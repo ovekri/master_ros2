@@ -1,0 +1,568 @@
+[1.002s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.003s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff97666670>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff97666670>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff97666d30>)
+[1.732s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.732s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.734s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nvidia/master_ws'
+[1.734s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.734s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.786s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.786s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.786s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['ignore', 'ignore_ament_install']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'ignore'
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'ignore_ament_install'
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['colcon_pkg']
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'colcon_pkg'
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['colcon_meta']
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'colcon_meta'
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['ros']
+[1.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'ros'
+[1.804s] DEBUG:colcon.colcon_core.package_identification:Package 'src/broadcaster' with type 'ros.ament_python' and name 'broadcaster'
+[1.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['ignore', 'ignore_ament_install']
+[1.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'ignore'
+[1.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'ignore_ament_install'
+[1.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['colcon_pkg']
+[1.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'colcon_pkg'
+[1.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['colcon_meta']
+[1.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'colcon_meta'
+[1.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['ros']
+[1.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'ros'
+[1.810s] DEBUG:colcon.colcon_core.package_identification:Package 'src/listener' with type 'ros.ament_cmake' and name 'listener'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore_ament_install'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_pkg']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_pkg'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_meta']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_meta'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ros']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ros'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['cmake', 'python']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'cmake'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['python_setup_py']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python_setup_py'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore'
+[1.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore_ament_install'
+[1.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_pkg']
+[1.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_pkg'
+[1.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_meta']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_meta'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ros']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ros'
+[1.818s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne' with type 'ros.ament_cmake' and name 'velodyne'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore_ament_install'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_pkg']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_pkg'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_meta']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_meta'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ros']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ros'
+[1.825s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_driver' with type 'ros.ament_cmake' and name 'velodyne_driver'
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore_ament_install'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_pkg']
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_pkg'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_meta']
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_meta'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ros']
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ros'
+[1.830s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_laserscan' with type 'ros.ament_cmake' and name 'velodyne_laserscan'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore_ament_install'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_pkg']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_pkg'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_meta']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_meta'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ros']
+[1.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ros'
+[1.834s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_msgs' with type 'ros.ament_cmake' and name 'velodyne_msgs'
+[1.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore'
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore_ament_install'
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_pkg']
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_pkg'
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_meta']
+[1.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_meta'
+[1.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ros']
+[1.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ros'
+[1.841s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_pointcloud' with type 'ros.ament_cmake' and name 'velodyne_pointcloud'
+[1.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.931s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/nvidia/master_ws/install
+[1.936s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 26 installed packages in /home/nvidia/velodyne_drivers/install
+[1.980s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 277 installed packages in /opt/ros/foxy
+[1.991s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'cmake_args' from command line to 'None'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'cmake_target' from command line to 'None'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'cmake_clean_cache' from command line to 'False'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'cmake_clean_first' from command line to 'False'
+[2.269s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'cmake_force_configure' from command line to 'False'
+[2.269s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'ament_cmake_args' from command line to 'None'
+[2.269s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'catkin_cmake_args' from command line to 'None'
+[2.269s] Level 5:colcon.colcon_core.verb:set package 'broadcaster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.269s] DEBUG:colcon.colcon_core.verb:Building package 'broadcaster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/broadcaster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/broadcaster', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/broadcaster', 'symlink_install': False, 'test_result_base': None}
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'cmake_args' from command line to 'None'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'cmake_target' from command line to 'None'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'cmake_clean_cache' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'cmake_clean_first' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'cmake_force_configure' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'ament_cmake_args' from command line to 'None'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'catkin_cmake_args' from command line to 'None'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'listener' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.272s] DEBUG:colcon.colcon_core.verb:Building package 'listener' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/listener', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/listener', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/listener', 'symlink_install': False, 'test_result_base': None}
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_args' from command line to 'None'
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target' from command line to 'None'
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_cache' from command line to 'False'
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_first' from command line to 'False'
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_force_configure' from command line to 'False'
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'ament_cmake_args' from command line to 'None'
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_cmake_args' from command line to 'None'
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.274s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_laserscan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/velodyne_laserscan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/velodyne_laserscan', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/velodyne/velodyne_laserscan', 'symlink_install': False, 'test_result_base': None}
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_args' from command line to 'None'
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target' from command line to 'None'
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.276s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.277s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.277s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.277s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/velodyne_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/velodyne_msgs', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/velodyne/velodyne_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.278s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_args' from command line to 'None'
+[2.278s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target' from command line to 'None'
+[2.278s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.278s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_first' from command line to 'False'
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_force_configure' from command line to 'False'
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'ament_cmake_args' from command line to 'None'
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[2.279s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.279s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/velodyne_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/velodyne_driver', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/velodyne/velodyne_driver', 'symlink_install': False, 'test_result_base': None}
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_args' from command line to 'None'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target' from command line to 'None'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_cache' from command line to 'False'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_first' from command line to 'False'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_force_configure' from command line to 'False'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'ament_cmake_args' from command line to 'None'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_cmake_args' from command line to 'None'
+[2.281s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.282s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_pointcloud' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/velodyne_pointcloud', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/velodyne_pointcloud', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud', 'symlink_install': False, 'test_result_base': None}
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_args' from command line to 'None'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target' from command line to 'None'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_cache' from command line to 'False'
+[2.284s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_first' from command line to 'False'
+[2.284s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_force_configure' from command line to 'False'
+[2.284s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'ament_cmake_args' from command line to 'None'
+[2.284s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_cmake_args' from command line to 'None'
+[2.284s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.284s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/velodyne', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/velodyne', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/velodyne/velodyne', 'symlink_install': False, 'test_result_base': None}
+[2.285s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.290s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/velodyne/velodyne_msgs' with build type 'ament_cmake'
+[2.290s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/velodyne/velodyne_msgs'
+[2.301s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.301s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.302s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/velodyne/velodyne_laserscan' with build type 'ament_cmake'
+[2.339s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/velodyne/velodyne_laserscan'
+[2.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.343s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.385s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nvidia/master_ws/src/broadcaster' with build type 'ament_python'
+[2.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('broadcaster', 'ament_prefix_path')
+[2.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/hook/ament_prefix_path.ps1'
+[2.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/hook/ament_prefix_path.dsv'
+[2.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/hook/ament_prefix_path.sh'
+[2.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.439s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/listener' with build type 'ament_cmake'
+[2.442s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/listener'
+[2.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.446s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_msgs -- -j4 -l4
+[2.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4
+[3.930s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nvidia/master_ws/src/broadcaster'
+[3.934s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.934s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/listener -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/listener
+[4.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4
+[4.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_msgs -- -j4 -l4
+[4.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_laserscan
+[4.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[4.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_laserscan
+[4.609s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan' for CMake module files
+[4.613s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan' for CMake config files
+[4.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[4.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[4.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[4.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[4.631s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/lib'
+[4.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[4.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[4.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[4.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[4.641s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/bin'
+[4.641s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[4.642s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/lib/python3.8/site-packages'
+[4.643s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/bin'
+[4.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[4.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[4.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[4.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[4.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[4.673s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[4.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_msgs
+[4.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan' for CMake module files
+[4.969s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan' for CMake config files
+[4.980s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[4.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[4.991s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[4.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/lib'
+[5.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[5.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[5.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[5.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[5.033s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/bin'
+[5.037s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[5.048s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/lib/python3.8/site-packages'
+[5.050s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_laserscan/bin'
+[5.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[5.055s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[5.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[5.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[5.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[5.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[5.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[5.300s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs' for CMake module files
+[5.304s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs' for CMake config files
+[5.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_msgs
+[5.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[5.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[5.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[5.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[5.315s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/lib'
+[5.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[5.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[5.318s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[5.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[5.322s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/bin'
+[5.322s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[5.323s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages'
+[5.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'pythonpath')
+[5.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.ps1'
+[5.326s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.dsv'
+[5.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.sh'
+[5.330s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/bin'
+[5.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[5.336s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[5.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[5.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[5.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[5.347s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[5.927s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[5.929s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs' for CMake module files
+[5.933s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs' for CMake config files
+[5.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[5.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[5.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[5.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[5.947s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/lib'
+[5.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[5.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[5.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[5.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[5.954s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/bin'
+[5.955s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[5.956s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages'
+[5.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'pythonpath')
+[5.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.ps1'
+[5.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.dsv'
+[5.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.sh'
+[5.964s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_msgs/bin'
+[5.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[5.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[5.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[5.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[5.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[5.981s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[5.984s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/velodyne/velodyne_driver' with build type 'ament_cmake'
+[5.986s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/velodyne/velodyne_driver'
+[5.987s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.987s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.032s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud' with build type 'ament_cmake'
+[6.035s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud'
+[6.038s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.041s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_driver -- -j4 -l4
+[6.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_pointcloud -- -j4 -l4
+[6.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/src/broadcaster': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data
+[7.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_driver -- -j4 -l4
+[8.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_driver
+[8.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[8.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_driver
+[8.569s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver' for CMake module files
+[8.578s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver' for CMake config files
+[8.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[8.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[8.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[8.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[8.650s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/lib'
+[8.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[8.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[8.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[8.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[8.679s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/bin'
+[8.680s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[8.682s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/lib/python3.8/site-packages'
+[8.683s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/bin'
+[8.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[8.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[8.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.sh'
+[8.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.bash'
+[8.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[8.726s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[9.642s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[9.645s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver' for CMake module files
+[9.655s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver' for CMake config files
+[9.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[9.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[9.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[9.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[9.692s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/lib'
+[9.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[9.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[9.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[9.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[9.715s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/bin'
+[9.715s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[9.719s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/lib/python3.8/site-packages'
+[9.723s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_driver/bin'
+[9.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[9.740s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[9.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.sh'
+[9.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.bash'
+[9.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[9.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[9.908s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster' for CMake module files
+[9.912s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster' for CMake config files
+[9.915s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster/lib'
+[9.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/src/broadcaster' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data
+[9.915s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster/bin'
+[9.916s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster/lib/pkgconfig/broadcaster.pc'
+[9.928s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages'
+[9.928s] Level 1:colcon.colcon_core.shell:create_environment_hook('broadcaster', 'pythonpath')
+[9.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/hook/pythonpath.ps1'
+[9.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/hook/pythonpath.dsv'
+[9.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/hook/pythonpath.sh'
+[9.936s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/broadcaster/bin'
+[9.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(broadcaster)
+[9.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/package.ps1'
+[9.948s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/package.dsv'
+[9.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/package.sh'
+[9.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/package.bash'
+[9.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/broadcaster/share/broadcaster/package.zsh'
+[9.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/broadcaster/share/colcon-core/packages/broadcaster)
+[11.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/listener -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/listener
+[11.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[54.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[54.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener
+[54.762s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(listener)
+[54.765s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener' for CMake module files
+[54.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener
+[54.771s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener' for CMake config files
+[54.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('listener', 'cmake_prefix_path')
+[54.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/listener/share/listener/hook/cmake_prefix_path.ps1'
+[54.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/listener/share/listener/hook/cmake_prefix_path.dsv'
+[54.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/listener/share/listener/hook/cmake_prefix_path.sh'
+[54.788s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/lib'
+[54.788s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/bin'
+[54.789s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/lib/pkgconfig/listener.pc'
+[54.790s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/lib/python3.8/site-packages'
+[54.791s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/bin'
+[54.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.ps1'
+[54.795s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/listener/share/listener/package.dsv'
+[54.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.sh'
+[54.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.bash'
+[54.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.zsh'
+[54.804s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/listener/share/colcon-core/packages/listener)
+[54.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(listener)
+[54.974s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener' for CMake module files
+[54.977s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener' for CMake config files
+[54.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('listener', 'cmake_prefix_path')
+[54.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/listener/share/listener/hook/cmake_prefix_path.ps1'
+[54.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/listener/share/listener/hook/cmake_prefix_path.dsv'
+[54.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/listener/share/listener/hook/cmake_prefix_path.sh'
+[54.991s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/lib'
+[54.991s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/bin'
+[54.992s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/lib/pkgconfig/listener.pc'
+[54.993s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/lib/python3.8/site-packages'
+[54.994s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/listener/bin'
+[54.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.ps1'
+[54.998s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/listener/share/listener/package.dsv'
+[55.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.sh'
+[55.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.bash'
+[55.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/listener/share/listener/package.zsh'
+[55.008s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/listener/share/colcon-core/packages/listener)
+[99.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_pointcloud -- -j4 -l4
+[99.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_pointcloud
+[99.808s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[99.812s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud' for CMake module files
+[99.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_pointcloud
+[99.818s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud' for CMake config files
+[99.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[99.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[99.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[99.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[99.830s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/lib'
+[99.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[99.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[99.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[99.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[99.838s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/bin'
+[99.838s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[99.840s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/lib/python3.8/site-packages'
+[99.841s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/bin'
+[99.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[99.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[99.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[99.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[99.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[99.853s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[100.059s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[100.062s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud' for CMake module files
+[100.066s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud' for CMake config files
+[100.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[100.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[100.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[100.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[100.083s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/lib'
+[100.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[100.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[100.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[100.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[100.090s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/bin'
+[100.090s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[100.092s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/lib/python3.8/site-packages'
+[100.092s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne_pointcloud/bin'
+[100.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[100.096s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[100.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[100.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[100.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[100.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[100.106s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/velodyne/velodyne' with build type 'ament_cmake'
+[100.107s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/velodyne/velodyne'
+[100.108s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[100.108s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[100.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/velodyne:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud:/home/nvidia/velodyne_drivers/install/velodyne_driver:/home/nvidia/velodyne_drivers/install/velodyne_msgs:/home/nvidia/velodyne_drivers/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/geometry2:/home/nvidia/velodyne_drivers/install/tf2_tools:/home/nvidia/velodyne_drivers/install/listener:/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs:/home/nvidia/velodyne_drivers/install/test_tf2:/home/nvidia/velodyne_drivers/install/tf2_kdl:/home/nvidia/velodyne_drivers/install/tf2_geometry_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen:/home/nvidia/velodyne_drivers/install/tf2_bullet:/home/nvidia/velodyne_drivers/install/tf2_ros:/home/nvidia/velodyne_drivers/install/tf2_py:/home/nvidia/velodyne_drivers/install/tf2_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl:/home/nvidia/velodyne_drivers/install/tf2:/home/nvidia/velodyne_drivers/install/pointcloud2xyz:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake /home/nvidia/master_ws/src/velodyne/velodyne -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/velodyne
+[104.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/velodyne:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud:/home/nvidia/velodyne_drivers/install/velodyne_driver:/home/nvidia/velodyne_drivers/install/velodyne_msgs:/home/nvidia/velodyne_drivers/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/geometry2:/home/nvidia/velodyne_drivers/install/tf2_tools:/home/nvidia/velodyne_drivers/install/listener:/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs:/home/nvidia/velodyne_drivers/install/test_tf2:/home/nvidia/velodyne_drivers/install/tf2_kdl:/home/nvidia/velodyne_drivers/install/tf2_geometry_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen:/home/nvidia/velodyne_drivers/install/tf2_bullet:/home/nvidia/velodyne_drivers/install/tf2_ros:/home/nvidia/velodyne_drivers/install/tf2_py:/home/nvidia/velodyne_drivers/install/tf2_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl:/home/nvidia/velodyne_drivers/install/tf2:/home/nvidia/velodyne_drivers/install/pointcloud2xyz:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake /home/nvidia/master_ws/src/velodyne/velodyne -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/velodyne
+[104.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/velodyne:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud:/home/nvidia/velodyne_drivers/install/velodyne_driver:/home/nvidia/velodyne_drivers/install/velodyne_msgs:/home/nvidia/velodyne_drivers/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/geometry2:/home/nvidia/velodyne_drivers/install/tf2_tools:/home/nvidia/velodyne_drivers/install/listener:/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs:/home/nvidia/velodyne_drivers/install/test_tf2:/home/nvidia/velodyne_drivers/install/tf2_kdl:/home/nvidia/velodyne_drivers/install/tf2_geometry_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen:/home/nvidia/velodyne_drivers/install/tf2_bullet:/home/nvidia/velodyne_drivers/install/tf2_ros:/home/nvidia/velodyne_drivers/install/tf2_py:/home/nvidia/velodyne_drivers/install/tf2_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl:/home/nvidia/velodyne_drivers/install/tf2:/home/nvidia/velodyne_drivers/install/pointcloud2xyz:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne -- -j4 -l4
+[104.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/velodyne:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud:/home/nvidia/velodyne_drivers/install/velodyne_driver:/home/nvidia/velodyne_drivers/install/velodyne_msgs:/home/nvidia/velodyne_drivers/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/geometry2:/home/nvidia/velodyne_drivers/install/tf2_tools:/home/nvidia/velodyne_drivers/install/listener:/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs:/home/nvidia/velodyne_drivers/install/test_tf2:/home/nvidia/velodyne_drivers/install/tf2_kdl:/home/nvidia/velodyne_drivers/install/tf2_geometry_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen:/home/nvidia/velodyne_drivers/install/tf2_bullet:/home/nvidia/velodyne_drivers/install/tf2_ros:/home/nvidia/velodyne_drivers/install/tf2_py:/home/nvidia/velodyne_drivers/install/tf2_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl:/home/nvidia/velodyne_drivers/install/tf2:/home/nvidia/velodyne_drivers/install/pointcloud2xyz:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne -- -j4 -l4
+[104.754s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/velodyne': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/velodyne:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud:/home/nvidia/velodyne_drivers/install/velodyne_driver:/home/nvidia/velodyne_drivers/install/velodyne_msgs:/home/nvidia/velodyne_drivers/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/geometry2:/home/nvidia/velodyne_drivers/install/tf2_tools:/home/nvidia/velodyne_drivers/install/listener:/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs:/home/nvidia/velodyne_drivers/install/test_tf2:/home/nvidia/velodyne_drivers/install/tf2_kdl:/home/nvidia/velodyne_drivers/install/tf2_geometry_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen:/home/nvidia/velodyne_drivers/install/tf2_bullet:/home/nvidia/velodyne_drivers/install/tf2_ros:/home/nvidia/velodyne_drivers/install/tf2_py:/home/nvidia/velodyne_drivers/install/tf2_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl:/home/nvidia/velodyne_drivers/install/tf2:/home/nvidia/velodyne_drivers/install/pointcloud2xyz:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne
+[104.822s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[104.825s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne' for CMake module files
+[104.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/velodyne:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud:/home/nvidia/velodyne_drivers/install/velodyne_driver:/home/nvidia/velodyne_drivers/install/velodyne_msgs:/home/nvidia/velodyne_drivers/install/velodyne_laserscan:/home/nvidia/velodyne_drivers/install/geometry2:/home/nvidia/velodyne_drivers/install/tf2_tools:/home/nvidia/velodyne_drivers/install/listener:/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs:/home/nvidia/velodyne_drivers/install/test_tf2:/home/nvidia/velodyne_drivers/install/tf2_kdl:/home/nvidia/velodyne_drivers/install/tf2_geometry_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen:/home/nvidia/velodyne_drivers/install/tf2_bullet:/home/nvidia/velodyne_drivers/install/tf2_ros:/home/nvidia/velodyne_drivers/install/tf2_py:/home/nvidia/velodyne_drivers/install/tf2_msgs:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl:/home/nvidia/velodyne_drivers/install/tf2:/home/nvidia/velodyne_drivers/install/pointcloud2xyz:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/velodyne_pointcloud/lib:/home/nvidia/velodyne_drivers/install/velodyne_driver/lib:/home/nvidia/velodyne_drivers/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/velodyne_laserscan/lib:/home/nvidia/velodyne_drivers/install/tf2_bullet/lib:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2_eigen_kdl/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne
+[104.829s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne' for CMake config files
+[104.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[104.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[104.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[104.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[104.843s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/bin'
+[104.844s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/lib/pkgconfig/velodyne.pc'
+[104.846s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/lib/python3.8/site-packages'
+[104.846s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/bin'
+[104.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.ps1'
+[104.853s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.dsv'
+[104.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.sh'
+[104.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.bash'
+[104.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.zsh'
+[104.860s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne/share/colcon-core/packages/velodyne)
+[104.991s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[104.993s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne' for CMake module files
+[104.995s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne' for CMake config files
+[104.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[104.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[105.001s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[105.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[105.006s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/bin'
+[105.006s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/lib/pkgconfig/velodyne.pc'
+[105.008s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/lib/python3.8/site-packages'
+[105.009s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/velodyne/bin'
+[105.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.ps1'
+[105.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.dsv'
+[105.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.sh'
+[105.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.bash'
+[105.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/velodyne/share/velodyne/package.zsh'
+[105.022s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/velodyne/share/colcon-core/packages/velodyne)
+[105.024s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[105.026s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[105.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[105.028s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[105.055s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[105.056s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[105.056s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[105.118s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[105.120s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.ps1'
+[105.124s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/master_ws/install/_local_setup_util_ps1.py'
+[105.131s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.ps1'
+[105.143s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.sh'
+[105.145s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/master_ws/install/_local_setup_util_sh.py'
+[105.148s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.sh'
+[105.160s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.bash'
+[105.163s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.bash'
+[105.174s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.zsh'
+[105.176s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.zsh'

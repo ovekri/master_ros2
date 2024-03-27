@@ -1,0 +1,22 @@
+[0.100s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/home/nvidia/velodyne_drivers/install/example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[0.737s] [100%] Built target listener
+[0.865s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/home/nvidia/velodyne_drivers/install/example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[2.469s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/home/nvidia/velodyne_drivers/install/example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener
+[2.549s] -- Install configuration: ""
+[2.550s] -- Up-to-date: /home/nvidia/master_ws/install/listener/lib/listener/listener
+[2.552s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/package_run_dependencies/listener
+[2.552s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/parent_prefix_path/listener
+[2.555s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/ament_prefix_path.sh
+[2.556s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/ament_prefix_path.dsv
+[2.562s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/path.sh
+[2.566s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/path.dsv
+[2.566s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.bash
+[2.567s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.sh
+[2.567s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.zsh
+[2.568s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.dsv
+[2.569s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/package.dsv
+[2.571s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/packages/listener
+[2.572s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/cmake/listenerConfig.cmake
+[2.572s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/cmake/listenerConfig-version.cmake
+[2.573s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/package.xml
+[2.594s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/home/nvidia/velodyne_drivers/install/example:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener

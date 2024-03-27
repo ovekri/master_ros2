@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nvidia/master_ws/build/velodyne
+-- Install configuration: ""
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-composed-launch.py
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLS128-composed-launch.py
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-launch.py
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLS128-launch.py
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-composed-launch.py
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-launch.py
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/ament_index/resource_index/package_run_dependencies/velodyne
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/ament_index/resource_index/parent_prefix_path/velodyne
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/environment/ament_prefix_path.sh
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/environment/ament_prefix_path.dsv
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/environment/path.sh
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/environment/path.dsv
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/local_setup.bash
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/local_setup.sh
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/local_setup.zsh
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/local_setup.dsv
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/package.dsv
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/ament_index/resource_index/packages/velodyne
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/cmake/velodyneConfig.cmake
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/cmake/velodyneConfig-version.cmake
+-- Installing: /home/nvidia/master_ws/install/velodyne/share/velodyne/package.xml

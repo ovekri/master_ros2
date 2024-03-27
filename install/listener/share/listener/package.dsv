@@ -1,0 +1,8 @@
+source;share/listener/hook/cmake_prefix_path.ps1
+source;share/listener/hook/cmake_prefix_path.dsv
+source;share/listener/hook/cmake_prefix_path.sh
+source;share/listener/local_setup.bash
+source;share/listener/local_setup.dsv
+source;share/listener/local_setup.ps1
+source;share/listener/local_setup.sh
+source;share/listener/local_setup.zsh

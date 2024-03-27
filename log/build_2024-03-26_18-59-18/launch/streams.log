@@ -1,0 +1,9 @@
+[5.446s] Invoking command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch/prefix_override:/home/nvidia/master_ws/install/launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch build --build-base /home/nvidia/master_ws/build/launch/build install --record /home/nvidia/master_ws/build/launch/install.log --install-scripts $base/lib/launch --single-version-externally-managed install_data
+[7.062s] running egg_info
+[7.063s] writing ../../../../build/launch/launch_ws.egg-info/PKG-INFO
+[7.065s] writing dependency_links to ../../../../build/launch/launch_ws.egg-info/dependency_links.txt
+[7.066s] writing entry points to ../../../../build/launch/launch_ws.egg-info/entry_points.txt
+[7.066s] writing requirements to ../../../../build/launch/launch_ws.egg-info/requires.txt
+[7.067s] writing top-level names to ../../../../build/launch/launch_ws.egg-info/top_level.txt
+[7.225s] error: package directory 'launch_ws' does not exist
+[7.322s] Invoked command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car' returned '1': PYTHONPATH=/home/nvidia/master_ws/build/launch/prefix_override:/home/nvidia/master_ws/install/launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch build --build-base /home/nvidia/master_ws/build/launch/build install --record /home/nvidia/master_ws/build/launch/install.log --install-scripts $base/lib/launch --single-version-externally-managed install_data

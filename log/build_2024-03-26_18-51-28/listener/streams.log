@@ -1,0 +1,64 @@
+[0.121s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/listener -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/listener
+[0.549s] -- The C compiler identification is GNU 9.4.0
+[0.900s] -- The CXX compiler identification is GNU 9.4.0
+[0.935s] -- Check for working C compiler: /usr/bin/cc
+[1.369s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.374s] -- Detecting C compiler ABI info
+[1.812s] -- Detecting C compiler ABI info - done
+[1.877s] -- Detecting C compile features
+[1.879s] -- Detecting C compile features - done
+[1.894s] -- Check for working CXX compiler: /usr/bin/c++
+[2.381s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.386s] -- Detecting CXX compiler ABI info
+[2.862s] -- Detecting CXX compiler ABI info - done
+[2.919s] -- Detecting CXX compile features
+[2.922s] -- Detecting CXX compile features - done
+[2.949s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.175s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.179s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.636s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.001s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.071s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.640s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.786s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.219s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.558s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.569s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.572s] -- Looking for pthread.h
+[6.990s] -- Looking for pthread.h - found
+[6.991s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.413s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.414s] -- Looking for pthread_create in pthreads
+[7.766s] -- Looking for pthread_create in pthreads - not found
+[7.767s] -- Looking for pthread_create in pthread
+[8.155s] -- Looking for pthread_create in pthread - found
+[8.161s] -- Found Threads: TRUE  
+[8.861s] -- Found tf2_ros: 0.13.14 (/home/nvidia/velodyne_drivers/install/tf2_ros/share/tf2_ros/cmake)
+[10.378s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[10.619s] -- Found tf2_sensor_msgs: 0.13.14 (/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs/share/tf2_sensor_msgs/cmake)
+[10.797s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.292s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.299s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.300s] -- Configured cppcheck include dirs: 
+[11.300s] -- Configured cppcheck exclude dirs and/or files: 
+[11.306s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.306s] -- Configured cpplint exclude dirs and/or files: 
+[11.312s] -- Added test 'lint_cmake' to check CMake code style
+[11.319s] -- Added test 'uncrustify' to check C / C++ code style
+[11.319s] -- Configured uncrustify additional arguments: 
+[11.323s] -- Added test 'xmllint' to check XML markup files
+[11.350s] -- Configuring done
+[11.355s] CMake Error at CMakeLists.txt:27 (add_executable):
+[11.355s]   Cannot find source file:
+[11.355s] 
+[11.356s]     src/transformerNode.cpp
+[11.357s] 
+[11.357s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[11.357s]   .hpp .hxx .in .txx
+[11.358s] 
+[11.358s] 
+[11.363s] CMake Error at CMakeLists.txt:27 (add_executable):
+[11.364s]   No SOURCES given to target: listener
+[11.364s] 
+[11.365s] 
+[11.365s] CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -1,0 +1,31 @@
+[8.519s] Invoking command in '/home/nvidia/master_ws/src/broadcaster': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data
+[10.582s] Traceback (most recent call last):
+[10.627s]   File "setup.py", line 1, in <module>
+[10.628s]     from setuptools import setup
+[10.629s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>
+[10.629s]     import setuptools.version
+[10.630s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[10.630s]     import pkg_resources
+[10.630s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3254, in <module>
+[10.631s]     def _initialize_master_working_set():
+[10.634s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3237, in _call_aside
+[10.636s]     f(*args, **kwargs)
+[10.636s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3289, in _initialize_master_working_set
+[10.644s]     list(map(working_set.add_entry, sys.path))
+[10.644s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 624, in add_entry
+[10.645s]     for dist in find_distributions(entry, True):
+[10.645s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2062, in find_on_path
+[10.646s]     path_item_entries = _by_version_descending(filtered)
+[10.647s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2035, in _by_version_descending
+[10.649s]     return sorted(names, key=_by_version, reverse=True)
+[10.660s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2033, in _by_version
+[10.664s]     return [packaging.version.parse(part) for part in parts]
+[10.671s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2033, in <listcomp>
+[10.674s]     return [packaging.version.parse(part) for part in parts]
+[10.676s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 31, in parse
+[10.678s]     return Version(version)
+[10.678s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 224, in __init__
+[10.678s]     self._key = _cmpkey(
+[10.684s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 349, in _cmpkey
+[10.684s]     release = tuple(
+[10.687s] KeyboardInterrupt

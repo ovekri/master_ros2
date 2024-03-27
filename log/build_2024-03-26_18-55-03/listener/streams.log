@@ -1,0 +1,38 @@
+[0.112s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/listener -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/listener
+[0.289s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.488s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.852s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.025s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.043s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.656s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.869s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.880s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.438s] -- Found tf2_ros: 0.13.14 (/home/nvidia/velodyne_drivers/install/tf2_ros/share/tf2_ros/cmake)
+[4.826s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[5.095s] -- Found tf2_sensor_msgs: 0.13.14 (/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs/share/tf2_sensor_msgs/cmake)
+[5.229s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.617s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.625s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.626s] -- Configured cppcheck include dirs: 
+[5.627s] -- Configured cppcheck exclude dirs and/or files: 
+[5.629s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.630s] -- Configured cpplint exclude dirs and/or files: 
+[5.632s] -- Added test 'lint_cmake' to check CMake code style
+[5.638s] -- Added test 'uncrustify' to check C / C++ code style
+[5.638s] -- Configured uncrustify additional arguments: 
+[5.640s] -- Added test 'xmllint' to check XML markup files
+[5.662s] -- Configuring done
+[5.667s] CMake Error at CMakeLists.txt:27 (add_executable):
+[5.668s]   Cannot find source file:
+[5.668s] 
+[5.669s]     src/transformerNode.cpp
+[5.669s] 
+[5.669s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[5.669s]   .hpp .hxx .in .txx
+[5.671s] 
+[5.671s] 
+[5.676s] CMake Error at CMakeLists.txt:27 (add_executable):
+[5.677s]   No SOURCES given to target: listener
+[5.677s] 
+[5.677s] 
+[5.678s] CMake Generate step failed.  Build files cannot be regenerated correctly.

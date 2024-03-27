@@ -1,0 +1,9 @@
+[0.241s] Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4
+[4.671s] [35m[1mScanning dependencies of target velodyne_laserscan[0m
+[4.672s] [ 25%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o[0m
+[10.637s] make[2]: *** wait: No child processes.  Stop.
+[10.638s] make[2]: *** Waiting for unfinished jobs....
+[10.638s] make[2]: *** wait: No child processes.  Stop.
+[10.678s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/velodyne_laserscan.dir/all] Error 2
+[10.679s] make: *** [Makefile:141: all] Interrupt
+[10.745s] Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4

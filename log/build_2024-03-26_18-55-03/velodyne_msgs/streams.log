@@ -1,0 +1,48 @@
+[0.242s] Invoking command in '/home/nvidia/master_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_msgs -- -j4 -l4
+[5.203s] [ 10%] Built target velodyne_msgs__rosidl_generator_c
+[5.204s] [ 12%] Built target velodyne_msgs__cpp
+[5.204s] [ 15%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.205s] [ 25%] Built target velodyne_msgs__rosidl_typesupport_c
+[5.206s] [ 28%] [32mBuilding CXX object CMakeFiles/velodyne_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/velodyne_msgs/msg/velodyne_scan__type_support.cpp.o[0m
+[5.207s] [ 30%] [32mBuilding CXX object CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/velodyne_msgs/msg/detail/dds_fastrtps/velodyne_packet__type_support.cpp.o[0m
+[5.208s] [ 33%] [32mBuilding CXX object CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/velodyne_msgs/msg/detail/velodyne_scan__type_support.cpp.o[0m
+[5.210s] [35m[1mScanning dependencies of target velodyne_msgs__rosidl_typesupport_introspection_c[0m
+[5.214s] [ 35%] [32m[1mLinking CXX shared library libvelodyne_msgs__rosidl_typesupport_cpp.so[0m
+[5.216s] [ 38%] [32mBuilding C object CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/velodyne_msgs/msg/detail/velodyne_packet__type_support.c.o[0m
+[5.217s] [ 41%] [32m[1mLinking CXX shared library libvelodyne_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.217s] [ 43%] [32mBuilding C object CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/velodyne_msgs/msg/detail/velodyne_scan__type_support.c.o[0m
+[5.218s] [ 48%] Built target velodyne_msgs__rosidl_typesupport_cpp
+[5.218s] [ 51%] [32mBuilding CXX object CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/velodyne_msgs/msg/detail/dds_fastrtps/velodyne_scan__type_support.cpp.o[0m
+[5.219s] [ 53%] [32m[1mLinking C shared library libvelodyne_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.219s] [ 58%] Built target velodyne_msgs__rosidl_typesupport_introspection_cpp
+[5.219s] [ 58%] Built target velodyne_msgs__rosidl_typesupport_introspection_c
+[7.215s] [ 61%] [32m[1mLinking CXX shared library libvelodyne_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.675s] [ 64%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_cpp
+[7.778s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.488s] [35m[1mScanning dependencies of target velodyne_msgs__rosidl_typesupport_fastrtps_c[0m
+[9.621s] [ 69%] [32mBuilding CXX object CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/velodyne_msgs/msg/detail/velodyne_scan__type_support_c.cpp.o[0m
+[9.668s] [ 71%] [32mBuilding CXX object CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/velodyne_msgs/msg/detail/velodyne_packet__type_support_c.cpp.o[0m
+[11.992s] [ 74%] [32m[1mLinking CXX shared library libvelodyne_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[12.425s] [ 74%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c
+[12.494s] [35m[1mScanning dependencies of target velodyne_msgs[0m
+[12.560s] [ 74%] Built target velodyne_msgs
+[12.625s] [35m[1mScanning dependencies of target velodyne_msgs__py[0m
+[12.695s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[15.269s] [ 76%] Built target velodyne_msgs__py
+[15.342s] [35m[1mScanning dependencies of target velodyne_msgs__python[0m
+[15.525s] [ 79%] [32mBuilding C object CMakeFiles/velodyne_msgs__python.dir/rosidl_generator_py/velodyne_msgs/msg/_velodyne_scan_s.c.o[0m
+[15.537s] [ 82%] [32mBuilding C object CMakeFiles/velodyne_msgs__python.dir/rosidl_generator_py/velodyne_msgs/msg/_velodyne_packet_s.c.o[0m
+[16.242s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/velodyne_msgs/libvelodyne_msgs__python.so[0m
+[16.501s] [ 84%] Built target velodyne_msgs__python
+[16.575s] [35m[1mScanning dependencies of target velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[16.580s] [35m[1mScanning dependencies of target velodyne_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[16.583s] [35m[1mScanning dependencies of target velodyne_msgs__rosidl_typesupport_c__pyext[0m
+[16.734s] [ 87%] [32mBuilding C object CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/velodyne_msgs/_velodyne_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[16.755s] [ 89%] [32mBuilding C object CMakeFiles/velodyne_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/velodyne_msgs/_velodyne_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[16.758s] [ 92%] [32mBuilding C object CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/velodyne_msgs/_velodyne_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.273s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[17.384s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[17.425s] [100%] [32m[1mLinking C shared library rosidl_generator_py/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[17.667s] [100%] Built target velodyne_msgs__rosidl_typesupport_c__pyext
+[17.673s] [100%] Built target velodyne_msgs__rosidl_typesupport_introspection_c__pyext
+[17.741s] [100%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext
