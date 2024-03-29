@@ -1,0 +1,24 @@
+[2.938s] Invoking command in '/home/nvidia/master_ws/src/controller': PYTHONPATH=/home/nvidia/master_ws/build/controller/prefix_override:/home/nvidia/master_ws/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/nvidia/master_ws/build/controller/build install --record /home/nvidia/master_ws/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed install_data
+[3.936s] running egg_info
+[3.937s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[3.938s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[3.939s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[3.939s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[3.940s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[4.068s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[4.071s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[4.072s] running build
+[4.072s] running build_py
+[4.073s] copying controller/controller.py -> /home/nvidia/master_ws/build/controller/build/lib/controller
+[4.073s] running install
+[4.077s] running install_lib
+[4.081s] copying /home/nvidia/master_ws/build/controller/build/lib/controller/controller.py -> /home/nvidia/master_ws/install/controller/lib/python3.8/site-packages/controller
+[4.084s] byte-compiling /home/nvidia/master_ws/install/controller/lib/python3.8/site-packages/controller/controller.py to controller.cpython-38.pyc
+[4.090s] running install_data
+[4.091s] running install_egg_info
+[4.097s] removing '/home/nvidia/master_ws/install/controller/lib/python3.8/site-packages/controller-0.0.0-py3.8.egg-info' (and everything under it)
+[4.098s] Copying ../../build/controller/controller.egg-info to /home/nvidia/master_ws/install/controller/lib/python3.8/site-packages/controller-0.0.0-py3.8.egg-info
+[4.103s] running install_scripts
+[4.168s] Installing controller script to /home/nvidia/master_ws/install/controller/lib/controller
+[4.170s] writing list of installed files to '/home/nvidia/master_ws/build/controller/install.log'
+[4.248s] Invoked command in '/home/nvidia/master_ws/src/controller' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/controller/prefix_override:/home/nvidia/master_ws/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/nvidia/master_ws/build/controller/build install --record /home/nvidia/master_ws/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed install_data

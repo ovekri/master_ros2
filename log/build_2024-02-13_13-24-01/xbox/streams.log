@@ -1,0 +1,26 @@
+[3.466s] Invoking command in '/home/nvidia/master_ws/src/xbox': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data
+[4.147s] Traceback (most recent call last):
+[4.147s]   File "setup.py", line 1, in <module>
+[4.147s]     from setuptools import setup
+[4.148s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>
+[4.148s]     import setuptools.version
+[4.148s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[4.149s]     import pkg_resources
+[4.149s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3254, in <module>
+[4.150s]     def _initialize_master_working_set():
+[4.152s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3237, in _call_aside
+[4.153s]     f(*args, **kwargs)
+[4.153s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3279, in _initialize_master_working_set
+[4.154s]     tuple(
+[4.154s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3280, in <genexpr>
+[4.155s]     dist.activate(replace=False)
+[4.156s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2784, in activate
+[4.157s]     fixup_namespace_packages(self.location)
+[4.157s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2296, in fixup_namespace_packages
+[4.158s]     subpath = _handle_ns(package, path_item)
+[4.159s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2200, in _handle_ns
+[4.160s]     with warnings.catch_warnings():
+[4.160s]   File "/usr/lib/python3.8/warnings.py", line 465, in __enter__
+[4.161s]     self._showwarning = self._module.showwarning
+[4.161s] KeyboardInterrupt
+[4.204s] Invoked command in '/home/nvidia/master_ws/src/xbox' returned '-2': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data

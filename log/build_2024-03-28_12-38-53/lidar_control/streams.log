@@ -1,0 +1,21 @@
+[3.553s] Invoking command in '/home/nvidia/master_ws/src/lidar_control': PYTHONPATH=/home/nvidia/master_ws/build/lidar_control/prefix_override:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_control build --build-base /home/nvidia/master_ws/build/lidar_control/build install --record /home/nvidia/master_ws/build/lidar_control/install.log --install-scripts $base/lib/lidar_control --single-version-externally-managed install_data
+[4.723s] running egg_info
+[4.726s] writing ../../build/lidar_control/lidar_control.egg-info/PKG-INFO
+[4.727s] writing dependency_links to ../../build/lidar_control/lidar_control.egg-info/dependency_links.txt
+[4.728s] writing entry points to ../../build/lidar_control/lidar_control.egg-info/entry_points.txt
+[4.729s] writing requirements to ../../build/lidar_control/lidar_control.egg-info/requires.txt
+[4.729s] writing top-level names to ../../build/lidar_control/lidar_control.egg-info/top_level.txt
+[4.861s] reading manifest file '../../build/lidar_control/lidar_control.egg-info/SOURCES.txt'
+[4.864s] writing manifest file '../../build/lidar_control/lidar_control.egg-info/SOURCES.txt'
+[4.864s] running build
+[4.865s] running build_py
+[4.866s] running install
+[4.869s] running install_lib
+[4.876s] running install_data
+[4.877s] running install_egg_info
+[4.883s] removing '/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages/lidar_control-0.0.0-py3.8.egg-info' (and everything under it)
+[4.885s] Copying ../../build/lidar_control/lidar_control.egg-info to /home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages/lidar_control-0.0.0-py3.8.egg-info
+[4.889s] running install_scripts
+[4.958s] Installing lidar_control script to /home/nvidia/master_ws/install/lidar_control/lib/lidar_control
+[4.959s] writing list of installed files to '/home/nvidia/master_ws/build/lidar_control/install.log'
+[5.043s] Invoked command in '/home/nvidia/master_ws/src/lidar_control' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/lidar_control/prefix_override:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_control build --build-base /home/nvidia/master_ws/build/lidar_control/build install --record /home/nvidia/master_ws/build/lidar_control/install.log --install-scripts $base/lib/lidar_control --single-version-externally-managed install_data

@@ -1,10 +1,1 @@
-velodyne_transform_node:
-    ros__parameters:
-        calibration: VLP16db.yaml
-        model: VLP16
-        min_range: 0.45
-        max_range: 20.0
-        view_direction: 0.0
-        fixed_frame: ""
-        target_frame: ""
-        organize_cloud: true
+/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud/config/VLP16-velodyne_transform_node-params.yaml

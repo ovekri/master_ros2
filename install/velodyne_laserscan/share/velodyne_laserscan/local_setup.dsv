@@ -1,2 +1,1 @@
-source;share/velodyne_laserscan/environment/ament_prefix_path.sh
-source;share/velodyne_laserscan/environment/path.sh
+/home/nvidia/master_ws/build/velodyne_laserscan/ament_cmake_environment_hooks/local_setup.dsv

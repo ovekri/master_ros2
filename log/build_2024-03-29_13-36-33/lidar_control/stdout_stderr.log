@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing lidar_control.egg-info/PKG-INFO
+writing dependency_links to lidar_control.egg-info/dependency_links.txt
+writing entry points to lidar_control.egg-info/entry_points.txt
+writing requirements to lidar_control.egg-info/requires.txt
+writing top-level names to lidar_control.egg-info/top_level.txt
+reading manifest file 'lidar_control.egg-info/SOURCES.txt'
+writing manifest file 'lidar_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages/site.py
+Creating /home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages/lidar-control.egg-link (link to .)
+Installing lidar_control script to /home/nvidia/master_ws/install/lidar_control/lib/lidar_control
+
+Installed /home/nvidia/master_ws/build/lidar_control
+running symlink_data
+symbolically linking /home/nvidia/master_ws/build/lidar_control/resource/lidar_control -> /home/nvidia/master_ws/install/lidar_control/share/ament_index/resource_index/packages
+symbolically linking /home/nvidia/master_ws/build/lidar_control/package.xml -> /home/nvidia/master_ws/install/lidar_control/share/lidar_control

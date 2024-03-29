@@ -9,6 +9,7 @@ setup.py
 ../../../../build/launch_car/launch_car.egg-info/top_level.txt
 ../../../../build/launch_car/launch_car.egg-info/zip-safe
 launch/car_launch.py
+launch/control_launch.py
 launch_car/__init__.py
 resource/launch_car
 test/test_copyright.py

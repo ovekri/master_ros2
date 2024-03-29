@@ -1,0 +1,20 @@
+[4.947s] Invoking command in '/home/nvidia/master_ws/build/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/nvidia/master_ws/build/launch_car/build --no-deps symlink_data --force
+[6.365s] running develop
+[7.073s] running egg_info
+[7.074s] writing launch_car.egg-info/PKG-INFO
+[7.074s] writing dependency_links to launch_car.egg-info/dependency_links.txt
+[7.076s] writing entry points to launch_car.egg-info/entry_points.txt
+[7.076s] writing requirements to launch_car.egg-info/requires.txt
+[7.077s] writing top-level names to launch_car.egg-info/top_level.txt
+[7.233s] reading manifest file 'launch_car.egg-info/SOURCES.txt'
+[7.236s] writing manifest file 'launch_car.egg-info/SOURCES.txt'
+[7.446s] running build_ext
+[7.447s] Creating /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch-car.egg-link (link to .)
+[7.447s] 
+[7.448s] Installed /home/nvidia/master_ws/build/launch_car
+[7.448s] running symlink_data
+[7.449s] symbolically linking /home/nvidia/master_ws/build/launch_car/resource/launch_car -> /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index/packages
+[7.449s] symbolically linking /home/nvidia/master_ws/build/launch_car/package.xml -> /home/nvidia/master_ws/install/launch_car/share/launch_car
+[7.449s] symbolically linking /home/nvidia/master_ws/build/launch_car/launch/control_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[7.450s] symbolically linking /home/nvidia/master_ws/build/launch_car/launch/car_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[7.587s] Invoked command in '/home/nvidia/master_ws/build/launch_car' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/nvidia/master_ws/build/launch_car/build --no-deps symlink_data --force

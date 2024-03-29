@@ -1,4 +1,1 @@
-# Raw Velodyne LIDAR packet.
-
-builtin_interfaces/Time stamp              # packet timestamp
-uint8[1206] data        # packet contents
+/home/nvidia/master_ws/src/velodyne/velodyne_msgs/msg/VelodynePacket.msg

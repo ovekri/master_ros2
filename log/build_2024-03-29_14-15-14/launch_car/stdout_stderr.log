@@ -1,0 +1,26 @@
+running develop
+Removing /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch-car.egg-link (link to .)
+running egg_info
+writing ../../../../build/launch_car/launch_car.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/launch_car/launch_car.egg-info/dependency_links.txt
+writing entry points to ../../../../build/launch_car/launch_car.egg-info/entry_points.txt
+writing requirements to ../../../../build/launch_car/launch_car.egg-info/requires.txt
+writing top-level names to ../../../../build/launch_car/launch_car.egg-info/top_level.txt
+reading manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car
+copying /home/nvidia/master_ws/build/launch_car/build/lib/launch_car/__init__.py -> /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car
+byte-compiling /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/launch_car -> /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index/packages
+copying package.xml -> /home/nvidia/master_ws/install/launch_car/share/launch_car
+copying launch/control_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+copying launch/car_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+running install_egg_info
+Copying ../../../../build/launch_car/launch_car.egg-info to /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/nvidia/master_ws/build/launch_car/install.log'

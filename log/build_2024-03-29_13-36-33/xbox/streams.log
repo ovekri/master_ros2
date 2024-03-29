@@ -1,0 +1,20 @@
+[4.602s] Invoking command in '/home/nvidia/master_ws/build/xbox': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/nvidia/master_ws/build/xbox/build --no-deps symlink_data --force
+[6.186s] running develop
+[6.969s] running egg_info
+[6.970s] writing xbox.egg-info/PKG-INFO
+[6.971s] writing dependency_links to xbox.egg-info/dependency_links.txt
+[6.972s] writing entry points to xbox.egg-info/entry_points.txt
+[6.973s] writing requirements to xbox.egg-info/requires.txt
+[6.974s] writing top-level names to xbox.egg-info/top_level.txt
+[7.113s] reading manifest file 'xbox.egg-info/SOURCES.txt'
+[7.118s] writing manifest file 'xbox.egg-info/SOURCES.txt'
+[7.296s] running build_ext
+[7.298s] Creating /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/site.py
+[7.305s] Creating /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox.egg-link (link to .)
+[7.308s] Installing xbox script to /home/nvidia/master_ws/install/xbox/lib/xbox
+[7.310s] 
+[7.310s] Installed /home/nvidia/master_ws/build/xbox
+[7.310s] running symlink_data
+[7.311s] symbolically linking /home/nvidia/master_ws/build/xbox/resource/xbox -> /home/nvidia/master_ws/install/xbox/share/ament_index/resource_index/packages
+[7.312s] symbolically linking /home/nvidia/master_ws/build/xbox/package.xml -> /home/nvidia/master_ws/install/xbox/share/xbox
+[7.443s] Invoked command in '/home/nvidia/master_ws/build/xbox' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/nvidia/master_ws/build/xbox/build --no-deps symlink_data --force

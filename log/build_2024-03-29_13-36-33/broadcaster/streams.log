@@ -1,0 +1,20 @@
+[4.779s] Invoking command in '/home/nvidia/master_ws/build/broadcaster': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/nvidia/master_ws/build/broadcaster/build --no-deps symlink_data --force
+[6.193s] running develop
+[6.930s] running egg_info
+[6.935s] writing broadcaster.egg-info/PKG-INFO
+[6.936s] writing dependency_links to broadcaster.egg-info/dependency_links.txt
+[6.937s] writing entry points to broadcaster.egg-info/entry_points.txt
+[6.938s] writing requirements to broadcaster.egg-info/requires.txt
+[6.939s] writing top-level names to broadcaster.egg-info/top_level.txt
+[7.098s] reading manifest file 'broadcaster.egg-info/SOURCES.txt'
+[7.102s] writing manifest file 'broadcaster.egg-info/SOURCES.txt'
+[7.324s] running build_ext
+[7.335s] Creating /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/site.py
+[7.352s] Creating /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster.egg-link (link to .)
+[7.361s] Installing lidar script to /home/nvidia/master_ws/install/broadcaster/lib/broadcaster
+[7.363s] 
+[7.363s] Installed /home/nvidia/master_ws/build/broadcaster
+[7.364s] running symlink_data
+[7.364s] symbolically linking /home/nvidia/master_ws/build/broadcaster/resource/broadcaster -> /home/nvidia/master_ws/install/broadcaster/share/ament_index/resource_index/packages
+[7.365s] symbolically linking /home/nvidia/master_ws/build/broadcaster/package.xml -> /home/nvidia/master_ws/install/broadcaster/share/broadcaster
+[7.542s] Invoked command in '/home/nvidia/master_ws/build/broadcaster' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/nvidia/master_ws/build/broadcaster/build --no-deps symlink_data --force

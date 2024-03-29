@@ -7,10 +7,6 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     return LaunchDescription([
-        Node(
-            package='joy',
-            executable='joy_node',
-            name='xbox'),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
                 PathJoinSubstitution([
@@ -27,13 +23,5 @@ def generate_launch_description():
         Node(
             package='listener',
             executable='listener',
-            name='listener'),
-        Node(
-            package='xbox',
-            executable='xbox',
-            name='xbox_controller'),
-#        Node(
-#            package='lidar_control',
-#            executable='lidar_control',
-#            name='lidar_control'),           
+            name='listener'),        
   ])

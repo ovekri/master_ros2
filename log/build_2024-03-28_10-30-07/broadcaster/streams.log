@@ -1,0 +1,21 @@
+[5.140s] Invoking command in '/home/nvidia/master_ws/src/broadcaster': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data
+[6.598s] running egg_info
+[6.601s] writing ../../build/broadcaster/broadcaster.egg-info/PKG-INFO
+[6.603s] writing dependency_links to ../../build/broadcaster/broadcaster.egg-info/dependency_links.txt
+[6.606s] writing entry points to ../../build/broadcaster/broadcaster.egg-info/entry_points.txt
+[6.606s] writing requirements to ../../build/broadcaster/broadcaster.egg-info/requires.txt
+[6.607s] writing top-level names to ../../build/broadcaster/broadcaster.egg-info/top_level.txt
+[6.759s] reading manifest file '../../build/broadcaster/broadcaster.egg-info/SOURCES.txt'
+[6.763s] writing manifest file '../../build/broadcaster/broadcaster.egg-info/SOURCES.txt'
+[6.763s] running build
+[6.764s] running build_py
+[6.765s] running install
+[6.769s] running install_lib
+[6.777s] running install_data
+[6.778s] running install_egg_info
+[6.787s] removing '/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster-0.0.0-py3.8.egg-info' (and everything under it)
+[6.789s] Copying ../../build/broadcaster/broadcaster.egg-info to /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster-0.0.0-py3.8.egg-info
+[6.794s] running install_scripts
+[6.879s] Installing lidar script to /home/nvidia/master_ws/install/broadcaster/lib/broadcaster
+[6.880s] writing list of installed files to '/home/nvidia/master_ws/build/broadcaster/install.log'
+[7.019s] Invoked command in '/home/nvidia/master_ws/src/broadcaster' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data

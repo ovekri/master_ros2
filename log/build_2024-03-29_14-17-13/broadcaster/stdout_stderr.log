@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing broadcaster.egg-info/PKG-INFO
+writing dependency_links to broadcaster.egg-info/dependency_links.txt
+writing entry points to broadcaster.egg-info/entry_points.txt
+writing requirements to broadcaster.egg-info/requires.txt
+writing top-level names to broadcaster.egg-info/top_level.txt
+reading manifest file 'broadcaster.egg-info/SOURCES.txt'
+writing manifest file 'broadcaster.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster.egg-link (link to .)
+Installing lidar script to /home/nvidia/master_ws/install/broadcaster/lib/broadcaster
+
+Installed /home/nvidia/master_ws/build/broadcaster
+running symlink_data
+symbolically linking /home/nvidia/master_ws/build/broadcaster/resource/broadcaster -> /home/nvidia/master_ws/install/broadcaster/share/ament_index/resource_index/packages
+symbolically linking /home/nvidia/master_ws/build/broadcaster/package.xml -> /home/nvidia/master_ws/install/broadcaster/share/broadcaster

@@ -1,0 +1,30 @@
+[4.927s] Invoking command in '/home/nvidia/master_ws/build/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/nvidia/master_ws/build/launch_car/build
+[6.280s] running develop
+[6.978s] Removing /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch-car.egg-link (link to .)
+[7.402s] Invoked command in '/home/nvidia/master_ws/build/launch_car' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/nvidia/master_ws/build/launch_car/build
+[7.417s] Invoking command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data --force
+[8.899s] running egg_info
+[8.903s] writing ../../../../build/launch_car/launch_car.egg-info/PKG-INFO
+[8.908s] writing dependency_links to ../../../../build/launch_car/launch_car.egg-info/dependency_links.txt
+[8.910s] writing entry points to ../../../../build/launch_car/launch_car.egg-info/entry_points.txt
+[8.912s] writing requirements to ../../../../build/launch_car/launch_car.egg-info/requires.txt
+[8.913s] writing top-level names to ../../../../build/launch_car/launch_car.egg-info/top_level.txt
+[9.108s] reading manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[9.113s] writing manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[9.114s] running build
+[9.115s] running build_py
+[9.117s] running install
+[9.121s] running install_lib
+[9.128s] creating /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car
+[9.129s] copying /home/nvidia/master_ws/build/launch_car/build/lib/launch_car/__init__.py -> /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car
+[9.134s] byte-compiling /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car/__init__.py to __init__.cpython-38.pyc
+[9.140s] running install_data
+[9.141s] copying resource/launch_car -> /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index/packages
+[9.143s] copying package.xml -> /home/nvidia/master_ws/install/launch_car/share/launch_car
+[9.148s] copying launch/control_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[9.149s] copying launch/car_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[9.153s] running install_egg_info
+[9.179s] Copying ../../../../build/launch_car/launch_car.egg-info to /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info
+[9.182s] running install_scripts
+[9.257s] writing list of installed files to '/home/nvidia/master_ws/build/launch_car/install.log'
+[9.374s] Invoked command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data --force

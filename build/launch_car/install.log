@@ -2,6 +2,7 @@
 /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car/__pycache__/__init__.cpython-38.pyc
 /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index/packages/launch_car
 /home/nvidia/master_ws/install/launch_car/share/launch_car/package.xml
+/home/nvidia/master_ws/install/launch_car/share/launch_car/launch/control_launch.py
 /home/nvidia/master_ws/install/launch_car/share/launch_car/launch/car_launch.py
 /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info/top_level.txt
 /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info/requires.txt
