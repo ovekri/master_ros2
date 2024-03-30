@@ -1,0 +1,21 @@
+[3.367s] Invoking command in '/home/nvidia/master_ws/src/xbox': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data
+[4.399s] running egg_info
+[4.401s] writing ../../build/xbox/xbox.egg-info/PKG-INFO
+[4.402s] writing dependency_links to ../../build/xbox/xbox.egg-info/dependency_links.txt
+[4.403s] writing entry points to ../../build/xbox/xbox.egg-info/entry_points.txt
+[4.404s] writing requirements to ../../build/xbox/xbox.egg-info/requires.txt
+[4.404s] writing top-level names to ../../build/xbox/xbox.egg-info/top_level.txt
+[4.543s] reading manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[4.546s] writing manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[4.547s] running build
+[4.547s] running build_py
+[4.548s] running install
+[4.552s] running install_lib
+[4.560s] running install_data
+[4.560s] running install_egg_info
+[4.567s] removing '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info' (and everything under it)
+[4.569s] Copying ../../build/xbox/xbox.egg-info to /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info
+[4.574s] running install_scripts
+[4.643s] Installing xbox script to /home/nvidia/master_ws/install/xbox/lib/xbox
+[4.644s] writing list of installed files to '/home/nvidia/master_ws/build/xbox/install.log'
+[4.731s] Invoked command in '/home/nvidia/master_ws/src/xbox' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data

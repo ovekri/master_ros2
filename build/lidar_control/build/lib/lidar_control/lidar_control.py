@@ -25,7 +25,7 @@ class LidarControl(Node):
         to_close_ratio = 0
         for point in xyz_points:
             counter_tot += 1
-            if (point[2] < 0.2 and point[2] > 0.05): # height
+            if (point[2] < 0.2 and point[2] > 0.0): # height
                 if (point[1] < 0.2 and point[1] > -0.2): # width
                     counter_approved += 1
                     if (point[0] < 1): # distance 
@@ -42,9 +42,9 @@ class LidarControl(Node):
             array_msg.data = [0, 0, 0, 0]
             self.publisher.publish(array_msg)
         #print("All points: ", counter_tot)
-        self.get_logger().info(f'Approved points: {counter_approved}')
-        self.get_logger().info(f'To close points: {counter_to_close}')
-        self.get_logger().info(f'To close ratio: {to_close_ratio}')
+        #self.get_logger().info(f'Approved points: {counter_approved}')
+        #self.get_logger().info(f'To close points: {counter_to_close}')
+        #self.get_logger().info(f'To close ratio: {to_close_ratio}')
         #print("Processed one transformed PointCloud2 message.")
             
 def main(args=None):

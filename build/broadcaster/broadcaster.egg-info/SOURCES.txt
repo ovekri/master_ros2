@@ -10,6 +10,7 @@ setup.py
 ../../build/broadcaster/broadcaster.egg-info/zip-safe
 broadcaster/__init__.py
 broadcaster/lidar.py
+broadcaster/realsense.py
 resource/broadcaster
 test/test_copyright.py
 test/test_flake8.py

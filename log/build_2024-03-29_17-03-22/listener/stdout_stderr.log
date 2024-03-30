@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target listener[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:[m[K In constructor ‘[01m[KTransformer::Transformer()[m[K’:
+[01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:15:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_lidar_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_lidar[m[K’?
+   15 |         [01;31m[Ksubscription_lidar_[m[K = this->create_subscription<sensor_msgs::msg::PointCloud2>(                                                                   // subscribes to the topic /velodyne_points where it recives pointcloud2 messages.
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Ksubscription_lidar[m[K
+[01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_realsense_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_realsense[m[K’?
+   20 |         [01;31m[Ksubscription_realsense_[m[K = this->create_subscription<sensor_msgs::msg::PointCloud2>(                                                                   // subscribes to the topic /velodyne_points where it recives pointcloud2 messages.
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Ksubscription_realsense[m[K
+[01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_lidar_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_lidar[m[K’?
+   28 |         [01;31m[Kpublisher_lidar_[m[K = this->create_publisher<sensor_msgs::msg::PointCloud2>(                                                                         // makes a publisher who publish message of type pointcloud2 to topic /LiDAR_transformed
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kpublisher_lidar[m[K
+[01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_realsense_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_realsense[m[K’?
+   31 |         [01;31m[Kpublisher_realsense_[m[K = this->create_publisher<sensor_msgs::msg::PointCloud2>(                                                                         // makes a publisher who publish message of type pointcloud2 to topic /LiDAR_transformed
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kpublisher_realsense[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

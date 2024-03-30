@@ -87,7 +87,7 @@ class xboxController(Node):
         
         if (self.joy_state.buttons[3] == 1 and self.joy_state.buttons[1] == 0 and self.joy_state.buttons[0] == 0):
             self.get_logger().info('Autonome mode activated... ')
-            self.get_logger().info(f'data from decision state: {self.decision_state.data[0]}')
+            #self.get_logger().info(f'data from decision state: {self.decision_state.data[0]}')
             if (self.decision_state.data[0] == 1):
                 if (self.pulse_width != 1550):
                     pass

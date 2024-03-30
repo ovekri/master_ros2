@@ -1,0 +1,24 @@
+[0.114s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/controller:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/home/nvidia/velodyne_drivers/install/example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[0.541s] [35m[1mScanning dependencies of target listener[0m
+[0.996s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[12.131s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:[m[K In constructor ‘[01m[KTransformer::Transformer()[m[K’:
+[12.132s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:15:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_lidar_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_lidar[m[K’?
+[12.132s]    15 |         [01;31m[Ksubscription_lidar_[m[K = this->create_subscription<sensor_msgs::msg::PointCloud2>(                                                                   // subscribes to the topic /velodyne_points where it recives pointcloud2 messages.
+[12.132s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.132s]       |         [32m[Ksubscription_lidar[m[K
+[12.180s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_realsense_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_realsense[m[K’?
+[12.181s]    20 |         [01;31m[Ksubscription_realsense_[m[K = this->create_subscription<sensor_msgs::msg::PointCloud2>(                                                                   // subscribes to the topic /velodyne_points where it recives pointcloud2 messages.
+[12.181s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.181s]       |         [32m[Ksubscription_realsense[m[K
+[12.195s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_lidar_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_lidar[m[K’?
+[12.195s]    28 |         [01;31m[Kpublisher_lidar_[m[K = this->create_publisher<sensor_msgs::msg::PointCloud2>(                                                                         // makes a publisher who publish message of type pointcloud2 to topic /LiDAR_transformed
+[12.196s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[12.196s]       |         [32m[Kpublisher_lidar[m[K
+[12.208s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_realsense_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_realsense[m[K’?
+[12.208s]    31 |         [01;31m[Kpublisher_realsense_[m[K = this->create_publisher<sensor_msgs::msg::PointCloud2>(                                                                         // makes a publisher who publish message of type pointcloud2 to topic /LiDAR_transformed
+[12.208s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[12.209s]       |         [32m[Kpublisher_realsense[m[K
+[19.820s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+[19.822s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/listener.dir/all] Error 2
+[19.823s] make: *** [Makefile:141: all] Error 2
+[19.834s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/controller:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/home/nvidia/velodyne_drivers/install/example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4

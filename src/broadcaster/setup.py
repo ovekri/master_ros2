@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'lidar = broadcaster.lidar:main',
+            'realsense = broadcaster.realsense:main',
         ],
     },
 )

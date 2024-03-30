@@ -4,9 +4,9 @@ from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster     
 from geometry_msgs.msg import TransformStamped                                                                                                      # message type that represents a transformation between two coordinate frames at a specific point in time
 from tf_transformations import quaternion_from_euler                                                                                                # convert euler angles to quaternion angles TODO: maybe use another package for quaternion
 
-class LiDAR_broadcast(Node):                                                                                                                        # new class that inherits from Node class
+class LidarBroadcast(Node):                                                                                                                        # new class that inherits from Node class
     def __init__(self):                                                                                                                             # constructor. Initialize the attributes of LiDAR_broadcast class
-        super().__init__('LiDAR_static_broadcast')                                                                                                  # calls the constructor of the superclass (Node), Initialize the node
+        super().__init__('lidar_static_broadcast')                                                                                                  # calls the constructor of the superclass (Node), Initialize the node
         self.static_broadcaster = StaticTransformBroadcaster(self)                                                                                  # Initialize the transform broadcaster
         self.timer = self.create_timer(0.1, self.transform)
 
@@ -30,8 +30,8 @@ class LiDAR_broadcast(Node):                                                    
 
 def main():
     rclpy.init()
-    node = LiDAR_broadcast()
-    print("Broadcasting... ")
+    node = LidarBroadcast()
+    print("Broadcasting Lidar transformation... ")
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
