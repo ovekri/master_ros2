@@ -27,7 +27,7 @@ class LidarControl(Node):
                 if (point[1] < 0.2 and point[1] > -0.2): # width
                     if (point[0] < 10.0 and point[0] > 0.0):
                         counter_approved += 1
-                    if (point[0] < 1.5 and point[0] > 0.4): # distance 
+                    if (point[0] < 2.0 and point[0] > 0.4): # distance 
                         counter_to_close += 1
                         #print(f"Transformed point coordinates: X: {point[0]}, Y: {point[1]}, Z: {point[2]}")
         if counter_approved != 0:

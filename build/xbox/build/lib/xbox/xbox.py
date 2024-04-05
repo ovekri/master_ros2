@@ -7,7 +7,8 @@ from std_msgs.msg import Int32MultiArray
 class xboxController(Node):
     def __init__(self):
         super().__init__('xbox')
-        self.pulse_width = 1500
+        self.pulse_width_motor = 1500
+        self.pulse_width_servo = 1500
         self.joy_state = None
         self.decision_state = None
         self.subscription = self.create_subscription(
@@ -53,24 +54,24 @@ class xboxController(Node):
         if (msg.buttons[3] == 0):
             if msg.buttons[0] == 1: # button A on the xbox controller
             # forward motion
-                self.pulse_width = 1550
+                self.pulse_width_motor = 1550
             elif msg.buttons[1] == 1: # button B on the xbox controller
             # backward motion
-                self.pulse_width = 1440
+                self.pulse_width_motor = 1440
             else:
             # neutral position
-                self.pulse_width = 1500
+                self.pulse_width_motor = 1500
 
-            duty_cycle = self.microseconds_to_duty_cycle(self.pulse_width)
+            duty_cycle = self.microseconds_to_duty_cycle(self.pulse_width_motor)
             self.pwm_motor.ChangeDutyCycle(duty_cycle)
 
             # show information
             button_state_1 = 'Pressed' if msg.buttons[0] == 1 else 'Released'
             button_state_2 = 'Pressed' if msg.buttons[1] == 1 else 'Released'
             if button_state_1 == 'Pressed':
-                self.get_logger().info(f'Button State Forward: {button_state_1}, Pulse Width: {self.pulse_width}, Duty Cycle: {duty_cycle:.2f}')
+                self.get_logger().info(f'Button State Forward: {button_state_1}, Pulse Width: {self.pulse_width_motor}, Duty Cycle: {duty_cycle:.2f}')
             if button_state_2 == 'Pressed':
-                self.get_logger().info(f'Button State Backwards: {button_state_2}, Pulse Width: {self.pulse_width}, Duty Cycle: {duty_cycle:.2f}')
+                self.get_logger().info(f'Button State Backwards: {button_state_2}, Pulse Width: {self.pulse_width_motor}, Duty Cycle: {duty_cycle:.2f}')
 
 
         self.joy_state = msg # save the states from joy
@@ -93,39 +94,41 @@ class xboxController(Node):
             #self.get_logger().info('Autonome mode activated... ')
             #self.get_logger().info(f'data from decision state: {self.decision_state.data[0]}')
             if (self.decision_state.data[0] == 1):
-                if (self.pulse_width != 1550):
+                if (self.pulse_width_motor != 1550):
                     pass
                     self.get_logger().info('forward')
                     #self.get_logger().info('Driveing.. ')
-                self.pulse_width = 1550
+                self.pulse_width_motor = 1550
             else:
-                if (self.pulse_width != 1500):
+                if (self.pulse_width_motor != 1500):
                     pass
                     #self.get_logger().info('Brakeing.. ')
-                self.pulse_width = 1500
+                self.pulse_width_motor = 1500
             
             # turning
             turn_value = 0
             if (self.decision_state.data[0] != 1):
                 if (self.decision_state.data[1] == 1):
-                    turn_value = 0.2
-                    self.pulse_width = 1550
+                    turn_value = 0.8
+                    self.pulse_width_motor = 1550
                     self.get_logger().info(f'left: {turn_value}')
                 elif (self.decision_state.data[2] == 1):
-                    turn_value = -0.2
-                    self.pulse_width = 1550
+                    turn_value = -0.8
+                    self.pulse_width_motor = 1550
                     self.get_logger().info(f'right: {turn_value}')
                 else:
                     turn_value = 0
-                    self.pulse_width = 1500
+                    self.pulse_width_motor = 1500
                     self.get_logger().info(f'Wait, no possible directions: [{self.decision_state.data[0]},{self.decision_state.data[1]},{self.decision_state.data[2]}]')
-            if turn_value != 0:
+            #if turn_value != 0:
                 #self.get_logger().info(f'godkjent: {turn_value}')
-                servo_angle = self.map_joystick_to_servo_angle(turn_value, self.angle_min, self.angle_neu, self.angle_max) #55, 90, 125
-                self.set_servo_angle(servo_angle)
+                
+            servo_angle = self.map_joystick_to_servo_angle(turn_value, self.angle_min, self.angle_neu, self.angle_max) #55, 90, 125
+            self.set_servo_angle(servo_angle)
 
-            duty_cycle = self.microseconds_to_duty_cycle(self.pulse_width)
+            duty_cycle = self.microseconds_to_duty_cycle(self.pulse_width_motor)
             self.pwm_motor.ChangeDutyCycle(duty_cycle)
+            #self.get_logger().info(f'pulse width: {self.pulse_width_motor}')
 
     def map_joystick_to_servo_angle(self, joystick_value, angle_min, angle_neutral, angle_max):
         if joystick_value > 0:
@@ -144,10 +147,10 @@ class xboxController(Node):
         pulse_range = max_pulse_width - min_pulse_width
         angle_range = self.angle_max - self.angle_min
 
-        self.pulse_width = ((angle - self.angle_min) * pulse_range / angle_range) + min_pulse_width
+        self.pulse_width_servo = ((angle - self.angle_min) * pulse_range / angle_range) + min_pulse_width
 
         # 50 Hz
-        duty_cycle = (self.pulse_width / 20000) * 100  # 20 ms period
+        duty_cycle = (self.pulse_width_servo / 20000) * 100  # 20 ms period
 
         # Se values in terminal
         #self.get_logger().info(f'Angle: {angle}, pulse_width: {pulse_width}, duty_cycle: {duty_cycle}')
