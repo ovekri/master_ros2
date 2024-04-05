@@ -1,7 +1,0 @@
-[ 25%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o[0m
-[ 50%] [32m[1mLinking CXX shared library libvelodyne_laserscan.so[0m
-[ 50%] Built target velodyne_laserscan
-[35m[1mScanning dependencies of target velodyne_laserscan_node[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan_node.dir/src/node.cpp.o[0m
-[100%] [32m[1mLinking CXX executable velodyne_laserscan_node[0m
-[100%] Built target velodyne_laserscan_node

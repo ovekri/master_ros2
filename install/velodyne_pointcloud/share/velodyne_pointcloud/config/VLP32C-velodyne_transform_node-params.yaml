@@ -1,1 +1,10 @@
-/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud/config/VLP32C-velodyne_transform_node-params.yaml
+velodyne_transform_node:
+    ros__parameters:
+        calibration: VeloView-VLP-32C.yaml
+        model: 32C
+        min_range: 0.9
+        max_range: 200.0
+        view_direction: 0.0
+        fixed_frame: ""
+        target_frame: ""
+        organize_cloud: true

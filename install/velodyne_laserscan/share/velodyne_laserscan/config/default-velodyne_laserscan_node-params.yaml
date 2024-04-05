@@ -1,1 +1,4 @@
-/home/nvidia/master_ws/src/velodyne/velodyne_laserscan/config/default-velodyne_laserscan_node-params.yaml
+velodyne_laserscan_node:
+    ros__parameters:
+        ring: -1
+        resolution: 0.007

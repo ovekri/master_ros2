@@ -1,0 +1,45 @@
+[0.077s] Invoking command in '/home/nvidia/master_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_pointcloud -- -j4 -l4
+[0.169s] make: Warning: File 'Makefile' has modification time 3980577 s in the future
+[0.328s] make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 3980577 s in the future
+[0.366s] make[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 3980577 s in the future
+[0.368s] make[2]: Warning: File 'src/lib/CMakeFiles/velodyne_cloud_types.dir/flags.make' has modification time 3980577 s in the future
+[0.369s] make[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 3980577 s in the future
+[0.372s] make[2]: Warning: File 'src/lib/CMakeFiles/velodyne_rawdata.dir/flags.make' has modification time 3980577 s in the future
+[0.429s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.439s] make[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 3980577 s in the future
+[0.440s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.481s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.481s] make[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 3980577 s in the future
+[0.482s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.483s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.483s] [ 11%] Built target gtest
+[0.493s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.521s] make[2]: Warning: File 'src/lib/CMakeFiles/velodyne_cloud_types.dir/flags.make' has modification time 3980577 s in the future
+[0.534s] make[2]: Warning: File 'src/lib/CMakeFiles/velodyne_rawdata.dir/flags.make' has modification time 3980577 s in the future
+[0.549s] [ 22%] Built target gtest_main
+[0.594s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.602s] make[2]: Warning: File 'tests/CMakeFiles/test_row_step.dir/flags.make' has modification time 3980577 s in the future
+[0.623s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.646s] [ 38%] Built target velodyne_cloud_types
+[0.665s] [ 55%] Built target velodyne_rawdata
+[0.693s] make[2]: Warning: File 'CMakeFiles/transform.dir/flags.make' has modification time 3980576 s in the future
+[0.694s] make[2]: Warning: File 'tests/CMakeFiles/test_calibration.dir/flags.make' has modification time 3980577 s in the future
+[0.713s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.730s] make[2]: Warning: File 'tests/CMakeFiles/test_row_step.dir/flags.make' has modification time 3980577 s in the future
+[0.753s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.776s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.778s] make[2]: Warning: File 'tests/CMakeFiles/test_calibration.dir/flags.make' has modification time 3980577 s in the future
+[0.805s] make[2]: Warning: File 'CMakeFiles/transform.dir/flags.make' has modification time 3980576 s in the future
+[0.830s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.847s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.905s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.906s] [ 66%] Built target test_row_step
+[0.930s] [ 77%] Built target test_calibration
+[0.974s] [ 88%] Built target transform
+[0.997s] make[2]: Warning: File 'CMakeFiles/velodyne_transform_node.dir/flags.make' has modification time 3980576 s in the future
+[1.049s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.065s] make[2]: Warning: File 'CMakeFiles/velodyne_transform_node.dir/flags.make' has modification time 3980576 s in the future
+[1.128s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.168s] [100%] Built target velodyne_transform_node
+[1.171s] make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.212s] make: warning:  Clock skew detected.  Your build may be incomplete.

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nvidia/master_ws/build/velodyne_laserscan/libvelodyne_laserscan.so" "TARGETS" "velodyne_laserscan" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

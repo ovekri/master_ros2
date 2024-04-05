@@ -1,1 +1,1 @@
-/home/nvidia/master_ws/build/velodyne_driver/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/velodyne_driver
+velodyne_driver::VelodyneDriver;lib/libvelodyne_driver.so

@@ -1,1 +1,2 @@
-/home/nvidia/master_ws/build/velodyne_pointcloud/ament_cmake_environment_hooks/local_setup.dsv
+source;share/velodyne_pointcloud/environment/ament_prefix_path.sh
+source;share/velodyne_pointcloud/environment/path.sh

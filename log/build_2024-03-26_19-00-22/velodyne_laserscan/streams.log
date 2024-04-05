@@ -1,8 +1,0 @@
-[0.227s] Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/velodyne_drivers/install/example:/home/nvidia/velodyne_drivers/install/broadcast_and_listener:/home/nvidia/velodyne_drivers/install/examples_tf2_py:/home/nvidia/velodyne_drivers/install/broadcaster:/home/nvidia/velodyne_drivers/install/test_converter:/home/nvidia/velodyne_drivers/install/py_launch_example:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4
-[3.311s] [ 25%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o[0m
-[25.160s] [ 50%] [32m[1mLinking CXX shared library libvelodyne_laserscan.so[0m
-[26.423s] [ 50%] Built target velodyne_laserscan
-[26.482s] [35m[1mScanning dependencies of target velodyne_laserscan_node[0m
-[26.697s] [ 75%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan_node.dir/src/node.cpp.o[0m
-[34.157s] [100%] [32m[1mLinking CXX executable velodyne_laserscan_node[0m
-[34.835s] [100%] Built target velodyne_laserscan_node

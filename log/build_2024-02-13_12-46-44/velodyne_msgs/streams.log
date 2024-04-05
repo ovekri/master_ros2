@@ -1,0 +1,195 @@
+[0.170s] Invoking command in '/home/nvidia/master_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_msgs -- -j4 -l4
+[2.560s] make: Warning: File 'Makefile' has modification time 3980543 s in the future
+[2.563s] make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 3980543 s in the future
+[2.564s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__cpp.dir/progress.make' has modification time 3980543 s in the future
+[2.566s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_generator_c.dir/flags.make' has modification time 3980543 s in the future
+[2.568s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.569s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__cpp.dir/progress.make' has modification time 3980543 s in the future
+[2.570s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.578s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.583s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_generator_c.dir/flags.make' has modification time 3980543 s in the future
+[2.584s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.585s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_cpp.dir/flags.make' has modification time 3980543 s in the future
+[2.592s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_c.dir/flags.make' has modification time 3980543 s in the future
+[2.593s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 3980543 s in the future
+[2.593s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 3980543 s in the future
+[2.594s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.594s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_cpp.dir/flags.make' has modification time 3980543 s in the future
+[2.595s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.597s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.605s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.608s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 3980543 s in the future
+[2.609s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_c.dir/flags.make' has modification time 3980543 s in the future
+[2.611s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.612s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.613s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 3980543 s in the future
+[2.617s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.624s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.626s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 3980543 s in the future
+[2.626s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 3980543 s in the future
+[2.626s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.629s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 3980543 s in the future
+[2.630s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.630s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.630s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 3980542 s in the future
+[2.631s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.631s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs.dir/progress.make' has modification time 3980543 s in the future
+[2.631s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.632s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs.dir/progress.make' has modification time 3980542 s in the future
+[2.634s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.634s] make[2]: Warning: File 'velodyne_msgs__py/CMakeFiles/velodyne_msgs__py.dir/progress.make' has modification time 3980542 s in the future
+[2.634s] [  2%] Built target velodyne_msgs__cpp
+[2.635s] [ 12%] Built target velodyne_msgs__rosidl_generator_c
+[2.643s] [ 23%] Built target velodyne_msgs__rosidl_typesupport_cpp
+[2.643s] [ 33%] Built target velodyne_msgs__rosidl_typesupport_c
+[2.644s] [ 46%] Built target velodyne_msgs__rosidl_typesupport_introspection_cpp
+[2.645s] [ 53%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_cpp
+[2.646s] [ 64%] Built target velodyne_msgs__rosidl_typesupport_introspection_c
+[2.646s] [ 74%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c
+[2.647s] [ 74%] Built target velodyne_msgs
+[2.647s] [ 76%] Built target velodyne_msgs__py
+[2.648s] [ 84%] Built target velodyne_msgs__python
+[2.648s] [ 94%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.648s] [ 94%] Built target velodyne_msgs__rosidl_typesupport_c__pyext
+[2.649s] [100%] Built target velodyne_msgs__rosidl_typesupport_introspection_c__pyext
+[2.649s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.650s] make[2]: Warning: File 'velodyne_msgs__py/CMakeFiles/velodyne_msgs__py.dir/progress.make' has modification time 3980542 s in the future
+[2.653s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.653s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__python.dir/flags.make' has modification time 3980542 s in the future
+[2.654s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.655s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__python.dir/flags.make' has modification time 3980542 s in the future
+[2.664s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.664s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make' has modification time 3980542 s in the future
+[2.665s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_c__pyext.dir/flags.make' has modification time 3980542 s in the future
+[2.665s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c__pyext.dir/flags.make' has modification time 3980542 s in the future
+[2.666s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.668s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.669s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.669s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_c__pyext.dir/flags.make' has modification time 3980542 s in the future
+[2.669s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make' has modification time 3980542 s in the future
+[2.670s] make[2]: Warning: File 'CMakeFiles/velodyne_msgs__rosidl_typesupport_introspection_c__pyext.dir/flags.make' has modification time 3980542 s in the future
+[2.670s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.670s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.672s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.672s] make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.673s] make: warning:  Clock skew detected.  Your build may be incomplete.
+[2.683s] Invoked command in '/home/nvidia/master_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_msgs -- -j4 -l4
+[3.042s] Invoking command in '/home/nvidia/master_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_msgs
+[3.118s] -- Install configuration: ""
+[3.122s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/ament_index/resource_index/rosidl_interfaces/velodyne_msgs
+[3.124s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs
+[3.124s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg
+[3.125s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_scan.h
+[3.126s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.126s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_packet.h
+[3.127s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail
+[3.128s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__functions.c
+[3.129s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__struct.h
+[3.131s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__type_support.h
+[3.132s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__functions.h
+[3.134s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__functions.c
+[3.134s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__struct.h
+[3.135s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__type_support.h
+[3.136s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__functions.h
+[3.141s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/library_path.sh
+[3.141s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/library_path.dsv
+[3.145s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_generator_c.so
+[3.148s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs
+[3.149s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg
+[3.151s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.152s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail
+[3.154s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_fastrtps_c.h
+[3.156s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_fastrtps_c.h
+[3.158s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_fastrtps_c.so
+[3.172s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs
+[3.172s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg
+[3.173s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail
+[3.173s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[3.174s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_fastrtps_cpp.hpp
+[3.174s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/dds_fastrtps
+[3.174s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.175s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.177s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs
+[3.193s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg
+[3.193s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail
+[3.193s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__type_support.c
+[3.194s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_introspection_c.h
+[3.194s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_introspection_c.h
+[3.194s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__type_support.c
+[3.195s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.195s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_introspection_c.so
+[3.195s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_c.so
+[3.196s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs
+[3.196s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg
+[3.196s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_scan.hpp
+[3.197s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_packet.hpp
+[3.197s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.197s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail
+[3.198s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp
+[3.198s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp
+[3.198s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp
+[3.199s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp
+[3.199s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__builder.hpp
+[3.199s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__builder.hpp
+[3.200s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp
+[3.200s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp
+[3.200s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs
+[3.201s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg
+[3.201s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail
+[3.202s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__type_support.cpp
+[3.203s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_introspection_cpp.hpp
+[3.203s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__type_support.cpp
+[3.204s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_introspection_cpp.hpp
+[3.204s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_introspection_cpp.so
+[3.204s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_cpp.so
+[3.205s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/pythonpath.sh
+[3.205s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/pythonpath.dsv
+[3.205s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/__init__.py
+[3.344s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg
+[3.345s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/_velodyne_scan_s.c
+[3.345s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/_velodyne_packet_s.c
+[3.347s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/_velodyne_scan.py
+[3.348s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/_velodyne_packet.py
+[3.348s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/__init__.py
+[3.348s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[3.350s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[3.354s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[3.357s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/lib/libvelodyne_msgs__python.so
+[3.360s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodynePacket.idl
+[3.360s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodyneScan.idl
+[3.361s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodynePacket.msg
+[3.361s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodyneScan.msg
+[3.362s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/ament_index/resource_index/package_run_dependencies/velodyne_msgs
+[3.362s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/ament_index/resource_index/parent_prefix_path/velodyne_msgs
+[3.363s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/ament_prefix_path.sh
+[3.363s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/ament_prefix_path.dsv
+[3.364s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/path.sh
+[3.365s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/environment/path.dsv
+[3.365s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.bash
+[3.366s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.sh
+[3.366s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.zsh
+[3.366s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.dsv
+[3.367s] -- Installing: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv
+[3.368s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/ament_index/resource_index/packages/velodyne_msgs
+[3.370s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_generator_cExport.cmake
+[3.371s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.372s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.373s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.374s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cExport.cmake
+[3.374s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.376s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_generator_cppExport.cmake
+[3.377s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.378s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.380s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cppExport.cmake
+[3.381s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.382s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake-extras.cmake
+[3.382s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.383s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.384s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.384s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.384s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.385s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.385s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgsConfig.cmake
+[3.392s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgsConfig-version.cmake
+[3.392s] -- Up-to-date: /home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/package.xml
+[4.515s] Invoked command in '/home/nvidia/master_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_msgs

@@ -1,1 +1,1 @@
-/home/nvidia/master_ws/build/velodyne_laserscan/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/velodyne_laserscan
+velodyne_laserscan::VelodyneLaserScan;lib/libvelodyne_laserscan.so

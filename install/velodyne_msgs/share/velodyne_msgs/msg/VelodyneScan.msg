@@ -1,1 +1,4 @@
-/home/nvidia/master_ws/src/velodyne/velodyne_msgs/msg/VelodyneScan.msg
+# Velodyne LIDAR scan packets.
+
+std_msgs/Header header         # standard ROS message header
+VelodynePacket[] packets        # vector of raw packets

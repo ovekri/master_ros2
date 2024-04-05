@@ -1,3 +1,0 @@
-make[2]: *** [CMakeFiles/velodyne_laserscan.dir/build.make:63: CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/velodyne_laserscan.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

@@ -82,15 +82,20 @@ class xboxController(Node):
 
     def control(self):
         if self.joy_state == None or self.decision_state == None:
-            self.get_logger().info('Waiting for both joy and decision messages.')
+            #self.get_logger().info('Waiting for both joy and decision messages.')
+            if self.joy_state == None:
+                self.get_logger().info('Waiting for joy')
+            if self.decision_state == None:
+                self.get_logger().info('Waiting for decision')
             return
         
         if (self.joy_state.buttons[3] == 1 and self.joy_state.buttons[1] == 0 and self.joy_state.buttons[0] == 0):
-            self.get_logger().info('Autonome mode activated... ')
+            #self.get_logger().info('Autonome mode activated... ')
             #self.get_logger().info(f'data from decision state: {self.decision_state.data[0]}')
             if (self.decision_state.data[0] == 1):
                 if (self.pulse_width != 1550):
                     pass
+                    self.get_logger().info('forward')
                     #self.get_logger().info('Driveing.. ')
                 self.pulse_width = 1550
             else:
@@ -99,6 +104,26 @@ class xboxController(Node):
                     #self.get_logger().info('Brakeing.. ')
                 self.pulse_width = 1500
             
+            # turning
+            turn_value = 0
+            if (self.decision_state.data[0] != 1):
+                if (self.decision_state.data[1] == 1):
+                    turn_value = 0.2
+                    self.pulse_width = 1550
+                    self.get_logger().info(f'left: {turn_value}')
+                elif (self.decision_state.data[2] == 1):
+                    turn_value = -0.2
+                    self.pulse_width = 1550
+                    self.get_logger().info(f'right: {turn_value}')
+                else:
+                    turn_value = 0
+                    self.pulse_width = 1500
+                    self.get_logger().info(f'Wait, no possible directions: [{self.decision_state.data[0]},{self.decision_state.data[1]},{self.decision_state.data[2]}]')
+            if turn_value != 0:
+                #self.get_logger().info(f'godkjent: {turn_value}')
+                servo_angle = self.map_joystick_to_servo_angle(turn_value, self.angle_min, self.angle_neu, self.angle_max) #55, 90, 125
+                self.set_servo_angle(servo_angle)
+
             duty_cycle = self.microseconds_to_duty_cycle(self.pulse_width)
             self.pwm_motor.ChangeDutyCycle(duty_cycle)
 

@@ -1,7 +1,0 @@
-[35m[1mScanning dependencies of target velodyne_laserscan[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o[0m
-make[2]: *** wait: No child processes.  Stop.
-make[2]: *** Waiting for unfinished jobs....
-make[2]: *** wait: No child processes.  Stop.
-make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/velodyne_laserscan.dir/all] Error 2
-make: *** [Makefile:141: all] Interrupt

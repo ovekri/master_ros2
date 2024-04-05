@@ -1,1 +1,1 @@
-/home/nvidia/master_ws/build/velodyne/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/velodyne
+velodyne_driver;velodyne_laserscan;velodyne_msgs;velodyne_pointcloud
