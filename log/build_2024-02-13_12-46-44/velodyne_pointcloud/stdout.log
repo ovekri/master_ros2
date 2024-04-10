@@ -1,8 +1,0 @@
-[ 11%] Built target gtest
-[ 22%] Built target gtest_main
-[ 38%] Built target velodyne_cloud_types
-[ 55%] Built target velodyne_rawdata
-[ 66%] Built target test_row_step
-[ 77%] Built target test_calibration
-[ 88%] Built target transform
-[100%] Built target velodyne_transform_node

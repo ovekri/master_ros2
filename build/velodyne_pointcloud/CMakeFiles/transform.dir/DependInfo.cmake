@@ -22,10 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud/include"
   "/usr/include/eigen3"
   "/usr/include/pcl-1.10"
-  "/home/nvidia/velodyne_drivers/install/tf2_ros/include"
-  "/home/nvidia/velodyne_drivers/install/tf2/include"
   "/opt/ros/foxy/include"
-  "/home/nvidia/velodyne_drivers/install/tf2_msgs/include"
   "/home/nvidia/master_ws/install/velodyne_msgs/include"
   )
 

@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_driver.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_driver.so"
-         OLD_RPATH "/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/master_ws/build/velodyne_driver/src/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
+         OLD_RPATH "/home/nvidia/master_ws/build/velodyne_driver/src/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_driver.so")
@@ -72,7 +72,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver/velodyne_driver_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver/velodyne_driver_node"
-         OLD_RPATH "/home/nvidia/master_ws/build/velodyne_driver:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/home/nvidia/master_ws/build/velodyne_driver/src/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
+         OLD_RPATH "/home/nvidia/master_ws/build/velodyne_driver:/home/nvidia/master_ws/build/velodyne_driver/src/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver/velodyne_driver_node")

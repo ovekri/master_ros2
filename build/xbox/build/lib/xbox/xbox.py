@@ -8,7 +8,8 @@ class xboxController(Node):
     def __init__(self):
         super().__init__('xbox')
         self.pulse_width_motor = 1500
-        self.pulse_width_servo = 1500
+        self.pulse_width_servo = 1420
+        self.turn_value = 0
         self.joy_state = None
         self.decision_state = None
         self.subscription = self.create_subscription(
@@ -27,13 +28,13 @@ class xboxController(Node):
 
         # Set the GPIO pin
         self.motor_pin = 32
-        self.servo_pin = 15
+        self.servo_pin = 33
         GPIO.setmode(GPIO.BOARD)
         GPIO.setup(self.motor_pin, GPIO.OUT)
         GPIO.setup(self.servo_pin, GPIO.OUT)
 
         # Initialize PWM
-        self.pwm_frequency = 50
+        self.pwm_frequency = 100
         self.pwm_motor = GPIO.PWM(self.motor_pin, self.pwm_frequency)
         self.pwm_servo = GPIO.PWM(self.servo_pin, self.pwm_frequency)
         self.pwm_motor.start(0)
@@ -41,14 +42,14 @@ class xboxController(Node):
 
         # GPIO pin for the servo
         self.angle_min = 55
-        self.angle_neu = 85
-        self.angle_max = 120
+        self.angle_neu = 90
+        self.angle_max = 125
 
     def joy_callback(self, msg):
         joystick_value = msg.axes[0]*(-1) # -1 done to get the correct turning direction # upperleft joystick
         servo_angle = self.map_joystick_to_servo_angle(joystick_value, self.angle_min, self.angle_neu, self.angle_max) #55, 90, 125
-        if servo_angle != 85:
-            self.get_logger().info(f'servo_angle: {servo_angle-85}')
+        if servo_angle != 90:
+            self.get_logger().info(f'servo_angle: {servo_angle-90}')
         self.set_servo_angle(servo_angle)
 
         if (msg.buttons[3] == 0):
@@ -99,6 +100,7 @@ class xboxController(Node):
                     self.get_logger().info('forward')
                     #self.get_logger().info('Driveing.. ')
                 self.pulse_width_motor = 1550
+                self.get_logger().info('forward')
             else:
                 if (self.pulse_width_motor != 1500):
                     pass
@@ -106,24 +108,23 @@ class xboxController(Node):
                 self.pulse_width_motor = 1500
             
             # turning
-            turn_value = 0
             if (self.decision_state.data[0] != 1):
                 if (self.decision_state.data[1] == 1):
-                    turn_value = 0.8
+                    self.turn_value = 0.8
                     self.pulse_width_motor = 1550
-                    self.get_logger().info(f'left: {turn_value}')
+                    self.get_logger().info('Turning left')
                 elif (self.decision_state.data[2] == 1):
-                    turn_value = -0.8
+                    self.turn_value = -0.8
                     self.pulse_width_motor = 1550
-                    self.get_logger().info(f'right: {turn_value}')
+                    self.get_logger().info('Turning right')
                 else:
-                    turn_value = 0
-                    self.pulse_width_motor = 1500
                     self.get_logger().info(f'Wait, no possible directions: [{self.decision_state.data[0]},{self.decision_state.data[1]},{self.decision_state.data[2]}]')
+                    self.turn_value = 0
+                    self.pulse_width_motor = 1500
             #if turn_value != 0:
                 #self.get_logger().info(f'godkjent: {turn_value}')
                 
-            servo_angle = self.map_joystick_to_servo_angle(turn_value, self.angle_min, self.angle_neu, self.angle_max) #55, 90, 125
+            servo_angle = self.map_joystick_to_servo_angle(self.turn_value, self.angle_min, self.angle_neu, self.angle_max) #55, 90, 125
             self.set_servo_angle(servo_angle)
 
             duty_cycle = self.microseconds_to_duty_cycle(self.pulse_width_motor)
@@ -139,18 +140,19 @@ class xboxController(Node):
 
     def set_servo_angle(self, angle):
         duty_cycle = self.angle_to_duty_cycle(angle)
+        self.get_logger().info(f'Duty cycle joystick: {duty_cycle}')
         self.pwm_servo.ChangeDutyCycle(duty_cycle)
 
     def angle_to_duty_cycle(self, angle):
-        min_pulse_width = 1100  # (changed from 1000)
-        max_pulse_width = 1600  # (changed from 2000)
+        min_pulse_width = 1000  # (changed from 1000)
+        max_pulse_width = 1800  # (changed from 2000)
         pulse_range = max_pulse_width - min_pulse_width
         angle_range = self.angle_max - self.angle_min
 
         self.pulse_width_servo = ((angle - self.angle_min) * pulse_range / angle_range) + min_pulse_width
 
         # 50 Hz
-        duty_cycle = (self.pulse_width_servo / 20000) * 100  # 20 ms period
+        duty_cycle = (self.pulse_width_servo / (1000000 / self.pwm_frequency)) * 100  # 20 ms period
 
         # Se values in terminal
         #self.get_logger().info(f'Angle: {angle}, pulse_width: {pulse_width}, duty_cycle: {duty_cycle}')

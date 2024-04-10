@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_cloud_types.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_cloud_types.so"
-         OLD_RPATH "/usr/usr/lib/aarch64-linux-gnu:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
+         OLD_RPATH "/usr/usr/lib/aarch64-linux-gnu:/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_cloud_types.so")
@@ -72,7 +72,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_rawdata.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_rawdata.so"
-         OLD_RPATH "/usr/usr/lib/aarch64-linux-gnu:/home/nvidia/velodyne_drivers/install/tf2_ros/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/velodyne_drivers/install/tf2/lib:/home/nvidia/velodyne_drivers/install/tf2_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
+         OLD_RPATH "/usr/usr/lib/aarch64-linux-gnu:/home/nvidia/master_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_rawdata.so")

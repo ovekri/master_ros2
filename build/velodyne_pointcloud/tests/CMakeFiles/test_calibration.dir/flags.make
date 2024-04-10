@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DHAVE_NEW_YAMLCPP -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud/include -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /opt/ros/foxy/include -isystem /home/nvidia/velodyne_drivers/install/tf2/include -isystem /home/nvidia/velodyne_drivers/install/tf2_ros/include -isystem /home/nvidia/velodyne_drivers/install/tf2_msgs/include -isystem /home/nvidia/master_ws/install/velodyne_msgs/include 
+CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/nvidia/master_ws/src/velodyne/velodyne_pointcloud/include -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /opt/ros/foxy/include -isystem /home/nvidia/master_ws/install/velodyne_msgs/include 
 

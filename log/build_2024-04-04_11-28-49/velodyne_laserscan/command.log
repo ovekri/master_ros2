@@ -1,4 +1,0 @@
-Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4
-Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j4 -l4
-Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_laserscan
-Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_laserscan

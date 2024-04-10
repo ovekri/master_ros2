@@ -17,12 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs/include"
   "/usr/include/eigen3"
-  "/home/nvidia/velodyne_drivers/install/tf2_ros/include"
-  "/home/nvidia/velodyne_drivers/install/tf2/include"
   "/opt/ros/foxy/include"
-  "/home/nvidia/velodyne_drivers/install/tf2_msgs/include"
   )
 
 # Targets to which this target links.

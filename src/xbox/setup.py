@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'xbox = xbox.xbox:main',
+            #'xbox = xbox.xbox:main',
+            'control = xbox.control:main',
         ],
     },
 )

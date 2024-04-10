@@ -21,10 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/nvidia/master_ws/src/velodyne/velodyne_driver/include"
   "/home/nvidia/master_ws/install/velodyne_msgs/include"
-  "/home/nvidia/velodyne_drivers/install/tf2_ros/include"
   "/opt/ros/foxy/include"
-  "/home/nvidia/velodyne_drivers/install/tf2/include"
-  "/home/nvidia/velodyne_drivers/install/tf2_msgs/include"
   )
 
 # Targets to which this target links.

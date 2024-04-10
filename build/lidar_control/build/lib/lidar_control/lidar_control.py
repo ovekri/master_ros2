@@ -51,19 +51,21 @@ class LidarControl(Node):
             if (z < 0.2 and z > 0.0):
                 theta = atan2(y, x)
                 if (theta > 0.52  and theta < 0.7):
-                    #right_approved += 1
-                    r = sqrt(x**2 + y**2)
-                    if (r < 1.1 and r > 0.4):
-                        right_to_close += 1
-                if (theta < -0.52  and theta > -0.7):
                     #left_approved += 1
                     r = sqrt(x**2 + y**2)
                     if (r < 1.1 and r > 0.4):
                         left_to_close += 1
+                if (theta < -0.52  and theta > -0.7):
+                    #right_approved += 1
+                    r = sqrt(x**2 + y**2)
+                    if (r < 1.1 and r > 0.4):
+                        right_to_close += 1
         if (left_to_close < 20):
+            #self.get_logger().info(f'left is clear')
             left_turn = 1
         if (right_to_close < 20):
             right_turn = 1
+            #self.get_logger().info(f'right is clear')
         
         #self.get_logger().info(f'left: {left_to_close}')
         #self.get_logger().info(f'right: {right_to_close}')

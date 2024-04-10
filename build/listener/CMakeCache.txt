@@ -527,16 +527,16 @@ statistics_msgs_DIR:PATH=/opt/ros/foxy/share/statistics_msgs/cmake
 std_msgs_DIR:PATH=/opt/ros/foxy/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for tf2.
-tf2_DIR:PATH=/home/nvidia/velodyne_drivers/install/tf2/share/tf2/cmake
+tf2_DIR:PATH=/opt/ros/foxy/share/tf2/cmake
 
 //The directory containing a CMake configuration file for tf2_msgs.
-tf2_msgs_DIR:PATH=/home/nvidia/velodyne_drivers/install/tf2_msgs/share/tf2_msgs/cmake
+tf2_msgs_DIR:PATH=/opt/ros/foxy/share/tf2_msgs/cmake
 
 //The directory containing a CMake configuration file for tf2_ros.
-tf2_ros_DIR:PATH=/home/nvidia/velodyne_drivers/install/tf2_ros/share/tf2_ros/cmake
+tf2_ros_DIR:PATH=/opt/ros/foxy/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf2_sensor_msgs.
-tf2_sensor_msgs_DIR:PATH=/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs/share/tf2_sensor_msgs/cmake
+tf2_sensor_msgs_DIR:PATH=/opt/ros/foxy/share/tf2_sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/foxy/share/tracetools/cmake

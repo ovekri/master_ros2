@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/nvidia/velodyne_drivers/install/tf2_sensor_msgs/include -I/usr/include/eigen3 -isystem /home/nvidia/velodyne_drivers/install/tf2_ros/include -isystem /home/nvidia/velodyne_drivers/install/tf2/include -isystem /opt/ros/foxy/include -isystem /home/nvidia/velodyne_drivers/install/tf2_msgs/include 
+CXX_INCLUDES = -I/usr/include/eigen3 -isystem /opt/ros/foxy/include 
 
