@@ -1,0 +1,37 @@
+[4.938s] Invoking command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data
+[6.041s] running egg_info
+[6.044s] creating ../../../../build/launch_car/launch_car.egg-info
+[6.044s] writing ../../../../build/launch_car/launch_car.egg-info/PKG-INFO
+[6.046s] writing dependency_links to ../../../../build/launch_car/launch_car.egg-info/dependency_links.txt
+[6.047s] writing entry points to ../../../../build/launch_car/launch_car.egg-info/entry_points.txt
+[6.047s] writing requirements to ../../../../build/launch_car/launch_car.egg-info/requires.txt
+[6.048s] writing top-level names to ../../../../build/launch_car/launch_car.egg-info/top_level.txt
+[6.054s] writing manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[6.249s] reading manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[6.253s] writing manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[6.254s] running build
+[6.254s] running build_py
+[6.260s] creating /home/nvidia/master_ws/build/launch_car/build
+[6.260s] creating /home/nvidia/master_ws/build/launch_car/build/lib
+[6.261s] creating /home/nvidia/master_ws/build/launch_car/build/lib/launch_car
+[6.261s] copying launch_car/__init__.py -> /home/nvidia/master_ws/build/launch_car/build/lib/launch_car
+[6.262s] running install
+[6.266s] running install_lib
+[6.270s] creating /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car
+[6.271s] copying /home/nvidia/master_ws/build/launch_car/build/lib/launch_car/__init__.py -> /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car
+[6.273s] byte-compiling /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car/__init__.py to __init__.cpython-38.pyc
+[6.288s] running install_data
+[6.288s] creating /home/nvidia/master_ws/install/launch_car/share/ament_index
+[6.289s] creating /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index
+[6.293s] creating /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index/packages
+[6.295s] copying resource/launch_car -> /home/nvidia/master_ws/install/launch_car/share/ament_index/resource_index/packages
+[6.296s] copying package.xml -> /home/nvidia/master_ws/install/launch_car/share/launch_car
+[6.296s] creating /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[6.297s] copying launch/control_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[6.297s] copying launch/car_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[6.299s] copying launch/realsense_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[6.299s] running install_egg_info
+[6.313s] Copying ../../../../build/launch_car/launch_car.egg-info to /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info
+[6.318s] running install_scripts
+[6.421s] writing list of installed files to '/home/nvidia/master_ws/build/launch_car/install.log'
+[6.570s] Invoked command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data

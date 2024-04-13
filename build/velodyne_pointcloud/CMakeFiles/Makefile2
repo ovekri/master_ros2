@@ -141,9 +141,9 @@ tests/clean: gtest/clean
 # Target rules for target CMakeFiles/velodyne_transform_node.dir
 
 # All Build rule for target.
+CMakeFiles/velodyne_transform_node.dir/all: src/lib/CMakeFiles/velodyne_rawdata.dir/all
 CMakeFiles/velodyne_transform_node.dir/all: CMakeFiles/transform.dir/all
 CMakeFiles/velodyne_transform_node.dir/all: src/lib/CMakeFiles/velodyne_cloud_types.dir/all
-CMakeFiles/velodyne_transform_node.dir/all: src/lib/CMakeFiles/velodyne_rawdata.dir/all
 	$(MAKE) -f CMakeFiles/velodyne_transform_node.dir/build.make CMakeFiles/velodyne_transform_node.dir/depend
 	$(MAKE) -f CMakeFiles/velodyne_transform_node.dir/build.make CMakeFiles/velodyne_transform_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles --progress-num=17,18 "Built target velodyne_transform_node"
@@ -170,8 +170,8 @@ CMakeFiles/velodyne_transform_node.dir/clean:
 # Target rules for target CMakeFiles/transform.dir
 
 # All Build rule for target.
-CMakeFiles/transform.dir/all: src/lib/CMakeFiles/velodyne_cloud_types.dir/all
 CMakeFiles/transform.dir/all: src/lib/CMakeFiles/velodyne_rawdata.dir/all
+CMakeFiles/transform.dir/all: src/lib/CMakeFiles/velodyne_cloud_types.dir/all
 	$(MAKE) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/depend
 	$(MAKE) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles --progress-num=9,10 "Built target transform"

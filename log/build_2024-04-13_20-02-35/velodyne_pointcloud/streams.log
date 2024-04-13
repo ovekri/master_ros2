@@ -1,0 +1,165 @@
+[0.145s] Invoking command in '/home/nvidia/master_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/nvidia/master_ws/src/velodyne/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/velodyne_pointcloud
+[0.580s] -- The C compiler identification is GNU 9.4.0
+[0.952s] -- The CXX compiler identification is GNU 9.4.0
+[0.982s] -- Check for working C compiler: /usr/bin/cc
+[1.343s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.349s] -- Detecting C compiler ABI info
+[1.759s] -- Detecting C compiler ABI info - done
+[1.807s] -- Detecting C compile features
+[1.810s] -- Detecting C compile features - done
+[1.824s] -- Check for working CXX compiler: /usr/bin/c++
+[2.238s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.245s] -- Detecting CXX compiler ABI info
+[2.880s] -- Detecting CXX compiler ABI info - done
+[2.932s] -- Detecting CXX compile features
+[2.936s] -- Detecting CXX compile features - done
+[2.953s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.103s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.103s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.533s] -- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+[4.546s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[4.815s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.876s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.436s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.584s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.113s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.818s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.829s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.835s] -- Looking for pthread.h
+[7.336s] -- Looking for pthread.h - found
+[7.338s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.794s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.797s] -- Looking for pthread_create in pthreads
+[8.146s] -- Looking for pthread_create in pthreads - not found
+[8.147s] -- Looking for pthread_create in pthread
+[8.696s] -- Looking for pthread_create in pthread - found
+[8.706s] -- Found Threads: TRUE  
+[9.935s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[10.225s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[10.337s] -- Checking for module 'eigen3'
+[10.509s] --   Found eigen3, version 3.3.7
+[10.994s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[10.997s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[11.359s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[11.367s] -- looking for PCL_COMMON
+[11.372s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[11.375s] -- Found PCL: pcl_common;/usr/lib/aarch64-linux-gnu/libboost_system.so;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;/usr/lib/aarch64-linux-gnu/libboost_iostreams.so;/usr/lib/aarch64-linux-gnu/libboost_regex.so  
+[11.391s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[11.666s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[11.979s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[12.026s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[13.190s] -- Found velodyne_msgs: 2.4.0 (/home/nvidia/master_ws/install/velodyne_msgs/share/velodyne_msgs/cmake)
+[13.430s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[13.446s] -- Checking for module 'yaml-cpp'
+[13.645s] --   Found yaml-cpp, version 0.6.2
+[14.170s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.626s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[14.638s] -- Check if compiler accepts -pthread
+[15.179s] -- Check if compiler accepts -pthread - yes
+[15.259s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.292s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[15.296s] -- Configured cppcheck include dirs: /home/nvidia/master_ws/src/velodyne/velodyne_pointcloud/include
+[15.296s] -- Configured cppcheck exclude dirs and/or files: 
+[15.327s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[15.328s] -- Configured cpplint exclude dirs and/or files: 
+[15.339s] -- Added test 'flake8' to check Python code syntax and style conventions
+[15.347s] -- Added test 'lint_cmake' to check CMake code style
+[15.354s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[15.383s] -- Added test 'uncrustify' to check C / C++ code style
+[15.383s] -- Configured uncrustify additional arguments: 
+[15.431s] -- Configuring done
+[15.911s] -- Generating done
+[15.927s] -- Build files have been written to: /home/nvidia/master_ws/build/velodyne_pointcloud
+[16.004s] Invoked command in '/home/nvidia/master_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/nvidia/master_ws/src/velodyne/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/velodyne_pointcloud
+[16.025s] Invoking command in '/home/nvidia/master_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_pointcloud -- -j4 -l4
+[16.321s] [35m[1mScanning dependencies of target velodyne_cloud_types[0m
+[16.878s] [  5%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_cloud_types.dir/pointcloudXYZIRT.cpp.o[0m
+[34.682s] [ 11%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_cloud_types.dir/organized_cloudXYZIRT.cpp.o[0m
+[48.842s] [ 16%] [32m[1mLinking CXX shared library libvelodyne_cloud_types.so[0m
+[49.372s] [ 16%] Built target velodyne_cloud_types
+[49.419s] [35m[1mScanning dependencies of target gtest_main[0m
+[49.494s] [ 22%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[52.473s] [ 27%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[52.618s] [ 27%] Built target gtest_main
+[52.666s] [35m[1mScanning dependencies of target gtest[0m
+[52.750s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[64.818s] [ 38%] [32m[1mLinking CXX static library libgtest.a[0m
+[65.127s] [ 38%] Built target gtest
+[65.177s] [35m[1mScanning dependencies of target velodyne_rawdata[0m
+[65.545s] [ 44%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_rawdata.dir/rawdata.cpp.o[0m
+[79.287s] [ 50%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_rawdata.dir/calibration.cpp.o[0m
+[87.990s] [ 55%] [32m[1mLinking CXX shared library libvelodyne_rawdata.so[0m
+[88.491s] [ 55%] Built target velodyne_rawdata
+[88.540s] [35m[1mScanning dependencies of target transform[0m
+[88.541s] [35m[1mScanning dependencies of target test_row_step[0m
+[88.902s] [ 61%] [32mBuilding CXX object tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o[0m
+[88.906s] [ 66%] [32mBuilding CXX object CMakeFiles/transform.dir/src/conversions/transform.cpp.o[0m
+[103.425s] [ 72%] [32m[1mLinking CXX executable test_row_step[0m
+[104.234s] [ 72%] Built target test_row_step
+[104.287s] [35m[1mScanning dependencies of target test_calibration[0m
+[104.365s] [ 77%] [32mBuilding CXX object tests/CMakeFiles/test_calibration.dir/test_calibration.cpp.o[0m
+[107.935s] [ 83%] [32m[1mLinking CXX executable test_calibration[0m
+[108.676s] [ 83%] Built target test_calibration
+[121.264s] [ 88%] [32m[1mLinking CXX shared library libtransform.so[0m
+[122.738s] [ 88%] Built target transform
+[122.786s] [35m[1mScanning dependencies of target velodyne_transform_node[0m
+[123.130s] [ 94%] [32mBuilding CXX object CMakeFiles/velodyne_transform_node.dir/src/conversions/transform_node.cpp.o[0m
+[138.984s] [100%] [32m[1mLinking CXX executable velodyne_transform_node[0m
+[139.819s] [100%] Built target velodyne_transform_node
+[139.872s] Invoked command in '/home/nvidia/master_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_pointcloud -- -j4 -l4
+[140.056s] Invoking command in '/home/nvidia/master_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_pointcloud
+[140.093s] -- Install configuration: ""
+[140.094s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/lib/libtransform.so
+[140.133s] -- Set runtime path of "/home/nvidia/master_ws/install/velodyne_pointcloud/lib/libtransform.so" to ""
+[140.133s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/lib/velodyne_pointcloud/velodyne_transform_node
+[140.139s] -- Set runtime path of "/home/nvidia/master_ws/install/velodyne_pointcloud/lib/velodyne_pointcloud/velodyne_transform_node" to ""
+[140.139s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud
+[140.140s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/datacontainerbase.hpp
+[140.140s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/pointcloudXYZIRT.hpp
+[140.141s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/organized_cloudXYZIRT.hpp
+[140.141s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/calibration.hpp
+[140.142s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/rawdata.hpp
+[140.142s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/transform.hpp
+[140.143s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config
+[140.144s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLS128-velodyne_transform_node-params.yaml
+[140.144s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP16-velodyne_transform_node-params.yaml
+[140.145s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP32C-velodyne_transform_node-params.yaml
+[140.145s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch
+[140.146s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-launch.py
+[140.147s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-launch.py
+[140.148s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-composed-launch.py
+[140.148s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-composed-launch.py
+[140.149s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-composed-launch.py
+[140.150s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-launch.py
+[140.150s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params
+[140.152s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/rviz_points.vcg
+[140.152s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/32db.yaml
+[140.153s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VeloView-VLP-32C.yaml
+[140.154s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16db.yaml
+[140.155s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16_hires_db.yaml
+[140.155s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s3-xiesc.yaml
+[140.155s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s2.1-sztaki.yaml
+[140.158s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_utexas.yaml
+[140.158s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/issue_84_float_intensities.yaml
+[140.159s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLS128.yaml
+[140.159s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/ament_index/resource_index/package_run_dependencies/velodyne_pointcloud
+[140.159s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/ament_index/resource_index/parent_prefix_path/velodyne_pointcloud
+[140.160s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.sh
+[140.161s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.dsv
+[140.162s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.sh
+[140.163s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.dsv
+[140.163s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.bash
+[140.164s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.sh
+[140.165s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.zsh
+[140.166s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.dsv
+[140.167s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv
+[140.168s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/ament_index/resource_index/packages/velodyne_pointcloud
+[140.169s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/ament_index/resource_index/rclcpp_components/velodyne_pointcloud
+[140.170s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig.cmake
+[140.170s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig-version.cmake
+[140.171s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.xml
+[140.173s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so
+[140.178s] -- Set runtime path of "/home/nvidia/master_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so" to ""
+[140.179s] -- Installing: /home/nvidia/master_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so
+[140.184s] -- Set runtime path of "/home/nvidia/master_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so" to ""
+[140.197s] Invoked command in '/home/nvidia/master_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy LD_LIBRARY_PATH=/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_pointcloud
