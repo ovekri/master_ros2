@@ -17,10 +17,10 @@ class RealsenseBroadcast(Node):                                                 
         t.header.frame_id = 'original_realsense_frame'                                                                                                  # Set the parent frame ID to represent the car
         t.child_frame_id = 'transformed_realsense_frame'                                                                                                # Set the child frame ID to represent the lidar
         
-        t.transform.translation.x = -4.0
+        t.transform.translation.x = -0.04
         t.transform.translation.y = 0.0
-        t.transform.translation.z = 4.0
-        q = quaternion_from_euler(-15 * 3.141592 / 180, 0, 0)                                                                                       # rotate -45 degrees on the z-axis
+        t.transform.translation.z = 0.04
+        q = quaternion_from_euler(0, -90 * 3.141592 / 180, 90 * 3.141592 / 180)                                                                                       # rotate -45 degrees on the z-axis
         t.transform.rotation.x = q[0]
         t.transform.rotation.y = q[1]
         t.transform.rotation.z = q[2]

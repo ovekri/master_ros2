@@ -18,7 +18,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('realsense2_camera'), 'launch/rs_launch.py')),
         launch_arguments={
-            "depth_module.profile": "640x480x30",
+            "depth_module.profile": "640x480x15", #640x480x30 848x480x15 1280x720x?
            # "pointcloud.enable": "True",
         }.items()
     )
@@ -28,3 +28,5 @@ def generate_launch_description():
         launch_ros.actions.Node(package='robot_state_publisher', executable='robot_state_publisher',
                                 parameters=[{'robot_description': robot_description}])
     ])
+
+#https://ashbabu.github.io/blog/2023/Obstacle-Detection-from-Pointclouds/

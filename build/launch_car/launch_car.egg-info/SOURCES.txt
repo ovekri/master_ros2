@@ -8,6 +8,7 @@ setup.py
 ../../../../build/launch_car/launch_car.egg-info/requires.txt
 ../../../../build/launch_car/launch_car.egg-info/top_level.txt
 ../../../../build/launch_car/launch_car.egg-info/zip-safe
+launch/all_launch.py
 launch/car_launch.py
 launch/control_launch.py
 launch/raw_to_PC2_launch.py

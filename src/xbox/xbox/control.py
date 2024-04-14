@@ -66,6 +66,7 @@ class Controller(Node):
         
         if autonom == 1 and forward == 0 and reverse == 0 and joystick_value == 0:
             self.get_logger().info('Autonome mode')
+            if 
             pass
         
         # self.get_logger().info(f'state: {self.angle_motor}')

@@ -29,3 +29,5 @@ def generate_launch_description():
         output='screen',
     )
     return launch.LaunchDescription([container])
+
+# https://ashbabu.github.io/blog/2023/Obstacle-Detection-from-Pointclouds/

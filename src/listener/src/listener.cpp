@@ -32,7 +32,7 @@ public:
             "/realsense_transformed", 1);
 
         RCLCPP_INFO(this->get_logger(), "Publishing to /LiDAR_transformed.");
-        RCLCPP_INFO(this->get_logger(), "Publishing to //camera/depth/color/points.");
+        RCLCPP_INFO(this->get_logger(), "Publishing to /camera/depth/color/points.");
 
         tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());                                                                          // stores the transformation received and initializes it with the nodes clock
         tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);                                                                   // listen to transformations published and stores it in the buffer 

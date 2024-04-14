@@ -21,6 +21,10 @@ def generate_launch_description():
             executable='lidar',
             name='lidar_broadcast'),
         Node(
+            package='broadcaster',
+            executable='lidar',
+            name='lidar_broadcast'),
+        Node(
             package='listener',
             executable='listener',
             name='listener'),        
