@@ -1,0 +1,41 @@
+[4.652s] Invoking command in '/home/nvidia/master_ws/src/broadcaster': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data
+[5.791s] running egg_info
+[5.793s] creating ../../build/broadcaster/broadcaster.egg-info
+[5.793s] writing ../../build/broadcaster/broadcaster.egg-info/PKG-INFO
+[5.795s] writing dependency_links to ../../build/broadcaster/broadcaster.egg-info/dependency_links.txt
+[5.796s] writing entry points to ../../build/broadcaster/broadcaster.egg-info/entry_points.txt
+[5.796s] writing requirements to ../../build/broadcaster/broadcaster.egg-info/requires.txt
+[5.797s] writing top-level names to ../../build/broadcaster/broadcaster.egg-info/top_level.txt
+[5.802s] writing manifest file '../../build/broadcaster/broadcaster.egg-info/SOURCES.txt'
+[5.946s] reading manifest file '../../build/broadcaster/broadcaster.egg-info/SOURCES.txt'
+[5.951s] writing manifest file '../../build/broadcaster/broadcaster.egg-info/SOURCES.txt'
+[5.952s] running build
+[5.952s] running build_py
+[5.952s] creating /home/nvidia/master_ws/build/broadcaster/build
+[5.953s] creating /home/nvidia/master_ws/build/broadcaster/build/lib
+[5.954s] creating /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster
+[5.954s] copying broadcaster/lidar.py -> /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster
+[5.955s] copying broadcaster/__init__.py -> /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster
+[5.955s] copying broadcaster/realsense.py -> /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster
+[5.956s] running install
+[5.958s] running install_lib
+[5.963s] creating /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster
+[5.964s] copying /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster/lidar.py -> /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster
+[5.964s] copying /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster/__init__.py -> /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster
+[5.964s] copying /home/nvidia/master_ws/build/broadcaster/build/lib/broadcaster/realsense.py -> /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster
+[5.967s] byte-compiling /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster/lidar.py to lidar.cpython-38.pyc
+[5.973s] byte-compiling /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster/__init__.py to __init__.cpython-38.pyc
+[5.974s] byte-compiling /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster/realsense.py to realsense.cpython-38.pyc
+[5.976s] running install_data
+[5.977s] creating /home/nvidia/master_ws/install/broadcaster/share/ament_index
+[5.977s] creating /home/nvidia/master_ws/install/broadcaster/share/ament_index/resource_index
+[5.978s] creating /home/nvidia/master_ws/install/broadcaster/share/ament_index/resource_index/packages
+[5.978s] copying resource/broadcaster -> /home/nvidia/master_ws/install/broadcaster/share/ament_index/resource_index/packages
+[5.979s] copying package.xml -> /home/nvidia/master_ws/install/broadcaster/share/broadcaster
+[5.980s] running install_egg_info
+[5.987s] Copying ../../build/broadcaster/broadcaster.egg-info to /home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages/broadcaster-0.0.0-py3.8.egg-info
+[5.993s] running install_scripts
+[6.070s] Installing lidar script to /home/nvidia/master_ws/install/broadcaster/lib/broadcaster
+[6.071s] Installing realsense script to /home/nvidia/master_ws/install/broadcaster/lib/broadcaster
+[6.072s] writing list of installed files to '/home/nvidia/master_ws/build/broadcaster/install.log'
+[6.182s] Invoked command in '/home/nvidia/master_ws/src/broadcaster' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/broadcaster/prefix_override:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/broadcaster build --build-base /home/nvidia/master_ws/build/broadcaster/build install --record /home/nvidia/master_ws/build/broadcaster/install.log --install-scripts $base/lib/broadcaster --single-version-externally-managed install_data

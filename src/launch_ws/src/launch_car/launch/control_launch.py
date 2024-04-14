@@ -14,7 +14,7 @@ def generate_launch_description():
             output='screen'),
         Node(
             package='xbox',
-            executable='xbox',
-            name='xbox_manual_control',
-            output='screen'),
+            executable='control',
+            name='control',
+            output='screen')
   ])

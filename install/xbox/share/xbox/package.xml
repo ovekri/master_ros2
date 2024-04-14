@@ -15,6 +15,7 @@
   <depend>adafruit_servokit</depend>
   <depend>adafruit_pca9685</depend>
   <depend>board</depend>
+  <depend>time</depend>
 
 
   <test_depend>ament_copyright</test_depend>

@@ -53,10 +53,10 @@ class xboxController(Node):
         self.set_servo_angle(servo_angle)
 
         if (msg.buttons[3] == 0):
-            if msg.buttons[0] == 1: # button A on the xbox controller
+            if msg.buttons[0] == 1:     # button A on the xbox controller
             # forward motion
                 self.pulse_width_motor = 1550
-            elif msg.buttons[1] == 1: # button B on the xbox controller
+            elif msg.buttons[1] == 1:   # button B on the xbox controller
             # backward motion
                 self.pulse_width_motor = 1440
             else:
