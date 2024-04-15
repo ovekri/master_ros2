@@ -121,25 +121,25 @@ class Controller(Node):
                     #self.set_servo_angle_with_delay(125, 2)
                     self.angle_servo = 125 #between 55-90-125
                     self.servo.angle = self.angle_servo
-                    time.sleep(0.2)
+                    time.sleep(0.1)
                     self.angle_motor = 112
                     self.motor.angle = self.angle_motor
-                    time.sleep(0.075)
+                    time.sleep(0.15)
                     self.angle_motor = 106
                     self.motor.angle = self.angle_motor
-                    time.sleep(0.075)
+                    time.sleep(0.1)
 
                 elif (right_auto == 1):
                     self.get_logger().info('Turning right')
                     self.angle_servo = 55 #between 55-90-125
                     self.servo.angle = self.angle_servo
-                    time.sleep(0.2)
+                    time.sleep(0.1)
                     self.angle_motor = 112
                     self.motor.angle = self.angle_motor
-                    time.sleep(0.075)
+                    time.sleep(0.15)
                     self.angle_motor = 106
                     self.motor.angle = self.angle_motor
-                    time.sleep(0.075)
+                    time.sleep(0.1)
                     #self.angle_motor = 112
                     #self.motor.angle = self.angle_motor
                 else: 
@@ -154,13 +154,17 @@ class Controller(Node):
                 self.get_logger().info('Forward')
                 self.angle_servo = 90 
                 self.servo.angle = self.angle_servo
-                #self.angle_motor = 112
-                #self.motor.angle = self.angle_motor
+                self.angle_motor = 112
+                self.motor.angle = self.angle_motor
+                time.sleep(0.1)
+                self.angle_motor = 106
+                self.motor.angle = self.angle_motor
+                time.sleep(0.1)
             else: 
                 self.angle_servo = 90
                 self.servo.angle = self.angle_servo
-                #self.angle_motor = 106
-                #self.motor.angle = self.angle_motor
+                self.angle_motor = 106
+                self.motor.angle = self.angle_motor
             
 
             

@@ -25,7 +25,7 @@ class LidarControl(Node):
             counter_tot += 1
             if (point[2] < 0.2 and point[2] > 0.0): # height
                 if (point[1] < 0.2 and point[1] > -0.2): # width
-                    if (point[0] < 10.0 and point[0] > 0.0):
+                    if (point[0] < 10.0 and point[0] > 0.0):                ####### have to go when outdoor
                         counter_approved += 1
                     if (point[0] < 2.0 and point[0] > 0.4): # distance 
                         counter_to_close += 1
@@ -40,30 +40,32 @@ class LidarControl(Node):
         return to_close_ratio, counter_approved
 
     def turn(self, xyz_point):
-        #right_approved = 0
+        right_approved = 0
         right_to_close = 0
         right_turn = 0
         left_turn = 0
-        #left_approved = 0
+        left_approved = 0
         left_to_close = 0
         r = 0
         for x, y, z in xyz_point:
             if (z < 0.2 and z > 0.0):
                 theta = atan2(y, x)
-                if (theta > 0.52  and theta < 0.7):
-                    #left_approved += 1
+                if (theta > 0.5  and theta < 0.8):
+                    left_approved += 1
                     r = sqrt(x**2 + y**2)
-                    if (r < 1.1 and r > 0.4):
+                    if (r < 1.5 and r > 0.5):
                         left_to_close += 1
-                if (theta < -0.52  and theta > -0.7):
-                    #right_approved += 1
+                if (theta < -0.5  and theta > -0.8): # theta < -0.52  and theta > -0.7
+                    right_approved += 1
                     r = sqrt(x**2 + y**2)
                     if (r < 1.1 and r > 0.4):
                         right_to_close += 1
-        if (left_to_close < 20):
+        if (left_to_close > 100 and left_approved > 100):
             #self.get_logger().info(f'left is clear')
+            #self.get_logger().info(f'why left: {(left_approved)}')
+            #self.get_logger().info(f'why left: {(left_to_close)}')
             left_turn = 1
-        if (right_to_close < 20):
+        if (right_to_close > 100 and right_approved > 100):
             right_turn = 1
             #self.get_logger().info(f'right is clear')
         
@@ -85,7 +87,7 @@ class LidarControl(Node):
         to_close_ratio, counter_approved = self.forward(xyz_points)
         turn_right, turn_left = self.turn(xyz_points)
 
-        if (to_close_ratio < 0.2 or counter_approved < 40):
+        if (to_close_ratio < 0.2 or counter_approved < 30):
             #self.get_logger().info('No obsticle straight ahead')
             array_msg.data[0] = 1
         else:
