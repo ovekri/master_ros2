@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.001207] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.002429] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.003349] (-) JobUnselected: {'identifier': 'listener'}
+[0.004351] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.004575] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.004770] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.004898] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.005020] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.005436] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.005672] (-) JobUnselected: {'identifier': 'xbox'}
+[0.006189] (launch_car) JobQueued: {'identifier': 'launch_car', 'dependencies': OrderedDict()}
+[0.007256] (launch_car) JobStarted: {'identifier': 'launch_car'}
+[0.099409] (-) TimerEvent: {}
+[0.202218] (-) TimerEvent: {}
+[0.303796] (-) TimerEvent: {}
+[0.404759] (-) TimerEvent: {}
+[0.505786] (-) TimerEvent: {}
+[0.606876] (-) TimerEvent: {}
+[0.707960] (-) TimerEvent: {}
+[0.808896] (-) TimerEvent: {}
+[0.909844] (-) TimerEvent: {}
+[1.010801] (-) TimerEvent: {}
+[1.111627] (-) TimerEvent: {}
+[1.212616] (-) TimerEvent: {}
+[1.313622] (-) TimerEvent: {}
+[1.414768] (-) TimerEvent: {}
+[1.520899] (-) TimerEvent: {}
+[1.624176] (-) TimerEvent: {}
+[1.726147] (-) TimerEvent: {}
+[1.827078] (-) TimerEvent: {}
+[1.928069] (-) TimerEvent: {}
+[2.029033] (-) TimerEvent: {}
+[2.129990] (-) TimerEvent: {}
+[2.230871] (-) TimerEvent: {}
+[2.331951] (-) TimerEvent: {}
+[2.432934] (-) TimerEvent: {}
+[2.533938] (-) TimerEvent: {}
+[2.634992] (-) TimerEvent: {}
+[2.736188] (-) TimerEvent: {}
+[2.837267] (-) TimerEvent: {}
+[2.938118] (-) TimerEvent: {}
+[3.039135] (-) TimerEvent: {}
+[3.140151] (-) TimerEvent: {}
+[3.241164] (-) TimerEvent: {}
+[3.342369] (-) TimerEvent: {}
+[3.443298] (-) TimerEvent: {}
+[3.544429] (-) TimerEvent: {}
+[3.646958] (-) TimerEvent: {}
+[3.653134] (launch_car) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/launch_car', 'build', '--build-base', '/home/nvidia/master_ws/build/launch_car/build', 'install', '--record', '/home/nvidia/master_ws/build/launch_car/install.log', '--install-scripts', '$base/lib/launch_car', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nvidia/master_ws/src/launch_ws/src/launch_car', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nvidia', 'SSH_CLIENT': '192.168.50.129 56448 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/nvidia', 'OLDPWD': '/home/nvidia', 'SSH_TTY': '/dev/pts/0', 'JETSON_L4T': '35.3.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Xavier NX Developer Kit', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/nvidia/master_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'nvidia', 'JETSON_MODULE': 'NVIDIA Jetson Xavier NX', 'JETSON_SERIAL_NUMBER': '1422421040635', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Jakku', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'AMENT_PREFIX_PATH': '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/nvidia/master_ws/build/launch_car', 'SSH_CONNECTION': '192.168.50.129 56448 192.168.50.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'JETSON_JETPACK': '5.1.1', 'CMAKE_PREFIX_PATH': '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/listener', 'JETSON_P_NUMBER': 'p3668-0001'}, 'shell': False}
+[3.747776] (-) TimerEvent: {}
+[3.849688] (-) TimerEvent: {}
+[3.950606] (-) TimerEvent: {}
+[4.051579] (-) TimerEvent: {}
+[4.152554] (-) TimerEvent: {}
+[4.253611] (-) TimerEvent: {}
+[4.354613] (-) TimerEvent: {}
+[4.455759] (-) TimerEvent: {}
+[4.556725] (-) TimerEvent: {}
+[4.657662] (-) TimerEvent: {}
+[4.758640] (-) TimerEvent: {}
+[4.859666] (-) TimerEvent: {}
+[4.950748] (launch_car) StdoutLine: {'line': b'running egg_info\n'}
+[4.953799] (launch_car) StdoutLine: {'line': b'writing ../../../../build/launch_car/launch_car.egg-info/PKG-INFO\n'}
+[4.955359] (launch_car) StdoutLine: {'line': b'writing dependency_links to ../../../../build/launch_car/launch_car.egg-info/dependency_links.txt\n'}
+[4.956334] (launch_car) StdoutLine: {'line': b'writing entry points to ../../../../build/launch_car/launch_car.egg-info/entry_points.txt\n'}
+[4.957226] (launch_car) StdoutLine: {'line': b'writing requirements to ../../../../build/launch_car/launch_car.egg-info/requires.txt\n'}
+[4.958818] (launch_car) StdoutLine: {'line': b'writing top-level names to ../../../../build/launch_car/launch_car.egg-info/top_level.txt\n'}
+[4.959815] (-) TimerEvent: {}
+[5.060658] (-) TimerEvent: {}
+[5.141436] (launch_car) StdoutLine: {'line': b"reading manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'\n"}
+[5.146231] (launch_car) StdoutLine: {'line': b"writing manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'\n"}
+[5.147101] (launch_car) StdoutLine: {'line': b'running build\n'}
+[5.147768] (launch_car) StdoutLine: {'line': b'running build_py\n'}
+[5.148524] (launch_car) StdoutLine: {'line': b'running install\n'}
+[5.152521] (launch_car) StdoutLine: {'line': b'running install_lib\n'}
+[5.160436] (launch_car) StdoutLine: {'line': b'running install_data\n'}
+[5.161229] (-) TimerEvent: {}
+[5.162021] (launch_car) StdoutLine: {'line': b'copying launch/raw_to_PC2_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch\n'}
+[5.163212] (launch_car) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.171254] (launch_car) StdoutLine: {'line': b"removing '/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.173365] (launch_car) StdoutLine: {'line': b'Copying ../../../../build/launch_car/launch_car.egg-info to /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info\n'}
+[5.179328] (launch_car) StdoutLine: {'line': b'running install_scripts\n'}
+[5.261500] (-) TimerEvent: {}
+[5.262450] (launch_car) StdoutLine: {'line': b"writing list of installed files to '/home/nvidia/master_ws/build/launch_car/install.log'\n"}
+[5.360531] (launch_car) CommandEnded: {'returncode': 0}
+[5.363809] (-) TimerEvent: {}
+[5.421057] (launch_car) JobEnded: {'identifier': 'launch_car', 'rc': 0}
+[5.425151] (-) EventReactorShutdown: {}

@@ -62,8 +62,8 @@ class LidarControl(Node):
                         right_to_close += 1
         if (left_to_close > 100 and left_approved > 100):
             #self.get_logger().info(f'left is clear')
-            self.get_logger().info(f'why left: {(left_approved)}')
-            self.get_logger().info(f'why left: {(left_to_close)}')
+            #self.get_logger().info(f'why left: {(left_approved)}')
+            #self.get_logger().info(f'why left: {(left_to_close)}')
             left_turn = 1
         if (right_to_close > 100 and right_approved > 100):
             right_turn = 1

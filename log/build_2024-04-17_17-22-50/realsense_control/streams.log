@@ -1,0 +1,77 @@
+[0.206s] Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/realsense_control -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/realsense_control
+[0.752s] -- The C compiler identification is GNU 9.4.0
+[1.190s] -- The CXX compiler identification is GNU 9.4.0
+[1.225s] -- Check for working C compiler: /usr/bin/cc
+[1.760s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.767s] -- Detecting C compiler ABI info
+[2.278s] -- Detecting C compiler ABI info - done
+[2.344s] -- Detecting C compile features
+[2.345s] -- Detecting C compile features - done
+[2.360s] -- Check for working CXX compiler: /usr/bin/c++
+[2.985s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.991s] -- Detecting CXX compiler ABI info
+[3.552s] -- Detecting CXX compiler ABI info - done
+[3.621s] -- Detecting CXX compile features
+[3.623s] -- Detecting CXX compile features - done
+[3.640s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.805s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.806s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.358s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.785s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.864s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.948s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.168s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.096s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.582s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.619s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.635s] -- Looking for pthread.h
+[9.717s] -- Looking for pthread.h - found
+[9.719s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.774s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[10.775s] -- Looking for pthread_create in pthreads
+[11.564s] -- Looking for pthread_create in pthreads - not found
+[11.568s] -- Looking for pthread_create in pthread
+[12.299s] -- Looking for pthread_create in pthread - found
+[12.307s] -- Found Threads: TRUE  
+[13.227s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[13.930s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.449s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.458s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.459s] -- Configured cppcheck include dirs: 
+[14.460s] -- Configured cppcheck exclude dirs and/or files: 
+[14.468s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.469s] -- Configured cpplint exclude dirs and/or files: 
+[14.475s] -- Added test 'lint_cmake' to check CMake code style
+[14.485s] -- Added test 'uncrustify' to check C / C++ code style
+[14.486s] -- Configured uncrustify additional arguments: 
+[14.489s] -- Added test 'xmllint' to check XML markup files
+[14.518s] -- Configuring done
+[14.575s] -- Generating done
+[14.586s] -- Build files have been written to: /home/nvidia/master_ws/build/realsense_control
+[14.637s] Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/realsense_control -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/realsense_control
+[14.651s] Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[14.940s] [35m[1mScanning dependencies of target realsense_control[0m
+[15.223s] [ 50%] [32mBuilding CXX object CMakeFiles/realsense_control.dir/src/realsense_control.cpp.o[0m
+[43.809s] [100%] [32m[1mLinking CXX executable realsense_control[0m
+[45.677s] [100%] Built target realsense_control
+[45.808s] Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[46.246s] Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/realsense_control
+[46.340s] -- Install configuration: ""
+[46.344s] -- Installing: /home/nvidia/master_ws/install/realsense_control/lib/realsense_control/realsense_control
+[46.371s] -- Set runtime path of "/home/nvidia/master_ws/install/realsense_control/lib/realsense_control/realsense_control" to ""
+[46.375s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/package_run_dependencies/realsense_control
+[46.378s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/parent_prefix_path/realsense_control
+[46.382s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/ament_prefix_path.sh
+[46.385s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/ament_prefix_path.dsv
+[46.388s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/path.sh
+[46.392s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/path.dsv
+[46.395s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.bash
+[46.398s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.sh
+[46.401s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.zsh
+[46.404s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.dsv
+[46.407s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.dsv
+[46.410s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/packages/realsense_control
+[46.413s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/cmake/realsense_controlConfig.cmake
+[46.417s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/cmake/realsense_controlConfig-version.cmake
+[46.420s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.xml
+[46.437s] Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/realsense_control
