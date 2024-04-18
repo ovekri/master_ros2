@@ -1,0 +1,79 @@
+[4.477s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/listener -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/listener
+[4.899s] -- The C compiler identification is GNU 9.4.0
+[5.297s] -- The CXX compiler identification is GNU 9.4.0
+[5.336s] -- Check for working C compiler: /usr/bin/cc
+[5.830s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.835s] -- Detecting C compiler ABI info
+[6.331s] -- Detecting C compiler ABI info - done
+[6.419s] -- Detecting C compile features
+[6.421s] -- Detecting C compile features - done
+[6.439s] -- Check for working CXX compiler: /usr/bin/c++
+[7.007s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[7.024s] -- Detecting CXX compiler ABI info
+[7.632s] -- Detecting CXX compiler ABI info - done
+[7.714s] -- Detecting CXX compile features
+[7.719s] -- Detecting CXX compile features - done
+[7.734s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[7.898s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.899s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.305s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[9.643s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.694s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[10.315s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[10.495s] -- Found FastRTPS: /opt/ros/foxy/include  
+[11.017s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.387s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[11.400s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.406s] -- Looking for pthread.h
+[11.931s] -- Looking for pthread.h - found
+[11.933s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.480s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[12.481s] -- Looking for pthread_create in pthreads
+[12.964s] -- Looking for pthread_create in pthreads - not found
+[12.966s] -- Looking for pthread_create in pthread
+[13.533s] -- Looking for pthread_create in pthread - found
+[13.540s] -- Found Threads: TRUE  
+[14.527s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[17.849s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[18.427s] -- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)
+[18.772s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[19.497s] -- Added test 'copyright' to check source files copyright and LICENSE
+[19.520s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[19.521s] -- Configured cppcheck include dirs: 
+[19.522s] -- Configured cppcheck exclude dirs and/or files: 
+[19.531s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[19.536s] -- Configured cpplint exclude dirs and/or files: 
+[19.542s] -- Added test 'lint_cmake' to check CMake code style
+[19.551s] -- Added test 'uncrustify' to check C / C++ code style
+[19.551s] -- Configured uncrustify additional arguments: 
+[19.557s] -- Added test 'xmllint' to check XML markup files
+[19.605s] -- Configuring done
+[19.736s] -- Generating done
+[19.749s] -- Build files have been written to: /home/nvidia/master_ws/build/listener
+[19.802s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/listener -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/listener
+[19.820s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j6 -l6
+[20.302s] [35m[1mScanning dependencies of target listener[0m
+[21.066s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[70.615s] [100%] [32m[1mLinking CXX executable listener[0m
+[73.280s] [100%] Built target listener
+[73.456s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j6 -l6
+[73.935s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener
+[74.032s] -- Install configuration: ""
+[74.034s] -- Installing: /home/nvidia/master_ws/install/listener/lib/listener/listener
+[74.065s] -- Set runtime path of "/home/nvidia/master_ws/install/listener/lib/listener/listener" to ""
+[74.067s] -- Installing: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/package_run_dependencies/listener
+[74.069s] -- Installing: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/parent_prefix_path/listener
+[74.072s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/environment/ament_prefix_path.sh
+[74.075s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/environment/ament_prefix_path.dsv
+[74.076s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/environment/path.sh
+[74.077s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/environment/path.dsv
+[74.079s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/local_setup.bash
+[74.081s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/local_setup.sh
+[74.084s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/local_setup.zsh
+[74.086s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/local_setup.dsv
+[74.087s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/package.dsv
+[74.088s] -- Installing: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/packages/listener
+[74.091s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/cmake/listenerConfig.cmake
+[74.092s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/cmake/listenerConfig-version.cmake
+[74.093s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/package.xml
+[74.107s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener

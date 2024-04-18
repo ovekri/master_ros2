@@ -306,9 +306,9 @@ src/lib/CMakeFiles/velodyne_rawdata.dir/clean:
 # Target rules for target tests/CMakeFiles/test_calibration.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_calibration.dir/all: src/lib/CMakeFiles/velodyne_rawdata.dir/all
 tests/CMakeFiles/test_calibration.dir/all: gtest/CMakeFiles/gtest_main.dir/all
 tests/CMakeFiles/test_calibration.dir/all: gtest/CMakeFiles/gtest.dir/all
-tests/CMakeFiles/test_calibration.dir/all: src/lib/CMakeFiles/velodyne_rawdata.dir/all
 	$(MAKE) -f tests/CMakeFiles/test_calibration.dir/build.make tests/CMakeFiles/test_calibration.dir/depend
 	$(MAKE) -f tests/CMakeFiles/test_calibration.dir/build.make tests/CMakeFiles/test_calibration.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles --progress-num=5,6 "Built target test_calibration"
