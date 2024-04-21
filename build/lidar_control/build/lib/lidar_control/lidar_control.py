@@ -31,7 +31,7 @@ class LidarControl(Node):
                         counter_to_close += 1
                         #print(f"Transformed point coordinates: X: {point[0]}, Y: {point[1]}, Z: {point[2]}")
         if counter_approved != 0:
-            to_close_ratio = counter_to_close/counter_approved
+            to_close_ratio = counter_to_close / counter_approved
         else:
             to_close_ratio = 0
         

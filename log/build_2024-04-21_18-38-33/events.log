@@ -1,0 +1,291 @@
+[0.000000] (-) TimerEvent: {}
+[0.002667] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.002967] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.003215] (-) JobUnselected: {'identifier': 'lidar'}
+[0.003366] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.003594] (-) JobUnselected: {'identifier': 'listener'}
+[0.003818] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.004047] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.004264] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.004563] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.005008] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.005249] (-) JobUnselected: {'identifier': 'xbox'}
+[0.005386] (realsense_control) JobQueued: {'identifier': 'realsense_control', 'dependencies': OrderedDict()}
+[0.005600] (realsense_control) JobStarted: {'identifier': 'realsense_control'}
+[0.073144] (realsense_control) JobProgress: {'identifier': 'realsense_control', 'progress': 'cmake'}
+[0.081036] (realsense_control) JobProgress: {'identifier': 'realsense_control', 'progress': 'build'}
+[0.085958] (realsense_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/master_ws/build/realsense_control', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/master_ws/build/realsense_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 52381 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/master_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/realsense_control'), ('SSH_CONNECTION', '192.168.50.129 52381 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[0.117740] (-) TimerEvent: {}
+[0.219816] (-) TimerEvent: {}
+[0.321009] (-) TimerEvent: {}
+[0.393328] (realsense_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense_control\x1b[0m\n'}
+[0.421254] (-) TimerEvent: {}
+[0.522482] (-) TimerEvent: {}
+[0.600821] (realsense_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense_control.dir/src/realsense_control.cpp.o\x1b[0m\n'}
+[0.622725] (-) TimerEvent: {}
+[0.724023] (-) TimerEvent: {}
+[0.825545] (-) TimerEvent: {}
+[0.926653] (-) TimerEvent: {}
+[1.027722] (-) TimerEvent: {}
+[1.129252] (-) TimerEvent: {}
+[1.230400] (-) TimerEvent: {}
+[1.331899] (-) TimerEvent: {}
+[1.434226] (-) TimerEvent: {}
+[1.535380] (-) TimerEvent: {}
+[1.636569] (-) TimerEvent: {}
+[1.738146] (-) TimerEvent: {}
+[1.839291] (-) TimerEvent: {}
+[1.940393] (-) TimerEvent: {}
+[2.041462] (-) TimerEvent: {}
+[2.142479] (-) TimerEvent: {}
+[2.244139] (-) TimerEvent: {}
+[2.345902] (-) TimerEvent: {}
+[2.447041] (-) TimerEvent: {}
+[2.548910] (-) TimerEvent: {}
+[2.649939] (-) TimerEvent: {}
+[2.750983] (-) TimerEvent: {}
+[2.851972] (-) TimerEvent: {}
+[2.953104] (-) TimerEvent: {}
+[3.054066] (-) TimerEvent: {}
+[3.155051] (-) TimerEvent: {}
+[3.256050] (-) TimerEvent: {}
+[3.357162] (-) TimerEvent: {}
+[3.459104] (-) TimerEvent: {}
+[3.560382] (-) TimerEvent: {}
+[3.661411] (-) TimerEvent: {}
+[3.762440] (-) TimerEvent: {}
+[3.863555] (-) TimerEvent: {}
+[3.965113] (-) TimerEvent: {}
+[4.066146] (-) TimerEvent: {}
+[4.167133] (-) TimerEvent: {}
+[4.268202] (-) TimerEvent: {}
+[4.369295] (-) TimerEvent: {}
+[4.470370] (-) TimerEvent: {}
+[4.571387] (-) TimerEvent: {}
+[4.672522] (-) TimerEvent: {}
+[4.773539] (-) TimerEvent: {}
+[4.874669] (-) TimerEvent: {}
+[4.975790] (-) TimerEvent: {}
+[5.076922] (-) TimerEvent: {}
+[5.178036] (-) TimerEvent: {}
+[5.279307] (-) TimerEvent: {}
+[5.380617] (-) TimerEvent: {}
+[5.481673] (-) TimerEvent: {}
+[5.582773] (-) TimerEvent: {}
+[5.683826] (-) TimerEvent: {}
+[5.785009] (-) TimerEvent: {}
+[5.886043] (-) TimerEvent: {}
+[5.987133] (-) TimerEvent: {}
+[6.088364] (-) TimerEvent: {}
+[6.190413] (-) TimerEvent: {}
+[6.292636] (-) TimerEvent: {}
+[6.394641] (-) TimerEvent: {}
+[6.496839] (-) TimerEvent: {}
+[6.598832] (-) TimerEvent: {}
+[6.700020] (-) TimerEvent: {}
+[6.801206] (-) TimerEvent: {}
+[6.902259] (-) TimerEvent: {}
+[7.003333] (-) TimerEvent: {}
+[7.104454] (-) TimerEvent: {}
+[7.205497] (-) TimerEvent: {}
+[7.306467] (-) TimerEvent: {}
+[7.407558] (-) TimerEvent: {}
+[7.470538] (realsense_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/realsense_control/src/realsense_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointCloud2Listener::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.471809] (realsense_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/realsense_control/src/realsense_control.cpp:22:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmax_depth\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[7.472491] (realsense_control) StderrLine: {'line': b'   22 |     double \x1b[01;35m\x1b[Kmax_depth\x1b[m\x1b[K = -std::numeric_limits<float>::max();\n'}
+[7.473000] (realsense_control) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.473417] (realsense_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/realsense_control/src/realsense_control.cpp:23:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmin_depth\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[7.473888] (realsense_control) StderrLine: {'line': b'   23 |     double \x1b[01;35m\x1b[Kmin_depth\x1b[m\x1b[K = std::numeric_limits<float>::max();\n'}
+[7.474349] (realsense_control) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.507804] (-) TimerEvent: {}
+[7.608943] (-) TimerEvent: {}
+[7.709992] (-) TimerEvent: {}
+[7.811088] (-) TimerEvent: {}
+[7.912143] (-) TimerEvent: {}
+[8.014310] (-) TimerEvent: {}
+[8.115341] (-) TimerEvent: {}
+[8.216523] (-) TimerEvent: {}
+[8.317513] (-) TimerEvent: {}
+[8.418505] (-) TimerEvent: {}
+[8.519668] (-) TimerEvent: {}
+[8.620788] (-) TimerEvent: {}
+[8.721942] (-) TimerEvent: {}
+[8.823020] (-) TimerEvent: {}
+[8.924141] (-) TimerEvent: {}
+[9.025280] (-) TimerEvent: {}
+[9.126328] (-) TimerEvent: {}
+[9.227356] (-) TimerEvent: {}
+[9.328412] (-) TimerEvent: {}
+[9.429431] (-) TimerEvent: {}
+[9.530551] (-) TimerEvent: {}
+[9.631581] (-) TimerEvent: {}
+[9.732664] (-) TimerEvent: {}
+[9.833787] (-) TimerEvent: {}
+[9.934926] (-) TimerEvent: {}
+[10.036035] (-) TimerEvent: {}
+[10.138275] (-) TimerEvent: {}
+[10.240170] (-) TimerEvent: {}
+[10.342259] (-) TimerEvent: {}
+[10.443933] (-) TimerEvent: {}
+[10.545127] (-) TimerEvent: {}
+[10.646268] (-) TimerEvent: {}
+[10.747461] (-) TimerEvent: {}
+[10.848552] (-) TimerEvent: {}
+[10.949504] (-) TimerEvent: {}
+[11.050460] (-) TimerEvent: {}
+[11.151435] (-) TimerEvent: {}
+[11.252445] (-) TimerEvent: {}
+[11.353399] (-) TimerEvent: {}
+[11.454546] (-) TimerEvent: {}
+[11.555691] (-) TimerEvent: {}
+[11.657466] (-) TimerEvent: {}
+[11.758841] (-) TimerEvent: {}
+[11.859919] (-) TimerEvent: {}
+[11.961375] (-) TimerEvent: {}
+[12.062499] (-) TimerEvent: {}
+[12.163568] (-) TimerEvent: {}
+[12.264590] (-) TimerEvent: {}
+[12.365587] (-) TimerEvent: {}
+[12.466636] (-) TimerEvent: {}
+[12.567650] (-) TimerEvent: {}
+[12.668658] (-) TimerEvent: {}
+[12.769774] (-) TimerEvent: {}
+[12.870954] (-) TimerEvent: {}
+[12.972542] (-) TimerEvent: {}
+[13.073773] (-) TimerEvent: {}
+[13.175021] (-) TimerEvent: {}
+[13.276045] (-) TimerEvent: {}
+[13.377112] (-) TimerEvent: {}
+[13.478206] (-) TimerEvent: {}
+[13.579376] (-) TimerEvent: {}
+[13.680680] (-) TimerEvent: {}
+[13.781780] (-) TimerEvent: {}
+[13.882805] (-) TimerEvent: {}
+[13.984368] (-) TimerEvent: {}
+[14.085702] (-) TimerEvent: {}
+[14.186836] (-) TimerEvent: {}
+[14.288059] (-) TimerEvent: {}
+[14.389375] (-) TimerEvent: {}
+[14.490769] (-) TimerEvent: {}
+[14.591897] (-) TimerEvent: {}
+[14.693077] (-) TimerEvent: {}
+[14.794178] (-) TimerEvent: {}
+[14.895392] (-) TimerEvent: {}
+[14.996546] (-) TimerEvent: {}
+[15.097589] (-) TimerEvent: {}
+[15.198630] (-) TimerEvent: {}
+[15.299711] (-) TimerEvent: {}
+[15.400882] (-) TimerEvent: {}
+[15.501985] (-) TimerEvent: {}
+[15.603039] (-) TimerEvent: {}
+[15.704113] (-) TimerEvent: {}
+[15.805443] (-) TimerEvent: {}
+[15.906805] (-) TimerEvent: {}
+[16.007937] (-) TimerEvent: {}
+[16.109191] (-) TimerEvent: {}
+[16.210605] (-) TimerEvent: {}
+[16.311985] (-) TimerEvent: {}
+[16.413301] (-) TimerEvent: {}
+[16.514412] (-) TimerEvent: {}
+[16.615578] (-) TimerEvent: {}
+[16.716773] (-) TimerEvent: {}
+[16.817959] (-) TimerEvent: {}
+[16.919132] (-) TimerEvent: {}
+[17.020488] (-) TimerEvent: {}
+[17.121680] (-) TimerEvent: {}
+[17.223828] (-) TimerEvent: {}
+[17.326104] (-) TimerEvent: {}
+[17.428055] (-) TimerEvent: {}
+[17.530273] (-) TimerEvent: {}
+[17.631360] (-) TimerEvent: {}
+[17.732560] (-) TimerEvent: {}
+[17.833623] (-) TimerEvent: {}
+[17.934801] (-) TimerEvent: {}
+[18.035920] (-) TimerEvent: {}
+[18.137201] (-) TimerEvent: {}
+[18.238264] (-) TimerEvent: {}
+[18.340425] (-) TimerEvent: {}
+[18.441647] (-) TimerEvent: {}
+[18.542964] (-) TimerEvent: {}
+[18.643980] (-) TimerEvent: {}
+[18.745102] (-) TimerEvent: {}
+[18.846385] (-) TimerEvent: {}
+[18.947491] (-) TimerEvent: {}
+[19.048709] (-) TimerEvent: {}
+[19.149639] (-) TimerEvent: {}
+[19.251049] (-) TimerEvent: {}
+[19.352133] (-) TimerEvent: {}
+[19.453262] (-) TimerEvent: {}
+[19.554338] (-) TimerEvent: {}
+[19.655429] (-) TimerEvent: {}
+[19.756689] (-) TimerEvent: {}
+[19.857951] (-) TimerEvent: {}
+[19.958930] (-) TimerEvent: {}
+[20.059954] (-) TimerEvent: {}
+[20.161152] (-) TimerEvent: {}
+[20.262167] (-) TimerEvent: {}
+[20.363184] (-) TimerEvent: {}
+[20.464275] (-) TimerEvent: {}
+[20.565431] (-) TimerEvent: {}
+[20.667258] (-) TimerEvent: {}
+[20.768387] (-) TimerEvent: {}
+[20.869446] (-) TimerEvent: {}
+[20.970458] (-) TimerEvent: {}
+[21.071688] (-) TimerEvent: {}
+[21.172895] (-) TimerEvent: {}
+[21.274603] (-) TimerEvent: {}
+[21.375913] (-) TimerEvent: {}
+[21.477129] (-) TimerEvent: {}
+[21.578219] (-) TimerEvent: {}
+[21.679311] (-) TimerEvent: {}
+[21.780355] (-) TimerEvent: {}
+[21.881383] (-) TimerEvent: {}
+[21.983066] (-) TimerEvent: {}
+[22.084805] (-) TimerEvent: {}
+[22.185892] (-) TimerEvent: {}
+[22.286999] (-) TimerEvent: {}
+[22.388053] (-) TimerEvent: {}
+[22.438476] (realsense_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable realsense_control\x1b[0m\n'}
+[22.488363] (-) TimerEvent: {}
+[22.589373] (-) TimerEvent: {}
+[22.690397] (-) TimerEvent: {}
+[22.791500] (-) TimerEvent: {}
+[22.892711] (-) TimerEvent: {}
+[22.993808] (-) TimerEvent: {}
+[23.094884] (-) TimerEvent: {}
+[23.195977] (-) TimerEvent: {}
+[23.297136] (-) TimerEvent: {}
+[23.398231] (-) TimerEvent: {}
+[23.499300] (-) TimerEvent: {}
+[23.557300] (realsense_control) StdoutLine: {'line': b'[100%] Built target realsense_control\n'}
+[23.599592] (-) TimerEvent: {}
+[23.627798] (realsense_control) CommandEnded: {'returncode': 0}
+[23.700441] (-) TimerEvent: {}
+[23.791098] (realsense_control) JobProgress: {'identifier': 'realsense_control', 'progress': 'install'}
+[23.801145] (-) TimerEvent: {}
+[23.858329] (realsense_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/master_ws/build/realsense_control'], 'cwd': '/home/nvidia/master_ws/build/realsense_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 52381 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/master_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/realsense_control'), ('SSH_CONNECTION', '192.168.50.129 52381 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[23.901325] (-) TimerEvent: {}
+[23.928120] (realsense_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.930494] (realsense_control) StdoutLine: {'line': b'-- Installing: /home/nvidia/master_ws/install/realsense_control/lib/realsense_control/realsense_control\n'}
+[23.953883] (realsense_control) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/master_ws/install/realsense_control/lib/realsense_control/realsense_control" to ""\n'}
+[23.956689] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/package_run_dependencies/realsense_control\n'}
+[23.957916] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/parent_prefix_path/realsense_control\n'}
+[23.958731] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/ament_prefix_path.sh\n'}
+[23.959195] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/ament_prefix_path.dsv\n'}
+[23.959636] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/path.sh\n'}
+[23.960009] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/path.dsv\n'}
+[23.960660] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.bash\n'}
+[23.961104] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.sh\n'}
+[23.961476] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.zsh\n'}
+[23.961972] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.dsv\n'}
+[23.962936] (realsense_control) StdoutLine: {'line': b'-- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.dsv\n'}
+[23.963395] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/packages/realsense_control\n'}
+[23.963802] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/cmake/realsense_controlConfig.cmake\n'}
+[23.964185] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/cmake/realsense_controlConfig-version.cmake\n'}
+[23.964634] (realsense_control) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.xml\n'}
+[23.971202] (realsense_control) CommandEnded: {'returncode': 0}
+[24.002073] (-) TimerEvent: {}
+[24.103756] (-) TimerEvent: {}
+[24.209053] (-) TimerEvent: {}
+[24.246610] (realsense_control) JobEnded: {'identifier': 'realsense_control', 'rc': 0}
+[24.252485] (-) EventReactorShutdown: {}

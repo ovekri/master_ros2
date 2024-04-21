@@ -1,0 +1,383 @@
+[1.160s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'realsense_control', 'xbox', 'launch_car']
+[1.160s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb8c55910>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['realsense_control', 'xbox', 'launch_car'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb8c55910>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb8c66040>)
+[2.081s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.081s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.081s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.082s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.082s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.083s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nvidia/master_ws'
+[2.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.147s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.151s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.151s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.154s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.154s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.154s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.154s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.154s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['ignore', 'ignore_ament_install']
+[2.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'ignore'
+[2.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'ignore_ament_install'
+[2.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['colcon_pkg']
+[2.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'colcon_pkg'
+[2.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['colcon_meta']
+[2.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'colcon_meta'
+[2.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extensions ['ros']
+[2.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/broadcaster) by extension 'ros'
+[2.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/broadcaster' with type 'ros.ament_python' and name 'broadcaster'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extensions ['ignore', 'ignore_ament_install']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'ignore'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'ignore_ament_install'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extensions ['colcon_pkg']
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'colcon_pkg'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extensions ['colcon_meta']
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'colcon_meta'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extensions ['ros']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'ros'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extensions ['cmake', 'python']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'cmake'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'python'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extensions ['python_setup_py']
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws) by extension 'python_setup_py'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'ignore'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'ignore_ament_install'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extensions ['colcon_pkg']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'colcon_pkg'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extensions ['colcon_meta']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'colcon_meta'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extensions ['ros']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'ros'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extensions ['cmake', 'python']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'cmake'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'python'
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extensions ['python_setup_py']
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src) by extension 'python_setup_py'
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extensions ['ignore', 'ignore_ament_install']
+[2.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extension 'ignore'
+[2.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extension 'ignore_ament_install'
+[2.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extensions ['colcon_pkg']
+[2.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extension 'colcon_pkg'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extensions ['colcon_meta']
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extension 'colcon_meta'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extensions ['ros']
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_ws/src/launch_car) by extension 'ros'
+[2.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/launch_ws/src/launch_car' with type 'ros.ament_python' and name 'launch_car'
+[2.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['ignore', 'ignore_ament_install']
+[2.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ignore'
+[2.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ignore_ament_install'
+[2.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['colcon_pkg']
+[2.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'colcon_pkg'
+[2.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['colcon_meta']
+[2.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'colcon_meta'
+[2.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['ros']
+[2.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ros'
+[2.188s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar' with type 'ros.ament_cmake' and name 'lidar'
+[2.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extensions ['ignore', 'ignore_ament_install']
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extension 'ignore'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extension 'ignore_ament_install'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extensions ['colcon_pkg']
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extension 'colcon_pkg'
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extensions ['colcon_meta']
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extension 'colcon_meta'
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extensions ['ros']
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_control) by extension 'ros'
+[2.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_control' with type 'ros.ament_python' and name 'lidar_control'
+[2.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['ignore', 'ignore_ament_install']
+[2.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'ignore'
+[2.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'ignore_ament_install'
+[2.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['colcon_pkg']
+[2.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'colcon_pkg'
+[2.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['colcon_meta']
+[2.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'colcon_meta'
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extensions ['ros']
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/listener) by extension 'ros'
+[2.201s] DEBUG:colcon.colcon_core.package_identification:Package 'src/listener' with type 'ros.ament_cmake' and name 'listener'
+[2.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extensions ['ignore', 'ignore_ament_install']
+[2.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extension 'ignore'
+[2.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extension 'ignore_ament_install'
+[2.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extensions ['colcon_pkg']
+[2.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extension 'colcon_pkg'
+[2.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extensions ['colcon_meta']
+[2.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extension 'colcon_meta'
+[2.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extensions ['ros']
+[2.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_control) by extension 'ros'
+[2.206s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense_control' with type 'ros.ament_cmake' and name 'realsense_control'
+[2.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[2.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore'
+[2.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore_ament_install'
+[2.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_pkg']
+[2.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_pkg'
+[2.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_meta']
+[2.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_meta'
+[2.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ros']
+[2.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ros'
+[2.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['cmake', 'python']
+[2.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'cmake'
+[2.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python'
+[2.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['python_setup_py']
+[2.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python_setup_py'
+[2.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[2.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore'
+[2.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore_ament_install'
+[2.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_pkg']
+[2.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_pkg'
+[2.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_meta']
+[2.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_meta'
+[2.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ros']
+[2.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ros'
+[2.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne' with type 'ros.ament_cmake' and name 'velodyne'
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ignore', 'ignore_ament_install']
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore'
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore_ament_install'
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_pkg']
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_pkg'
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_meta']
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_meta'
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ros']
+[2.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ros'
+[2.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_driver' with type 'ros.ament_cmake' and name 'velodyne_driver'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore_ament_install'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_pkg']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_pkg'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_meta']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_meta'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ros']
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ros'
+[2.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_laserscan' with type 'ros.ament_cmake' and name 'velodyne_laserscan'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore'
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore_ament_install'
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_pkg']
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_pkg'
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_meta']
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_meta'
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ros']
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ros'
+[2.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_msgs' with type 'ros.ament_cmake' and name 'velodyne_msgs'
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore_ament_install'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_pkg']
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_pkg'
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_meta']
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_meta'
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ros']
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ros'
+[2.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_pointcloud' with type 'ros.ament_cmake' and name 'velodyne_pointcloud'
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extensions ['ignore', 'ignore_ament_install']
+[2.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extension 'ignore'
+[2.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extension 'ignore_ament_install'
+[2.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extensions ['colcon_pkg']
+[2.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extension 'colcon_pkg'
+[2.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extensions ['colcon_meta']
+[2.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extension 'colcon_meta'
+[2.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extensions ['ros']
+[2.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox) by extension 'ros'
+[2.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xbox' with type 'ros.ament_python' and name 'xbox'
+[2.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.389s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'broadcaster' in 'src/broadcaster'
+[2.389s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lidar' in 'src/lidar'
+[2.389s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lidar_control' in 'src/lidar_control'
+[2.389s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'listener' in 'src/listener'
+[2.390s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_laserscan' in 'src/velodyne/velodyne_laserscan'
+[2.390s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_msgs' in 'src/velodyne/velodyne_msgs'
+[2.390s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_driver' in 'src/velodyne/velodyne_driver'
+[2.390s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_pointcloud' in 'src/velodyne/velodyne_pointcloud'
+[2.390s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne' in 'src/velodyne/velodyne'
+[2.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.406s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/nvidia/master_ws/install
+[2.409s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/nvidia/install
+[2.420s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 349 installed packages in /opt/ros/foxy
+[2.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.834s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'cmake_args' from command line to 'None'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'cmake_target' from command line to 'None'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'cmake_clean_cache' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'cmake_clean_first' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'cmake_force_configure' from command line to 'False'
+[2.836s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'ament_cmake_args' from command line to 'None'
+[2.836s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'catkin_cmake_args' from command line to 'None'
+[2.836s] Level 5:colcon.colcon_core.verb:set package 'launch_car' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.836s] DEBUG:colcon.colcon_core.verb:Building package 'launch_car' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/launch_car', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/launch_car', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/launch_ws/src/launch_car', 'symlink_install': False, 'test_result_base': None}
+[2.838s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'cmake_args' from command line to 'None'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'cmake_target' from command line to 'None'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'cmake_clean_cache' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'cmake_clean_first' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'cmake_force_configure' from command line to 'False'
+[2.840s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'ament_cmake_args' from command line to 'None'
+[2.840s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'catkin_cmake_args' from command line to 'None'
+[2.840s] Level 5:colcon.colcon_core.verb:set package 'realsense_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.840s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/realsense_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/realsense_control', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/realsense_control', 'symlink_install': False, 'test_result_base': None}
+[2.842s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'cmake_args' from command line to 'None'
+[2.842s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'cmake_target' from command line to 'None'
+[2.842s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'cmake_clean_cache' from command line to 'False'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'cmake_clean_first' from command line to 'False'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'cmake_force_configure' from command line to 'False'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'ament_cmake_args' from command line to 'None'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'catkin_cmake_args' from command line to 'None'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'xbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.844s] DEBUG:colcon.colcon_core.verb:Building package 'xbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/master_ws/build/xbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/master_ws/install/xbox', 'merge_install': False, 'path': '/home/nvidia/master_ws/src/xbox', 'symlink_install': False, 'test_result_base': None}
+[2.844s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.850s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.852s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nvidia/master_ws/src/launch_ws/src/launch_car' with build type 'ament_python'
+[2.854s] Level 1:colcon.colcon_core.shell:create_environment_hook('launch_car', 'ament_prefix_path')
+[2.867s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/launch_car/share/launch_car/hook/ament_prefix_path.ps1'
+[2.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/launch_car/share/launch_car/hook/ament_prefix_path.dsv'
+[2.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/launch_car/share/launch_car/hook/ament_prefix_path.sh'
+[2.877s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.877s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.913s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/master_ws/src/realsense_control' with build type 'ament_cmake'
+[2.918s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/master_ws/src/realsense_control'
+[2.923s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.924s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.967s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nvidia/master_ws/src/xbox' with build type 'ament_python'
+[2.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('xbox', 'ament_prefix_path')
+[2.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/xbox/share/xbox/hook/ament_prefix_path.ps1'
+[2.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/xbox/share/xbox/hook/ament_prefix_path.dsv'
+[2.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/xbox/share/xbox/hook/ament_prefix_path.sh'
+[2.985s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.985s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.528s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nvidia/master_ws/src/launch_ws/src/launch_car'
+[4.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[6.114s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nvidia/master_ws/src/xbox'
+[6.119s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.120s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data
+[8.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/src/xbox': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data
+[10.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/src/xbox' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data
+[10.411s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox' for CMake module files
+[10.415s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox' for CMake config files
+[10.421s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox/lib'
+[10.423s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox/bin'
+[10.423s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox/lib/pkgconfig/xbox.pc'
+[10.425s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages'
+[10.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('xbox', 'pythonpath')
+[10.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/xbox/share/xbox/hook/pythonpath.ps1'
+[10.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/xbox/share/xbox/hook/pythonpath.dsv'
+[10.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/xbox/share/xbox/hook/pythonpath.sh'
+[10.437s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/xbox/bin'
+[10.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xbox)
+[10.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/xbox/share/xbox/package.ps1'
+[10.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/xbox/share/xbox/package.dsv'
+[10.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/xbox/share/xbox/package.sh'
+[10.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/xbox/share/xbox/package.bash'
+[10.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/xbox/share/xbox/package.zsh'
+[10.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/xbox/share/colcon-core/packages/xbox)
+[10.468s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car' for CMake module files
+[10.472s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car' for CMake config files
+[10.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data
+[10.478s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car/lib'
+[10.479s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car/bin'
+[10.480s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car/lib/pkgconfig/launch_car.pc'
+[10.481s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages'
+[10.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('launch_car', 'pythonpath')
+[10.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/launch_car/share/launch_car/hook/pythonpath.ps1'
+[10.485s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/launch_car/share/launch_car/hook/pythonpath.dsv'
+[10.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/launch_car/share/launch_car/hook/pythonpath.sh'
+[10.489s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/launch_car/bin'
+[10.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(launch_car)
+[10.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/launch_car/share/launch_car/package.ps1'
+[10.495s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/launch_car/share/launch_car/package.dsv'
+[10.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/launch_car/share/launch_car/package.sh'
+[10.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/launch_car/share/launch_car/package.bash'
+[10.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/launch_car/share/launch_car/package.zsh'
+[10.504s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/launch_car/share/colcon-core/packages/launch_car)
+[31.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[31.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/realsense_control
+[31.441s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_control)
+[31.444s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control' for CMake module files
+[31.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/realsense_control
+[31.450s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control' for CMake config files
+[31.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_control', 'cmake_prefix_path')
+[31.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/hook/cmake_prefix_path.ps1'
+[31.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/hook/cmake_prefix_path.dsv'
+[31.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/hook/cmake_prefix_path.sh'
+[31.463s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/lib'
+[31.463s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/bin'
+[31.464s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/lib/pkgconfig/realsense_control.pc'
+[31.465s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/lib/python3.8/site-packages'
+[31.466s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/bin'
+[31.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.ps1'
+[31.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.dsv'
+[31.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.sh'
+[31.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.bash'
+[31.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.zsh'
+[31.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/realsense_control/share/colcon-core/packages/realsense_control)
+[31.645s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_control)
+[31.648s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control' for CMake module files
+[31.653s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control' for CMake config files
+[31.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_control', 'cmake_prefix_path')
+[31.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/hook/cmake_prefix_path.ps1'
+[31.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/hook/cmake_prefix_path.dsv'
+[31.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/hook/cmake_prefix_path.sh'
+[31.668s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/lib'
+[31.668s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/bin'
+[31.668s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/lib/pkgconfig/realsense_control.pc'
+[31.670s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/lib/python3.8/site-packages'
+[31.671s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/master_ws/install/realsense_control/bin'
+[31.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.ps1'
+[31.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.dsv'
+[31.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.sh'
+[31.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.bash'
+[31.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.zsh'
+[31.684s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/master_ws/install/realsense_control/share/colcon-core/packages/realsense_control)
+[31.686s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[31.689s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[31.692s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[31.692s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[31.731s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[31.732s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[31.732s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[31.806s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[31.808s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.ps1'
+[31.813s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/master_ws/install/_local_setup_util_ps1.py'
+[31.819s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.ps1'
+[31.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.sh'
+[31.831s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/master_ws/install/_local_setup_util_sh.py'
+[31.834s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.sh'
+[31.843s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.bash'
+[31.845s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.bash'
+[31.853s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/master_ws/install/local_setup.zsh'
+[31.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/master_ws/install/setup.zsh'

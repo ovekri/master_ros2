@@ -20,8 +20,8 @@ def generate_launch_description():
                             ("cloud", "/camera/depth/color/points")
                             ],
                 parameters=[
-                            {"decimation": 4},
-                            {"voxel_size": 0.05},
+                            {"decimation": 2},
+                            {"voxel_size": 0.01},
                             {"approx_sync": False},
                             #{"filter_nans": True},
                             #{"min_depth": 0.2},

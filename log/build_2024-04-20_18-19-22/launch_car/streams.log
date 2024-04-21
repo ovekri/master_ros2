@@ -1,0 +1,21 @@
+[5.709s] Invoking command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data
+[7.073s] running egg_info
+[7.076s] writing ../../../../build/launch_car/launch_car.egg-info/PKG-INFO
+[7.078s] writing dependency_links to ../../../../build/launch_car/launch_car.egg-info/dependency_links.txt
+[7.079s] writing entry points to ../../../../build/launch_car/launch_car.egg-info/entry_points.txt
+[7.079s] writing requirements to ../../../../build/launch_car/launch_car.egg-info/requires.txt
+[7.080s] writing top-level names to ../../../../build/launch_car/launch_car.egg-info/top_level.txt
+[7.276s] reading manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[7.282s] writing manifest file '../../../../build/launch_car/launch_car.egg-info/SOURCES.txt'
+[7.283s] running build
+[7.285s] running build_py
+[7.289s] running install
+[7.292s] running install_lib
+[7.297s] running install_data
+[7.298s] copying launch/all_launch.py -> /home/nvidia/master_ws/install/launch_car/share/launch_car/launch
+[7.301s] running install_egg_info
+[7.306s] removing '/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info' (and everything under it)
+[7.307s] Copying ../../../../build/launch_car/launch_car.egg-info to /home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages/launch_car-0.0.0-py3.8.egg-info
+[7.313s] running install_scripts
+[7.396s] writing list of installed files to '/home/nvidia/master_ws/build/launch_car/install.log'
+[7.499s] Invoked command in '/home/nvidia/master_ws/src/launch_ws/src/launch_car' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/launch_car/prefix_override:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/launch_car build --build-base /home/nvidia/master_ws/build/launch_car/build install --record /home/nvidia/master_ws/build/launch_car/install.log --install-scripts $base/lib/launch_car --single-version-externally-managed install_data

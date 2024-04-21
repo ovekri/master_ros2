@@ -20,7 +20,7 @@ class RealsenseBroadcast(Node):                                                 
         t.transform.translation.x = -0.04
         t.transform.translation.y = 0.0
         t.transform.translation.z = 0.04
-        q = quaternion_from_euler(0, -95 * 3.141592 / 180, 90 * 3.141592 / 180)                                                                                       # rotate -45 degrees on the z-axis
+        q = quaternion_from_euler(180 * 3.141592 / 180, -95 * 3.141592 / 180, 90 * 3.141592 / 180)                                                                                       # rotate -45 degrees on the z-axis
         t.transform.rotation.x = q[0]
         t.transform.rotation.y = q[1]
         t.transform.rotation.z = q[2]

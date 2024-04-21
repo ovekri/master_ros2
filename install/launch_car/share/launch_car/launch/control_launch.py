@@ -16,5 +16,10 @@ def generate_launch_description():
             package='xbox',
             executable='control',
             name='control',
+            output='screen'),
+        Node(
+            package='realsense_control',
+            executable='realsense_control',
+            name='realsense_control',
             output='screen')
   ])

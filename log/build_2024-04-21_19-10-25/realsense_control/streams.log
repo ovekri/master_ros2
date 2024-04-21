@@ -1,0 +1,7 @@
+[0.093s] Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[0.374s] [35m[1mScanning dependencies of target realsense_control[0m
+[0.582s] [ 50%] [32mBuilding CXX object CMakeFiles/realsense_control.dir/src/realsense_control.cpp.o[0m
+[0.833s] make[2]: *** [CMakeFiles/realsense_control.dir/build.make:63: CMakeFiles/realsense_control.dir/src/realsense_control.cpp.o] Interrupt
+[0.834s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/realsense_control.dir/all] Interrupt
+[0.835s] make: *** [Makefile:141: all] Interrupt
+[0.843s] Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6

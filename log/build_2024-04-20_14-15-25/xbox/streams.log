@@ -1,0 +1,24 @@
+[3.573s] Invoking command in '/home/nvidia/master_ws/src/xbox': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data
+[4.811s] running egg_info
+[4.813s] writing ../../build/xbox/xbox.egg-info/PKG-INFO
+[4.815s] writing dependency_links to ../../build/xbox/xbox.egg-info/dependency_links.txt
+[4.815s] writing entry points to ../../build/xbox/xbox.egg-info/entry_points.txt
+[4.816s] writing requirements to ../../build/xbox/xbox.egg-info/requires.txt
+[4.817s] writing top-level names to ../../build/xbox/xbox.egg-info/top_level.txt
+[4.994s] reading manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[4.998s] writing manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[4.999s] running build
+[4.999s] running build_py
+[5.000s] copying xbox/control.py -> /home/nvidia/master_ws/build/xbox/build/lib/xbox
+[5.002s] running install
+[5.005s] running install_lib
+[5.010s] copying /home/nvidia/master_ws/build/xbox/build/lib/xbox/control.py -> /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox
+[5.014s] byte-compiling /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/control.py to control.cpython-38.pyc
+[5.024s] running install_data
+[5.024s] running install_egg_info
+[5.032s] removing '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info' (and everything under it)
+[5.034s] Copying ../../build/xbox/xbox.egg-info to /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info
+[5.039s] running install_scripts
+[5.118s] Installing control script to /home/nvidia/master_ws/install/xbox/lib/xbox
+[5.120s] writing list of installed files to '/home/nvidia/master_ws/build/xbox/install.log'
+[5.220s] Invoked command in '/home/nvidia/master_ws/src/xbox' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data

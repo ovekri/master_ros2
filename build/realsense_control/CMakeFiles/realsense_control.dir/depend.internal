@@ -304,6 +304,12 @@ CMakeFiles/realsense_control.dir/src/realsense_control.cpp.o
  /opt/ros/foxy/include/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
  /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/int32__builder.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/int32__traits.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/int32__type_support.hpp
+ /opt/ros/foxy/include/std_msgs/msg/int32.hpp
+ /opt/ros/foxy/include/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/foxy/include/tracetools/config.h
  /opt/ros/foxy/include/tracetools/tracetools.h
  /opt/ros/foxy/include/tracetools/utils.hpp
