@@ -71,7 +71,7 @@ class Controller(Node):
         self.angle_motor = motor
         self.motor.angle = self.angle_motor
         time.sleep(0.15)  # can remove when its safe
-        self.angle_motor = motor
+        self.angle_motor = 106
         self.motor.angle = self.angle_motor
         time.sleep(0.05)
 
@@ -89,6 +89,7 @@ class Controller(Node):
         
         joystick_value = self.joy_state.axes[0]*(-1) # left joystick
         forward = self.joy_state.buttons[0] # button A
+        forward_fast = self.joy_state.buttons[4]
         reverse = self.joy_state.buttons[1] # button B
         autonom = self.joy_state.buttons[3] # button X
         
@@ -99,6 +100,9 @@ class Controller(Node):
                 self.servo.angle = self.angle_servo
             if forward == 1:
                 self.angle_motor = 114
+                self.motor.angle = self.angle_motor
+            elif forward_fast == 1:
+                self.angle_motor = 118 
                 self.motor.angle = self.angle_motor
             elif reverse == 1:
                 self.angle_motor = 99
@@ -113,7 +117,7 @@ class Controller(Node):
             right_auto = self.lidar_decision_state.data[1] # if 1, left direction is free
             left_auto = self.lidar_decision_state.data[2]
             obsticle = self.realsense_decision_state.data
-            self.get_logger().info(f'obsticle: {obsticle}')
+            #self.get_logger().info(f'obsticle: {obsticle}')
 
 
             if (forward_auto != 1):
@@ -130,13 +134,11 @@ class Controller(Node):
                     self.set_state(125, 114)
                 else: 
                     self.get_logger().info('Stop')
-                    self.set_state(55, 106)
+                    self.set_state(85, 106)
 
             if (forward_auto == 1):
                 self.get_logger().info('Forward')
                 self.set_state(85, 114)
-            else: 
-                self.set_state(55, 106)
             
 
 def main(args=None):

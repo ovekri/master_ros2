@@ -16,9 +16,9 @@ public:
 private:
   void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) const {
     // Example region: x between 1 and 2, y between 1 and 2, z between 1 and 2
-    double x_min = 0.2, x_max = 0.8;
-    double y_min = -0.18, y_max = 0.18;
-    double z_min = -0.14, z_max = 0.08;
+    double x_min = 1.0, x_max = 1.2;
+    double y_min = -0.16, y_max = 0.16;
+    double z_min = -0.05, z_max = 0.08;
     int count = 0;
 
 
