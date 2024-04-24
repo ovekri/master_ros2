@@ -1,0 +1,16 @@
+/home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter
+/home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/package_run_dependencies/plane_fitter
+/home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/parent_prefix_path/plane_fitter
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.sh
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.dsv
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.sh
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.dsv
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.bash
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.sh
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.zsh
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.dsv
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.dsv
+/home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/packages/plane_fitter
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig.cmake
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig-version.cmake
+/home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.xml

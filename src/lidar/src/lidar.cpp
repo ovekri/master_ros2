@@ -2,7 +2,7 @@
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "sensor_msgs/point_cloud2_iterator.hpp"
 #include <cmath>
-
+/*
 class PointCloud2Listener : public rclcpp::Node {
 public:
   PointCloud2Listener() : Node("lidar") {
@@ -56,11 +56,13 @@ private:
 
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_realsense_pointcloud2_;
 };
-
-int main(int argc, char *argv[]) {
+*/
+int main(/*int argc, char *argv[]*/) {
+  /*
   rclcpp::init(argc, argv);
   auto node = std::make_shared<PointCloud2Listener>();
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
+  */
 }

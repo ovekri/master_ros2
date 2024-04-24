@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b26e3/fast && /usr/bin/make -f CMakeFiles/cmTC_b26e3.dir/build.make CMakeFiles/cmTC_b26e3.dir/build
+Run Build Command(s):/usr/bin/make cmTC_82d7a/fast && /usr/bin/make -f CMakeFiles/cmTC_82d7a.dir/build.make CMakeFiles/cmTC_82d7a.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b26e3.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b26e3.dir/src.c.o   -c /home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_b26e3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b26e3.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_b26e3.dir/src.c.o  -o cmTC_b26e3 
-/usr/bin/ld: CMakeFiles/cmTC_b26e3.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_82d7a.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_82d7a.dir/src.c.o   -c /home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_82d7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82d7a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_82d7a.dir/src.c.o  -o cmTC_82d7a 
+/usr/bin/ld: CMakeFiles/cmTC_82d7a.dir/src.c.o: in function `main':
 src.c:(.text+0x48): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_b26e3.dir/build.make:87: cmTC_b26e3] Error 1
+make[1]: *** [CMakeFiles/cmTC_82d7a.dir/build.make:87: cmTC_82d7a] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b26e3/fast] Error 2
+make: *** [Makefile:121: cmTC_82d7a/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d52e6/fast && /usr/bin/make -f CMakeFiles/cmTC_d52e6.dir/build.make CMakeFiles/cmTC_d52e6.dir/build
+Run Build Command(s):/usr/bin/make cmTC_afcbc/fast && /usr/bin/make -f CMakeFiles/cmTC_afcbc.dir/build.make CMakeFiles/cmTC_afcbc.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d52e6.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d52e6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d52e6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d52e6.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d52e6.dir/CheckFunctionExists.c.o  -o cmTC_d52e6  -lpthreads 
+Building C object CMakeFiles/cmTC_afcbc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_afcbc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_afcbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afcbc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_afcbc.dir/CheckFunctionExists.c.o  -o cmTC_afcbc  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_d52e6.dir/build.make:87: cmTC_d52e6] Error 1
+make[1]: *** [CMakeFiles/cmTC_afcbc.dir/build.make:87: cmTC_afcbc] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d52e6/fast] Error 2
+make: *** [Makefile:121: cmTC_afcbc/fast] Error 2
 
 
 

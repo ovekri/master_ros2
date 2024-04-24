@@ -1,0 +1,40 @@
+[4.485s] Invoking command in '/home/nvidia/master_ws/src/xbox': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data
+[5.896s] running egg_info
+[5.901s] creating ../../build/xbox/xbox.egg-info
+[5.903s] writing ../../build/xbox/xbox.egg-info/PKG-INFO
+[5.905s] writing dependency_links to ../../build/xbox/xbox.egg-info/dependency_links.txt
+[5.907s] writing entry points to ../../build/xbox/xbox.egg-info/entry_points.txt
+[5.909s] writing requirements to ../../build/xbox/xbox.egg-info/requires.txt
+[5.910s] writing top-level names to ../../build/xbox/xbox.egg-info/top_level.txt
+[5.918s] writing manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[6.088s] reading manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[6.093s] writing manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'
+[6.095s] running build
+[6.096s] running build_py
+[6.098s] creating /home/nvidia/master_ws/build/xbox/build
+[6.099s] creating /home/nvidia/master_ws/build/xbox/build/lib
+[6.100s] creating /home/nvidia/master_ws/build/xbox/build/lib/xbox
+[6.101s] copying xbox/xbox.py -> /home/nvidia/master_ws/build/xbox/build/lib/xbox
+[6.103s] copying xbox/control.py -> /home/nvidia/master_ws/build/xbox/build/lib/xbox
+[6.107s] copying xbox/__init__.py -> /home/nvidia/master_ws/build/xbox/build/lib/xbox
+[6.111s] running install
+[6.115s] running install_lib
+[6.121s] creating /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox
+[6.122s] copying /home/nvidia/master_ws/build/xbox/build/lib/xbox/xbox.py -> /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox
+[6.127s] copying /home/nvidia/master_ws/build/xbox/build/lib/xbox/control.py -> /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox
+[6.128s] copying /home/nvidia/master_ws/build/xbox/build/lib/xbox/__init__.py -> /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox
+[6.132s] byte-compiling /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/xbox.py to xbox.cpython-38.pyc
+[6.144s] byte-compiling /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/control.py to control.cpython-38.pyc
+[6.151s] byte-compiling /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/__init__.py to __init__.cpython-38.pyc
+[6.153s] running install_data
+[6.154s] creating /home/nvidia/master_ws/install/xbox/share/ament_index
+[6.155s] creating /home/nvidia/master_ws/install/xbox/share/ament_index/resource_index
+[6.156s] creating /home/nvidia/master_ws/install/xbox/share/ament_index/resource_index/packages
+[6.158s] copying resource/xbox -> /home/nvidia/master_ws/install/xbox/share/ament_index/resource_index/packages
+[6.161s] copying package.xml -> /home/nvidia/master_ws/install/xbox/share/xbox
+[6.162s] running install_egg_info
+[6.172s] Copying ../../build/xbox/xbox.egg-info to /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info
+[6.181s] running install_scripts
+[6.279s] Installing control script to /home/nvidia/master_ws/install/xbox/lib/xbox
+[6.282s] writing list of installed files to '/home/nvidia/master_ws/build/xbox/install.log'
+[6.404s] Invoked command in '/home/nvidia/master_ws/src/xbox' returned '0': PYTHONPATH=/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbox build --build-base /home/nvidia/master_ws/build/xbox/build install --record /home/nvidia/master_ws/build/xbox/install.log --install-scripts $base/lib/xbox --single-version-externally-managed install_data

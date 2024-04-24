@@ -1,0 +1,22 @@
+[0.175s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[0.753s] [100%] Built target listener
+[0.865s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j4 -l4
+[1.149s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener
+[1.210s] -- Install configuration: ""
+[1.214s] -- Up-to-date: /home/nvidia/master_ws/install/listener/lib/listener/listener
+[1.217s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/package_run_dependencies/listener
+[1.218s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/parent_prefix_path/listener
+[1.220s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/ament_prefix_path.sh
+[1.222s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/ament_prefix_path.dsv
+[1.224s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/path.sh
+[1.225s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/environment/path.dsv
+[1.226s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.bash
+[1.228s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.sh
+[1.229s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.zsh
+[1.230s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/local_setup.dsv
+[1.231s] -- Installing: /home/nvidia/master_ws/install/listener/share/listener/package.dsv
+[1.235s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/ament_index/resource_index/packages/listener
+[1.236s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/cmake/listenerConfig.cmake
+[1.236s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/cmake/listenerConfig-version.cmake
+[1.237s] -- Up-to-date: /home/nvidia/master_ws/install/listener/share/listener/package.xml
+[1.250s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/listener

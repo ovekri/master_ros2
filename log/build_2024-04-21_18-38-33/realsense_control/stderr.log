@@ -1,7 +1,0 @@
-[01m[K/home/nvidia/master_ws/src/realsense_control/src/realsense_control.cpp:[m[K In member function ‘[01m[Kvoid PointCloud2Listener::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/nvidia/master_ws/src/realsense_control/src/realsense_control.cpp:22:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_depth[m[K’ [[01;35m[K-Wunused-variable[m[K]
-   22 |     double [01;35m[Kmax_depth[m[K = -std::numeric_limits<float>::max();
-      |            [01;35m[K^~~~~~~~~[m[K
-[01m[K/home/nvidia/master_ws/src/realsense_control/src/realsense_control.cpp:23:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_depth[m[K’ [[01;35m[K-Wunused-variable[m[K]
-   23 |     double [01;35m[Kmin_depth[m[K = std::numeric_limits<float>::max();
-      |            [01;35m[K^~~~~~~~~[m[K

@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c324a/fast && /usr/bin/make -f CMakeFiles/cmTC_c324a.dir/build.make CMakeFiles/cmTC_c324a.dir/build
+Run Build Command(s):/usr/bin/make cmTC_612c2/fast && /usr/bin/make -f CMakeFiles/cmTC_612c2.dir/build.make CMakeFiles/cmTC_612c2.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c324a.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c324a.dir/src.c.o   -c /home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_c324a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c324a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_c324a.dir/src.c.o  -o cmTC_c324a 
-/usr/bin/ld: CMakeFiles/cmTC_c324a.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_612c2.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_612c2.dir/src.c.o   -c /home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_612c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_612c2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_612c2.dir/src.c.o  -o cmTC_612c2 
+/usr/bin/ld: CMakeFiles/cmTC_612c2.dir/src.c.o: in function `main':
 src.c:(.text+0x48): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_c324a.dir/build.make:87: cmTC_c324a] Error 1
+make[1]: *** [CMakeFiles/cmTC_612c2.dir/build.make:87: cmTC_612c2] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c324a/fast] Error 2
+make: *** [Makefile:121: cmTC_612c2/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e0980/fast && /usr/bin/make -f CMakeFiles/cmTC_e0980.dir/build.make CMakeFiles/cmTC_e0980.dir/build
+Run Build Command(s):/usr/bin/make cmTC_7835e/fast && /usr/bin/make -f CMakeFiles/cmTC_7835e.dir/build.make CMakeFiles/cmTC_7835e.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e0980.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e0980.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e0980
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0980.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e0980.dir/CheckFunctionExists.c.o  -o cmTC_e0980  -lpthreads 
+Building C object CMakeFiles/cmTC_7835e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7835e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7835e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7835e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7835e.dir/CheckFunctionExists.c.o  -o cmTC_7835e  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_e0980.dir/build.make:87: cmTC_e0980] Error 1
+make[1]: *** [CMakeFiles/cmTC_7835e.dir/build.make:87: cmTC_7835e] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/realsense_control/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_e0980/fast] Error 2
+make: *** [Makefile:121: cmTC_7835e/fast] Error 2
 
 
 

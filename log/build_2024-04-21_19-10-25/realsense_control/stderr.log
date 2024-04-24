@@ -1,3 +1,0 @@
-make[2]: *** [CMakeFiles/realsense_control.dir/build.make:63: CMakeFiles/realsense_control.dir/src/realsense_control.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/realsense_control.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt
