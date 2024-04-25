@@ -1,68 +1,90 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "sensor_msgs/point_cloud2_iterator.hpp"
+#include "std_msgs/msg/float32_multi_array.hpp"
+
+// PLC
+#include "pcl_conversions/pcl_conversions.h"
+#include "pcl/point_cloud.h"
+#include "pcl/point_types.h"
+#include "pcl/ModelCoefficients.h"
+#include "pcl/sample_consensus/method_types.h"
+#include "pcl/sample_consensus/model_types.h"
+#include "pcl/segmentation/sac_segmentation.h"
+#include "pcl/filters/extract_indices.h"
+#include "pcl/filters/passthrough.h"
+
 #include <cmath>
-/*
+#include <vector>
+#include <sstream>
+
 class PointCloud2Listener : public rclcpp::Node {
 public:
   PointCloud2Listener() : Node("lidar") {
-    subscription_realsense_pointcloud2_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        "lidar_transformed", 10, std::bind(&PointCloud2Listener::topic_callback, this, std::placeholders::_1));
+    subscription_lidar_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+        "LiDAR_transformed", 10, std::bind(&PointCloud2Listener::topic_callback, this, std::placeholders::_1));
     
-    //publisher_realsense_control_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(                                                                         // makes a publisher who publish message of type pointcloud2 to topic /LiDAR_transformed
-    //    "/realsense_decision", 1);
-  }
-
-private:
-  bool forward() {
-    int counter_tot = 0;
-    int counter_approved = 0;
-    int counter_to_close = 0;
-    double to_close_ratio = 0.0;
-    int decision = 0;
-    
-    for (const auto& point : xyz_point) {
-        counter_tot++;
-        if (point[2] < 0.2 && point[2] > 0.0) { // height
-            if (point[1] < 0.2 && point[1] > -0.2) { // width
-                if (point[0] < 10.0 && point[0] > 0.0) { // have to go when outdoor
-                    counter_approved++;
-                }
-                if (point[0] < 2.0 && point[0] > 0.4) { // distance
-                    counter_to_close++;
-                }
-            }
-        }
-    }
-    if (counter_approved != 0) {
-        to_close_ratio = static_cast<double>(counter_to_close) / counter_approved;
-    }
-    if (to_close_ratio < 0.2 && counter_approved < 30) {
-        decision = 1;
-    }
-    else{
-        decision = 0;
-    }
-    return decision
-  }
-
-  int turn() {
-    
+    publisher_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(                                                                         // makes a publisher who publish message of type pointcloud2 to topic /LiDAR_transformed
+        "/obstacle_distance", 10);
   }
 
   void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) const {
+    RCLCPP_INFO(this->get_logger(), "Received data:");
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_msg (new pcl::PointCloud<pcl::PointXYZ>);
+    pcl::fromROSMsg(*msg, *cloud_msg);
+    std::vector<float> mean(48, 0.0);
+    for (const auto& point : cloud_msg->points) {
+      if (point.z > 0.0 && point.z < 0.15) {
+        float r = std::sqrt(point.x * point.x + point.y * point.y);
+        float theta = std::atan2(point.y, point.x);
+        int binIndex = static_cast<int>((theta + 1.0472) / 0.08727); // 5 degree increments, -60 to 60. 
+        if (binIndex >= 0 && binIndex < 24) { 
+            mean[binIndex * 2] += r;                                 // mean[0] is theta = -60 to -55
+            mean[binIndex * 2 + 1] += 1;                             // mean[1] is number of points in the theta range
+        }
+      }
+    }
 
+    std_msgs::msg::Float32MultiArray lengths;
+    lengths.data.clear(); 
+    for(int i = 0; i < 24; i++) {
+      float value = 0;
+      int k = 23-i;
+      if (mean[k*2+1] != 0) {
+        value = mean[k*2]/mean[k*2+1];
+      }
+      else {
+        value = 100; // high value or infinite. no points found = no obstacle 
+      } 
+      lengths.data.push_back(value);
+    }
+
+    publisher_->publish(lengths); 
+    /*
+    // Creating a string to log the obstacle lengths
+    std::ostringstream oss;
+    oss << "Obstacle vector from lidar is: [";
+    for (size_t j = 0; j < lengths.data.size(); j++) {
+        oss << lengths.data[j];
+        if (j < lengths.data.size() - 1) {
+            oss << ", ";
+        }
+    }
+    oss << "]";
+    RCLCPP_INFO(this->get_logger(), "%s", oss.str().c_str());
+    */
   }
 
-  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_realsense_pointcloud2_;
+private:
+  
+  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_lidar_;
+  rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr publisher_;
 };
-*/
-int main(/*int argc, char *argv[]*/) {
-  /*
+
+int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<PointCloud2Listener>();
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
-  */
 }

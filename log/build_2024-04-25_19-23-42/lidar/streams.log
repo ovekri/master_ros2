@@ -1,0 +1,11 @@
+[0.082s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j4 -l4
+[0.435s] [35m[1mScanning dependencies of target lidar[0m
+[0.661s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[1.222s] [01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Float32MultiArray.hpp: No such file or directory
+[1.223s]     4 | #include [01;31m[K"std_msgs/msg/Float32MultiArray.hpp"[m[K
+[1.223s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.224s] compilation terminated.
+[1.230s] make[2]: *** [CMakeFiles/lidar.dir/build.make:63: CMakeFiles/lidar.dir/src/lidar.cpp.o] Error 1
+[1.232s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar.dir/all] Error 2
+[1.232s] make: *** [Makefile:141: all] Error 2
+[1.241s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j4 -l4

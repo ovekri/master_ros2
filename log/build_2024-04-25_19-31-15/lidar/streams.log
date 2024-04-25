@@ -1,0 +1,88 @@
+[0.064s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j4 -l4
+[0.228s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.340s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.260s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.447s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.468s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.067s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.296s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.305s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.862s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.264s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[3.872s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[3.945s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[3.973s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[3.974s] ** WARNING ** io features related to pcap will be disabled
+[3.974s] ** WARNING ** io features related to png will be disabled
+[4.262s] -- The imported target "vtkParseOGLExt" references the file
+[4.262s]    "/usr/bin/vtkParseOGLExt-7.1"
+[4.263s] but this file does not exist.  Possible reasons include:
+[4.263s] * The file was deleted, renamed, or moved to another location.
+[4.263s] * An install or uninstall procedure did not complete successfully.
+[4.263s] * The installation package was faulty and contained
+[4.264s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[4.265s] but not all the files it references.
+[4.266s] 
+[4.267s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[4.268s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[4.268s] but this file does not exist.  Possible reasons include:
+[4.268s] * The file was deleted, renamed, or moved to another location.
+[4.269s] * An install or uninstall procedure did not complete successfully.
+[4.269s] * The installation package was faulty and contained
+[4.269s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[4.270s] but not all the files it references.
+[4.270s] 
+[4.271s] -- The imported target "vtk" references the file
+[4.271s]    "/usr/bin/vtk"
+[4.273s] but this file does not exist.  Possible reasons include:
+[4.273s] * The file was deleted, renamed, or moved to another location.
+[4.273s] * An install or uninstall procedure did not complete successfully.
+[4.274s] * The installation package was faulty and contained
+[4.274s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[4.275s] but not all the files it references.
+[4.275s] 
+[4.276s] -- The imported target "pvtk" references the file
+[4.277s]    "/usr/bin/pvtk"
+[4.278s] but this file does not exist.  Possible reasons include:
+[4.283s] * The file was deleted, renamed, or moved to another location.
+[4.284s] * An install or uninstall procedure did not complete successfully.
+[4.284s] * The installation package was faulty and contained
+[4.285s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[4.285s] but not all the files it references.
+[4.286s] 
+[4.347s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[4.548s] -- looking for PCL_COMMON
+[4.551s] -- looking for PCL_OCTREE
+[4.553s] -- looking for PCL_IO
+[4.555s] -- looking for PCL_KDTREE
+[4.557s] -- looking for PCL_SEARCH
+[4.560s] -- looking for PCL_SAMPLE_CONSENSUS
+[4.562s] -- looking for PCL_FILTERS
+[4.565s] -- looking for PCL_GEOMETRY
+[4.566s] -- looking for PCL_2D
+[4.568s] -- looking for PCL_FEATURES
+[4.572s] -- looking for PCL_ML
+[4.574s] -- looking for PCL_SEGMENTATION
+[4.698s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.021s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.027s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.030s] -- Configured cppcheck include dirs: 
+[5.031s] -- Configured cppcheck exclude dirs and/or files: 
+[5.034s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.035s] -- Configured cpplint exclude dirs and/or files: 
+[5.037s] -- Added test 'lint_cmake' to check CMake code style
+[5.042s] -- Added test 'uncrustify' to check C / C++ code style
+[5.043s] -- Configured uncrustify additional arguments: 
+[5.044s] -- Added test 'xmllint' to check XML markup files
+[5.064s] -- Configuring done
+[5.289s] -- Generating done
+[5.301s] -- Build files have been written to: /home/nvidia/master_ws/build/lidar
+[5.551s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[6.146s] [01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Float32MultiArray.hpp: No such file or directory
+[6.147s]     4 | #include [01;31m[K"std_msgs/msg/Float32MultiArray.hpp"[m[K
+[6.147s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.148s] compilation terminated.
+[6.155s] make[2]: *** [CMakeFiles/lidar.dir/build.make:63: CMakeFiles/lidar.dir/src/lidar.cpp.o] Error 1
+[6.156s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar.dir/all] Error 2
+[6.156s] make: *** [Makefile:141: all] Error 2
+[6.166s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j4 -l4

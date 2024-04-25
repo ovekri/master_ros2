@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target lidar[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lidar[0m
+[100%] Built target lidar
+-- Install configuration: ""
+-- Installing: /home/nvidia/master_ws/install/lidar/lib/lidar/lidar
+-- Set runtime path of "/home/nvidia/master_ws/install/lidar/lib/lidar/lidar" to ""
+-- Installing: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/package_run_dependencies/lidar
+-- Installing: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/parent_prefix_path/lidar
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/environment/ament_prefix_path.sh
+-- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/environment/path.sh
+-- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/environment/path.dsv
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.bash
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.sh
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.zsh
+-- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.dsv
+-- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/package.dsv
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/packages/lidar
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/cmake/lidarConfig.cmake
+-- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/cmake/lidarConfig-version.cmake
+-- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/package.xml

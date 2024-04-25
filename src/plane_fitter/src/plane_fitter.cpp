@@ -2,6 +2,7 @@
 #include <memory>
 #include <chrono>
 #include <thread>
+#include <cmath>
 
 // ROS2
 #include "rclcpp/rclcpp.hpp"
@@ -99,12 +100,14 @@ class pointCloudPlaneFitter : public rclcpp::Node {
         std::string name_;
         pointCloudPlaneFitter() : Node("point_cloud_plane_fitter") {
             name_ = this->get_name();
-            publisher_feature_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter", 1);
+            publisher_feature_mid_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_mid", 1);
+            publisher_feature_left_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_left", 1);
+            publisher_feature_right_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_right", 1);
             subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
                 "/realsense_transformed", 1, 
-                std::bind(&pointCloudPlaneFitter::pointCloudCb, this, std::placeholders::_1));
+                std::bind(&pointCloudPlaneFitter::splitPointCloud, this, std::placeholders::_1));
             
-            max_distance_ = 0.035;
+            max_distance_ = 0.25;
 
             createColors();
 
@@ -117,15 +120,53 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             return vector[int(size * percentile/100.0)];
         }
 
-        void pointCloudSplitter(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
-            
+        std::tuple<float, float> pointToSpherical(float x, float y) {
+            float r = std::sqrt(x * x + y * y);
+            float theta = std::atan2(y, x);
+
+            return std::make_tuple(r, theta);
         }
 
-        void pointCloudCb(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
-            // Convert to pcl pointcloud
+        void splitPointCloud(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
             pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_msg (new pcl::PointCloud<pcl::PointXYZ>);
             pcl::fromROSMsg(*msg, *cloud_msg);
             RCLCPP_INFO(get_logger(), "%s: new pointcloud (%i, %i)(%zu)", name_.c_str(), cloud_msg->width, cloud_msg->height, cloud_msg->size());
+
+            pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_mid(new pcl::PointCloud<pcl::PointXYZ>());
+            pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_left(new pcl::PointCloud<pcl::PointXYZ>());
+            pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_right(new pcl::PointCloud<pcl::PointXYZ>());
+
+            for (const auto& point : cloud_msg->points) {
+                float r = std::sqrt(point.x * point.x + point.y * point.y);
+                float theta = std::atan2(point.y, point.x);
+                if (r < 1 && r > 0.2) {
+                    if (theta > -0.15 && theta < 0.15) {
+                        //std::cout << "Point z value: " << point.z << std::endl;
+                        cloud_mid->points.push_back(point);
+                    }
+                    if (theta > 0.15 && theta < 0.45) {
+                        cloud_left->points.push_back(point);
+                    }
+                    if (theta > -0.45 && theta < -0.15) {
+                        cloud_right->points.push_back(point);
+                    }
+                }
+            }
+            publisher_feature_mid_->publish(pointCloudCb(cloud_mid));
+            publisher_feature_left_->publish(pointCloudCb(cloud_left));
+            publisher_feature_right_->publish(pointCloudCb(cloud_right));
+        }
+
+        std_msgs::msg::Float64MultiArray pointCloudCb(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud_msg) {
+            RCLCPP_INFO(this->get_logger(), "Processing cloud with %lu points.", cloud_msg->points.size());
+            std_msgs::msg::Float64MultiArray result;
+            if (cloud_msg->points.empty()) {
+                RCLCPP_ERROR(this->get_logger(), "The input cloud is empty.");
+                // You can optionally add a flag or specific data to indicate the error in processing
+                result.data = {-1}; // Example error flag
+                return result;
+            }
+
             // Filter cloud
             pcl::PassThrough<pcl::PointXYZ> pass;
             pass.setInputCloud(cloud_msg);
@@ -142,8 +183,6 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             seg.setModelType (pcl::SACMODEL_PLANE);
             seg.setMethodType (pcl::SAC_RANSAC);
             seg.setDistanceThreshold(max_distance_);
-            //Create pointcloud to publish inliers
-            pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_pub(new pcl::PointCloud<pcl::PointXYZRGB>);
             int original_size(cloud->height*cloud->width);
             // Fit the plane
             seg.setInputCloud(cloud);
@@ -169,7 +208,7 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             mean_error /= inliers->indices.size();
             MSE /= inliers->indices.size();
             // Compute Standard deviation
-            ColorMap cm(min_error,max_error);
+            ColorMap cm(min_error, max_error);
             double sigma(0);
             for (size_t i=0;i<inliers->indices.size();i++){
                 sigma += pow(err[i] - mean_error,2);
@@ -177,23 +216,6 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             sigma = sqrt(sigma/inliers->indices.size());
 
             RCLCPP_INFO(get_logger(), "%s: me: %lu points, %.2f(mm), mse: %.2f, sd: %.2f (mm), %.1f%% of points",name_.c_str(),inliers->indices.size(),mean_error,MSE,sigma,(double(inliers->indices.size()) / double(original_size))*100.0);
-            if (logFile_.is_open()) {
-                if (firstPrint_) {
-                    logFile_ << "mean, mse, sd, inliers\n";
-                    firstPrint_ = false;
-                } else {
-                    logFile_ << "\n";
-                }
-                if (inliers->indices.size() < 5){
-                    logFile_ << "0.0, 0.0, 0.0, " << inliers->indices.size();
-                } else {
-
-                    logFile_ << std::to_string(mean_error) << ", "
-                            << std::to_string(MSE) << ", "
-                            << std::to_string(sigma) << ", "
-                            << inliers->indices.size();
-                }
-            }
             std_msgs::msg::Float64MultiArray featureMsg;
             // set up dimensions
             featureMsg.layout.dim.push_back(std_msgs::msg::MultiArrayDimension());
@@ -213,7 +235,7 @@ class pointCloudPlaneFitter : public rclcpp::Node {
                 featureMsg.data[2] = sigma;
                 featureMsg.data[3] = inliers->indices.size();
             }
-            publisher_feature_->publish(featureMsg);
+            return featureMsg;
         }
 
         void createColors(){
@@ -245,12 +267,14 @@ class pointCloudPlaneFitter : public rclcpp::Node {
         bool firstPrint_;
         std::vector<Color> colors;
 
-        rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_feature_;
+        rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_feature_mid_;
+        rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_feature_left_;
+        rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_feature_right_;
         rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
 };
 
 int main(int argc, char** argv) {
-    std::this_thread::sleep_for(std::chrono::seconds(10));
+    std::this_thread::sleep_for(std::chrono::seconds(4));
     rclcpp::init(argc, argv);
     auto node = std::make_shared<pointCloudPlaneFitter>();
     rclcpp::spin(node);

@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target lidar[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:[m[K In member function ‘[01m[Kvoid PointCloud2Listener::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+   67 |     for (size_t j = 0; j < [01;31m[Kmessage[m[K.data.size(); j++) {
+      |                            [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/lidar.dir/build.make:63: CMakeFiles/lidar.dir/src/lidar.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -19,15 +19,26 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(pcl_conversions REQUIRED)
+find_package(PCL REQUIRED COMPONENTS common io filters segmentation)
 
-####### new ########
+include_directories(
+  ${PCL_INCLUDE_DIRS}
+)
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
 
 add_executable(lidar src/lidar.cpp)
-ament_target_dependencies(lidar rclcpp sensor_msgs)
-
+ament_target_dependencies(lidar
+  rclcpp
+  sensor_msgs
+  std_msgs
+  pcl_conversions
+)
+target_link_libraries(lidar
+  ${PCL_LIBRARIES}
+)
 install(TARGETS
   lidar
   DESTINATION lib/${PROJECT_NAME}

@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.001503] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.002648] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.003353] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.004135] (-) JobUnselected: {'identifier': 'listener'}
+[0.004349] (-) JobUnselected: {'identifier': 'plane_fitter'}
+[0.004461] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.004695] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.004964] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.005239] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.006389] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.006506] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.006651] (-) JobUnselected: {'identifier': 'xbox'}
+[0.006800] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.006906] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.063954] (lidar) JobProgress: {'identifier': 'lidar', 'progress': 'cmake'}
+[0.068307] (lidar) JobProgress: {'identifier': 'lidar', 'progress': 'build'}
+[0.073166] (lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/master_ws/build/lidar', '--', '-j4', '-l4'], 'cwd': '/home/nvidia/master_ws/build/lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 50407 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/lidar'), ('SSH_CONNECTION', '192.168.50.129 50407 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[0.102006] (-) TimerEvent: {}
+[0.203941] (-) TimerEvent: {}
+[0.249162] (lidar) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.304140] (-) TimerEvent: {}
+[0.377184] (lidar) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.404346] (-) TimerEvent: {}
+[0.505956] (-) TimerEvent: {}
+[0.607353] (-) TimerEvent: {}
+[0.709063] (-) TimerEvent: {}
+[0.810911] (-) TimerEvent: {}
+[0.912571] (-) TimerEvent: {}
+[1.013467] (-) TimerEvent: {}
+[1.114296] (-) TimerEvent: {}
+[1.215171] (-) TimerEvent: {}
+[1.316295] (-) TimerEvent: {}
+[1.339196] (lidar) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.416552] (-) TimerEvent: {}
+[1.517687] (-) TimerEvent: {}
+[1.534434] (lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.555796] (lidar) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.617911] (-) TimerEvent: {}
+[1.718995] (-) TimerEvent: {}
+[1.820037] (-) TimerEvent: {}
+[1.921112] (-) TimerEvent: {}
+[2.022254] (-) TimerEvent: {}
+[2.123429] (-) TimerEvent: {}
+[2.174802] (lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.223644] (-) TimerEvent: {}
+[2.325368] (-) TimerEvent: {}
+[2.424161] (lidar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.425425] (-) TimerEvent: {}
+[2.434210] (lidar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.525679] (-) TimerEvent: {}
+[2.627406] (-) TimerEvent: {}
+[2.728399] (-) TimerEvent: {}
+[2.829375] (-) TimerEvent: {}
+[2.930317] (-) TimerEvent: {}
+[3.029648] (lidar) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[3.030360] (-) TimerEvent: {}
+[3.131070] (-) TimerEvent: {}
+[3.231977] (-) TimerEvent: {}
+[3.333123] (-) TimerEvent: {}
+[3.434123] (-) TimerEvent: {}
+[3.465744] (lidar) StdoutLine: {'line': b'-- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)\n'}
+[3.534441] (-) TimerEvent: {}
+[3.635399] (-) TimerEvent: {}
+[3.738086] (-) TimerEvent: {}
+[3.839692] (-) TimerEvent: {}
+[3.941268] (-) TimerEvent: {}
+[4.043018] (-) TimerEvent: {}
+[4.133021] (lidar) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[4.143246] (-) TimerEvent: {}
+[4.243916] (lidar) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[4.244668] (-) TimerEvent: {}
+[4.345614] (-) TimerEvent: {}
+[4.446705] (-) TimerEvent: {}
+[4.491894] (lidar) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[4.492827] (lidar) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[4.546975] (-) TimerEvent: {}
+[4.648035] (-) TimerEvent: {}
+[4.749376] (-) TimerEvent: {}
+[4.846006] (lidar) StdoutLine: {'line': b'-- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex \n'}
+[4.849556] (-) TimerEvent: {}
+[4.871182] (lidar) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[4.949796] (-) TimerEvent: {}
+[4.984408] (lidar) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[5.049977] (-) TimerEvent: {}
+[5.150813] (-) TimerEvent: {}
+[5.235422] (lidar) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[5.251045] (-) TimerEvent: {}
+[5.352040] (-) TimerEvent: {}
+[5.453169] (-) TimerEvent: {}
+[5.554900] (-) TimerEvent: {}
+[5.597568] (lidar) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so  \n'}
+[5.598731] (lidar) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[5.655128] (-) TimerEvent: {}
+[5.756481] (-) TimerEvent: {}
+[5.857430] (-) TimerEvent: {}
+[5.958666] (-) TimerEvent: {}
+[5.970017] (lidar) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/libOpenNI2.so  \n'}
+[5.971281] (lidar) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[5.972080] (lidar) StderrLine: {'line': b'** WARNING ** io features related to pcap will be disabled\n'}
+[5.972821] (lidar) StderrLine: {'line': b'** WARNING ** io features related to png will be disabled\n'}
+[6.058850] (-) TimerEvent: {}
+[6.159941] (-) TimerEvent: {}
+[6.256996] (lidar) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[6.257843] (lidar) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[6.258216] (lidar) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[6.258519] (lidar) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[6.258874] (lidar) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[6.259149] (lidar) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[6.259575] (lidar) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[6.259872] (lidar) StdoutLine: {'line': b'but not all the files it references.\n'}
+[6.260127] (-) TimerEvent: {}
+[6.260687] (lidar) StdoutLine: {'line': b'\n'}
+[6.263058] (lidar) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[6.263599] (lidar) StdoutLine: {'line': b'   "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[6.265885] (lidar) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[6.266439] (lidar) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[6.267059] (lidar) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[6.267393] (lidar) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[6.267676] (lidar) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[6.270171] (lidar) StdoutLine: {'line': b'but not all the files it references.\n'}
+[6.270563] (lidar) StdoutLine: {'line': b'\n'}
+[6.275276] (lidar) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[6.279241] (lidar) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[6.279913] (lidar) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[6.280471] (lidar) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[6.280991] (lidar) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[6.281318] (lidar) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[6.282680] (lidar) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[6.283046] (lidar) StdoutLine: {'line': b'but not all the files it references.\n'}
+[6.283351] (lidar) StdoutLine: {'line': b'\n'}
+[6.283622] (lidar) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[6.284305] (lidar) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[6.284602] (lidar) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[6.284986] (lidar) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[6.285286] (lidar) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[6.285556] (lidar) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[6.285896] (lidar) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[6.286266] (lidar) StdoutLine: {'line': b'but not all the files it references.\n'}
+[6.286538] (lidar) StdoutLine: {'line': b'\n'}
+[6.360400] (-) TimerEvent: {}
+[6.373382] (lidar) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[6.374548] (lidar) StderrLine: {'line': b'** WARNING ** io features related to libusb-1.0 will be disabled\n'}
+[6.449947] (lidar) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[6.460661] (-) TimerEvent: {}
+[6.554898] (lidar) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[6.560953] (-) TimerEvent: {}
+[6.661777] (-) TimerEvent: {}
+[6.763533] (-) TimerEvent: {}
+[6.819369] (lidar) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[6.863777] (-) TimerEvent: {}
+[6.930105] (lidar) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[6.934382] (lidar) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[6.935348] (lidar) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[6.940229] (lidar) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[6.941264] (lidar) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[6.945384] (lidar) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[6.946795] (lidar) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[6.951644] (lidar) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[6.952669] (lidar) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[6.956939] (lidar) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[6.957875] (lidar) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[6.961630] (lidar) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[6.962660] (lidar) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[6.963873] (-) TimerEvent: {}
+[6.966560] (lidar) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[6.967888] (lidar) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[6.968845] (lidar) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[6.969702] (lidar) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[6.970724] (lidar) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[6.974760] (lidar) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[6.977108] (lidar) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[6.978706] (lidar) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[6.983114] (lidar) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[6.984017] (lidar) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[6.988450] (lidar) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[6.992635] (lidar) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;pcl_kdtree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_features;pcl_ml;pcl_segmentation;/usr/lib/aarch64-linux-gnu/libboost_system.so;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;/usr/lib/aarch64-linux-gnu/libboost_iostreams.so;/usr/lib/aarch64-linux-gnu/libboost_regex.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/aarch64-linux-gnu/libfreetype.so;/usr/lib/aarch64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/aarch64-linux-gnu/libjpeg.so;/usr/lib/aarch64-linux-gnu/libpng.so;/usr/lib/aarch64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/aarch64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  \n'}
+[7.064116] (-) TimerEvent: {}
+[7.105084] (lidar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[7.164339] (-) TimerEvent: {}
+[7.265427] (-) TimerEvent: {}
+[7.366371] (-) TimerEvent: {}
+[7.418063] (lidar) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.423674] (lidar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.425797] (lidar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.426416] (lidar) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.431530] (lidar) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.432216] (lidar) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.434235] (lidar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.438569] (lidar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.439212] (lidar) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.443678] (lidar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.461109] (lidar) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.466610] (-) TimerEvent: {}
+[7.568135] (-) TimerEvent: {}
+[7.669533] (-) TimerEvent: {}
+[7.694994] (lidar) StdoutLine: {'line': b'-- Generating done\n'}
+[7.707172] (lidar) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/master_ws/build/lidar\n'}
+[7.769762] (-) TimerEvent: {}
+[7.859862] (lidar) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lidar\x1b[0m\n'}
+[7.869965] (-) TimerEvent: {}
+[7.971166] (lidar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o\x1b[0m\n'}
+[7.971965] (-) TimerEvent: {}
+[8.076017] (-) TimerEvent: {}
+[8.177393] (-) TimerEvent: {}
+[8.278330] (-) TimerEvent: {}
+[8.379519] (-) TimerEvent: {}
+[8.480509] (-) TimerEvent: {}
+[8.581065] (lidar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kstd_msgs/msg/Float32MultiArray.hpp: No such file or directory\n'}
+[8.581937] (-) TimerEvent: {}
+[8.582379] (lidar) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K"std_msgs/msg/Float32MultiArray.hpp"\x1b[m\x1b[K\n'}
+[8.582729] (lidar) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.583021] (lidar) StderrLine: {'line': b'compilation terminated.\n'}
+[8.590135] (lidar) StderrLine: {'line': b'make[2]: *** [CMakeFiles/lidar.dir/build.make:63: CMakeFiles/lidar.dir/src/lidar.cpp.o] Error 1\n'}
+[8.591120] (lidar) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar.dir/all] Error 2\n'}
+[8.591546] (lidar) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.601800] (lidar) CommandEnded: {'returncode': 2}
+[8.682634] (-) TimerEvent: {}
+[8.786084] (-) TimerEvent: {}
+[8.800701] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 2}
+[8.813047] (-) EventReactorShutdown: {}
