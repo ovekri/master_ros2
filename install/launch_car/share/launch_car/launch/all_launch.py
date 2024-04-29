@@ -32,7 +32,7 @@ def generate_launch_description():
             os.path.join(get_package_share_directory('realsense2_camera'), 'launch', 'rs_launch.py')),
         launch_arguments={
             "depth_module.profile": "640x480x6", #640x480x30 848x480x15 1280x720x?
-            #"rgb_camera.profile": "640x480x6"
+            "rgb_camera.profile": "640x480x6"
         }.items()
     )
     

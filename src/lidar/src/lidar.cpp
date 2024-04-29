@@ -32,35 +32,37 @@ public:
     RCLCPP_INFO(this->get_logger(), "Received data:");
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_msg (new pcl::PointCloud<pcl::PointXYZ>);
     pcl::fromROSMsg(*msg, *cloud_msg);
-    std::vector<float> mean(48, 0.0);
+    std::vector<float> mean(40, 0.0);
+    std::vector<int> counter(20, 0.0);
     for (const auto& point : cloud_msg->points) {
       if (point.z > 0.0 && point.z < 0.15) {
         float r = std::sqrt(point.x * point.x + point.y * point.y);
         float theta = std::atan2(point.y, point.x);
-        int binIndex = static_cast<int>((theta + 1.0472) / 0.08727); // 5 degree increments, -60 to 60. 
-        if (binIndex >= 0 && binIndex < 24) { 
+        int binIndex = static_cast<int>((theta + 0.69816) / 0.07); // 4 degree increments, -40 to 40. 
+        if (binIndex >= 0 && binIndex < 20) { 
             mean[binIndex * 2] += r;                                 // mean[0] is theta = -60 to -55
             mean[binIndex * 2 + 1] += 1;                             // mean[1] is number of points in the theta range
+            counter[binIndex] += 1;
         }
       }
     }
 
     std_msgs::msg::Float32MultiArray lengths;
     lengths.data.clear(); 
-    for(int i = 0; i < 24; i++) {
+    for(int i = 0; i < 20; i++) {
       float value = 0;
-      int k = 23-i;
-      if (mean[k*2+1] != 0) {
+      int k = 19-i;
+      if (mean[k*2+1] != 0 && counter[19-i] > 5) {
         value = mean[k*2]/mean[k*2+1];
       }
       else {
-        value = 100; // high value or infinite. no points found = no obstacle 
+        value = 11; // high value or infinite. no points found = no obstacle 
       } 
       lengths.data.push_back(value);
     }
 
     publisher_->publish(lengths); 
-    /*
+    
     // Creating a string to log the obstacle lengths
     std::ostringstream oss;
     oss << "Obstacle vector from lidar is: [";
@@ -72,7 +74,6 @@ public:
     }
     oss << "]";
     RCLCPP_INFO(this->get_logger(), "%s", oss.str().c_str());
-    */
   }
 
 private:

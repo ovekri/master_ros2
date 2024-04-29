@@ -77,6 +77,7 @@ class Controller(Node):
 
 
     def control(self):
+        """
         if self.joy_state == None or self.lidar_decision_state == None or self.realsense_decision_state == None:
             #self.get_logger().info('Waiting for both joy and decision messages.')
             if self.joy_state == None:
@@ -86,13 +87,12 @@ class Controller(Node):
             if self.realsense_decision_state == None:
                 self.get_logger().info('Waiting for realsense')
             return
-        
+        """
         joystick_value = self.joy_state.axes[0]*(-1) # left joystick
         forward = self.joy_state.buttons[0] # button A
         forward_fast = self.joy_state.buttons[4]
         reverse = self.joy_state.buttons[1] # button B
         autonom = self.joy_state.buttons[3] # button X
-        
         
         if autonom == 0: # manually controled
             if joystick_value != 0:

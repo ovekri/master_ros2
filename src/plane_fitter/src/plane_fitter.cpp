@@ -139,19 +139,20 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             for (const auto& point : cloud_msg->points) {
                 float r = std::sqrt(point.x * point.x + point.y * point.y);
                 float theta = std::atan2(point.y, point.x);
-                if (r < 1 && r > 0.2) {
-                    if (theta > -0.15 && theta < 0.15) {
+                if (r < 2.0 && r > 0.4 && point.y > - 1.0 && point.y < 1.0) {
+                    if (theta > -0.22 && theta < 0.22) {
                         //std::cout << "Point z value: " << point.z << std::endl;
                         cloud_mid->points.push_back(point);
                     }
-                    if (theta > 0.15 && theta < 0.45) {
+                    if (theta > 0.22 && theta < 0.66) {
                         cloud_left->points.push_back(point);
                     }
-                    if (theta > -0.45 && theta < -0.15) {
+                    if (theta > -0.66 && theta < -0.22) {
                         cloud_right->points.push_back(point);
                     }
                 }
             }
+            
             publisher_feature_mid_->publish(pointCloudCb(cloud_mid));
             publisher_feature_left_->publish(pointCloudCb(cloud_left));
             publisher_feature_right_->publish(pointCloudCb(cloud_right));

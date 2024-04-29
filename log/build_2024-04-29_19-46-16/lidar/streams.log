@@ -1,0 +1,26 @@
+[0.115s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j6 -l6
+[0.679s] [35m[1mScanning dependencies of target lidar[0m
+[1.121s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[80.162s] [100%] [32m[1mLinking CXX executable lidar[0m
+[83.744s] [100%] Built target lidar
+[83.835s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j6 -l6
+[84.145s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/lidar
+[84.234s] -- Install configuration: ""
+[84.237s] -- Installing: /home/nvidia/master_ws/install/lidar/lib/lidar/lidar
+[84.458s] -- Set runtime path of "/home/nvidia/master_ws/install/lidar/lib/lidar/lidar" to ""
+[84.460s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/package_run_dependencies/lidar
+[84.460s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/parent_prefix_path/lidar
+[84.461s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/environment/ament_prefix_path.sh
+[84.462s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/environment/ament_prefix_path.dsv
+[84.464s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/environment/path.sh
+[84.466s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/environment/path.dsv
+[84.472s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.bash
+[84.474s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.sh
+[84.474s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.zsh
+[84.475s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.dsv
+[84.475s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/package.dsv
+[84.477s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/packages/lidar
+[84.477s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/cmake/lidarConfig.cmake
+[84.478s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/cmake/lidarConfig-version.cmake
+[84.479s] -- Up-to-date: /home/nvidia/master_ws/install/lidar/share/lidar/package.xml
+[84.494s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/lidar

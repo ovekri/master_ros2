@@ -1,0 +1,11 @@
+[0.112s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j6 -l6
+[0.661s] [35m[1mScanning dependencies of target lidar[0m
+[1.177s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[39.045s] [01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:[m[K In member function ‘[01m[Kvoid PointCloud2Listener::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const[m[K’:
+[39.047s] [01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:55:45:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kcounter.std::vector<int>::operator[](((std::vector<int>::size_type)(15 - i)))[m[K’, which is of non-class type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K’ {aka ‘[01m[Kint[m[K’}
+[39.049s]    55 |       if (mean[k*2+1] != 0 && counter[15-i].[01;31m[Ksize[m[K() > 5) {
+[39.050s]       |                                             [01;31m[K^~~~[m[K
+[56.317s] make[2]: *** [CMakeFiles/lidar.dir/build.make:63: CMakeFiles/lidar.dir/src/lidar.cpp.o] Error 1
+[56.319s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar.dir/all] Error 2
+[56.319s] make: *** [Makefile:141: all] Error 2
+[56.336s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j6 -l6
