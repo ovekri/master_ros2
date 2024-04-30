@@ -94,7 +94,7 @@ class Controller(Node):
         reverse = self.joy_state.buttons[1] # button B
         autonom = self.joy_state.buttons[3] # button X
         
-        if autonom == 0: # manually controled
+        if autonom == 0: # manually controlled
             if joystick_value != 0:
                 self.angle_servo = joystick_value*35 + 90 # 55-90-125
                 self.servo.angle = self.angle_servo
