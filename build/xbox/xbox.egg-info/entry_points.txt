@@ -1,3 +1,4 @@
 [console_scripts]
 control = xbox.control:main
+new_control = xbox.new_control:main
 

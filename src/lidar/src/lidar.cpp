@@ -30,6 +30,7 @@ public:
 
   void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) const {
     //RCLCPP_INFO(this->get_logger(), "Received data:");
+    static bool successful_publish = false;
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_msg (new pcl::PointCloud<pcl::PointXYZ>);
     pcl::fromROSMsg(*msg, *cloud_msg);
     std::vector<float> mean(38, 0.0);
@@ -38,7 +39,7 @@ public:
       if (point.z > 0.0 && point.z < 0.15) {
         float r = std::sqrt(point.x * point.x + point.y * point.y);
         float theta = std::atan2(point.y, point.x);
-        int binIndex = static_cast<int>((theta + 0.69816) / 0.066); // 4 degree increments, -38 to 38. 
+        int binIndex = static_cast<int>((theta + 0.69816) / 0.069816); // 4 degree increments, -38 to 38. 
         if (binIndex >= 0 && binIndex < 19) { 
             mean[binIndex * 2] += r;                                 // mean[0] is theta = -38 to -34
             mean[binIndex * 2 + 1] += 1;                             // mean[1] is number of points in the theta range
@@ -56,12 +57,17 @@ public:
         value = mean[k*2]/mean[k*2+1];
       }
       else {
-        value = 22; // high value or infinite. no points found = no obstacle 
+        value = 11; // high value or infinite. no points found = no obstacle, or to close?
       } 
       lengths.data.push_back(value);
     }
 
     publisher_->publish(lengths); 
+
+    if (!successful_publish) {
+      RCLCPP_INFO(this->get_logger(), "FTG data published");
+      successful_publish = true;
+    }
     /*
     // Creating a string to log the obstacle lengths
     std::ostringstream oss;
@@ -79,7 +85,6 @@ public:
 
 
 private:
-  
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_lidar_;
   rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr publisher_;
 };

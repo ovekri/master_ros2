@@ -1,0 +1,5 @@
+  File "/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/new_control.py", line 196
+    self.get_logger().info(f'Gap chosen': {gap_chosen}, size: {max_length}')
+                                        ^
+SyntaxError: invalid syntax
+

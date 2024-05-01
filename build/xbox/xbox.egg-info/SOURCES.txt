@@ -14,4 +14,5 @@ test/test_flake8.py
 test/test_pep257.py
 xbox/__init__.py
 xbox/control.py
+xbox/new_control.py
 xbox/xbox.py

@@ -1,0 +1,5 @@
+  File "/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/new_control.py", line 111
+    [5.772433   4.5977125  4.7312922  1.7574326  0.97158563 0.95507544
+                ^
+SyntaxError: invalid syntax
+
