@@ -1,0 +1,438 @@
+[0.000000] (-) TimerEvent: {}
+[0.001452] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.002312] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.003334] (-) JobUnselected: {'identifier': 'lidar'}
+[0.004648] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.005109] (-) JobUnselected: {'identifier': 'listener'}
+[0.005276] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.005523] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.005826] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.005983] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.006128] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.006747] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.006926] (-) JobUnselected: {'identifier': 'xbox'}
+[0.007128] (plane_fitter) JobQueued: {'identifier': 'plane_fitter', 'dependencies': OrderedDict()}
+[0.007334] (plane_fitter) JobStarted: {'identifier': 'plane_fitter'}
+[0.071356] (plane_fitter) JobProgress: {'identifier': 'plane_fitter', 'progress': 'cmake'}
+[0.077652] (plane_fitter) JobProgress: {'identifier': 'plane_fitter', 'progress': 'build'}
+[0.082603] (plane_fitter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/master_ws/build/plane_fitter', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/master_ws/build/plane_fitter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 58442 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/plane_fitter'), ('SSH_CONNECTION', '192.168.50.129 58442 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[0.110704] (-) TimerEvent: {}
+[0.212787] (-) TimerEvent: {}
+[0.314054] (-) TimerEvent: {}
+[0.415162] (-) TimerEvent: {}
+[0.503356] (plane_fitter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target plane_fitter\x1b[0m\n'}
+[0.515354] (-) TimerEvent: {}
+[0.616294] (-) TimerEvent: {}
+[0.717322] (-) TimerEvent: {}
+[0.818313] (-) TimerEvent: {}
+[0.915970] (plane_fitter) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o\x1b[0m\n'}
+[0.918424] (-) TimerEvent: {}
+[1.019229] (-) TimerEvent: {}
+[1.120323] (-) TimerEvent: {}
+[1.221399] (-) TimerEvent: {}
+[1.322603] (-) TimerEvent: {}
+[1.423698] (-) TimerEvent: {}
+[1.524752] (-) TimerEvent: {}
+[1.625831] (-) TimerEvent: {}
+[1.726864] (-) TimerEvent: {}
+[1.827913] (-) TimerEvent: {}
+[1.928930] (-) TimerEvent: {}
+[2.030028] (-) TimerEvent: {}
+[2.131069] (-) TimerEvent: {}
+[2.232205] (-) TimerEvent: {}
+[2.333262] (-) TimerEvent: {}
+[2.434467] (-) TimerEvent: {}
+[2.535528] (-) TimerEvent: {}
+[2.636604] (-) TimerEvent: {}
+[2.737787] (-) TimerEvent: {}
+[2.838822] (-) TimerEvent: {}
+[2.939896] (-) TimerEvent: {}
+[3.040943] (-) TimerEvent: {}
+[3.142002] (-) TimerEvent: {}
+[3.243011] (-) TimerEvent: {}
+[3.344129] (-) TimerEvent: {}
+[3.445098] (-) TimerEvent: {}
+[3.546177] (-) TimerEvent: {}
+[3.647236] (-) TimerEvent: {}
+[3.748283] (-) TimerEvent: {}
+[3.849323] (-) TimerEvent: {}
+[3.950341] (-) TimerEvent: {}
+[4.051442] (-) TimerEvent: {}
+[4.152476] (-) TimerEvent: {}
+[4.253560] (-) TimerEvent: {}
+[4.354674] (-) TimerEvent: {}
+[4.455679] (-) TimerEvent: {}
+[4.556772] (-) TimerEvent: {}
+[4.657814] (-) TimerEvent: {}
+[4.758857] (-) TimerEvent: {}
+[4.859927] (-) TimerEvent: {}
+[4.960989] (-) TimerEvent: {}
+[5.062135] (-) TimerEvent: {}
+[5.163236] (-) TimerEvent: {}
+[5.264223] (-) TimerEvent: {}
+[5.365326] (-) TimerEvent: {}
+[5.466458] (-) TimerEvent: {}
+[5.567559] (-) TimerEvent: {}
+[5.668630] (-) TimerEvent: {}
+[5.769669] (-) TimerEvent: {}
+[5.870661] (-) TimerEvent: {}
+[5.971667] (-) TimerEvent: {}
+[6.072700] (-) TimerEvent: {}
+[6.173791] (-) TimerEvent: {}
+[6.274930] (-) TimerEvent: {}
+[6.376007] (-) TimerEvent: {}
+[6.477070] (-) TimerEvent: {}
+[6.578161] (-) TimerEvent: {}
+[6.679253] (-) TimerEvent: {}
+[6.780298] (-) TimerEvent: {}
+[6.881355] (-) TimerEvent: {}
+[6.982461] (-) TimerEvent: {}
+[7.083509] (-) TimerEvent: {}
+[7.184541] (-) TimerEvent: {}
+[7.285556] (-) TimerEvent: {}
+[7.386620] (-) TimerEvent: {}
+[7.487577] (-) TimerEvent: {}
+[7.588533] (-) TimerEvent: {}
+[7.689623] (-) TimerEvent: {}
+[7.790603] (-) TimerEvent: {}
+[7.891592] (-) TimerEvent: {}
+[7.992631] (-) TimerEvent: {}
+[8.093718] (-) TimerEvent: {}
+[8.194813] (-) TimerEvent: {}
+[8.295793] (-) TimerEvent: {}
+[8.396838] (-) TimerEvent: {}
+[8.497844] (-) TimerEvent: {}
+[8.598866] (-) TimerEvent: {}
+[8.699931] (-) TimerEvent: {}
+[8.801005] (-) TimerEvent: {}
+[8.902112] (-) TimerEvent: {}
+[9.003175] (-) TimerEvent: {}
+[9.104186] (-) TimerEvent: {}
+[9.205211] (-) TimerEvent: {}
+[9.306315] (-) TimerEvent: {}
+[9.407374] (-) TimerEvent: {}
+[9.508507] (-) TimerEvent: {}
+[9.609664] (-) TimerEvent: {}
+[9.710708] (-) TimerEvent: {}
+[9.811770] (-) TimerEvent: {}
+[9.912876] (-) TimerEvent: {}
+[10.014067] (-) TimerEvent: {}
+[10.115160] (-) TimerEvent: {}
+[10.216227] (-) TimerEvent: {}
+[10.317248] (-) TimerEvent: {}
+[10.418365] (-) TimerEvent: {}
+[10.519400] (-) TimerEvent: {}
+[10.620500] (-) TimerEvent: {}
+[10.721671] (-) TimerEvent: {}
+[10.822771] (-) TimerEvent: {}
+[10.923853] (-) TimerEvent: {}
+[11.024931] (-) TimerEvent: {}
+[11.126078] (-) TimerEvent: {}
+[11.227180] (-) TimerEvent: {}
+[11.328167] (-) TimerEvent: {}
+[11.429215] (-) TimerEvent: {}
+[11.530295] (-) TimerEvent: {}
+[11.631375] (-) TimerEvent: {}
+[11.732430] (-) TimerEvent: {}
+[11.833505] (-) TimerEvent: {}
+[11.934713] (-) TimerEvent: {}
+[12.035745] (-) TimerEvent: {}
+[12.136786] (-) TimerEvent: {}
+[12.237964] (-) TimerEvent: {}
+[12.338975] (-) TimerEvent: {}
+[12.439994] (-) TimerEvent: {}
+[12.541087] (-) TimerEvent: {}
+[12.642202] (-) TimerEvent: {}
+[12.743249] (-) TimerEvent: {}
+[12.844324] (-) TimerEvent: {}
+[12.945390] (-) TimerEvent: {}
+[13.046465] (-) TimerEvent: {}
+[13.147544] (-) TimerEvent: {}
+[13.248641] (-) TimerEvent: {}
+[13.349799] (-) TimerEvent: {}
+[13.450900] (-) TimerEvent: {}
+[13.551911] (-) TimerEvent: {}
+[13.652965] (-) TimerEvent: {}
+[13.754105] (-) TimerEvent: {}
+[13.855178] (-) TimerEvent: {}
+[13.956303] (-) TimerEvent: {}
+[14.057431] (-) TimerEvent: {}
+[14.158620] (-) TimerEvent: {}
+[14.259627] (-) TimerEvent: {}
+[14.360716] (-) TimerEvent: {}
+[14.461703] (-) TimerEvent: {}
+[14.562764] (-) TimerEvent: {}
+[14.663888] (-) TimerEvent: {}
+[14.764911] (-) TimerEvent: {}
+[14.866004] (-) TimerEvent: {}
+[14.967047] (-) TimerEvent: {}
+[15.068089] (-) TimerEvent: {}
+[15.169120] (-) TimerEvent: {}
+[15.270381] (-) TimerEvent: {}
+[15.371487] (-) TimerEvent: {}
+[15.472547] (-) TimerEvent: {}
+[15.573649] (-) TimerEvent: {}
+[15.674859] (-) TimerEvent: {}
+[15.775954] (-) TimerEvent: {}
+[15.877068] (-) TimerEvent: {}
+[15.978222] (-) TimerEvent: {}
+[16.079320] (-) TimerEvent: {}
+[16.180437] (-) TimerEvent: {}
+[16.281677] (-) TimerEvent: {}
+[16.382800] (-) TimerEvent: {}
+[16.483877] (-) TimerEvent: {}
+[16.584988] (-) TimerEvent: {}
+[16.686123] (-) TimerEvent: {}
+[16.787293] (-) TimerEvent: {}
+[16.888401] (-) TimerEvent: {}
+[16.989526] (-) TimerEvent: {}
+[17.090743] (-) TimerEvent: {}
+[17.191802] (-) TimerEvent: {}
+[17.292864] (-) TimerEvent: {}
+[17.394004] (-) TimerEvent: {}
+[17.495073] (-) TimerEvent: {}
+[17.596079] (-) TimerEvent: {}
+[17.697155] (-) TimerEvent: {}
+[17.798322] (-) TimerEvent: {}
+[17.899395] (-) TimerEvent: {}
+[18.000399] (-) TimerEvent: {}
+[18.101454] (-) TimerEvent: {}
+[18.202613] (-) TimerEvent: {}
+[18.303757] (-) TimerEvent: {}
+[18.405057] (-) TimerEvent: {}
+[18.506291] (-) TimerEvent: {}
+[18.607425] (-) TimerEvent: {}
+[18.708498] (-) TimerEvent: {}
+[18.809702] (-) TimerEvent: {}
+[18.910851] (-) TimerEvent: {}
+[19.011958] (-) TimerEvent: {}
+[19.113074] (-) TimerEvent: {}
+[19.214302] (-) TimerEvent: {}
+[19.315362] (-) TimerEvent: {}
+[19.416344] (-) TimerEvent: {}
+[19.517423] (-) TimerEvent: {}
+[19.618518] (-) TimerEvent: {}
+[19.719699] (-) TimerEvent: {}
+[19.820878] (-) TimerEvent: {}
+[19.922092] (-) TimerEvent: {}
+[20.023114] (-) TimerEvent: {}
+[20.124127] (-) TimerEvent: {}
+[20.225242] (-) TimerEvent: {}
+[20.326348] (-) TimerEvent: {}
+[20.427310] (-) TimerEvent: {}
+[20.528371] (-) TimerEvent: {}
+[20.629435] (-) TimerEvent: {}
+[20.730503] (-) TimerEvent: {}
+[20.831433] (-) TimerEvent: {}
+[20.932492] (-) TimerEvent: {}
+[21.033503] (-) TimerEvent: {}
+[21.134737] (-) TimerEvent: {}
+[21.235853] (-) TimerEvent: {}
+[21.336966] (-) TimerEvent: {}
+[21.438141] (-) TimerEvent: {}
+[21.539321] (-) TimerEvent: {}
+[21.640457] (-) TimerEvent: {}
+[21.741549] (-) TimerEvent: {}
+[21.842733] (-) TimerEvent: {}
+[21.943899] (-) TimerEvent: {}
+[22.044802] (-) TimerEvent: {}
+[22.145832] (-) TimerEvent: {}
+[22.246996] (-) TimerEvent: {}
+[22.348142] (-) TimerEvent: {}
+[22.449249] (-) TimerEvent: {}
+[22.550391] (-) TimerEvent: {}
+[22.651403] (-) TimerEvent: {}
+[22.752466] (-) TimerEvent: {}
+[22.853499] (-) TimerEvent: {}
+[22.954593] (-) TimerEvent: {}
+[23.055558] (-) TimerEvent: {}
+[23.156548] (-) TimerEvent: {}
+[23.258381] (-) TimerEvent: {}
+[23.360120] (-) TimerEvent: {}
+[23.461293] (-) TimerEvent: {}
+[23.562430] (-) TimerEvent: {}
+[23.663425] (-) TimerEvent: {}
+[23.764377] (-) TimerEvent: {}
+[23.865159] (-) TimerEvent: {}
+[23.966099] (-) TimerEvent: {}
+[24.067129] (-) TimerEvent: {}
+[24.168092] (-) TimerEvent: {}
+[24.269011] (-) TimerEvent: {}
+[24.370154] (-) TimerEvent: {}
+[24.471214] (-) TimerEvent: {}
+[24.572159] (-) TimerEvent: {}
+[24.673026] (-) TimerEvent: {}
+[24.774047] (-) TimerEvent: {}
+[24.875049] (-) TimerEvent: {}
+[24.975930] (-) TimerEvent: {}
+[25.076889] (-) TimerEvent: {}
+[25.177979] (-) TimerEvent: {}
+[25.278946] (-) TimerEvent: {}
+[25.379958] (-) TimerEvent: {}
+[25.481083] (-) TimerEvent: {}
+[25.582174] (-) TimerEvent: {}
+[25.683158] (-) TimerEvent: {}
+[25.784163] (-) TimerEvent: {}
+[25.885243] (-) TimerEvent: {}
+[25.986376] (-) TimerEvent: {}
+[26.087438] (-) TimerEvent: {}
+[26.188487] (-) TimerEvent: {}
+[26.289702] (-) TimerEvent: {}
+[26.390737] (-) TimerEvent: {}
+[26.491764] (-) TimerEvent: {}
+[26.592648] (-) TimerEvent: {}
+[26.693478] (-) TimerEvent: {}
+[26.794351] (-) TimerEvent: {}
+[26.895183] (-) TimerEvent: {}
+[26.956718] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.958080] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:159:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfeature_mid\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.958781] (plane_fitter) StderrLine: {'line': b'  159 |             \x1b[01;31m\x1b[Kfeature_mid\x1b[m\x1b[K = pointCloudCb(cloud_mid);\n'}
+[26.959579] (plane_fitter) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.992602] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:160:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfeature_left\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.993530] (plane_fitter) StderrLine: {'line': b'  160 |             \x1b[01;31m\x1b[Kfeature_left\x1b[m\x1b[K = pointCloudCb(cloud_left);\n'}
+[26.994254] (plane_fitter) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.995334] (-) TimerEvent: {}
+[27.030896] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:161:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfeature_right\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[27.031892] (plane_fitter) StderrLine: {'line': b'  161 |             \x1b[01;31m\x1b[Kfeature_right\x1b[m\x1b[K = pointCloudCb(cloud_right);\n'}
+[27.032466] (plane_fitter) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.045524] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:164:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmid\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[27.046599] (plane_fitter) StderrLine: {'line': b'  164 |             combined_features.data.insert(combined_features.data.end(), \x1b[01;31m\x1b[Kmid\x1b[m\x1b[K.data.begin(), mid.data.end());\n'}
+[27.047089] (plane_fitter) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[27.050944] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:165:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kleft\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::left\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[27.051973] (plane_fitter) StderrLine: {'line': b'  165 |             combined_features.data.insert(combined_features.data.end(), \x1b[01;31m\x1b[Kleft\x1b[m\x1b[K.data.begin(), left.data.end());\n'}
+[27.052556] (plane_fitter) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[27.052959] (plane_fitter) StderrLine: {'line': b'      |                                                                         \x1b[32m\x1b[Kstd::left\x1b[m\x1b[K\n'}
+[27.053381] (plane_fitter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/ios:42\x1b[m\x1b[K,\n'}
+[27.054059] (plane_fitter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/istream:38\x1b[m\x1b[K,\n'}
+[27.054471] (plane_fitter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/fstream:38\x1b[m\x1b[K,\n'}
+[27.054933] (plane_fitter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:1\x1b[m\x1b[K:\n'}
+[27.055377] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ios_base.h:1011:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::left\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[27.055853] (plane_fitter) StderrLine: {'line': b' 1011 |   \x1b[01;36m\x1b[Kleft\x1b[m\x1b[K(ios_base& __base)\n'}
+[27.056217] (plane_fitter) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[27.057022] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:166:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kright\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::right\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[27.057919] (plane_fitter) StderrLine: {'line': b'  166 |             combined_features.data.insert(combined_features.data.end(), \x1b[01;31m\x1b[Kright\x1b[m\x1b[K.data.begin(), right.data.end());\n'}
+[27.058381] (plane_fitter) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[27.058860] (plane_fitter) StderrLine: {'line': b'      |                                                                         \x1b[32m\x1b[Kstd::right\x1b[m\x1b[K\n'}
+[27.059527] (plane_fitter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/ios:42\x1b[m\x1b[K,\n'}
+[27.059925] (plane_fitter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/istream:38\x1b[m\x1b[K,\n'}
+[27.060638] (plane_fitter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/fstream:38\x1b[m\x1b[K,\n'}
+[27.061074] (plane_fitter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:1\x1b[m\x1b[K:\n'}
+[27.061458] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ios_base.h:1019:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::right\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[27.062018] (plane_fitter) StderrLine: {'line': b' 1019 |   \x1b[01;36m\x1b[Kright\x1b[m\x1b[K(ios_base& __base)\n'}
+[27.062561] (plane_fitter) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[27.089996] (plane_fitter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:168:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[27.090753] (plane_fitter) StderrLine: {'line': b'  168 |             publisher_combined_features_->publish(combined_features)\n'}
+[27.091316] (plane_fitter) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[27.091793] (plane_fitter) StderrLine: {'line': b'      |                                                                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[27.092237] (plane_fitter) StderrLine: {'line': b'  169 |         \x1b[32m\x1b[K}\x1b[m\x1b[K\n'}
+[27.092902] (plane_fitter) StderrLine: {'line': b'      |         \x1b[32m\x1b[K~\x1b[m\x1b[K                                                            \n'}
+[27.095500] (-) TimerEvent: {}
+[27.196266] (-) TimerEvent: {}
+[27.297340] (-) TimerEvent: {}
+[27.398484] (-) TimerEvent: {}
+[27.499610] (-) TimerEvent: {}
+[27.600585] (-) TimerEvent: {}
+[27.701712] (-) TimerEvent: {}
+[27.802759] (-) TimerEvent: {}
+[27.903795] (-) TimerEvent: {}
+[28.004836] (-) TimerEvent: {}
+[28.106009] (-) TimerEvent: {}
+[28.207046] (-) TimerEvent: {}
+[28.308088] (-) TimerEvent: {}
+[28.409175] (-) TimerEvent: {}
+[28.510348] (-) TimerEvent: {}
+[28.611387] (-) TimerEvent: {}
+[28.712460] (-) TimerEvent: {}
+[28.813509] (-) TimerEvent: {}
+[28.914600] (-) TimerEvent: {}
+[29.015627] (-) TimerEvent: {}
+[29.116722] (-) TimerEvent: {}
+[29.217819] (-) TimerEvent: {}
+[29.318920] (-) TimerEvent: {}
+[29.419982] (-) TimerEvent: {}
+[29.521873] (-) TimerEvent: {}
+[29.622970] (-) TimerEvent: {}
+[29.724073] (-) TimerEvent: {}
+[29.825119] (-) TimerEvent: {}
+[29.926512] (-) TimerEvent: {}
+[30.027565] (-) TimerEvent: {}
+[30.128678] (-) TimerEvent: {}
+[30.229745] (-) TimerEvent: {}
+[30.330725] (-) TimerEvent: {}
+[30.431757] (-) TimerEvent: {}
+[30.532840] (-) TimerEvent: {}
+[30.633988] (-) TimerEvent: {}
+[30.735144] (-) TimerEvent: {}
+[30.836205] (-) TimerEvent: {}
+[30.937231] (-) TimerEvent: {}
+[31.038288] (-) TimerEvent: {}
+[31.139338] (-) TimerEvent: {}
+[31.240427] (-) TimerEvent: {}
+[31.341439] (-) TimerEvent: {}
+[31.442587] (-) TimerEvent: {}
+[31.543690] (-) TimerEvent: {}
+[31.644680] (-) TimerEvent: {}
+[31.745754] (-) TimerEvent: {}
+[31.846785] (-) TimerEvent: {}
+[31.947839] (-) TimerEvent: {}
+[32.048899] (-) TimerEvent: {}
+[32.149984] (-) TimerEvent: {}
+[32.250995] (-) TimerEvent: {}
+[32.352055] (-) TimerEvent: {}
+[32.453098] (-) TimerEvent: {}
+[32.554155] (-) TimerEvent: {}
+[32.655224] (-) TimerEvent: {}
+[32.756650] (-) TimerEvent: {}
+[32.857839] (-) TimerEvent: {}
+[32.958893] (-) TimerEvent: {}
+[33.060143] (-) TimerEvent: {}
+[33.161165] (-) TimerEvent: {}
+[33.262294] (-) TimerEvent: {}
+[33.363388] (-) TimerEvent: {}
+[33.464459] (-) TimerEvent: {}
+[33.565535] (-) TimerEvent: {}
+[33.666717] (-) TimerEvent: {}
+[33.767788] (-) TimerEvent: {}
+[33.868819] (-) TimerEvent: {}
+[33.969980] (-) TimerEvent: {}
+[34.071048] (-) TimerEvent: {}
+[34.172154] (-) TimerEvent: {}
+[34.273523] (-) TimerEvent: {}
+[34.374839] (-) TimerEvent: {}
+[34.476737] (-) TimerEvent: {}
+[34.577808] (-) TimerEvent: {}
+[34.678849] (-) TimerEvent: {}
+[34.779877] (-) TimerEvent: {}
+[34.880921] (-) TimerEvent: {}
+[34.982079] (-) TimerEvent: {}
+[35.083106] (-) TimerEvent: {}
+[35.184138] (-) TimerEvent: {}
+[35.285203] (-) TimerEvent: {}
+[35.386317] (-) TimerEvent: {}
+[35.487420] (-) TimerEvent: {}
+[35.588539] (-) TimerEvent: {}
+[35.689734] (-) TimerEvent: {}
+[35.790911] (-) TimerEvent: {}
+[35.892109] (-) TimerEvent: {}
+[35.993210] (-) TimerEvent: {}
+[36.094309] (-) TimerEvent: {}
+[36.195384] (-) TimerEvent: {}
+[36.296416] (-) TimerEvent: {}
+[36.397503] (-) TimerEvent: {}
+[36.498640] (-) TimerEvent: {}
+[36.599719] (-) TimerEvent: {}
+[36.700869] (-) TimerEvent: {}
+[36.802098] (-) TimerEvent: {}
+[36.903276] (-) TimerEvent: {}
+[37.004334] (-) TimerEvent: {}
+[37.105393] (-) TimerEvent: {}
+[37.206552] (-) TimerEvent: {}
+[37.253079] (plane_fitter) StderrLine: {'line': b'make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1\n'}
+[37.254796] (plane_fitter) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2\n'}
+[37.255842] (plane_fitter) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[37.267784] (plane_fitter) CommandEnded: {'returncode': 2}
+[37.307253] (-) TimerEvent: {}
+[37.409257] (-) TimerEvent: {}
+[37.507295] (plane_fitter) JobEnded: {'identifier': 'plane_fitter', 'rc': 2}
+[37.510702] (-) TimerEvent: {}
+[37.519371] (-) EventReactorShutdown: {}

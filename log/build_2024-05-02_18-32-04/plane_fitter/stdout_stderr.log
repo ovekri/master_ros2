@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target plane_fitter[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o[0m
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kstd_msgs::msg::Float64MultiArray pointCloudPlaneFitter::pointCloudCb(const Ptr&)[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:202:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koriginal_size[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  202 |             int [01;35m[Koriginal_size[m[K(cloud->height*cloud->width);
+      |                 [01;35m[K^~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable plane_fitter[0m
+[100%] Built target plane_fitter
+-- Install configuration: ""
+-- Installing: /home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter
+-- Set runtime path of "/home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter" to ""
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/package_run_dependencies/plane_fitter
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/parent_prefix_path/plane_fitter
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.sh
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.dsv
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.bash
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.sh
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.zsh
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.dsv
+-- Installing: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.dsv
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/packages/plane_fitter
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig.cmake
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig-version.cmake
+-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.xml

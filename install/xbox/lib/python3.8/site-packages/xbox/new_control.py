@@ -12,7 +12,7 @@ import heapq
 # 
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32MultiArray
-from std_msgs.msg import Int32
+from std_msgs.msg import Float64MultiArray
 
 # for adafruit motor controller
 from adafruit_servokit import ServoKit
@@ -26,27 +26,35 @@ class Controller(Node):
             Joy,
             'joy',
             self.joy_callback,
-            1)
+            5)
         self.subscription 
 
         self.desicion_array_subscription = self.create_subscription(
             Float32MultiArray,
             'obstacle_distance',
-            self.lidar_desicion_callback,
+            self.lidar_bank_callback,
             10)
         self.desicion_array_subscription
 
         self.desicion_array_subscription = self.create_subscription(
-            Int32,
-            'realsense_decision',
-            self.realsense_desicion_callback,
+            Float64MultiArray,
+            'plane_fitter_features_',
+            self.realsense_bank_callback,
             10)
         self.desicion_array_subscription
+
+        self.timer_period_lidar = 0.5 
+        self.timer_period_realsense = 0.33 
+        self.timer_lidar = self.create_timer(self.timer_period_lidar, self.lidar_desicion_callback)
+        self.timer_realsense = self.create_timer(self.timer_period_realsense, self.realsense_desicion_callback)
 
         self.temp_timer = None
         self.joy_state = None 
         self.lidar_decision_state = None
+        self.lidar_state = None
         self.realsense_decision_state = None
+        self.realsense_state = None
+        self.no_solution = False
         self.angle_motor = 106 # angels correspond to pulses 99≈1450, 106≈1500 and 112≈1550
         self.angle_servo = 90 # 55-90-125
         self.motor = kit.servo[0]
@@ -57,33 +65,21 @@ class Controller(Node):
     def joy_callback(self, msg):
         self.joy_state = msg # save the states from joy
         self.control()
+    
+    def lidar_bank_callback(self, msg):
+        self.lidar_state = msg
+    
+    def realsense_bank_callback(self, msg):
+        self.realsense_state = msg
         
-    def lidar_desicion_callback(self, msg):
-        self.lidar_decision_state = msg 
-        self.control()
-
-    def realsense_desicion_callback(self, msg):
-        self.realsense_decision_state = msg 
-        self.control()
-
-    def set_state(self, angle, motor):
-        self.angle_servo = angle 
-        self.servo.angle = self.angle_servo
-        #time.sleep(0.1)
-        self.angle_motor = motor
-        self.motor.angle = self.angle_motor
-        time.sleep(0.15)  # can remove when its safe
-        self.angle_motor = 106
-        self.motor.angle = self.angle_motor
-        time.sleep(0.05)
-
-    def control(self):
-        self.get_logger().info('control is ON')
+    def lidar_desicion_callback(self):
         ## Find the gap ## 
         # gap array form [1,1,0,0,0,1,1,0,0,0,1]
-        data_from_lidar = self.lidar_decision_state.data
-        length_to_gap_array = np.array(data_from_lidar)
-        self.get_logger().info(f'length array: {length_to_gap_array}')
+        if self.lidar_state is None:
+            self.get_logger().info('Lidar data not available yet.')
+            return
+        length_to_gap_array = np.array(self.lidar_state.data)
+        #self.get_logger().info(f'length array: {length_to_gap_array}')
 
         gap_up = 1.75
         un = 0.75                                                       ####$$$$$$
@@ -104,7 +100,7 @@ class Controller(Node):
                 elif (((length_to_gap_array[i] > gap_up*length_to_gap_array[i-1]) or (length_to_gap_array[i] > 3)) and (length_to_gap_array[i+1] < up*length_to_gap_array[i] and length_to_gap_array[i+1] > un*length_to_gap_array[i])):
                     gap[i] = 1
 
-        self.get_logger().info(f'gap array: {gap}')
+        #self.get_logger().info(f'gap array: {gap}')
 
         # calculate the length of each segment [length_segment_1, ...]
         # not necessery i think
@@ -136,7 +132,7 @@ class Controller(Node):
                     gap_neighbours_rate[i] = 0.05
 
             if (i <= 9 and i > 0):
-                gap_neighbours_rate[i] += 0.01*i
+                gap_neighbours_rate[i] += 0.02*i
                 for j in range(i):
                     if (gap[i-j-1] == 1):
                         gap_neighbours_rate[i] += 0.05
@@ -150,7 +146,7 @@ class Controller(Node):
                         break
 
             if (i > 9 and i < len(gap)-1):
-                gap_neighbours_rate[i] += 0.01*(len(gap)-i-1)
+                gap_neighbours_rate[i] += 0.02*(len(gap)-i-1)
                 for k in range(1, len(gap)-i):
                     if (gap[i-k] == 1):
                         gap_neighbours_rate[i] += 0.05
@@ -163,7 +159,7 @@ class Controller(Node):
                     if (flag == False):
                         break    
 
-        self.get_logger().info(f'gap neighbours array: {gap_neighbours_rate}')    
+        #self.get_logger().info(f'gap neighbours array: {gap_neighbours_rate}')    
 
         # Filter length array
         # find fake 11m. if points are closer than 0.5m to the lidar 
@@ -182,11 +178,11 @@ class Controller(Node):
                         length_to_gap_array[i] = -1
                     if ((length_to_gap_array[i-1] == None)):
                         length_to_gap_array[i] = -1
-        self.get_logger().info(f'Filtered length array: {length_to_gap_array}') 
+        #self.get_logger().info(f'Filtered length array: {length_to_gap_array}') 
 
         # make one array by multiply the lengths with the gap rate
         decision_array = gap_neighbours_rate*length_to_gap_array
-        self.get_logger().info(f'result array: {decision_array}') 
+        #self.get_logger().info(f'result array: {decision_array}') 
 
         # Check the lengths against the gaps
         count = 0
@@ -213,30 +209,94 @@ class Controller(Node):
         max_decision = 0.0
         max_length = 0.0
         gap_chosen = 0
+        no_solu = False
         # check is values in decision array are <= 0
         check = np.any(decision_array > 0)
-        print("check ", check)
+        #print("check ", check)
         if (check == True):
             for i in range(len(decision_array)):
                 if (decision_array[i] > max_decision):
                     max_decision = decision_array[i]
                     gap_chosen = i
             max_length = length_to_gap_array[gap_chosen]
-            #for i in range(len(indices_decision_array)):
-            #    if (length_to_gap_array[indices_decision_array[i]] > max_length):
-             #       gap_chosen = indices_decision_array[i]
-              #      max_length = length_to_gap_array[indices_decision_array[i]]
-            self.get_logger().info(f'Gap chosen: {gap_chosen}, size: {max_length}')
+            #self.get_logger().info(f'Gap chosen: {gap_chosen}, size: {max_length}')
         else: 
             ## can reverse??? or choose the best value in the length array $$$$$$$$$$$$$$
             for i in range(len(length_to_gap_array)):
                 if (length_to_gap_array[i] > max_length):
                     max_length = length_to_gap_array[i]
                     gap_chosen = i
-            if (max_length < 2):
+            if (max_length < 1.5):
                 max_length = None
                 gap_chosen = None
+                no_solu = True
                 # reverse. look behind if clear, reverse
+        self.no_solution = no_solu
+        #if ((gap_chosen % 2) != 0 and gap_chosen != None):
+        #    gap_chosen += 1
+        if (gap_chosen != None):
+            gap_angle = -36 + 4*(gap_chosen)
+        else:
+            gap_angle = 0
+        self.lidar_decision_state = gap_angle
+        self.control()
+
+    def realsense_desicion_callback(self):
+        if self.realsense_state is None:
+            self.get_logger().info('Realsense data not available yet.')
+            return
+        #features = np.array(self.realsense_state.data)
+        #print(features)
+        self.control()
+
+    def set_state(self, angle, motor):
+        self.angle_servo = 90+(int(angle*0.98))
+        self.servo.angle = self.angle_servo
+        self.angle_motor = motor
+        self.motor.angle = self.angle_motor
+        time.sleep(0.15)  # can remove when its safe
+        self.angle_motor = 106
+        self.motor.angle = self.angle_motor
+        time.sleep(0.1)
+
+    def control(self):
+        if self.joy_state == None:
+            #self.get_logger().info('Waiting for both joy and decision messages.')
+            if self.joy_state == None:
+                self.get_logger().info('Waiting for joy')
+                return
+        #self.get_logger().info(f'm: {self.lidar_decision_state}')
+        # Buttons
+        joystick_value = self.joy_state.axes[0]*(-1) # left joystick
+        forward = self.joy_state.buttons[0] # button A
+        forward_fast = self.joy_state.buttons[4]
+        reverse = self.joy_state.buttons[1] # button B
+        autonom = self.joy_state.buttons[3] # button X
+        
+        if autonom == 0: # manually controlled
+            if joystick_value != 0:
+                self.angle_servo = joystick_value*35 + 90 # 55-90-125
+                self.servo.angle = self.angle_servo
+            if forward == 1:
+                self.angle_motor = 114
+                self.motor.angle = self.angle_motor
+            elif forward_fast == 1:
+                self.angle_motor = 118 
+                self.motor.angle = self.angle_motor
+            elif reverse == 1:
+                self.angle_motor = 99
+                self.motor.angle = self.angle_motor
+            else:
+                self.angle_motor = 106
+                self.motor.angle = self.angle_motor
+        
+        if autonom == 1 and forward == 0 and reverse == 0 and joystick_value == 0:
+            
+            if (self.no_solution == True):
+                self.set_state(self.lidar_decision_state, 106)
+            else:
+                self.set_state(self.lidar_decision_state, 114)
+            self.get_logger().info(f'angle: {90+self.lidar_decision_state}')
 
 def main(args=None):
     rclpy.init(args=args)

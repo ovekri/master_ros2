@@ -7,19 +7,24 @@ def generate_launch_description():
             package='joy',
             executable='joy_node',
             name='xbox_elite_pad'),
-#        Node(
-#            package='lidar_control',
-#            executable='lidar_control',
-#            name='lidar_control',
-#            output='screen'),
+        Node(
+            package='lidar',
+            executable='lidar',
+            name='lidar',
+            output='screen'),
         Node(
             package='xbox',
             executable='control',
             name='control',
             output='screen'),
-#        Node(
-#            package='realsense_control',
-#            executable='realsense_control',
-#            name='realsense_control',
-#            output='screen')
+        Node(
+            package='plane_fitter',
+            executable='plane_fitter',
+            name='plane_fitter',
+            output='screen'),
+        Node(
+            package='xbox',
+            executable='new_control',
+            name='new_control',
+            output='screen')
   ])

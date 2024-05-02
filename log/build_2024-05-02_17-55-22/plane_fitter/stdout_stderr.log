@@ -1,0 +1,31 @@
+[35m[1mScanning dependencies of target plane_fitter[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o[0m
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:169:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kmid[m[K’ was not declared in this scope
+  169 |             combined_features.data.insert(combined_features.data.end(), [01;31m[Kmid[m[K.data.begin(), mid.data.end());
+      |                                                                         [01;31m[K^~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:170:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::left[m[K’?
+  170 |             combined_features.data.insert(combined_features.data.end(), [01;31m[Kleft[m[K.data.begin(), left.data.end());
+      |                                                                         [01;31m[K^~~~[m[K
+      |                                                                         [32m[Kstd::left[m[K
+In file included from [01m[K/usr/include/c++/9/ios:42[m[K,
+                 from [01m[K/usr/include/c++/9/istream:38[m[K,
+                 from [01m[K/usr/include/c++/9/fstream:38[m[K,
+                 from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/ios_base.h:1011:3:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::left[m[K’ declared here
+ 1011 |   [01;36m[Kleft[m[K(ios_base& __base)
+      |   [01;36m[K^~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:171:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kright[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::right[m[K’?
+  171 |             combined_features.data.insert(combined_features.data.end(), [01;31m[Kright[m[K.data.begin(), right.data.end());
+      |                                                                         [01;31m[K^~~~~[m[K
+      |                                                                         [32m[Kstd::right[m[K
+In file included from [01m[K/usr/include/c++/9/ios:42[m[K,
+                 from [01m[K/usr/include/c++/9/istream:38[m[K,
+                 from [01m[K/usr/include/c++/9/fstream:38[m[K,
+                 from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/ios_base.h:1019:3:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::right[m[K’ declared here
+ 1019 |   [01;36m[Kright[m[K(ios_base& __base)
+      |   [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

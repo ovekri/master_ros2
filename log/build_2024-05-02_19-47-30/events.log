@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.002389] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.003239] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.003408] (-) JobUnselected: {'identifier': 'lidar'}
+[0.003525] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.003641] (-) JobUnselected: {'identifier': 'listener'}
+[0.003751] (-) JobUnselected: {'identifier': 'plane_fitter'}
+[0.003858] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.003966] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.004072] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.004178] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.004460] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.004572] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.004693] (xbox) JobQueued: {'identifier': 'xbox', 'dependencies': OrderedDict()}
+[0.004868] (xbox) JobStarted: {'identifier': 'xbox'}
+[0.098527] (-) TimerEvent: {}
+[0.200677] (-) TimerEvent: {}
+[0.301637] (-) TimerEvent: {}
+[0.403861] (-) TimerEvent: {}
+[0.505131] (-) TimerEvent: {}
+[0.606229] (-) TimerEvent: {}
+[0.707224] (-) TimerEvent: {}
+[0.808279] (-) TimerEvent: {}
+[0.909270] (-) TimerEvent: {}
+[1.010247] (-) TimerEvent: {}
+[1.111204] (-) TimerEvent: {}
+[1.212311] (-) TimerEvent: {}
+[1.314387] (-) TimerEvent: {}
+[1.416120] (-) TimerEvent: {}
+[1.519976] (-) TimerEvent: {}
+[1.624974] (-) TimerEvent: {}
+[1.727109] (-) TimerEvent: {}
+[1.828107] (-) TimerEvent: {}
+[1.929036] (-) TimerEvent: {}
+[2.030064] (-) TimerEvent: {}
+[2.131227] (-) TimerEvent: {}
+[2.232201] (-) TimerEvent: {}
+[2.333372] (-) TimerEvent: {}
+[2.434696] (-) TimerEvent: {}
+[2.535769] (-) TimerEvent: {}
+[2.636820] (-) TimerEvent: {}
+[2.737922] (-) TimerEvent: {}
+[2.838923] (-) TimerEvent: {}
+[2.939903] (-) TimerEvent: {}
+[3.040899] (-) TimerEvent: {}
+[3.142012] (-) TimerEvent: {}
+[3.243082] (-) TimerEvent: {}
+[3.344281] (-) TimerEvent: {}
+[3.445172] (-) TimerEvent: {}
+[3.546315] (-) TimerEvent: {}
+[3.647414] (-) TimerEvent: {}
+[3.697533] (xbox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xbox', 'build', '--build-base', '/home/nvidia/master_ws/build/xbox/build', 'install', '--record', '/home/nvidia/master_ws/build/xbox/install.log', '--install-scripts', '$base/lib/xbox', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nvidia/master_ws/src/xbox', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nvidia', 'SSH_CLIENT': '192.168.50.129 58438 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/nvidia', 'OLDPWD': '/home/nvidia', 'SSH_TTY': '/dev/pts/2', 'JETSON_L4T': '35.3.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Xavier NX Developer Kit', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/nvidia/master_ws/install:/home/nvidia/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'nvidia', 'JETSON_MODULE': 'NVIDIA Jetson Xavier NX', 'JETSON_SERIAL_NUMBER': '1422421040635', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Jakku', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'AMENT_PREFIX_PATH': '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/nvidia/master_ws/build/xbox', 'SSH_CONNECTION': '192.168.50.129 58438 192.168.50.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'JETSON_JETPACK': '5.1.1', 'CMAKE_PREFIX_PATH': '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar', 'JETSON_P_NUMBER': 'p3668-0001'}, 'shell': False}
+[3.748038] (-) TimerEvent: {}
+[3.850073] (-) TimerEvent: {}
+[3.951364] (-) TimerEvent: {}
+[4.052363] (-) TimerEvent: {}
+[4.153959] (-) TimerEvent: {}
+[4.255476] (-) TimerEvent: {}
+[4.356418] (-) TimerEvent: {}
+[4.457321] (-) TimerEvent: {}
+[4.558479] (-) TimerEvent: {}
+[4.659497] (-) TimerEvent: {}
+[4.760540] (-) TimerEvent: {}
+[4.861868] (-) TimerEvent: {}
+[4.962920] (-) TimerEvent: {}
+[5.045338] (xbox) StdoutLine: {'line': b'running egg_info\n'}
+[5.048126] (xbox) StdoutLine: {'line': b'writing ../../build/xbox/xbox.egg-info/PKG-INFO\n'}
+[5.049485] (xbox) StdoutLine: {'line': b'writing dependency_links to ../../build/xbox/xbox.egg-info/dependency_links.txt\n'}
+[5.050752] (xbox) StdoutLine: {'line': b'writing entry points to ../../build/xbox/xbox.egg-info/entry_points.txt\n'}
+[5.051923] (xbox) StdoutLine: {'line': b'writing requirements to ../../build/xbox/xbox.egg-info/requires.txt\n'}
+[5.052817] (xbox) StdoutLine: {'line': b'writing top-level names to ../../build/xbox/xbox.egg-info/top_level.txt\n'}
+[5.063101] (-) TimerEvent: {}
+[5.164120] (-) TimerEvent: {}
+[5.235861] (xbox) StdoutLine: {'line': b"reading manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'\n"}
+[5.240041] (xbox) StdoutLine: {'line': b"writing manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'\n"}
+[5.240693] (xbox) StdoutLine: {'line': b'running build\n'}
+[5.241199] (xbox) StdoutLine: {'line': b'running build_py\n'}
+[5.241715] (xbox) StdoutLine: {'line': b'copying xbox/new_control.py -> /home/nvidia/master_ws/build/xbox/build/lib/xbox\n'}
+[5.243967] (xbox) StdoutLine: {'line': b'running install\n'}
+[5.247718] (xbox) StdoutLine: {'line': b'running install_lib\n'}
+[5.252856] (xbox) StdoutLine: {'line': b'copying /home/nvidia/master_ws/build/xbox/build/lib/xbox/new_control.py -> /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox\n'}
+[5.256675] (xbox) StdoutLine: {'line': b'byte-compiling /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox/new_control.py to new_control.cpython-38.pyc\n'}
+[5.264237] (-) TimerEvent: {}
+[5.270984] (xbox) StdoutLine: {'line': b'running install_data\n'}
+[5.271627] (xbox) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.279482] (xbox) StdoutLine: {'line': b"removing '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.281756] (xbox) StdoutLine: {'line': b'Copying ../../build/xbox/xbox.egg-info to /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info\n'}
+[5.287919] (xbox) StdoutLine: {'line': b'running install_scripts\n'}
+[5.364485] (-) TimerEvent: {}
+[5.370516] (xbox) StdoutLine: {'line': b'Installing control script to /home/nvidia/master_ws/install/xbox/lib/xbox\n'}
+[5.371358] (xbox) StdoutLine: {'line': b'Installing new_control script to /home/nvidia/master_ws/install/xbox/lib/xbox\n'}
+[5.373026] (xbox) StdoutLine: {'line': b"writing list of installed files to '/home/nvidia/master_ws/build/xbox/install.log'\n"}
+[5.465069] (-) TimerEvent: {}
+[5.474037] (xbox) CommandEnded: {'returncode': 0}
+[5.539495] (xbox) JobEnded: {'identifier': 'xbox', 'rc': 0}
+[5.543491] (-) EventReactorShutdown: {}

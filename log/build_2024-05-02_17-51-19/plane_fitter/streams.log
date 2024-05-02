@@ -1,0 +1,48 @@
+[0.097s] Invoking command in '/home/nvidia/master_ws/build/plane_fitter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/plane_fitter -- -j6 -l6
+[0.497s] [35m[1mScanning dependencies of target plane_fitter[0m
+[0.909s] [ 50%] [32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o[0m
+[26.950s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[26.951s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:159:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_mid[m[K’ was not declared in this scope
+[26.952s]   159 |             [01;31m[Kfeature_mid[m[K = pointCloudCb(cloud_mid);
+[26.952s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[26.986s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:160:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_left[m[K’ was not declared in this scope
+[26.987s]   160 |             [01;31m[Kfeature_left[m[K = pointCloudCb(cloud_left);
+[26.987s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[27.024s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:161:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_right[m[K’ was not declared in this scope
+[27.025s]   161 |             [01;31m[Kfeature_right[m[K = pointCloudCb(cloud_right);
+[27.025s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[27.039s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:164:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kmid[m[K’ was not declared in this scope
+[27.039s]   164 |             combined_features.data.insert(combined_features.data.end(), [01;31m[Kmid[m[K.data.begin(), mid.data.end());
+[27.040s]       |                                                                         [01;31m[K^~~[m[K
+[27.044s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:165:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::left[m[K’?
+[27.045s]   165 |             combined_features.data.insert(combined_features.data.end(), [01;31m[Kleft[m[K.data.begin(), left.data.end());
+[27.045s]       |                                                                         [01;31m[K^~~~[m[K
+[27.046s]       |                                                                         [32m[Kstd::left[m[K
+[27.046s] In file included from [01m[K/usr/include/c++/9/ios:42[m[K,
+[27.047s]                  from [01m[K/usr/include/c++/9/istream:38[m[K,
+[27.047s]                  from [01m[K/usr/include/c++/9/fstream:38[m[K,
+[27.048s]                  from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:1[m[K:
+[27.048s] [01m[K/usr/include/c++/9/bits/ios_base.h:1011:3:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::left[m[K’ declared here
+[27.049s]  1011 |   [01;36m[Kleft[m[K(ios_base& __base)
+[27.049s]       |   [01;36m[K^~~~[m[K
+[27.050s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:166:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kright[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::right[m[K’?
+[27.051s]   166 |             combined_features.data.insert(combined_features.data.end(), [01;31m[Kright[m[K.data.begin(), right.data.end());
+[27.051s]       |                                                                         [01;31m[K^~~~~[m[K
+[27.052s]       |                                                                         [32m[Kstd::right[m[K
+[27.052s] In file included from [01m[K/usr/include/c++/9/ios:42[m[K,
+[27.053s]                  from [01m[K/usr/include/c++/9/istream:38[m[K,
+[27.053s]                  from [01m[K/usr/include/c++/9/fstream:38[m[K,
+[27.054s]                  from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:1[m[K:
+[27.054s] [01m[K/usr/include/c++/9/bits/ios_base.h:1019:3:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::right[m[K’ declared here
+[27.055s]  1019 |   [01;36m[Kright[m[K(ios_base& __base)
+[27.055s]       |   [01;36m[K^~~~~[m[K
+[27.083s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:168:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[27.084s]   168 |             publisher_combined_features_->publish(combined_features)
+[27.084s]       |                                                                     [01;31m[K^[m[K
+[27.084s]       |                                                                     [32m[K;[m[K
+[27.085s]   169 |         [32m[K}[m[K
+[27.086s]       |         [32m[K~[m[K                                                            
+[37.246s] make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
+[37.248s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
+[37.249s] make: *** [Makefile:141: all] Error 2
+[37.262s] Invoked command in '/home/nvidia/master_ws/build/plane_fitter' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/plane_fitter -- -j6 -l6
