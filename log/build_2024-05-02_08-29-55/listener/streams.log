@@ -1,0 +1,39 @@
+[0.086s] Invoking command in '/home/nvidia/master_ws/build/listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j6 -l6
+[0.504s] [35m[1mScanning dependencies of target listener[0m
+[0.872s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[14.209s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:[m[K In member function ‘[01m[Kvoid Transformer::listener_callback_lidar(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.210s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[Ksensor_msgs[m[K’
+[14.210s]    66 |         [01;31m[Ksensor_msgs[m[K::msg::PointCloud2 transformed_cloud;
+[14.211s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[14.211s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Ksensor_msgs[m[K’
+[14.212s]    66 |         [01;31m[Ks[m[K[32m[Kensor_msgs[m[K::msg::PointCloud2 transformed_cloud;
+[14.212s]       |         [01;31m[K^[m[K[32m[K~~~~~~~~~~[m[K
+[14.213s]       |         [32m[K([m[K
+[14.213s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[14.214s]    66 |         [34m[Ksensor_msgs[m[K::msg::PointCloud2 transformed_cloud[01;31m[K;[m[K
+[14.214s]       |         [34m[K~~~~~~~~~~~[m[K                                    [01;31m[K^[m[K
+[14.215s]       |                                                        [32m[K)[m[K
+[14.215s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[14.244s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:67:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransformed_cloud[m[K’ was not declared in this scope
+[14.244s]    67 |         tf2::doTransform(*msg, [01;31m[Ktransformed_cloud[m[K, transform);                                                                                       // transform the pointcloud2 message
+[14.245s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[14.249s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:[m[K In member function ‘[01m[Kvoid Transformer::listener_callback_realsense(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.249s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[Ksensor_msgs[m[K’
+[14.250s]    99 |         [01;31m[Ksensor_msgs[m[K::msg::PointCloud2 transformed_cloud;
+[14.250s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[14.251s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Ksensor_msgs[m[K’
+[14.251s]    99 |         [01;31m[Ks[m[K[32m[Kensor_msgs[m[K::msg::PointCloud2 transformed_cloud;
+[14.252s]       |         [01;31m[K^[m[K[32m[K~~~~~~~~~~[m[K
+[14.252s]       |         [32m[K([m[K
+[14.253s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[14.253s]    99 |         [34m[Ksensor_msgs[m[K::msg::PointCloud2 transformed_cloud[01;31m[K;[m[K
+[14.254s]       |         [34m[K~~~~~~~~~~~[m[K                                    [01;31m[K^[m[K
+[14.254s]       |                                                        [32m[K)[m[K
+[14.254s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[14.281s] [01m[K/home/nvidia/master_ws/src/listener/src/listener.cpp:100:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransformed_cloud[m[K’ was not declared in this scope
+[14.281s]   100 |         tf2::doTransform(*msg, [01;31m[Ktransformed_cloud[m[K, transform);                                                                                       // transform the pointcloud2 message
+[14.282s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[23.851s] make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+[23.852s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/listener.dir/all] Error 2
+[23.854s] make: *** [Makefile:141: all] Error 2
+[23.866s] Invoked command in '/home/nvidia/master_ws/build/listener' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/listener -- -j6 -l6

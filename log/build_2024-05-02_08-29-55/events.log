@@ -1,0 +1,296 @@
+[0.000000] (-) TimerEvent: {}
+[0.002020] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.002833] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.003585] (-) JobUnselected: {'identifier': 'lidar'}
+[0.003944] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.004270] (-) JobUnselected: {'identifier': 'plane_fitter'}
+[0.004535] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.004772] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.005002] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.005252] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.005930] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.006068] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.006190] (-) JobUnselected: {'identifier': 'xbox'}
+[0.006449] (listener) JobQueued: {'identifier': 'listener', 'dependencies': OrderedDict()}
+[0.006673] (listener) JobStarted: {'identifier': 'listener'}
+[0.076803] (listener) JobProgress: {'identifier': 'listener', 'progress': 'cmake'}
+[0.082767] (listener) JobProgress: {'identifier': 'listener', 'progress': 'build'}
+[0.087459] (listener) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/master_ws/build/listener', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/master_ws/build/listener', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 57447 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/listener'), ('SSH_CONNECTION', '192.168.50.129 57447 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[0.101105] (-) TimerEvent: {}
+[0.208849] (-) TimerEvent: {}
+[0.310041] (-) TimerEvent: {}
+[0.411133] (-) TimerEvent: {}
+[0.509588] (listener) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[0.511617] (-) TimerEvent: {}
+[0.612547] (-) TimerEvent: {}
+[0.713501] (-) TimerEvent: {}
+[0.814430] (-) TimerEvent: {}
+[0.878624] (listener) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o\x1b[0m\n'}
+[0.914678] (-) TimerEvent: {}
+[1.015855] (-) TimerEvent: {}
+[1.117146] (-) TimerEvent: {}
+[1.218321] (-) TimerEvent: {}
+[1.319468] (-) TimerEvent: {}
+[1.420650] (-) TimerEvent: {}
+[1.521787] (-) TimerEvent: {}
+[1.622868] (-) TimerEvent: {}
+[1.724164] (-) TimerEvent: {}
+[1.825195] (-) TimerEvent: {}
+[1.926375] (-) TimerEvent: {}
+[2.027506] (-) TimerEvent: {}
+[2.128705] (-) TimerEvent: {}
+[2.229793] (-) TimerEvent: {}
+[2.330918] (-) TimerEvent: {}
+[2.432024] (-) TimerEvent: {}
+[2.533139] (-) TimerEvent: {}
+[2.634407] (-) TimerEvent: {}
+[2.735690] (-) TimerEvent: {}
+[2.836906] (-) TimerEvent: {}
+[2.938064] (-) TimerEvent: {}
+[3.039181] (-) TimerEvent: {}
+[3.140494] (-) TimerEvent: {}
+[3.241758] (-) TimerEvent: {}
+[3.344599] (-) TimerEvent: {}
+[3.445728] (-) TimerEvent: {}
+[3.546718] (-) TimerEvent: {}
+[3.647707] (-) TimerEvent: {}
+[3.748937] (-) TimerEvent: {}
+[3.850144] (-) TimerEvent: {}
+[3.951230] (-) TimerEvent: {}
+[4.052549] (-) TimerEvent: {}
+[4.153683] (-) TimerEvent: {}
+[4.254843] (-) TimerEvent: {}
+[4.356021] (-) TimerEvent: {}
+[4.457077] (-) TimerEvent: {}
+[4.558215] (-) TimerEvent: {}
+[4.659322] (-) TimerEvent: {}
+[4.760662] (-) TimerEvent: {}
+[4.861726] (-) TimerEvent: {}
+[4.962854] (-) TimerEvent: {}
+[5.064115] (-) TimerEvent: {}
+[5.165256] (-) TimerEvent: {}
+[5.266311] (-) TimerEvent: {}
+[5.367360] (-) TimerEvent: {}
+[5.468593] (-) TimerEvent: {}
+[5.569750] (-) TimerEvent: {}
+[5.670931] (-) TimerEvent: {}
+[5.772107] (-) TimerEvent: {}
+[5.873251] (-) TimerEvent: {}
+[5.974353] (-) TimerEvent: {}
+[6.075516] (-) TimerEvent: {}
+[6.176808] (-) TimerEvent: {}
+[6.277859] (-) TimerEvent: {}
+[6.378972] (-) TimerEvent: {}
+[6.480114] (-) TimerEvent: {}
+[6.581250] (-) TimerEvent: {}
+[6.682329] (-) TimerEvent: {}
+[6.783378] (-) TimerEvent: {}
+[6.884640] (-) TimerEvent: {}
+[6.985729] (-) TimerEvent: {}
+[7.086827] (-) TimerEvent: {}
+[7.188022] (-) TimerEvent: {}
+[7.289098] (-) TimerEvent: {}
+[7.390242] (-) TimerEvent: {}
+[7.491334] (-) TimerEvent: {}
+[7.592598] (-) TimerEvent: {}
+[7.693720] (-) TimerEvent: {}
+[7.794762] (-) TimerEvent: {}
+[7.895842] (-) TimerEvent: {}
+[7.997004] (-) TimerEvent: {}
+[8.098091] (-) TimerEvent: {}
+[8.199260] (-) TimerEvent: {}
+[8.300351] (-) TimerEvent: {}
+[8.401426] (-) TimerEvent: {}
+[8.502499] (-) TimerEvent: {}
+[8.603621] (-) TimerEvent: {}
+[8.704747] (-) TimerEvent: {}
+[8.805805] (-) TimerEvent: {}
+[8.906879] (-) TimerEvent: {}
+[9.008052] (-) TimerEvent: {}
+[9.109097] (-) TimerEvent: {}
+[9.210163] (-) TimerEvent: {}
+[9.311231] (-) TimerEvent: {}
+[9.412357] (-) TimerEvent: {}
+[9.513397] (-) TimerEvent: {}
+[9.614424] (-) TimerEvent: {}
+[9.715454] (-) TimerEvent: {}
+[9.816701] (-) TimerEvent: {}
+[9.917734] (-) TimerEvent: {}
+[10.018790] (-) TimerEvent: {}
+[10.119983] (-) TimerEvent: {}
+[10.221061] (-) TimerEvent: {}
+[10.322134] (-) TimerEvent: {}
+[10.423215] (-) TimerEvent: {}
+[10.524430] (-) TimerEvent: {}
+[10.625521] (-) TimerEvent: {}
+[10.726688] (-) TimerEvent: {}
+[10.827733] (-) TimerEvent: {}
+[10.928870] (-) TimerEvent: {}
+[11.029897] (-) TimerEvent: {}
+[11.130822] (-) TimerEvent: {}
+[11.231945] (-) TimerEvent: {}
+[11.332989] (-) TimerEvent: {}
+[11.434031] (-) TimerEvent: {}
+[11.535169] (-) TimerEvent: {}
+[11.636391] (-) TimerEvent: {}
+[11.737467] (-) TimerEvent: {}
+[11.838507] (-) TimerEvent: {}
+[11.939570] (-) TimerEvent: {}
+[12.040711] (-) TimerEvent: {}
+[12.141747] (-) TimerEvent: {}
+[12.242816] (-) TimerEvent: {}
+[12.344102] (-) TimerEvent: {}
+[12.445114] (-) TimerEvent: {}
+[12.546182] (-) TimerEvent: {}
+[12.647273] (-) TimerEvent: {}
+[12.748412] (-) TimerEvent: {}
+[12.849508] (-) TimerEvent: {}
+[12.950540] (-) TimerEvent: {}
+[13.051637] (-) TimerEvent: {}
+[13.152802] (-) TimerEvent: {}
+[13.253827] (-) TimerEvent: {}
+[13.354824] (-) TimerEvent: {}
+[13.455972] (-) TimerEvent: {}
+[13.557033] (-) TimerEvent: {}
+[13.658073] (-) TimerEvent: {}
+[13.759107] (-) TimerEvent: {}
+[13.860407] (-) TimerEvent: {}
+[13.961420] (-) TimerEvent: {}
+[14.062463] (-) TimerEvent: {}
+[14.163474] (-) TimerEvent: {}
+[14.214850] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Transformer::listener_callback_lidar(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.216330] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[Kcatch\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.216911] (listener) StderrLine: {'line': b'   66 |         \x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::PointCloud2 transformed_cloud;\n'}
+[14.217390] (listener) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.217904] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.218360] (listener) StderrLine: {'line': b'   66 |         \x1b[01;31m\x1b[Ks\x1b[m\x1b[K\x1b[32m\x1b[Kensor_msgs\x1b[m\x1b[K::msg::PointCloud2 transformed_cloud;\n'}
+[14.218910] (listener) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.219366] (listener) StderrLine: {'line': b'      |         \x1b[32m\x1b[K(\x1b[m\x1b[K\n'}
+[14.219784] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.220353] (listener) StderrLine: {'line': b'   66 |         \x1b[34m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::PointCloud2 transformed_cloud\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[14.220754] (listener) StderrLine: {'line': b'      |         \x1b[34m\x1b[K~~~~~~~~~~~\x1b[m\x1b[K                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.221233] (listener) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[14.221619] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:66:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.249822] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:67:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktransformed_cloud\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.250633] (listener) StderrLine: {'line': b'   67 |         tf2::doTransform(*msg, \x1b[01;31m\x1b[Ktransformed_cloud\x1b[m\x1b[K, transform);                                                                                       // transform the pointcloud2 message\n'}
+[14.251160] (listener) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.254875] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Transformer::listener_callback_realsense(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.255835] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[Kcatch\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.256419] (listener) StderrLine: {'line': b'   99 |         \x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::PointCloud2 transformed_cloud;\n'}
+[14.256917] (listener) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.257306] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.257769] (listener) StderrLine: {'line': b'   99 |         \x1b[01;31m\x1b[Ks\x1b[m\x1b[K\x1b[32m\x1b[Kensor_msgs\x1b[m\x1b[K::msg::PointCloud2 transformed_cloud;\n'}
+[14.258193] (listener) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.258675] (listener) StderrLine: {'line': b'      |         \x1b[32m\x1b[K(\x1b[m\x1b[K\n'}
+[14.259056] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.259482] (listener) StderrLine: {'line': b'   99 |         \x1b[34m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::PointCloud2 transformed_cloud\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[14.259946] (listener) StderrLine: {'line': b'      |         \x1b[34m\x1b[K~~~~~~~~~~~\x1b[m\x1b[K                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.260482] (listener) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[14.260903] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:99:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.263577] (-) TimerEvent: {}
+[14.286868] (listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/master_ws/src/listener/src/listener.cpp:100:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktransformed_cloud\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.287713] (listener) StderrLine: {'line': b'  100 |         tf2::doTransform(*msg, \x1b[01;31m\x1b[Ktransformed_cloud\x1b[m\x1b[K, transform);                                                                                       // transform the pointcloud2 message\n'}
+[14.288254] (listener) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.363983] (-) TimerEvent: {}
+[14.465023] (-) TimerEvent: {}
+[14.566110] (-) TimerEvent: {}
+[14.667137] (-) TimerEvent: {}
+[14.768113] (-) TimerEvent: {}
+[14.869067] (-) TimerEvent: {}
+[14.970010] (-) TimerEvent: {}
+[15.071110] (-) TimerEvent: {}
+[15.172276] (-) TimerEvent: {}
+[15.273317] (-) TimerEvent: {}
+[15.374392] (-) TimerEvent: {}
+[15.475436] (-) TimerEvent: {}
+[15.576598] (-) TimerEvent: {}
+[15.677603] (-) TimerEvent: {}
+[15.778638] (-) TimerEvent: {}
+[15.879717] (-) TimerEvent: {}
+[15.980844] (-) TimerEvent: {}
+[16.081830] (-) TimerEvent: {}
+[16.182810] (-) TimerEvent: {}
+[16.283825] (-) TimerEvent: {}
+[16.384936] (-) TimerEvent: {}
+[16.485964] (-) TimerEvent: {}
+[16.587036] (-) TimerEvent: {}
+[16.688110] (-) TimerEvent: {}
+[16.789113] (-) TimerEvent: {}
+[16.890149] (-) TimerEvent: {}
+[16.991187] (-) TimerEvent: {}
+[17.092329] (-) TimerEvent: {}
+[17.193468] (-) TimerEvent: {}
+[17.294419] (-) TimerEvent: {}
+[17.395363] (-) TimerEvent: {}
+[17.496446] (-) TimerEvent: {}
+[17.597426] (-) TimerEvent: {}
+[17.698443] (-) TimerEvent: {}
+[17.799439] (-) TimerEvent: {}
+[17.900545] (-) TimerEvent: {}
+[18.001571] (-) TimerEvent: {}
+[18.102575] (-) TimerEvent: {}
+[18.203587] (-) TimerEvent: {}
+[18.304715] (-) TimerEvent: {}
+[18.405703] (-) TimerEvent: {}
+[18.506727] (-) TimerEvent: {}
+[18.607801] (-) TimerEvent: {}
+[18.708895] (-) TimerEvent: {}
+[18.809821] (-) TimerEvent: {}
+[18.910844] (-) TimerEvent: {}
+[19.011965] (-) TimerEvent: {}
+[19.113008] (-) TimerEvent: {}
+[19.214056] (-) TimerEvent: {}
+[19.315142] (-) TimerEvent: {}
+[19.416273] (-) TimerEvent: {}
+[19.517380] (-) TimerEvent: {}
+[19.618405] (-) TimerEvent: {}
+[19.719429] (-) TimerEvent: {}
+[19.820439] (-) TimerEvent: {}
+[19.921457] (-) TimerEvent: {}
+[20.022457] (-) TimerEvent: {}
+[20.123442] (-) TimerEvent: {}
+[20.224471] (-) TimerEvent: {}
+[20.325625] (-) TimerEvent: {}
+[20.426553] (-) TimerEvent: {}
+[20.527520] (-) TimerEvent: {}
+[20.628653] (-) TimerEvent: {}
+[20.729744] (-) TimerEvent: {}
+[20.830800] (-) TimerEvent: {}
+[20.931811] (-) TimerEvent: {}
+[21.032871] (-) TimerEvent: {}
+[21.133788] (-) TimerEvent: {}
+[21.234752] (-) TimerEvent: {}
+[21.335786] (-) TimerEvent: {}
+[21.436804] (-) TimerEvent: {}
+[21.537839] (-) TimerEvent: {}
+[21.638756] (-) TimerEvent: {}
+[21.739642] (-) TimerEvent: {}
+[21.840607] (-) TimerEvent: {}
+[21.941515] (-) TimerEvent: {}
+[22.042540] (-) TimerEvent: {}
+[22.143588] (-) TimerEvent: {}
+[22.244679] (-) TimerEvent: {}
+[22.345771] (-) TimerEvent: {}
+[22.446762] (-) TimerEvent: {}
+[22.547796] (-) TimerEvent: {}
+[22.648944] (-) TimerEvent: {}
+[22.750059] (-) TimerEvent: {}
+[22.851015] (-) TimerEvent: {}
+[22.952137] (-) TimerEvent: {}
+[23.053137] (-) TimerEvent: {}
+[23.154206] (-) TimerEvent: {}
+[23.255278] (-) TimerEvent: {}
+[23.356516] (-) TimerEvent: {}
+[23.457548] (-) TimerEvent: {}
+[23.558625] (-) TimerEvent: {}
+[23.659769] (-) TimerEvent: {}
+[23.760862] (-) TimerEvent: {}
+[23.857017] (listener) StderrLine: {'line': b'make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1\n'}
+[23.858829] (listener) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/listener.dir/all] Error 2\n'}
+[23.860006] (listener) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[23.861004] (-) TimerEvent: {}
+[23.872132] (listener) CommandEnded: {'returncode': 2}
+[23.961676] (-) TimerEvent: {}
+[24.063734] (-) TimerEvent: {}
+[24.124461] (listener) JobEnded: {'identifier': 'listener', 'rc': 2}
+[24.136981] (-) EventReactorShutdown: {}

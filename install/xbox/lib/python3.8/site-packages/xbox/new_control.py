@@ -85,20 +85,23 @@ class Controller(Node):
         length_to_gap_array = np.array(data_from_lidar)
         self.get_logger().info(f'length array: {length_to_gap_array}')
 
-        gap_up = 1.4
+        gap_up = 1.75
         un = 0.75                                                       ####$$$$$$
         up = 1.25
         gap = np.zeros(19)
 
-        for i in range(1, len(length_to_gap_array)-1):
+        for i in range(0, len(length_to_gap_array)):
             if (length_to_gap_array[i] > 2):
                 if (i == 0):
-                    if (length_to_gap_array[i] > 5 and (up*length_to_gap_array[i+1] > length_to_gap_array[i])):
+                    if (length_to_gap_array[i] > 5 and (length_to_gap_array[i+1] > length_to_gap_array[i] or length_to_gap_array[i+1] > un*length_to_gap_array[i])):
                         gap[i] == 1
-                if (gap[i-1] == 1):
-                    if ((up*length_to_gap_array[i] > length_to_gap_array[i-1] and un*length_to_gap_array[i] < length_to_gap_array[i-1]) and i!=len(length_to_gap_array)-2):
+                if (gap[i-1] == 1 and i!=len(length_to_gap_array)-1):
+                    if ((length_to_gap_array[i] > un*length_to_gap_array[i-1])):
                         gap[i] = 1
-                elif (((length_to_gap_array[i] > gap_up*length_to_gap_array[i-1]) or (length_to_gap_array[i] > 4)) and (length_to_gap_array[i+1] < up*length_to_gap_array[i] and length_to_gap_array[i+1] > un*length_to_gap_array[i])):
+                elif (i == len(length_to_gap_array)-1):
+                    if (un*length_to_gap_array[i-1] < length_to_gap_array[i]):
+                        gap[i] = 1
+                elif (((length_to_gap_array[i] > gap_up*length_to_gap_array[i-1]) or (length_to_gap_array[i] > 3)) and (length_to_gap_array[i+1] < up*length_to_gap_array[i] and length_to_gap_array[i+1] > un*length_to_gap_array[i])):
                     gap[i] = 1
 
         self.get_logger().info(f'gap array: {gap}')
@@ -122,21 +125,19 @@ class Controller(Node):
 
             if (i != 0 and i != 18):
                 gap_neighbours_rate[i] = 0.1
-            else: gap_neighbours_rate[i] = 0.05
+            elif (i == 0 or i == 18):
+                gap_neighbours_rate[i] = 0.075
 
             if (i == 0):
                 if (gap[i+1] == 1):
                     gap_neighbours_rate[i] = 0.05
-                else: 
-                    gap_neighbours_rate[i] = 0
             if (i == len(gap)-1):
                 if (gap[i-1] == 1):
                     gap_neighbours_rate[i] = 0.05
-                else: 
-                    gap_neighbours_rate[i] = 0
 
             if (i <= 9 and i > 0):
-                for j in range(0, i):
+                gap_neighbours_rate[i] += 0.01*i
+                for j in range(i):
                     if (gap[i-j-1] == 1):
                         gap_neighbours_rate[i] += 0.05
                     else:
@@ -149,36 +150,43 @@ class Controller(Node):
                         break
 
             if (i > 9 and i < len(gap)-1):
-                for k in range(0, (i-len(gap))*(-1)):
-                    if (gap[i-k-1] == 1):
+                gap_neighbours_rate[i] += 0.01*(len(gap)-i-1)
+                for k in range(1, len(gap)-i):
+                    if (gap[i-k] == 1):
                         gap_neighbours_rate[i] += 0.05
                     else:
                         flag = False
-                    if (gap[i+k+1] == 1):
+                    if (gap[i+k] == 1):
                         gap_neighbours_rate[i] += 0.05
                     else:
                         flag = False
                     if (flag == False):
                         break    
+
         self.get_logger().info(f'gap neighbours array: {gap_neighbours_rate}')    
 
         # Filter length array
         # find fake 11m. if points are closer than 0.5m to the lidar 
+        min_param = 1.5
         for i in range(len(length_to_gap_array)):
             if (length_to_gap_array[i] == 11):
-                if (i > 1 and i < len(length_to_gap_array)-2):
-                    if ((length_to_gap_array[i-1] < 1 and length_to_gap_array[i-2] < 1) or (length_to_gap_array[i+1] < 1 and length_to_gap_array[i+2] < 1)):
-                        length_to_gap_array[i] = None
-                if (i < 2):
-                    if (length_to_gap_array[i+1] < 1 and length_to_gap_array[i+2] < 1):
-                        length_to_gap_array[i] = None
-                if (i > len(length_to_gap_array)-2):
-                    if (length_to_gap_array[i-1] < 1 and length_to_gap_array[i-2] < 1):
-                        length_to_gap_array[i] = None
-        #self.get_logger().info(f'Filtered length array: {length_to_gap_array}') 
+                if (i == 0):
+                    if (length_to_gap_array[i+1] < min_param and length_to_gap_array[i+2] < min_param):
+                        length_to_gap_array[i] = -1
+                if (i == len(length_to_gap_array)-1):
+                    print(length_to_gap_array[i])
+                    if (length_to_gap_array[i-1] < min_param and length_to_gap_array[i-2] < min_param):
+                        length_to_gap_array[i] = -1
+                if ((i > 1) and (i < len(length_to_gap_array)-1)):
+                    if (((length_to_gap_array[i-1] < min_param and length_to_gap_array[i-2] < min_param) or (length_to_gap_array[i+1] < min_param and length_to_gap_array[i+2] < min_param)) or (length_to_gap_array[i+1] < min_param and length_to_gap_array[i-1] < min_param)): #((1,1,11or11,1,1)or(1,11,1))
+                        length_to_gap_array[i] = -1
+                    if ((length_to_gap_array[i-1] == None)):
+                        length_to_gap_array[i] = -1
+        self.get_logger().info(f'Filtered length array: {length_to_gap_array}') 
 
         # make one array by multiply the lengths with the gap rate
         decision_array = gap_neighbours_rate*length_to_gap_array
+        self.get_logger().info(f'result array: {decision_array}') 
 
         # Check the lengths against the gaps
         count = 0
@@ -189,7 +197,7 @@ class Controller(Node):
             count = 4
         #self.get_logger().info(f'count: {count}')
         ## not used
-        indices_decision_array = np.argsort(decision_array)[-count:][::-1]
+        #indices_decision_array = np.argsort(decision_array)[-count:][::-1]
         #max_length_array = length_to_gap_array[decision_array]
         #self.get_logger().info(f'max length array: {max_length_array}, size: {len(max_length_array)}')
         ##
@@ -202,14 +210,33 @@ class Controller(Node):
 
         # decision part, which GAP to choose
         # look true the gaps and choose the one with the longest range
+        max_decision = 0.0
         max_length = 0.0
-        gap_chosen = 0.0
-        for i in range(len(indices_decision_array)):
-            if (length_to_gap_array[indices_decision_array[i]] > max_length):
-                gap_chosen = indices_decision_array[i]
-                max_length = length_to_gap_array[indices_decision_array[i]]
-        self.get_logger().info(f'Gap chosen: {gap_chosen}, size: {max_length}')
-            
+        gap_chosen = 0
+        # check is values in decision array are <= 0
+        check = np.any(decision_array > 0)
+        print("check ", check)
+        if (check == True):
+            for i in range(len(decision_array)):
+                if (decision_array[i] > max_decision):
+                    max_decision = decision_array[i]
+                    gap_chosen = i
+            max_length = length_to_gap_array[gap_chosen]
+            #for i in range(len(indices_decision_array)):
+            #    if (length_to_gap_array[indices_decision_array[i]] > max_length):
+             #       gap_chosen = indices_decision_array[i]
+              #      max_length = length_to_gap_array[indices_decision_array[i]]
+            self.get_logger().info(f'Gap chosen: {gap_chosen}, size: {max_length}')
+        else: 
+            ## can reverse??? or choose the best value in the length array $$$$$$$$$$$$$$
+            for i in range(len(length_to_gap_array)):
+                if (length_to_gap_array[i] > max_length):
+                    max_length = length_to_gap_array[i]
+                    gap_chosen = i
+            if (max_length < 2):
+                max_length = None
+                gap_chosen = None
+                # reverse. look behind if clear, reverse
 
 def main(args=None):
     rclpy.init(args=args)
