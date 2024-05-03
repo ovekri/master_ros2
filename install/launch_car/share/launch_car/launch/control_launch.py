@@ -13,11 +13,6 @@ def generate_launch_description():
             name='lidar',
             output='screen'),
         Node(
-            package='xbox',
-            executable='control',
-            name='control',
-            output='screen'),
-        Node(
             package='plane_fitter',
             executable='plane_fitter',
             name='plane_fitter',

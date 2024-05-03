@@ -1,0 +1,32 @@
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:159:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+  159 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K feature_mid;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[KFloat64MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:160:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+  160 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K feature_left;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[KFloat64MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:161:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+  161 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K feature_right;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[KFloat64MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:164:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_mid[m[K’ was not declared in this scope
+  164 |             [01;31m[Kfeature_mid[m[K = pointCloudCb(cloud_mid);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:165:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_left[m[K’ was not declared in this scope
+  165 |             [01;31m[Kfeature_left[m[K = pointCloudCb(cloud_left);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:166:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_right[m[K’ was not declared in this scope
+  166 |             [01;31m[Kfeature_right[m[K = pointCloudCb(cloud_right);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:168:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+  168 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K combined_features;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[KFloat64MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:169:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcombined_features[m[K’ was not declared in this scope
+  169 |             [01;31m[Kcombined_features[m[K.data.insert(combined_features.data.end(), feature_mid.data.begin(), feature_mid.data.end());
+      |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

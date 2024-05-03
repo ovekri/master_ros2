@@ -1,0 +1,36 @@
+[0.161s] Invoking command in '/home/nvidia/master_ws/build/plane_fitter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/plane_fitter -- -j6 -l6
+[0.659s] [35m[1mScanning dependencies of target plane_fitter[0m
+[1.158s] [ 50%] [32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o[0m
+[31.903s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[31.904s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:159:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+[31.904s]   159 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K feature_mid;
+[31.905s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[31.905s]       |                            [32m[KFloat64MultiArray[m[K
+[31.906s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:160:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+[31.907s]   160 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K feature_left;
+[31.907s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[31.907s]       |                            [32m[KFloat64MultiArray[m[K
+[31.908s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:161:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+[31.908s]   161 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K feature_right;
+[31.909s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[31.909s]       |                            [32m[KFloat64MultiArray[m[K
+[31.936s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:164:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_mid[m[K’ was not declared in this scope
+[31.936s]   164 |             [01;31m[Kfeature_mid[m[K = pointCloudCb(cloud_mid);
+[31.937s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[31.971s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:165:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_left[m[K’ was not declared in this scope
+[31.972s]   165 |             [01;31m[Kfeature_left[m[K = pointCloudCb(cloud_left);
+[31.973s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[32.013s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:166:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_right[m[K’ was not declared in this scope
+[32.014s]   166 |             [01;31m[Kfeature_right[m[K = pointCloudCb(cloud_right);
+[32.015s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[32.015s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:168:28:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat64MultiArray[m[K’?
+[32.015s]   168 |             std_msgs::msg::[01;31m[KFloat32MultiArray[m[K combined_features;
+[32.016s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[32.016s]       |                            [32m[KFloat64MultiArray[m[K
+[32.066s] [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:169:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcombined_features[m[K’ was not declared in this scope
+[32.066s]   169 |             [01;31m[Kcombined_features[m[K.data.insert(combined_features.data.end(), feature_mid.data.begin(), feature_mid.data.end());
+[32.067s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[44.312s] make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
+[44.313s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
+[44.315s] make: *** [Makefile:141: all] Error 2
+[44.334s] Invoked command in '/home/nvidia/master_ws/build/plane_fitter' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/plane_fitter -- -j6 -l6

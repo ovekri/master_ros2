@@ -1,0 +1,60 @@
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:176:24:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  176 |         std_msgs::msg::[01;31m[KFloat64MultiArray[m[K pointCloudCb(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud_msg) {
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:287:42:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  287 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KFloat64MultiArray[m[K>::SharedPtr publisher_combined_features_;
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                          [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:287:42:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  287 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KFloat64MultiArray[m[K>::SharedPtr publisher_combined_features_;
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                          [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:287:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  287 |         rclcpp::Publisher<std_msgs::msg::Float64MultiArray[01;31m[K>[m[K::SharedPtr publisher_combined_features_;
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:287:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  287 |         rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::[01;31m[KSharedPtr[m[K publisher_combined_features_;
+      |                                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                                       [32m[K;[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:287:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_combined_features_[m[K’ does not name a type
+  287 |         rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr [01;31m[Kpublisher_combined_features_[m[K;
+      |                                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In constructor ‘[01m[KpointCloudPlaneFitter::pointCloudPlaneFitter()[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:103:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_combined_features_[m[K’ was not declared in this scope
+  103 |             [01;31m[Kpublisher_combined_features_[m[K = this->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_features_", 10);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:103:82:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  103 |             publisher_combined_features_ = this->create_publisher<std_msgs::msg::[01;31m[KFloat64MultiArray[m[K>("/plane_fitter_features_", 10);
+      |                                                                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                                                                  [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:103:82:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  103 |             publisher_combined_features_ = this->create_publisher<std_msgs::msg::[01;31m[KFloat64MultiArray[m[K>("/plane_fitter_features_", 10);
+      |                                                                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                                                                  [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:103:130:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KpointCloudPlaneFitter::create_publisher<<expression error> >(const char [24], int)[m[K’
+  103 | ->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_features_", 10[01;31m[K)[m[K;
+      |                                                                                   [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:8[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  184 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:103:130:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 | ->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_features_", 10[01;31m[K)[m[K;
+      |                                                                                   [01;31m[K^[m[K
+
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:164:27:[m[K [01;31m[Kerror: [m[K‘[01m[KpointCloudCb[m[K’ was not declared in this scope
+  164 |             feature_mid = [01;31m[KpointCloudCb[m[K(cloud_mid);
+      |                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:173:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_combined_features_[m[K’ was not declared in this scope
+  173 |             [01;31m[Kpublisher_combined_features_[m[K->publish(combined_features);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

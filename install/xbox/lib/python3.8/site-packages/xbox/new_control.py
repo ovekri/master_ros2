@@ -43,14 +43,20 @@ class Controller(Node):
             10)
         self.desicion_array_subscription
 
-        self.timer_period_lidar = 0.5 
-        self.timer_period_realsense = 0.33 
+        self.timer_period_lidar = 0.5
+        self.timer_period_realsense = 0.5
         self.timer_lidar = self.create_timer(self.timer_period_lidar, self.lidar_desicion_callback)
         self.timer_realsense = self.create_timer(self.timer_period_realsense, self.realsense_desicion_callback)
 
+        self.flag_lidar = False
+        self.flag_realsense = False
+        self.plane_fitter_features_mid = [0, 0, 0, 0]
+        self.plane_fitter_features_left = [0, 0, 0, 0]
+        self.plane_fitter_features_right = [0, 0, 0, 0]
+        self.plane_fitter_features = 0
         self.temp_timer = None
         self.joy_state = None 
-        self.lidar_decision_state = None
+        self.lidar_decision_state = 0
         self.lidar_state = None
         self.realsense_decision_state = None
         self.realsense_state = None
@@ -73,11 +79,13 @@ class Controller(Node):
         self.realsense_state = msg
         
     def lidar_desicion_callback(self):
-        ## Find the gap ## 
-        # gap array form [1,1,0,0,0,1,1,0,0,0,1]
+        self.flag_lidar = True
         if self.lidar_state is None:
             self.get_logger().info('Lidar data not available yet.')
             return
+        self.flag_lidar = True
+        ## Find the gap ## 
+        # gap array form [1,1,0,0,0,1,1,0,0,0,1]
         length_to_gap_array = np.array(self.lidar_state.data)
         #self.get_logger().info(f'length array: {length_to_gap_array}')
 
@@ -245,23 +253,25 @@ class Controller(Node):
         if self.realsense_state is None:
             self.get_logger().info('Realsense data not available yet.')
             return
-        #features = np.array(self.realsense_state.data)
-        #print(features)
+        self.flag_realsense = True
+        self.plane_fitter_features = np.array(self.realsense_state.data)
+        #self.plane_fitter_features_mid = plane_fitter_features[0:4]
+        #self.plane_fitter_features_left = plane_fitter_features[4:8]
+        #self.plane_fitter_features_right = plane_fitter_features[8:12]
         self.control()
 
     def set_state(self, angle, motor):
         self.angle_servo = 90+(int(angle*0.98))
         self.servo.angle = self.angle_servo
-        self.angle_motor = motor
-        self.motor.angle = self.angle_motor
-        time.sleep(0.15)  # can remove when its safe
-        self.angle_motor = 106
-        self.motor.angle = self.angle_motor
-        time.sleep(0.1)
+        #self.angle_motor = motor
+        #self.motor.angle = self.angle_motor
+        #time.sleep(0.15)  # can remove when its safe
+        #self.angle_motor = 106
+        #self.motor.angle = self.angle_motor
+        #time.sleep(0.1)
 
     def control(self):
         if self.joy_state == None:
-            #self.get_logger().info('Waiting for both joy and decision messages.')
             if self.joy_state == None:
                 self.get_logger().info('Waiting for joy')
                 return
@@ -290,13 +300,20 @@ class Controller(Node):
                 self.angle_motor = 106
                 self.motor.angle = self.angle_motor
         
-        if autonom == 1 and forward == 0 and reverse == 0 and joystick_value == 0:
-            
-            if (self.no_solution == True):
-                self.set_state(self.lidar_decision_state, 106)
-            else:
-                self.set_state(self.lidar_decision_state, 114)
-            self.get_logger().info(f'angle: {90+self.lidar_decision_state}')
+        # Self driving part
+        if self.flag_lidar == True and self.flag_realsense == True:
+            if autonom == 1 and forward == 0 and reverse == 0 and joystick_value == 0:
+                #print("mid: ",self.plane_fitter_features_mid)
+                #print("left: ",self.plane_fitter_features_left)
+                #print("right: ",self.plane_fitter_features_right)
+                self.get_logger().info(f'whole plane: {self.plane_fitter_features}')
+                if (self.no_solution == True):
+                    self.set_state(self.lidar_decision_state, 106)
+                else:
+                    self.set_state(self.lidar_decision_state, 114)
+                self.get_logger().info(f'angle: {90+self.lidar_decision_state}')
+                self.flag_lidar = False
+                self.flag_realsense = False
 
 def main(args=None):
     rclpy.init(args=args)

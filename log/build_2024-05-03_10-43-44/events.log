@@ -1,0 +1,660 @@
+[0.000000] (-) TimerEvent: {}
+[0.001159] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.002432] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.002578] (-) JobUnselected: {'identifier': 'lidar'}
+[0.003333] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.003489] (-) JobUnselected: {'identifier': 'listener'}
+[0.003610] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.003776] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.003926] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.004040] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.004158] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.004991] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.006000] (plane_fitter) JobQueued: {'identifier': 'plane_fitter', 'dependencies': OrderedDict()}
+[0.006184] (xbox) JobQueued: {'identifier': 'xbox', 'dependencies': OrderedDict()}
+[0.006353] (plane_fitter) JobStarted: {'identifier': 'plane_fitter'}
+[0.062711] (xbox) JobStarted: {'identifier': 'xbox'}
+[0.098488] (-) TimerEvent: {}
+[0.140976] (plane_fitter) JobProgress: {'identifier': 'plane_fitter', 'progress': 'cmake'}
+[0.146384] (plane_fitter) JobProgress: {'identifier': 'plane_fitter', 'progress': 'build'}
+[0.150284] (plane_fitter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/master_ws/build/plane_fitter', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/master_ws/build/plane_fitter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 60042 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/plane_fitter'), ('SSH_CONNECTION', '192.168.50.129 60042 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[0.206007] (-) TimerEvent: {}
+[0.308825] (-) TimerEvent: {}
+[0.409741] (-) TimerEvent: {}
+[0.510765] (-) TimerEvent: {}
+[0.513662] (plane_fitter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target plane_fitter\x1b[0m\n'}
+[0.611006] (-) TimerEvent: {}
+[0.713125] (-) TimerEvent: {}
+[0.814174] (-) TimerEvent: {}
+[0.915932] (-) TimerEvent: {}
+[0.961340] (plane_fitter) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o\x1b[0m\n'}
+[1.016180] (-) TimerEvent: {}
+[1.117865] (-) TimerEvent: {}
+[1.219164] (-) TimerEvent: {}
+[1.321040] (-) TimerEvent: {}
+[1.422156] (-) TimerEvent: {}
+[1.524514] (-) TimerEvent: {}
+[1.626400] (-) TimerEvent: {}
+[1.727445] (-) TimerEvent: {}
+[1.829526] (-) TimerEvent: {}
+[1.933352] (-) TimerEvent: {}
+[2.036133] (-) TimerEvent: {}
+[2.137418] (-) TimerEvent: {}
+[2.240872] (-) TimerEvent: {}
+[2.342247] (-) TimerEvent: {}
+[2.443602] (-) TimerEvent: {}
+[2.544849] (-) TimerEvent: {}
+[2.645918] (-) TimerEvent: {}
+[2.747217] (-) TimerEvent: {}
+[2.848550] (-) TimerEvent: {}
+[2.949922] (-) TimerEvent: {}
+[3.051195] (-) TimerEvent: {}
+[3.152475] (-) TimerEvent: {}
+[3.254295] (-) TimerEvent: {}
+[3.356636] (-) TimerEvent: {}
+[3.458429] (-) TimerEvent: {}
+[3.560412] (-) TimerEvent: {}
+[3.661566] (-) TimerEvent: {}
+[3.762755] (-) TimerEvent: {}
+[3.863961] (-) TimerEvent: {}
+[3.965168] (-) TimerEvent: {}
+[4.066299] (-) TimerEvent: {}
+[4.163693] (xbox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xbox', 'build', '--build-base', '/home/nvidia/master_ws/build/xbox/build', 'install', '--record', '/home/nvidia/master_ws/build/xbox/install.log', '--install-scripts', '$base/lib/xbox', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nvidia/master_ws/src/xbox', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nvidia', 'SSH_CLIENT': '192.168.50.129 60042 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/nvidia', 'OLDPWD': '/home/nvidia', 'SSH_TTY': '/dev/pts/1', 'JETSON_L4T': '35.3.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Xavier NX Developer Kit', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/opt/ros/foxy/', 'COLCON_PREFIX_PATH': '/home/nvidia/master_ws/install:/home/nvidia/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'nvidia', 'JETSON_MODULE': 'NVIDIA Jetson Xavier NX', 'JETSON_SERIAL_NUMBER': '1422421040635', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Jakku', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'AMENT_PREFIX_PATH': '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/nvidia/master_ws/build/xbox', 'SSH_CONNECTION': '192.168.50.129 60042 192.168.50.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nvidia/master_ws/build/xbox/prefix_override:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'JETSON_JETPACK': '5.1.1', 'CMAKE_PREFIX_PATH': '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar', 'JETSON_P_NUMBER': 'p3668-0001'}, 'shell': False}
+[4.188388] (-) TimerEvent: {}
+[4.289918] (-) TimerEvent: {}
+[4.390899] (-) TimerEvent: {}
+[4.491855] (-) TimerEvent: {}
+[4.592848] (-) TimerEvent: {}
+[4.693821] (-) TimerEvent: {}
+[4.794804] (-) TimerEvent: {}
+[4.895785] (-) TimerEvent: {}
+[4.996840] (-) TimerEvent: {}
+[5.097862] (-) TimerEvent: {}
+[5.198992] (-) TimerEvent: {}
+[5.300801] (-) TimerEvent: {}
+[5.402542] (-) TimerEvent: {}
+[5.504412] (-) TimerEvent: {}
+[5.583147] (xbox) StdoutLine: {'line': b'running egg_info\n'}
+[5.586711] (xbox) StdoutLine: {'line': b'writing ../../build/xbox/xbox.egg-info/PKG-INFO\n'}
+[5.588607] (xbox) StdoutLine: {'line': b'writing dependency_links to ../../build/xbox/xbox.egg-info/dependency_links.txt\n'}
+[5.589549] (xbox) StdoutLine: {'line': b'writing entry points to ../../build/xbox/xbox.egg-info/entry_points.txt\n'}
+[5.591078] (xbox) StdoutLine: {'line': b'writing requirements to ../../build/xbox/xbox.egg-info/requires.txt\n'}
+[5.591829] (xbox) StdoutLine: {'line': b'writing top-level names to ../../build/xbox/xbox.egg-info/top_level.txt\n'}
+[5.604603] (-) TimerEvent: {}
+[5.706102] (-) TimerEvent: {}
+[5.775436] (xbox) StdoutLine: {'line': b"reading manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'\n"}
+[5.780139] (xbox) StdoutLine: {'line': b"writing manifest file '../../build/xbox/xbox.egg-info/SOURCES.txt'\n"}
+[5.783045] (xbox) StdoutLine: {'line': b'running build\n'}
+[5.783588] (xbox) StdoutLine: {'line': b'running build_py\n'}
+[5.784572] (xbox) StdoutLine: {'line': b'running install\n'}
+[5.789140] (xbox) StdoutLine: {'line': b'running install_lib\n'}
+[5.797698] (xbox) StdoutLine: {'line': b'running install_data\n'}
+[5.798887] (xbox) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.806368] (-) TimerEvent: {}
+[5.807517] (xbox) StdoutLine: {'line': b"removing '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.809678] (xbox) StdoutLine: {'line': b'Copying ../../build/xbox/xbox.egg-info to /home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages/xbox-0.0.0-py3.8.egg-info\n'}
+[5.815665] (xbox) StdoutLine: {'line': b'running install_scripts\n'}
+[5.906574] (-) TimerEvent: {}
+[5.910395] (xbox) StdoutLine: {'line': b'Installing control script to /home/nvidia/master_ws/install/xbox/lib/xbox\n'}
+[5.911979] (xbox) StdoutLine: {'line': b'Installing new_control script to /home/nvidia/master_ws/install/xbox/lib/xbox\n'}
+[5.913329] (xbox) StdoutLine: {'line': b"writing list of installed files to '/home/nvidia/master_ws/build/xbox/install.log'\n"}
+[6.007217] (-) TimerEvent: {}
+[6.022735] (xbox) CommandEnded: {'returncode': 0}
+[6.093087] (xbox) JobEnded: {'identifier': 'xbox', 'rc': 0}
+[6.107408] (-) TimerEvent: {}
+[6.208315] (-) TimerEvent: {}
+[6.309334] (-) TimerEvent: {}
+[6.410414] (-) TimerEvent: {}
+[6.511478] (-) TimerEvent: {}
+[6.612690] (-) TimerEvent: {}
+[6.713707] (-) TimerEvent: {}
+[6.814710] (-) TimerEvent: {}
+[6.915804] (-) TimerEvent: {}
+[7.017148] (-) TimerEvent: {}
+[7.118260] (-) TimerEvent: {}
+[7.219257] (-) TimerEvent: {}
+[7.320380] (-) TimerEvent: {}
+[7.421428] (-) TimerEvent: {}
+[7.522485] (-) TimerEvent: {}
+[7.623686] (-) TimerEvent: {}
+[7.724950] (-) TimerEvent: {}
+[7.826838] (-) TimerEvent: {}
+[7.928992] (-) TimerEvent: {}
+[8.030727] (-) TimerEvent: {}
+[8.132754] (-) TimerEvent: {}
+[8.233922] (-) TimerEvent: {}
+[8.334981] (-) TimerEvent: {}
+[8.436089] (-) TimerEvent: {}
+[8.537200] (-) TimerEvent: {}
+[8.638249] (-) TimerEvent: {}
+[8.739192] (-) TimerEvent: {}
+[8.840757] (-) TimerEvent: {}
+[8.941814] (-) TimerEvent: {}
+[9.043031] (-) TimerEvent: {}
+[9.144294] (-) TimerEvent: {}
+[9.245309] (-) TimerEvent: {}
+[9.346588] (-) TimerEvent: {}
+[9.447714] (-) TimerEvent: {}
+[9.548897] (-) TimerEvent: {}
+[9.649879] (-) TimerEvent: {}
+[9.750938] (-) TimerEvent: {}
+[9.852093] (-) TimerEvent: {}
+[9.953183] (-) TimerEvent: {}
+[10.054255] (-) TimerEvent: {}
+[10.155365] (-) TimerEvent: {}
+[10.256537] (-) TimerEvent: {}
+[10.357592] (-) TimerEvent: {}
+[10.458641] (-) TimerEvent: {}
+[10.559702] (-) TimerEvent: {}
+[10.660883] (-) TimerEvent: {}
+[10.762006] (-) TimerEvent: {}
+[10.863209] (-) TimerEvent: {}
+[10.964647] (-) TimerEvent: {}
+[11.065861] (-) TimerEvent: {}
+[11.166938] (-) TimerEvent: {}
+[11.268073] (-) TimerEvent: {}
+[11.369279] (-) TimerEvent: {}
+[11.470442] (-) TimerEvent: {}
+[11.571554] (-) TimerEvent: {}
+[11.672765] (-) TimerEvent: {}
+[11.773882] (-) TimerEvent: {}
+[11.875062] (-) TimerEvent: {}
+[11.976196] (-) TimerEvent: {}
+[12.077382] (-) TimerEvent: {}
+[12.178508] (-) TimerEvent: {}
+[12.279625] (-) TimerEvent: {}
+[12.381226] (-) TimerEvent: {}
+[12.482347] (-) TimerEvent: {}
+[12.584282] (-) TimerEvent: {}
+[12.686013] (-) TimerEvent: {}
+[12.787784] (-) TimerEvent: {}
+[12.889614] (-) TimerEvent: {}
+[12.990834] (-) TimerEvent: {}
+[13.092928] (-) TimerEvent: {}
+[13.194857] (-) TimerEvent: {}
+[13.296987] (-) TimerEvent: {}
+[13.398838] (-) TimerEvent: {}
+[13.500692] (-) TimerEvent: {}
+[13.602534] (-) TimerEvent: {}
+[13.704423] (-) TimerEvent: {}
+[13.806574] (-) TimerEvent: {}
+[13.908409] (-) TimerEvent: {}
+[14.010964] (-) TimerEvent: {}
+[14.112039] (-) TimerEvent: {}
+[14.214131] (-) TimerEvent: {}
+[14.316445] (-) TimerEvent: {}
+[14.418637] (-) TimerEvent: {}
+[14.520832] (-) TimerEvent: {}
+[14.622984] (-) TimerEvent: {}
+[14.724121] (-) TimerEvent: {}
+[14.826621] (-) TimerEvent: {}
+[14.928847] (-) TimerEvent: {}
+[15.030870] (-) TimerEvent: {}
+[15.133178] (-) TimerEvent: {}
+[15.235326] (-) TimerEvent: {}
+[15.337416] (-) TimerEvent: {}
+[15.438755] (-) TimerEvent: {}
+[15.539942] (-) TimerEvent: {}
+[15.641087] (-) TimerEvent: {}
+[15.742483] (-) TimerEvent: {}
+[15.843614] (-) TimerEvent: {}
+[15.944745] (-) TimerEvent: {}
+[16.046458] (-) TimerEvent: {}
+[16.147520] (-) TimerEvent: {}
+[16.248890] (-) TimerEvent: {}
+[16.351517] (-) TimerEvent: {}
+[16.454498] (-) TimerEvent: {}
+[16.557730] (-) TimerEvent: {}
+[16.658711] (-) TimerEvent: {}
+[16.759660] (-) TimerEvent: {}
+[16.860812] (-) TimerEvent: {}
+[16.961896] (-) TimerEvent: {}
+[17.062900] (-) TimerEvent: {}
+[17.164098] (-) TimerEvent: {}
+[17.265206] (-) TimerEvent: {}
+[17.366830] (-) TimerEvent: {}
+[17.467982] (-) TimerEvent: {}
+[17.569150] (-) TimerEvent: {}
+[17.670452] (-) TimerEvent: {}
+[17.771478] (-) TimerEvent: {}
+[17.872791] (-) TimerEvent: {}
+[17.973849] (-) TimerEvent: {}
+[18.074903] (-) TimerEvent: {}
+[18.175888] (-) TimerEvent: {}
+[18.277057] (-) TimerEvent: {}
+[18.378107] (-) TimerEvent: {}
+[18.479385] (-) TimerEvent: {}
+[18.581551] (-) TimerEvent: {}
+[18.683945] (-) TimerEvent: {}
+[18.785108] (-) TimerEvent: {}
+[18.886230] (-) TimerEvent: {}
+[18.987389] (-) TimerEvent: {}
+[19.088499] (-) TimerEvent: {}
+[19.189663] (-) TimerEvent: {}
+[19.290762] (-) TimerEvent: {}
+[19.391817] (-) TimerEvent: {}
+[19.493111] (-) TimerEvent: {}
+[19.594362] (-) TimerEvent: {}
+[19.695367] (-) TimerEvent: {}
+[19.796995] (-) TimerEvent: {}
+[19.898034] (-) TimerEvent: {}
+[19.999044] (-) TimerEvent: {}
+[20.100154] (-) TimerEvent: {}
+[20.201390] (-) TimerEvent: {}
+[20.302598] (-) TimerEvent: {}
+[20.403599] (-) TimerEvent: {}
+[20.504796] (-) TimerEvent: {}
+[20.605876] (-) TimerEvent: {}
+[20.706964] (-) TimerEvent: {}
+[20.808541] (-) TimerEvent: {}
+[20.909594] (-) TimerEvent: {}
+[21.010767] (-) TimerEvent: {}
+[21.112108] (-) TimerEvent: {}
+[21.213328] (-) TimerEvent: {}
+[21.314439] (-) TimerEvent: {}
+[21.415624] (-) TimerEvent: {}
+[21.516983] (-) TimerEvent: {}
+[21.618046] (-) TimerEvent: {}
+[21.719115] (-) TimerEvent: {}
+[21.820992] (-) TimerEvent: {}
+[21.922077] (-) TimerEvent: {}
+[22.023342] (-) TimerEvent: {}
+[22.125112] (-) TimerEvent: {}
+[22.226511] (-) TimerEvent: {}
+[22.328260] (-) TimerEvent: {}
+[22.429444] (-) TimerEvent: {}
+[22.530690] (-) TimerEvent: {}
+[22.631817] (-) TimerEvent: {}
+[22.732965] (-) TimerEvent: {}
+[22.834244] (-) TimerEvent: {}
+[22.937077] (-) TimerEvent: {}
+[23.038952] (-) TimerEvent: {}
+[23.140857] (-) TimerEvent: {}
+[23.242977] (-) TimerEvent: {}
+[23.345014] (-) TimerEvent: {}
+[23.447065] (-) TimerEvent: {}
+[23.549139] (-) TimerEvent: {}
+[23.651115] (-) TimerEvent: {}
+[23.753194] (-) TimerEvent: {}
+[23.855077] (-) TimerEvent: {}
+[23.957213] (-) TimerEvent: {}
+[24.058237] (-) TimerEvent: {}
+[24.159335] (-) TimerEvent: {}
+[24.260459] (-) TimerEvent: {}
+[24.361530] (-) TimerEvent: {}
+[24.463744] (-) TimerEvent: {}
+[24.565879] (-) TimerEvent: {}
+[24.667767] (-) TimerEvent: {}
+[24.769959] (-) TimerEvent: {}
+[24.871991] (-) TimerEvent: {}
+[24.974066] (-) TimerEvent: {}
+[25.076299] (-) TimerEvent: {}
+[25.178257] (-) TimerEvent: {}
+[25.280434] (-) TimerEvent: {}
+[25.381503] (-) TimerEvent: {}
+[25.482552] (-) TimerEvent: {}
+[25.583572] (-) TimerEvent: {}
+[25.684802] (-) TimerEvent: {}
+[25.786829] (-) TimerEvent: {}
+[25.888483] (-) TimerEvent: {}
+[25.989628] (-) TimerEvent: {}
+[26.090633] (-) TimerEvent: {}
+[26.191730] (-) TimerEvent: {}
+[26.293770] (-) TimerEvent: {}
+[26.394888] (-) TimerEvent: {}
+[26.495980] (-) TimerEvent: {}
+[26.597202] (-) TimerEvent: {}
+[26.698395] (-) TimerEvent: {}
+[26.799587] (-) TimerEvent: {}
+[26.901852] (-) TimerEvent: {}
+[27.004009] (-) TimerEvent: {}
+[27.106411] (-) TimerEvent: {}
+[27.207641] (-) TimerEvent: {}
+[27.309235] (-) TimerEvent: {}
+[27.410819] (-) TimerEvent: {}
+[27.512037] (-) TimerEvent: {}
+[27.613543] (-) TimerEvent: {}
+[27.714637] (-) TimerEvent: {}
+[27.815736] (-) TimerEvent: {}
+[27.917984] (-) TimerEvent: {}
+[28.020033] (-) TimerEvent: {}
+[28.122260] (-) TimerEvent: {}
+[28.224294] (-) TimerEvent: {}
+[28.325654] (-) TimerEvent: {}
+[28.426854] (-) TimerEvent: {}
+[28.528117] (-) TimerEvent: {}
+[28.629290] (-) TimerEvent: {}
+[28.730510] (-) TimerEvent: {}
+[28.831691] (-) TimerEvent: {}
+[28.933001] (-) TimerEvent: {}
+[29.034286] (-) TimerEvent: {}
+[29.135571] (-) TimerEvent: {}
+[29.237741] (-) TimerEvent: {}
+[29.339790] (-) TimerEvent: {}
+[29.442286] (-) TimerEvent: {}
+[29.544648] (-) TimerEvent: {}
+[29.645796] (-) TimerEvent: {}
+[29.746873] (-) TimerEvent: {}
+[29.848035] (-) TimerEvent: {}
+[29.949366] (-) TimerEvent: {}
+[30.050567] (-) TimerEvent: {}
+[30.151762] (-) TimerEvent: {}
+[30.253207] (-) TimerEvent: {}
+[30.354490] (-) TimerEvent: {}
+[30.456369] (-) TimerEvent: {}
+[30.557539] (-) TimerEvent: {}
+[30.658881] (-) TimerEvent: {}
+[30.760361] (-) TimerEvent: {}
+[30.861595] (-) TimerEvent: {}
+[30.962719] (-) TimerEvent: {}
+[31.063881] (-) TimerEvent: {}
+[31.165145] (-) TimerEvent: {}
+[31.266243] (-) TimerEvent: {}
+[31.367629] (-) TimerEvent: {}
+[31.469718] (-) TimerEvent: {}
+[31.570998] (-) TimerEvent: {}
+[31.672424] (-) TimerEvent: {}
+[31.773583] (-) TimerEvent: {}
+[31.875154] (-) TimerEvent: {}
+[31.976318] (-) TimerEvent: {}
+[32.077559] (-) TimerEvent: {}
+[32.179037] (-) TimerEvent: {}
+[32.280342] (-) TimerEvent: {}
+[32.382749] (-) TimerEvent: {}
+[32.484817] (-) TimerEvent: {}
+[32.585993] (-) TimerEvent: {}
+[32.687019] (-) TimerEvent: {}
+[32.788303] (-) TimerEvent: {}
+[32.890473] (-) TimerEvent: {}
+[32.992424] (-) TimerEvent: {}
+[33.094300] (-) TimerEvent: {}
+[33.197146] (-) TimerEvent: {}
+[33.299149] (-) TimerEvent: {}
+[33.400908] (-) TimerEvent: {}
+[33.502646] (-) TimerEvent: {}
+[33.604325] (-) TimerEvent: {}
+[33.706003] (-) TimerEvent: {}
+[33.807027] (-) TimerEvent: {}
+[33.908073] (-) TimerEvent: {}
+[34.009156] (-) TimerEvent: {}
+[34.110787] (-) TimerEvent: {}
+[34.211848] (-) TimerEvent: {}
+[34.312931] (-) TimerEvent: {}
+[34.413976] (-) TimerEvent: {}
+[34.515043] (-) TimerEvent: {}
+[34.617119] (-) TimerEvent: {}
+[34.719017] (-) TimerEvent: {}
+[34.821012] (-) TimerEvent: {}
+[34.922167] (-) TimerEvent: {}
+[35.023462] (-) TimerEvent: {}
+[35.124721] (-) TimerEvent: {}
+[35.226631] (-) TimerEvent: {}
+[35.328670] (-) TimerEvent: {}
+[35.432519] (-) TimerEvent: {}
+[35.534392] (-) TimerEvent: {}
+[35.636341] (-) TimerEvent: {}
+[35.738865] (-) TimerEvent: {}
+[35.840897] (-) TimerEvent: {}
+[35.942147] (-) TimerEvent: {}
+[36.043121] (-) TimerEvent: {}
+[36.144864] (-) TimerEvent: {}
+[36.246234] (-) TimerEvent: {}
+[36.347901] (-) TimerEvent: {}
+[36.449212] (-) TimerEvent: {}
+[36.550386] (-) TimerEvent: {}
+[36.651626] (-) TimerEvent: {}
+[36.752755] (-) TimerEvent: {}
+[36.853772] (-) TimerEvent: {}
+[36.955524] (-) TimerEvent: {}
+[37.057275] (-) TimerEvent: {}
+[37.159056] (-) TimerEvent: {}
+[37.261084] (-) TimerEvent: {}
+[37.362618] (-) TimerEvent: {}
+[37.463657] (-) TimerEvent: {}
+[37.564703] (-) TimerEvent: {}
+[37.666569] (-) TimerEvent: {}
+[37.771538] (-) TimerEvent: {}
+[37.875050] (-) TimerEvent: {}
+[37.976163] (-) TimerEvent: {}
+[38.077243] (-) TimerEvent: {}
+[38.178317] (-) TimerEvent: {}
+[38.279994] (-) TimerEvent: {}
+[38.381489] (-) TimerEvent: {}
+[38.483059] (-) TimerEvent: {}
+[38.583949] (-) TimerEvent: {}
+[38.685050] (-) TimerEvent: {}
+[38.786049] (-) TimerEvent: {}
+[38.887139] (-) TimerEvent: {}
+[38.988351] (-) TimerEvent: {}
+[39.089350] (-) TimerEvent: {}
+[39.190372] (-) TimerEvent: {}
+[39.291401] (-) TimerEvent: {}
+[39.392544] (-) TimerEvent: {}
+[39.494226] (-) TimerEvent: {}
+[39.595193] (-) TimerEvent: {}
+[39.696319] (-) TimerEvent: {}
+[39.798034] (-) TimerEvent: {}
+[39.900308] (-) TimerEvent: {}
+[40.001429] (-) TimerEvent: {}
+[40.102557] (-) TimerEvent: {}
+[40.203758] (-) TimerEvent: {}
+[40.305857] (-) TimerEvent: {}
+[40.408722] (-) TimerEvent: {}
+[40.510007] (-) TimerEvent: {}
+[40.611283] (-) TimerEvent: {}
+[40.712520] (-) TimerEvent: {}
+[40.813600] (-) TimerEvent: {}
+[40.915053] (-) TimerEvent: {}
+[41.016331] (-) TimerEvent: {}
+[41.117512] (-) TimerEvent: {}
+[41.219006] (-) TimerEvent: {}
+[41.320046] (-) TimerEvent: {}
+[41.421269] (-) TimerEvent: {}
+[41.523004] (-) TimerEvent: {}
+[41.624770] (-) TimerEvent: {}
+[41.725898] (-) TimerEvent: {}
+[41.828195] (-) TimerEvent: {}
+[41.929952] (-) TimerEvent: {}
+[42.031039] (-) TimerEvent: {}
+[42.133306] (-) TimerEvent: {}
+[42.234569] (-) TimerEvent: {}
+[42.337249] (-) TimerEvent: {}
+[42.438679] (-) TimerEvent: {}
+[42.539971] (-) TimerEvent: {}
+[42.641338] (-) TimerEvent: {}
+[42.742709] (-) TimerEvent: {}
+[42.843830] (-) TimerEvent: {}
+[42.945168] (-) TimerEvent: {}
+[43.046575] (-) TimerEvent: {}
+[43.148582] (-) TimerEvent: {}
+[43.250575] (-) TimerEvent: {}
+[43.351787] (-) TimerEvent: {}
+[43.452989] (-) TimerEvent: {}
+[43.554350] (-) TimerEvent: {}
+[43.655682] (-) TimerEvent: {}
+[43.756846] (-) TimerEvent: {}
+[43.857952] (-) TimerEvent: {}
+[43.959068] (-) TimerEvent: {}
+[44.060052] (-) TimerEvent: {}
+[44.162231] (-) TimerEvent: {}
+[44.263155] (-) TimerEvent: {}
+[44.364053] (-) TimerEvent: {}
+[44.465125] (-) TimerEvent: {}
+[44.566179] (-) TimerEvent: {}
+[44.667202] (-) TimerEvent: {}
+[44.768399] (-) TimerEvent: {}
+[44.869447] (-) TimerEvent: {}
+[44.970499] (-) TimerEvent: {}
+[45.071525] (-) TimerEvent: {}
+[45.172706] (-) TimerEvent: {}
+[45.273787] (-) TimerEvent: {}
+[45.374775] (-) TimerEvent: {}
+[45.475980] (-) TimerEvent: {}
+[45.577122] (-) TimerEvent: {}
+[45.678192] (-) TimerEvent: {}
+[45.779199] (-) TimerEvent: {}
+[45.880258] (-) TimerEvent: {}
+[45.981270] (-) TimerEvent: {}
+[46.083140] (-) TimerEvent: {}
+[46.184770] (-) TimerEvent: {}
+[46.285687] (-) TimerEvent: {}
+[46.386638] (-) TimerEvent: {}
+[46.487544] (-) TimerEvent: {}
+[46.588529] (-) TimerEvent: {}
+[46.689434] (-) TimerEvent: {}
+[46.790920] (-) TimerEvent: {}
+[46.892028] (-) TimerEvent: {}
+[46.993110] (-) TimerEvent: {}
+[47.094159] (-) TimerEvent: {}
+[47.195202] (-) TimerEvent: {}
+[47.296296] (-) TimerEvent: {}
+[47.397264] (-) TimerEvent: {}
+[47.498360] (-) TimerEvent: {}
+[47.599341] (-) TimerEvent: {}
+[47.700434] (-) TimerEvent: {}
+[47.802271] (-) TimerEvent: {}
+[47.904640] (-) TimerEvent: {}
+[48.007278] (-) TimerEvent: {}
+[48.109367] (-) TimerEvent: {}
+[48.210588] (-) TimerEvent: {}
+[48.312556] (-) TimerEvent: {}
+[48.413981] (-) TimerEvent: {}
+[48.515342] (-) TimerEvent: {}
+[48.617474] (-) TimerEvent: {}
+[48.718792] (-) TimerEvent: {}
+[48.820043] (-) TimerEvent: {}
+[48.921539] (-) TimerEvent: {}
+[49.022790] (-) TimerEvent: {}
+[49.124515] (-) TimerEvent: {}
+[49.226678] (-) TimerEvent: {}
+[49.329022] (-) TimerEvent: {}
+[49.431020] (-) TimerEvent: {}
+[49.533162] (-) TimerEvent: {}
+[49.635302] (-) TimerEvent: {}
+[49.737352] (-) TimerEvent: {}
+[49.839457] (-) TimerEvent: {}
+[49.940795] (-) TimerEvent: {}
+[50.042867] (-) TimerEvent: {}
+[50.144935] (-) TimerEvent: {}
+[50.246830] (-) TimerEvent: {}
+[50.349302] (-) TimerEvent: {}
+[50.451468] (-) TimerEvent: {}
+[50.553214] (-) TimerEvent: {}
+[50.654990] (-) TimerEvent: {}
+[50.757221] (-) TimerEvent: {}
+[50.858370] (-) TimerEvent: {}
+[50.959466] (-) TimerEvent: {}
+[51.060657] (-) TimerEvent: {}
+[51.161827] (-) TimerEvent: {}
+[51.262947] (-) TimerEvent: {}
+[51.364080] (-) TimerEvent: {}
+[51.465377] (-) TimerEvent: {}
+[51.566457] (-) TimerEvent: {}
+[51.667621] (-) TimerEvent: {}
+[51.768809] (-) TimerEvent: {}
+[51.870002] (-) TimerEvent: {}
+[51.971247] (-) TimerEvent: {}
+[52.073243] (-) TimerEvent: {}
+[52.174960] (-) TimerEvent: {}
+[52.277079] (-) TimerEvent: {}
+[52.378811] (-) TimerEvent: {}
+[52.480549] (-) TimerEvent: {}
+[52.582311] (-) TimerEvent: {}
+[52.684059] (-) TimerEvent: {}
+[52.785685] (-) TimerEvent: {}
+[52.887379] (-) TimerEvent: {}
+[52.989364] (-) TimerEvent: {}
+[53.091221] (-) TimerEvent: {}
+[53.193027] (-) TimerEvent: {}
+[53.294130] (-) TimerEvent: {}
+[53.301500] (plane_fitter) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable plane_fitter\x1b[0m\n'}
+[53.394425] (-) TimerEvent: {}
+[53.495427] (-) TimerEvent: {}
+[53.596684] (-) TimerEvent: {}
+[53.697838] (-) TimerEvent: {}
+[53.798884] (-) TimerEvent: {}
+[53.899957] (-) TimerEvent: {}
+[54.001234] (-) TimerEvent: {}
+[54.102567] (-) TimerEvent: {}
+[54.203813] (-) TimerEvent: {}
+[54.305015] (-) TimerEvent: {}
+[54.407417] (-) TimerEvent: {}
+[54.509724] (-) TimerEvent: {}
+[54.612004] (-) TimerEvent: {}
+[54.713287] (-) TimerEvent: {}
+[54.814413] (-) TimerEvent: {}
+[54.915758] (-) TimerEvent: {}
+[55.018265] (-) TimerEvent: {}
+[55.120500] (-) TimerEvent: {}
+[55.222665] (-) TimerEvent: {}
+[55.324957] (-) TimerEvent: {}
+[55.427060] (-) TimerEvent: {}
+[55.528983] (-) TimerEvent: {}
+[55.630050] (-) TimerEvent: {}
+[55.731098] (-) TimerEvent: {}
+[55.832394] (-) TimerEvent: {}
+[55.935036] (-) TimerEvent: {}
+[56.037115] (-) TimerEvent: {}
+[56.138254] (-) TimerEvent: {}
+[56.239402] (-) TimerEvent: {}
+[56.340422] (-) TimerEvent: {}
+[56.441578] (-) TimerEvent: {}
+[56.542779] (-) TimerEvent: {}
+[56.644333] (-) TimerEvent: {}
+[56.746369] (-) TimerEvent: {}
+[56.848577] (-) TimerEvent: {}
+[56.950893] (-) TimerEvent: {}
+[57.053090] (-) TimerEvent: {}
+[57.155084] (-) TimerEvent: {}
+[57.256423] (-) TimerEvent: {}
+[57.358682] (-) TimerEvent: {}
+[57.460874] (-) TimerEvent: {}
+[57.563630] (-) TimerEvent: {}
+[57.665513] (-) TimerEvent: {}
+[57.769377] (-) TimerEvent: {}
+[57.871206] (-) TimerEvent: {}
+[57.973905] (-) TimerEvent: {}
+[58.075193] (-) TimerEvent: {}
+[58.176337] (-) TimerEvent: {}
+[58.277809] (-) TimerEvent: {}
+[58.378960] (-) TimerEvent: {}
+[58.479950] (-) TimerEvent: {}
+[58.581068] (-) TimerEvent: {}
+[58.682126] (-) TimerEvent: {}
+[58.783123] (-) TimerEvent: {}
+[58.884066] (-) TimerEvent: {}
+[58.985178] (-) TimerEvent: {}
+[59.086150] (-) TimerEvent: {}
+[59.187032] (-) TimerEvent: {}
+[59.252581] (plane_fitter) StdoutLine: {'line': b'[100%] Built target plane_fitter\n'}
+[59.287278] (-) TimerEvent: {}
+[59.326745] (plane_fitter) CommandEnded: {'returncode': 0}
+[59.388114] (-) TimerEvent: {}
+[59.490277] (-) TimerEvent: {}
+[59.496740] (plane_fitter) JobProgress: {'identifier': 'plane_fitter', 'progress': 'install'}
+[59.573099] (plane_fitter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/master_ws/build/plane_fitter'], 'cwd': '/home/nvidia/master_ws/build/plane_fitter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.50.129 60042 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/master_ws/install/velodyne_pointcloud/lib:/home/nvidia/master_ws/install/velodyne_driver/lib:/home/nvidia/master_ws/install/velodyne_msgs/lib:/home/nvidia/master_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/nvidia/master_ws/install:/home/nvidia/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX'), ('JETSON_SERIAL_NUMBER', '1422421040635'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/nvidia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('AMENT_PREFIX_PATH', '/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/nvidia/master_ws/build/plane_fitter'), ('SSH_CONNECTION', '192.168.50.129 60042 192.168.50.38 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/master_ws/install/xbox/lib/python3.8/site-packages:/home/nvidia/master_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/nvidia/master_ws/install/lidar_control/lib/python3.8/site-packages:/home/nvidia/master_ws/install/launch_car/lib/python3.8/site-packages:/home/nvidia/master_ws/install/broadcaster/lib/python3.8/site-packages:/home/nvidia/install/xbox/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.1'), ('CMAKE_PREFIX_PATH', '/home/nvidia/master_ws/install/velodyne:/home/nvidia/master_ws/install/velodyne_pointcloud:/home/nvidia/master_ws/install/velodyne_driver:/home/nvidia/master_ws/install/velodyne_msgs:/home/nvidia/master_ws/install/velodyne_laserscan:/home/nvidia/master_ws/install/realsense_control:/home/nvidia/master_ws/install/plane_fitter:/home/nvidia/master_ws/install/listener:/home/nvidia/master_ws/install/lidar:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3668-0001')]), 'shell': False}
+[59.590552] (-) TimerEvent: {}
+[59.628295] (plane_fitter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[59.630921] (plane_fitter) StdoutLine: {'line': b'-- Installing: /home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter\n'}
+[59.655308] (plane_fitter) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter" to ""\n'}
+[59.656320] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/package_run_dependencies/plane_fitter\n'}
+[59.657027] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/parent_prefix_path/plane_fitter\n'}
+[59.657580] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.sh\n'}
+[59.658199] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.dsv\n'}
+[59.658881] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.sh\n'}
+[59.659265] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.dsv\n'}
+[59.659876] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.bash\n'}
+[59.660422] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.sh\n'}
+[59.660945] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.zsh\n'}
+[59.661308] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.dsv\n'}
+[59.661650] (plane_fitter) StdoutLine: {'line': b'-- Installing: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.dsv\n'}
+[59.662607] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/packages/plane_fitter\n'}
+[59.663269] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig.cmake\n'}
+[59.663965] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig-version.cmake\n'}
+[59.664491] (plane_fitter) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.xml\n'}
+[59.673023] (plane_fitter) CommandEnded: {'returncode': 0}
+[59.692009] (-) TimerEvent: {}
+[59.793519] (-) TimerEvent: {}
+[59.895742] (-) TimerEvent: {}
+[59.958021] (plane_fitter) JobEnded: {'identifier': 'plane_fitter', 'rc': 0}
+[59.966167] (-) EventReactorShutdown: {}

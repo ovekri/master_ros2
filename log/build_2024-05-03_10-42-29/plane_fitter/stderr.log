@@ -1,0 +1,62 @@
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:288:42:[m[K [01;31m[Kerror: [m[K‘[01m[KFloa32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  288 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KFloa32MultiArray[m[K>::SharedPtr publisher_combined_features_;
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                          [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:288:42:[m[K [01;31m[Kerror: [m[K‘[01m[KFloa32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32MultiArray[m[K’?
+  288 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KFloa32MultiArray[m[K>::SharedPtr publisher_combined_features_;
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                          [32m[KFloat32MultiArray[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:288:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  288 |         rclcpp::Publisher<std_msgs::msg::Floa32MultiArray[01;31m[K>[m[K::SharedPtr publisher_combined_features_;
+      |                                                          [01;31m[K^[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:288:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  288 |         rclcpp::Publisher<std_msgs::msg::Floa32MultiArray>::[01;31m[KSharedPtr[m[K publisher_combined_features_;
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                                      [32m[K;[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:288:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_combined_features_[m[K’ does not name a type
+  288 |         rclcpp::Publisher<std_msgs::msg::Floa32MultiArray>::SharedPtr [01;31m[Kpublisher_combined_features_[m[K;
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In constructor ‘[01m[KpointCloudPlaneFitter::pointCloudPlaneFitter()[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:104:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_combined_features_[m[K’ was not declared in this scope
+  104 |             [01;31m[Kpublisher_combined_features_[m[K = this->create_publisher<std_msgs::msg::Float32MultiArray>("/plane_fitter_features_", 10);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kvoid pointCloudPlaneFitter::splitPointCloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:165:49:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Float32MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >[m[K’} and ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’})
+  165 |             feature_mid = pointCloudCb(cloud_mid[01;31m[K)[m[K;
+      |                                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/float32_multi_array.hpp:7[m[K,
+                 from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >& std_msgs::msg::Float32MultiArray_<std::allocator<void> >::operator=(const std_msgs::msg::Float32MultiArray_<std::allocator<void> >&)[m[K’
+   35 | struct [01;36m[KFloat32MultiArray_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std_msgs::msg::Float32MultiArray_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >& std_msgs::msg::Float32MultiArray_<std::allocator<void> >::operator=(std_msgs::msg::Float32MultiArray_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >&&[m[K’
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:166:51:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Float32MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >[m[K’} and ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’})
+  166 |             feature_left = pointCloudCb(cloud_left[01;31m[K)[m[K;
+      |                                                   [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/float32_multi_array.hpp:7[m[K,
+                 from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >& std_msgs::msg::Float32MultiArray_<std::allocator<void> >::operator=(const std_msgs::msg::Float32MultiArray_<std::allocator<void> >&)[m[K’
+   35 | struct [01;36m[KFloat32MultiArray_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std_msgs::msg::Float32MultiArray_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >& std_msgs::msg::Float32MultiArray_<std::allocator<void> >::operator=(std_msgs::msg::Float32MultiArray_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >&&[m[K’
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:167:53:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Float32MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >[m[K’} and ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’})
+  167 |             feature_right = pointCloudCb(cloud_right[01;31m[K)[m[K;
+      |                                                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/float32_multi_array.hpp:7[m[K,
+                 from [01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >& std_msgs::msg::Float32MultiArray_<std::allocator<void> >::operator=(const std_msgs::msg::Float32MultiArray_<std::allocator<void> >&)[m[K’
+   35 | struct [01;36m[KFloat32MultiArray_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std_msgs::msg::Float32MultiArray_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >& std_msgs::msg::Float32MultiArray_<std::allocator<void> >::operator=(std_msgs::msg::Float32MultiArray_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/float32_multi_array__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kstd_msgs::msg::Float32MultiArray_<std::allocator<void> >&&[m[K’
+[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:174:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_combined_features_[m[K’ was not declared in this scope
+  174 |             [01;31m[Kpublisher_combined_features_[m[K->publish(combined_features);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
