@@ -48,6 +48,7 @@ class Controller(Node):
         self.timer_lidar = self.create_timer(self.timer_period_lidar, self.lidar_desicion_callback)
         self.timer_realsense = self.create_timer(self.timer_period_realsense, self.realsense_desicion_callback)
 
+        self.gap_selected = 0
         self.flag_lidar = False
         self.flag_realsense = False
         self.MSE_array = 0
@@ -288,7 +289,9 @@ class Controller(Node):
 
     def set_state(self, angle, motor):
         if self.angle_servo != angle+90:
-            self.get_logger().info(f'### motor angle: {motor}, servo angle {angle} ####')
+            self.get_logger().info(' ')
+            self.get_logger().info(f'############################# motor angle: {motor}, servo angle {angle} ##############################')
+            self.get_logger().info(' ')
         self.angle_servo = 90 + angle
         self.servo.angle = self.angle_servo
         """
@@ -336,45 +339,57 @@ class Controller(Node):
             lidar_array = self.decision_array
 
             realsense_weight = 0.66
-            min_mse = 200
-            max_mse = 200
+            lidar_weight = 1
+            min_mse = 6
+            max_mse = 40
 
             if self.flag_lidar == True and self.flag_realsense == True:
                 # -36 to -12 to 12 to 36
 
                 self.get_logger().info(f'mse array: {realsense_array}')
-                if (realsense_array.any() == 0):            ######lag en for loop som adder 1000 hvis 0
-                    realsense_array += 1000
+                for i in range(len(realsense_array)):
+                    if (realsense_array[i] == 0):            ######lag en for loop som adder 1000 hvis 0
+                        realsense_array[i] += 1000
                 new_realsense_array = 1 / realsense_array
 
                 normalized_realsense_array = (new_realsense_array - new_realsense_array.min()) / (new_realsense_array.max() - new_realsense_array.min())
                 if (realsense_array.max() > max_mse):
                     for i in range(len(realsense_array)):
                         if (realsense_array[i] > max_mse):
-                            normalized_realsense_array[i] = - 2
+                            normalized_realsense_array[i] = - 1
                 expand_normalized_realsense_array = np.repeat(normalized_realsense_array, 6)
                 final_normalized_realsense_array = np.insert(expand_normalized_realsense_array, 9, normalized_realsense_array[1])
-                #self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
+                self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
 
                 self.get_logger().info(f'lidar array: {lidar_array}')
                 normalized_lidar_array = (lidar_array - lidar_array.min()) / (lidar_array.max() - lidar_array.min())
-                #self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
+                self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
 
-                self.result_array = realsense_weight*final_normalized_realsense_array + normalized_lidar_array
+                self.result_array = realsense_weight*final_normalized_realsense_array + lidar_weight*normalized_lidar_array
+                # give weigth to the last chosen angle and its neighboor to reduce changing angels sharply when not important to turn
+                self.result_array[self.gap_selected] *= 1.25
+                if (self.gap_selected != 0):
+                    self.result_array[self.gap_selected-1] *= 1.1
+                if (self.gap_selected != len(self.result_array)-1):
+                    self.result_array[self.gap_selected+1] *= 1.1
+
                 self.get_logger().info(f'result array: {self.result_array}')
-            
+
                 self.flag_lidar = False
                 self.flag_realsense = False
                 self.no_solution = False
             
+            max_value = 0
+            gap_chosen = 0
+            gap_angle = 0
+
+            for i in range(len(self.result_array)):
+                if self.result_array[i] > max_value:
+                    max_value = self.result_array[i]
+                    gap_chosen = i
+            self.gap_selected = gap_chosen
+            
             if (realsense_array.max() > min_mse):
-                max_value = 0
-                gap_chosen = 0
-                gap_angle = 0
-                for i in range(len(self.result_array)):
-                    if self.result_array[i] > max_value:
-                        max_value = self.result_array[i]
-                        gap_chosen = i
                 if (max_value <= 0):
                     self.set_state(0, 106)
                     #self.get_logger().info(f'no valid solution: {max_value}')
