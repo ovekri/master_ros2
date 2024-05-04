@@ -43,15 +43,15 @@ class Controller(Node):
             10)
         self.desicion_array_subscription
 
-        self.timer_period_lidar = 0.5
-        self.timer_period_realsense = 0.5
+        self.timer_period_lidar = 0.25
+        self.timer_period_realsense = 0.25
         self.timer_lidar = self.create_timer(self.timer_period_lidar, self.lidar_desicion_callback)
         self.timer_realsense = self.create_timer(self.timer_period_realsense, self.realsense_desicion_callback)
 
         self.gap_selected = 0
         self.flag_lidar = False
         self.flag_realsense = False
-        self.MSE_array = 0
+        self.MSE_array = [0, 0, 0]
         self.plane_fitter_features = 0
         self.temp_timer = None
         self.joy_state = None 
@@ -180,8 +180,10 @@ class Controller(Node):
                     #print(length_to_gap_array[i])
                     if (length_to_gap_array[i-1] < min_param and length_to_gap_array[i-2] < min_param):
                         length_to_gap_array[i] = -1
-                if ((i > 1) and (i < len(length_to_gap_array)-1)):
-                    if (((length_to_gap_array[i-1] < min_param and length_to_gap_array[i-2] < min_param) or (length_to_gap_array[i+1] < min_param and length_to_gap_array[i+2] < min_param)) or (length_to_gap_array[i+1] < min_param and length_to_gap_array[i-1] < min_param)): #((1,1,11or11,1,1)or(1,11,1))
+                if ((i > 1) and (i < len(length_to_gap_array)-2)):
+                    if (((length_to_gap_array[i-1] < min_param and length_to_gap_array[i-2] < min_param) or 
+                         (length_to_gap_array[i+1] < min_param and length_to_gap_array[i+2] < min_param)) or 
+                         (length_to_gap_array[i+1] < min_param and length_to_gap_array[i-1] < min_param)): #((1,1,11or11,1,1)or(1,11,1))
                         length_to_gap_array[i] = -1
                     if ((length_to_gap_array[i-1] == None)):
                         length_to_gap_array[i] = -1
@@ -213,6 +215,7 @@ class Controller(Node):
 
         # decision part, which GAP to choose
         # look true the gaps and choose the one with the longest range
+        min_distance_lidar_param = 0.5                                             ### param
         max_decision = 0.0
         max_length = 0.0
         gap_chosen = 0
@@ -233,7 +236,7 @@ class Controller(Node):
                 if (length_to_gap_array[i] > max_length):
                     max_length = length_to_gap_array[i]
                     gap_chosen = i
-            if (max_length < 1.5):
+            if (max_length < min_distance_lidar_param):    
                 max_length = None
                 gap_chosen = None
                 no_solu = True
@@ -253,14 +256,25 @@ class Controller(Node):
             self.get_logger().info('Realsense data not available yet.')
             return
         self.flag_realsense = True
+        self.get_logger().info(f'realsense state: {self.realsense_state.data}')
 
-        plane_fitter_features = np.array(self.realsense_state.data)
-        plane_fitter_features_mid = plane_fitter_features[0:4] # [Mean error, MSE, SD, points used]
-        plane_fitter_features_left = plane_fitter_features[4:8]
-        plane_fitter_features_right = plane_fitter_features[8:12]
+        plane_fitter_features = self.realsense_state.data # [Mean error, MSE, SD, points used]
+        self.get_logger().info(f'np array realsense state: {len(plane_fitter_features)}')
+        # check if the data is there
+        if (len(np.array(plane_fitter_features)) < 12):
+            self.get_logger().info(f'The length of plane_fitter_features: {plane_fitter_features}')
+
+        result_list = []
+        replacement = [0.0, 0.0, 0.0, 0.0]
+        for value in plane_fitter_features:
+            if value == -1:
+                result_list.extend(replacement)  # Append the replacement list
+            else:
+                result_list.append(value)    
+        self.get_logger().info(f'result_list: {result_list}')
 
         #self.get_logger().info(f'plane_fitter_features: {plane_fitter_features}')
-        self.MSE_array = np.array([plane_fitter_features_left[1], plane_fitter_features_mid[1], plane_fitter_features_right[1]])
+        self.MSE_array = np.array([result_list[1], result_list[5], result_list[9]])
         """
                 MSE_max = 10
                 MSE_abs_max = 30
@@ -294,14 +308,14 @@ class Controller(Node):
             self.get_logger().info(' ')
         self.angle_servo = 90 + angle
         self.servo.angle = self.angle_servo
-        """
+        
         self.angle_motor = motor
         self.motor.angle = self.angle_motor
         time.sleep(0.15)  # can remove when its safe
         self.angle_motor = 106
         self.motor.angle = self.angle_motor
         time.sleep(0.1)
-        """
+        
 
     def control(self):
         if self.joy_state == None:
@@ -393,6 +407,9 @@ class Controller(Node):
                 if (max_value <= 0):
                     self.set_state(0, 106)
                     #self.get_logger().info(f'no valid solution: {max_value}')
+                elif (realsense_array.min() > max_mse):
+                    self.set_state(0, 106)
+                    self.get_logger().info(f'no valid solution, realsense min mse value is: {realsense_array.min()}')
                 else:
                     gap_angle = -36 + 4*(gap_chosen)
                     self.set_state(gap_angle, 114)
