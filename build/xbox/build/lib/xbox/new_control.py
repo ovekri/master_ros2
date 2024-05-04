@@ -9,7 +9,6 @@ import time
 import numpy as np
 import heapq
 
-# 
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32MultiArray
 from std_msgs.msg import Float64MultiArray
@@ -43,8 +42,8 @@ class Controller(Node):
             10)
         self.desicion_array_subscription
 
-        self.timer_period_lidar = 0.25
-        self.timer_period_realsense = 0.25
+        self.timer_period_lidar = 0.1
+        self.timer_period_realsense = 0.1
         self.timer_lidar = self.create_timer(self.timer_period_lidar, self.lidar_desicion_callback)
         self.timer_realsense = self.create_timer(self.timer_period_realsense, self.realsense_desicion_callback)
 
@@ -71,6 +70,7 @@ class Controller(Node):
     def joy_callback(self, msg):
         self.joy_state = msg # save the states from joy
         self.control()
+        self.set_state()
     
     def lidar_bank_callback(self, msg):
         self.lidar_state = msg
@@ -256,14 +256,11 @@ class Controller(Node):
             self.get_logger().info('Realsense data not available yet.')
             return
         self.flag_realsense = True
-        self.get_logger().info(f'realsense state: {self.realsense_state.data}')
+        #self.get_logger().info(f'realsense state: {self.realsense_state.data}')
 
         plane_fitter_features = self.realsense_state.data # [Mean error, MSE, SD, points used]
-        self.get_logger().info(f'np array realsense state: {len(plane_fitter_features)}')
-        # check if the data is there
-        if (len(np.array(plane_fitter_features)) < 12):
-            self.get_logger().info(f'The length of plane_fitter_features: {plane_fitter_features}')
 
+        # realsense_state.data changes shape if it does not find the points, have to keep the shape by adding zeros
         result_list = []
         replacement = [0.0, 0.0, 0.0, 0.0]
         for value in plane_fitter_features:
@@ -271,7 +268,7 @@ class Controller(Node):
                 result_list.extend(replacement)  # Append the replacement list
             else:
                 result_list.append(value)    
-        self.get_logger().info(f'result_list: {result_list}')
+        #self.get_logger().info(f'result_list: {result_list}')
 
         #self.get_logger().info(f'plane_fitter_features: {plane_fitter_features}')
         self.MSE_array = np.array([result_list[1], result_list[5], result_list[9]])
@@ -301,21 +298,11 @@ class Controller(Node):
         """
         self.control()
 
-    def set_state(self, angle, motor):
-        if self.angle_servo != angle+90:
-            self.get_logger().info(' ')
-            self.get_logger().info(f'############################# motor angle: {motor}, servo angle {angle} ##############################')
-            self.get_logger().info(' ')
-        self.angle_servo = 90 + angle
+    def set_state(self):
         self.servo.angle = self.angle_servo
-        
-        self.angle_motor = motor
         self.motor.angle = self.angle_motor
-        time.sleep(0.15)  # can remove when its safe
-        self.angle_motor = 106
-        self.motor.angle = self.angle_motor
-        time.sleep(0.1)
-        
+        #time.sleep(0.05)
+        #self.motor.angle = 106
 
     def control(self):
         if self.joy_state == None:
@@ -360,7 +347,7 @@ class Controller(Node):
             if self.flag_lidar == True and self.flag_realsense == True:
                 # -36 to -12 to 12 to 36
 
-                self.get_logger().info(f'mse array: {realsense_array}')
+                #self.get_logger().info(f'mse array: {realsense_array}')
                 for i in range(len(realsense_array)):
                     if (realsense_array[i] == 0):            ######lag en for loop som adder 1000 hvis 0
                         realsense_array[i] += 1000
@@ -373,11 +360,11 @@ class Controller(Node):
                             normalized_realsense_array[i] = - 1
                 expand_normalized_realsense_array = np.repeat(normalized_realsense_array, 6)
                 final_normalized_realsense_array = np.insert(expand_normalized_realsense_array, 9, normalized_realsense_array[1])
-                self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
+                #self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
 
-                self.get_logger().info(f'lidar array: {lidar_array}')
+                #self.get_logger().info(f'lidar array: {lidar_array}')
                 normalized_lidar_array = (lidar_array - lidar_array.min()) / (lidar_array.max() - lidar_array.min())
-                self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
+                #self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
 
                 self.result_array = realsense_weight*final_normalized_realsense_array + lidar_weight*normalized_lidar_array
                 # give weigth to the last chosen angle and its neighboor to reduce changing angels sharply when not important to turn
@@ -387,7 +374,7 @@ class Controller(Node):
                 if (self.gap_selected != len(self.result_array)-1):
                     self.result_array[self.gap_selected+1] *= 1.1
 
-                self.get_logger().info(f'result array: {self.result_array}')
+                #self.get_logger().info(f'result array: {self.result_array}')
 
                 self.flag_lidar = False
                 self.flag_realsense = False
@@ -405,22 +392,26 @@ class Controller(Node):
             
             if (realsense_array.max() > min_mse):
                 if (max_value <= 0):
-                    self.set_state(0, 106)
-                    #self.get_logger().info(f'no valid solution: {max_value}')
+                    self.angle_motor = 106
+                    self.angle_servo = 90
+                    self.get_logger().info(f'no valid solution: {max_value}')
                 elif (realsense_array.min() > max_mse):
-                    self.set_state(0, 106)
+                    self.angle_motor = 106
+                    self.angle_servo = 90
                     self.get_logger().info(f'no valid solution, realsense min mse value is: {realsense_array.min()}')
                 else:
-                    gap_angle = -36 + 4*(gap_chosen)
-                    self.set_state(gap_angle, 114)
-                    #self.get_logger().info(f'realsense + lidar: {90+gap_angle}')
+                    self.angle_motor = 114
+                    self.angle_servo = 90 - 36 + 4*(gap_chosen)
+                    self.get_logger().info(f'realsense + lidar: {90 - 36 + 4*(gap_chosen)}, {114}')
             else: 
                 if (self.no_solution == True):
-                    self.set_state(self.lidar_decision_state, 106)
-                    #self.get_logger().info(f'lidar no solution: {90+self.lidar_decision_state}')
+                    self.angle_motor = 106
+                    self.angle_servo = 90 + self.lidar_decision_state
+                    self.get_logger().info(f'lidar no solution: {90+self.lidar_decision_state}')
                 else:
-                    self.set_state(self.lidar_decision_state, 114)
-                    #self.get_logger().info(f'lidar only: {90+self.lidar_decision_state}')
+                    self.angle_motor = 114
+                    self.angle_servo = 90 + self.lidar_decision_state
+                    self.get_logger().info(f'lidar only: {90+self.lidar_decision_state}')
                 
 
 def main(args=None):

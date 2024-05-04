@@ -22,7 +22,7 @@ def generate_launch_description():
                 parameters=[
                             {"decimation": 2},
                             {"voxel_size": 0.0},
-                            {"approx_sync": False},
+                            {"approx_sync": True},
                             #{"filter_nans": True},
                             #{"min_depth": 0.2},
                             #{"max_depth": 4.0},
@@ -30,7 +30,7 @@ def generate_launch_description():
                             #{"noise_filter_min_neighbors": 5},
                             #{"normal_k": 6},
                             #{"normal_radius": 0}
-                            #{"roi_ratios": "0.1 0.1 0.0 0.0"} # [left, right, top, bottom] string format
+                            #{"roi_ratios": "0.0 0.0 0.0 0.4"} # [left, right, top, bottom] string format
                             ]
                 ),
         ],

@@ -1,0 +1,15 @@
+[0.000000] (-) TimerEvent: {}
+[0.000660] (-) JobUnselected: {'identifier': 'broadcaster'}
+[0.000861] (-) JobUnselected: {'identifier': 'launch_car'}
+[0.001975] (-) JobUnselected: {'identifier': 'lidar'}
+[0.002352] (-) JobUnselected: {'identifier': 'lidar_control'}
+[0.002616] (-) JobUnselected: {'identifier': 'listener'}
+[0.002854] (-) JobUnselected: {'identifier': 'plane_fitter'}
+[0.003077] (-) JobUnselected: {'identifier': 'realsense_control'}
+[0.003506] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.003910] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.004367] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.004630] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.004784] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.004930] (-) JobUnselected: {'identifier': 'xbox'}
+[0.005049] (-) EventReactorShutdown: {}
