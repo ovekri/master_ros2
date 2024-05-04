@@ -50,12 +50,11 @@ class Controller(Node):
 
         self.flag_lidar = False
         self.flag_realsense = False
-        self.plane_fitter_features_mid = [0, 0, 0, 0]
-        self.plane_fitter_features_left = [0, 0, 0, 0]
-        self.plane_fitter_features_right = [0, 0, 0, 0]
+        self.MSE_array = 0
         self.plane_fitter_features = 0
         self.temp_timer = None
         self.joy_state = None 
+        self.result_array = np.zeros(19)
         self.lidar_decision_state = 0
         self.lidar_state = None
         self.realsense_decision_state = None
@@ -79,7 +78,6 @@ class Controller(Node):
         self.realsense_state = msg
         
     def lidar_desicion_callback(self):
-        self.flag_lidar = True
         if self.lidar_state is None:
             self.get_logger().info('Lidar data not available yet.')
             return
@@ -178,7 +176,7 @@ class Controller(Node):
                     if (length_to_gap_array[i+1] < min_param and length_to_gap_array[i+2] < min_param):
                         length_to_gap_array[i] = -1
                 if (i == len(length_to_gap_array)-1):
-                    print(length_to_gap_array[i])
+                    #print(length_to_gap_array[i])
                     if (length_to_gap_array[i-1] < min_param and length_to_gap_array[i-2] < min_param):
                         length_to_gap_array[i] = -1
                 if ((i > 1) and (i < len(length_to_gap_array)-1)):
@@ -189,16 +187,16 @@ class Controller(Node):
         #self.get_logger().info(f'Filtered length array: {length_to_gap_array}') 
 
         # make one array by multiply the lengths with the gap rate
-        decision_array = gap_neighbours_rate*length_to_gap_array
+        self.decision_array = gap_neighbours_rate*length_to_gap_array
         #self.get_logger().info(f'result array: {decision_array}') 
 
         # Check the lengths against the gaps
-        count = 0
-        for i in range(len(decision_array)):
-            if (decision_array[i] > 0):
-                count += 1
-        if (count > 4):
-            count = 4
+        #count = 0
+        #for i in range(len(self.decision_array)):
+        #    if (self.decision_array[i] > 0):
+        #        count += 1
+        #if (count > 4):
+        #    count = 4
         #self.get_logger().info(f'count: {count}')
         ## not used
         #indices_decision_array = np.argsort(decision_array)[-count:][::-1]
@@ -219,12 +217,12 @@ class Controller(Node):
         gap_chosen = 0
         no_solu = False
         # check is values in decision array are <= 0
-        check = np.any(decision_array > 0)
+        check = np.any(self.decision_array > 0)
         #print("check ", check)
         if (check == True):
-            for i in range(len(decision_array)):
-                if (decision_array[i] > max_decision):
-                    max_decision = decision_array[i]
+            for i in range(len(self.decision_array)):
+                if (self.decision_array[i] > max_decision):
+                    max_decision = self.decision_array[i]
                     gap_chosen = i
             max_length = length_to_gap_array[gap_chosen]
             #self.get_logger().info(f'Gap chosen: {gap_chosen}, size: {max_length}')
@@ -254,21 +252,53 @@ class Controller(Node):
             self.get_logger().info('Realsense data not available yet.')
             return
         self.flag_realsense = True
-        self.plane_fitter_features = np.array(self.realsense_state.data)
-        #self.plane_fitter_features_mid = plane_fitter_features[0:4]
-        #self.plane_fitter_features_left = plane_fitter_features[4:8]
-        #self.plane_fitter_features_right = plane_fitter_features[8:12]
+
+        plane_fitter_features = np.array(self.realsense_state.data)
+        plane_fitter_features_mid = plane_fitter_features[0:4] # [Mean error, MSE, SD, points used]
+        plane_fitter_features_left = plane_fitter_features[4:8]
+        plane_fitter_features_right = plane_fitter_features[8:12]
+
+        #self.get_logger().info(f'plane_fitter_features: {plane_fitter_features}')
+        self.MSE_array = np.array([plane_fitter_features_left[1], plane_fitter_features_mid[1], plane_fitter_features_right[1]])
+        """
+                MSE_max = 10
+                MSE_abs_max = 30
+                if (self.lidar_decision_state < -12):
+                    MSE_left *= 0.8
+                elif (self.lidar_decision_state > 12):
+                    MSE_right *= 0.8
+                else:
+                    MSE_mid *= 0.8
+
+                MSE_array = np.sort([MSE_mid, MSE_left, MSE_right])[::-1]
+                if (MSE_array[0] > MSE_max):
+                    self.get_logger().info(f'Largest MSE: {MSE_array[0]}')
+                    if (MSE_array[2] < MSE_abs_max):
+                        if (MSE_array[2] == MSE_mid):
+                            self.set_state(90, 114)
+                        elif (MSE_array[2] == MSE_left):
+                            self.set_state(60, 114)
+                        else:
+                            self.set_state(120, 114)
+                    else:
+                        self.set_state(90, 106)
+                        self.get_logger().info(f'Stop, no solution') # maybee back up
+        """
         self.control()
 
     def set_state(self, angle, motor):
-        self.angle_servo = 90+(int(angle*0.98))
+        if self.angle_servo != angle+90:
+            self.get_logger().info(f'### motor angle: {motor}, servo angle {angle} ####')
+        self.angle_servo = 90 + angle
         self.servo.angle = self.angle_servo
-        #self.angle_motor = motor
-        #self.motor.angle = self.angle_motor
-        #time.sleep(0.15)  # can remove when its safe
-        #self.angle_motor = 106
-        #self.motor.angle = self.angle_motor
-        #time.sleep(0.1)
+        """
+        self.angle_motor = motor
+        self.motor.angle = self.angle_motor
+        time.sleep(0.15)  # can remove when its safe
+        self.angle_motor = 106
+        self.motor.angle = self.angle_motor
+        time.sleep(0.1)
+        """
 
     def control(self):
         if self.joy_state == None:
@@ -301,19 +331,65 @@ class Controller(Node):
                 self.motor.angle = self.angle_motor
         
         # Self driving part
-        if self.flag_lidar == True and self.flag_realsense == True:
-            if autonom == 1 and forward == 0 and reverse == 0 and joystick_value == 0:
-                #print("mid: ",self.plane_fitter_features_mid)
-                #print("left: ",self.plane_fitter_features_left)
-                #print("right: ",self.plane_fitter_features_right)
-                self.get_logger().info(f'whole plane: {self.plane_fitter_features}')
-                if (self.no_solution == True):
-                    self.set_state(self.lidar_decision_state, 106)
-                else:
-                    self.set_state(self.lidar_decision_state, 114)
-                self.get_logger().info(f'angle: {90+self.lidar_decision_state}')
+        if autonom == 1 and forward == 0 and reverse == 0 and joystick_value == 0:
+            realsense_array = self.MSE_array
+            lidar_array = self.decision_array
+
+            realsense_weight = 0.66
+            min_mse = 200
+            max_mse = 200
+
+            if self.flag_lidar == True and self.flag_realsense == True:
+                # -36 to -12 to 12 to 36
+
+                self.get_logger().info(f'mse array: {realsense_array}')
+                if (realsense_array.any() == 0):            ######lag en for loop som adder 1000 hvis 0
+                    realsense_array += 1000
+                new_realsense_array = 1 / realsense_array
+
+                normalized_realsense_array = (new_realsense_array - new_realsense_array.min()) / (new_realsense_array.max() - new_realsense_array.min())
+                if (realsense_array.max() > max_mse):
+                    for i in range(len(realsense_array)):
+                        if (realsense_array[i] > max_mse):
+                            normalized_realsense_array[i] = - 2
+                expand_normalized_realsense_array = np.repeat(normalized_realsense_array, 6)
+                final_normalized_realsense_array = np.insert(expand_normalized_realsense_array, 9, normalized_realsense_array[1])
+                #self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
+
+                self.get_logger().info(f'lidar array: {lidar_array}')
+                normalized_lidar_array = (lidar_array - lidar_array.min()) / (lidar_array.max() - lidar_array.min())
+                #self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
+
+                self.result_array = realsense_weight*final_normalized_realsense_array + normalized_lidar_array
+                self.get_logger().info(f'result array: {self.result_array}')
+            
                 self.flag_lidar = False
                 self.flag_realsense = False
+                self.no_solution = False
+            
+            if (realsense_array.max() > min_mse):
+                max_value = 0
+                gap_chosen = 0
+                gap_angle = 0
+                for i in range(len(self.result_array)):
+                    if self.result_array[i] > max_value:
+                        max_value = self.result_array[i]
+                        gap_chosen = i
+                if (max_value <= 0):
+                    self.set_state(0, 106)
+                    #self.get_logger().info(f'no valid solution: {max_value}')
+                else:
+                    gap_angle = -36 + 4*(gap_chosen)
+                    self.set_state(gap_angle, 114)
+                    #self.get_logger().info(f'realsense + lidar: {90+gap_angle}')
+            else: 
+                if (self.no_solution == True):
+                    self.set_state(self.lidar_decision_state, 106)
+                    #self.get_logger().info(f'lidar no solution: {90+self.lidar_decision_state}')
+                else:
+                    self.set_state(self.lidar_decision_state, 114)
+                    #self.get_logger().info(f'lidar only: {90+self.lidar_decision_state}')
+                
 
 def main(args=None):
     rclpy.init(args=args)
