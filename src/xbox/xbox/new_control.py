@@ -32,14 +32,14 @@ class Controller(Node):
             Float32MultiArray,
             'obstacle_distance',
             self.lidar_bank_callback,
-            10)
+            5)
         self.desicion_array_subscription
 
         self.desicion_array_subscription = self.create_subscription(
             Float64MultiArray,
             'plane_fitter_features_',
             self.realsense_bank_callback,
-            10)
+            5)
         self.desicion_array_subscription
 
         self.timer_period_lidar = 0.1
@@ -139,28 +139,28 @@ class Controller(Node):
                     gap_neighbours_rate[i] = 0.05
 
             if (i <= 9 and i > 0):
-                gap_neighbours_rate[i] += 0.02*i
+                gap_neighbours_rate[i] += 0.02*i                                        # Param
                 for j in range(i):
                     if (gap[i-j-1] == 1):
-                        gap_neighbours_rate[i] += 0.05
+                        gap_neighbours_rate[i] += 0.05                                      # Param
                     else:
                         flag = False
                     if (gap[i+j+1] == 1):
-                        gap_neighbours_rate[i] += 0.05
+                        gap_neighbours_rate[i] += 0.05                                      # Param
                     else:
                         flag = False
                     if (flag == False):
                         break
 
             if (i > 9 and i < len(gap)-1):
-                gap_neighbours_rate[i] += 0.02*(len(gap)-i-1)
+                gap_neighbours_rate[i] += 0.02*(len(gap)-i-1)                          # Param
                 for k in range(1, len(gap)-i):
                     if (gap[i-k] == 1):
-                        gap_neighbours_rate[i] += 0.05
+                        gap_neighbours_rate[i] += 0.05                                  # Param
                     else:
                         flag = False
                     if (gap[i+k] == 1):
-                        gap_neighbours_rate[i] += 0.05
+                        gap_neighbours_rate[i] += 0.05                                 # Param
                     else:
                         flag = False
                     if (flag == False):
@@ -170,7 +170,7 @@ class Controller(Node):
 
         # Filter length array
         # find fake 11m. if points are closer than 0.5m to the lidar 
-        min_param = 1.5
+        min_param = 1.5                                                                     # Param
         for i in range(len(length_to_gap_array)):
             if (length_to_gap_array[i] == 11):
                 if (i == 0):
@@ -215,7 +215,7 @@ class Controller(Node):
 
         # decision part, which GAP to choose
         # look true the gaps and choose the one with the longest range
-        min_distance_lidar_param = 0.5                                             ### param
+        min_distance_lidar_param = 1.0                                                                      ### param
         max_decision = 0.0
         max_length = 0.0
         gap_chosen = 0
@@ -272,6 +272,7 @@ class Controller(Node):
 
         #self.get_logger().info(f'plane_fitter_features: {plane_fitter_features}')
         self.MSE_array = np.array([result_list[1], result_list[5], result_list[9]])
+
         """
                 MSE_max = 10
                 MSE_abs_max = 30
@@ -339,42 +340,50 @@ class Controller(Node):
             realsense_array = self.MSE_array
             lidar_array = self.decision_array
 
-            realsense_weight = 0.66
-            lidar_weight = 1
-            min_mse = 6
-            max_mse = 40
+            realsense_weight = 0.66                                                                             ###### Param
+            lidar_weight = 1                                                                                    ###### Param
+            min_mse = 10                                                                                        ###### Param
+            max_mse = 100                                                                                       ###### Param
 
             if self.flag_lidar == True and self.flag_realsense == True:
                 # -36 to -12 to 12 to 36
 
-                #self.get_logger().info(f'mse array: {realsense_array}')
+                self.get_logger().info(f'mse array: {realsense_array}')
                 for i in range(len(realsense_array)):
                     if (realsense_array[i] == 0):            ######lag en for loop som adder 1000 hvis 0
                         realsense_array[i] += 1000
                 new_realsense_array = 1 / realsense_array
 
                 normalized_realsense_array = (new_realsense_array - new_realsense_array.min()) / (new_realsense_array.max() - new_realsense_array.min())
+                self.get_logger().info(f'normalized realsense_array_before: {normalized_realsense_array}')
+
+                middle_index = 3 - np.argmin(normalized_realsense_array) - np.argmax(normalized_realsense_array)
+                if (normalized_realsense_array[middle_index] > 0.2):                                                ## Param
+                    normalized_realsense_array[middle_index] *= 1 / np.sqrt(normalized_realsense_array[middle_index])
+                    self.get_logger().info(f'normalized realsense_array_after: {normalized_realsense_array}')
+
                 if (realsense_array.max() > max_mse):
                     for i in range(len(realsense_array)):
                         if (realsense_array[i] > max_mse):
                             normalized_realsense_array[i] = - 1
                 expand_normalized_realsense_array = np.repeat(normalized_realsense_array, 6)
                 final_normalized_realsense_array = np.insert(expand_normalized_realsense_array, 9, normalized_realsense_array[1])
-                #self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
+                self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
 
                 #self.get_logger().info(f'lidar array: {lidar_array}')
                 normalized_lidar_array = (lidar_array - lidar_array.min()) / (lidar_array.max() - lidar_array.min())
-                #self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
+                self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
 
                 self.result_array = realsense_weight*final_normalized_realsense_array + lidar_weight*normalized_lidar_array
                 # give weigth to the last chosen angle and its neighboor to reduce changing angels sharply when not important to turn
-                self.result_array[self.gap_selected] *= 1.25
+                self.result_array[self.gap_selected] *= 1.25                                                        ###### Param
+                self.get_logger().info(f'weight on pos: {self.result_array[self.gap_selected]}')
                 if (self.gap_selected != 0):
                     self.result_array[self.gap_selected-1] *= 1.1
                 if (self.gap_selected != len(self.result_array)-1):
                     self.result_array[self.gap_selected+1] *= 1.1
 
-                #self.get_logger().info(f'result array: {self.result_array}')
+                self.get_logger().info(f'result array: {self.result_array}')
 
                 self.flag_lidar = False
                 self.flag_realsense = False

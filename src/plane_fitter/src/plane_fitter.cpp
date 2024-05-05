@@ -101,6 +101,8 @@ class pointCloudPlaneFitter : public rclcpp::Node {
         pointCloudPlaneFitter() : Node("point_cloud_plane_fitter") {
             name_ = this->get_name();
             publisher_combined_features_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/plane_fitter_features_", 10);
+            publisher_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/plane_fitter_area", 10);
+
             subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
                 "/realsense_transformed", 10, 
                 std::bind(&pointCloudPlaneFitter::splitPointCloud, this, std::placeholders::_1));
@@ -137,15 +139,15 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             for (const auto& point : cloud_msg->points) {
                 float r = std::sqrt(point.x * point.x + point.y * point.y);
                 float theta = std::atan2(point.y, point.x);
-                if (r < 2.0 && r > 0.4 && point.y > - 1.0 && point.y < 1.0) {
-                    if (theta > -0.22 && theta < 0.22) {
+                if (r < 1.6 && r > 0.8 && point.y > - 1.0 && point.y < 1.0) {
+                    if (theta > -0.25 && theta < 0.25) {
                         //std::cout << "Point z value: " << point.z << std::endl;
                         cloud_mid->points.push_back(point);
                     }
-                    if (theta > 0.22 && theta < 0.66) {
+                    if (theta > 0.25 && theta < 0.75) {
                         cloud_left->points.push_back(point);
                     }
-                    if (theta > -0.66 && theta < -0.22) {
+                    if (theta > -0.75 && theta < -0.25) {
                         cloud_right->points.push_back(point);
                     }
                 }
@@ -155,19 +157,31 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             publisher_feature_left_->publish(pointCloudCb(cloud_left));
             publisher_feature_right_->publish(pointCloudCb(cloud_right));
             */
+            // ###### new cloud to publish, visual only #########
+            pcl::PointCloud<pcl::PointXYZ>::Ptr combined_cloud(new pcl::PointCloud<pcl::PointXYZ>);
+            sensor_msgs::msg::PointCloud2 output_msg;
+
+            *combined_cloud += *cloud_mid;
+            *combined_cloud += *cloud_left;
+            *combined_cloud += *cloud_right;
+
+            pcl::toROSMsg(*combined_cloud, output_msg);
+            output_msg.header.stamp = now(); // Make sure to call this in the context of a node to get the current time
+            output_msg.header.frame_id = "transformed_realsense_frame";
+            publisher_->publish(output_msg);
+            // ####################
 
             std_msgs::msg::Float64MultiArray feature_mid;
             std_msgs::msg::Float64MultiArray feature_left;
             std_msgs::msg::Float64MultiArray feature_right;
             
-
             feature_mid = pointCloudCb(cloud_mid);
             feature_left = pointCloudCb(cloud_left);
             feature_right = pointCloudCb(cloud_right);
 
             std_msgs::msg::Float64MultiArray combined_features; 
-            combined_features.data.insert(combined_features.data.end(), feature_mid.data.begin(), feature_mid.data.end());
             combined_features.data.insert(combined_features.data.end(), feature_left.data.begin(), feature_left.data.end());
+            combined_features.data.insert(combined_features.data.end(), feature_mid.data.begin(), feature_mid.data.end());
             combined_features.data.insert(combined_features.data.end(), feature_right.data.begin(), feature_right.data.end());
 
             publisher_combined_features_->publish(combined_features);
@@ -285,6 +299,7 @@ class pointCloudPlaneFitter : public rclcpp::Node {
         std::vector<Color> colors;
 
         rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_combined_features_;
+        rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher_;
         rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
 };
 
