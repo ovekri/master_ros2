@@ -1,4 +1,0 @@
-[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kstd_msgs::msg::Float64MultiArray pointCloudPlaneFitter::pointCloudCb(const Ptr&)[m[K’:
-[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:202:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koriginal_size[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  202 |             int [01;35m[Koriginal_size[m[K(cloud->height*cloud->width);
-      |                 [01;35m[K^~~~~~~~~~~~~[m[K

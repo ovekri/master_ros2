@@ -1,0 +1,26 @@
+[0.152s] Invoking command in '/home/nvidia/master_ws/build/plane_fitter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/plane_fitter -- -j6 -l6
+[0.628s] [35m[1mScanning dependencies of target plane_fitter[0m
+[1.085s] [ 50%] [32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o[0m
+[60.780s] [100%] [32m[1mLinking CXX executable plane_fitter[0m
+[66.280s] [100%] Built target plane_fitter
+[66.356s] Invoked command in '/home/nvidia/master_ws/build/plane_fitter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/plane_fitter -- -j6 -l6
+[66.615s] Invoking command in '/home/nvidia/master_ws/build/plane_fitter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/plane_fitter
+[66.671s] -- Install configuration: ""
+[66.674s] -- Installing: /home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter
+[66.705s] -- Set runtime path of "/home/nvidia/master_ws/install/plane_fitter/lib/plane_fitter/plane_fitter" to ""
+[66.706s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/package_run_dependencies/plane_fitter
+[66.707s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/parent_prefix_path/plane_fitter
+[66.707s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.sh
+[66.708s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/ament_prefix_path.dsv
+[66.708s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.sh
+[66.709s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/environment/path.dsv
+[66.710s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.bash
+[66.710s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.sh
+[66.711s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.zsh
+[66.711s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/local_setup.dsv
+[66.712s] -- Installing: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.dsv
+[66.713s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/ament_index/resource_index/packages/plane_fitter
+[66.714s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig.cmake
+[66.715s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/cmake/plane_fitterConfig-version.cmake
+[66.715s] -- Up-to-date: /home/nvidia/master_ws/install/plane_fitter/share/plane_fitter/package.xml
+[66.734s] Invoked command in '/home/nvidia/master_ws/build/plane_fitter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/plane_fitter

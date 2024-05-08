@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target plane_fitter[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o[0m
-[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:[m[K In member function ‘[01m[Kstd_msgs::msg::Float64MultiArray pointCloudPlaneFitter::pointCloudCb(const Ptr&)[m[K’:
-[01m[K/home/nvidia/master_ws/src/plane_fitter/src/plane_fitter.cpp:166:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
-  166 |                 [01;31m[Kresult[m[K.data = {-1}; // Example error flag
-      |                 [01;31m[K^~~~~~[m[K
-make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

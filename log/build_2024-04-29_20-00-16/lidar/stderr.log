@@ -1,4 +1,0 @@
-[01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:[m[K In member function ‘[01m[Kvoid PointCloud2Listener::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/nvidia/master_ws/src/lidar/src/lidar.cpp:80:41:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression >= 0 is always true [[01;35m[K-Wtype-limits[m[K]
-   80 |     for (size_t i = counter.size()-1; [01;35m[Ki >= 0[m[K; i--) {
-      |                                       [01;35m[K~~^~~~[m[K

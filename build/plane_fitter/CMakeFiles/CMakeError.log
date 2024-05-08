@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_681c6/fast && /usr/bin/make -f CMakeFiles/cmTC_681c6.dir/build.make CMakeFiles/cmTC_681c6.dir/build
+Run Build Command(s):/usr/bin/make cmTC_81924/fast && /usr/bin/make -f CMakeFiles/cmTC_81924.dir/build.make CMakeFiles/cmTC_81924.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_681c6.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_681c6.dir/src.c.o   -c /home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_681c6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_681c6.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_681c6.dir/src.c.o  -o cmTC_681c6 
-/usr/bin/ld: CMakeFiles/cmTC_681c6.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_81924.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_81924.dir/src.c.o   -c /home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_81924
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81924.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_81924.dir/src.c.o  -o cmTC_81924 
+/usr/bin/ld: CMakeFiles/cmTC_81924.dir/src.c.o: in function `main':
 src.c:(.text+0x48): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_681c6.dir/build.make:87: cmTC_681c6] Error 1
+make[1]: *** [CMakeFiles/cmTC_81924.dir/build.make:87: cmTC_81924] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_681c6/fast] Error 2
+make: *** [Makefile:121: cmTC_81924/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b6176/fast && /usr/bin/make -f CMakeFiles/cmTC_b6176.dir/build.make CMakeFiles/cmTC_b6176.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f0531/fast && /usr/bin/make -f CMakeFiles/cmTC_f0531.dir/build.make CMakeFiles/cmTC_f0531.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b6176.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b6176.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_b6176
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6176.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b6176.dir/CheckFunctionExists.c.o  -o cmTC_b6176  -lpthreads 
+Building C object CMakeFiles/cmTC_f0531.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f0531.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f0531
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0531.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f0531.dir/CheckFunctionExists.c.o  -o cmTC_f0531  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_b6176.dir/build.make:87: cmTC_b6176] Error 1
+make[1]: *** [CMakeFiles/cmTC_f0531.dir/build.make:87: cmTC_f0531] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/plane_fitter/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b6176/fast] Error 2
+make: *** [Makefile:121: cmTC_f0531/fast] Error 2
 
 
 

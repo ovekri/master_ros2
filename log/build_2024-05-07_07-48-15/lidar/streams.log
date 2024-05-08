@@ -1,0 +1,158 @@
+[3.385s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/lidar -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/lidar
+[3.812s] -- The C compiler identification is GNU 9.4.0
+[4.248s] -- The CXX compiler identification is GNU 9.4.0
+[4.292s] -- Check for working C compiler: /usr/bin/cc
+[4.849s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.858s] -- Detecting C compiler ABI info
+[5.524s] -- Detecting C compiler ABI info - done
+[5.687s] -- Detecting C compile features
+[5.689s] -- Detecting C compile features - done
+[5.710s] -- Check for working CXX compiler: /usr/bin/c++
+[6.766s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.782s] -- Detecting CXX compiler ABI info
+[7.628s] -- Detecting CXX compiler ABI info - done
+[7.732s] -- Detecting CXX compile features
+[7.735s] -- Detecting CXX compile features - done
+[7.753s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[7.981s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.982s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.226s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[10.636s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.688s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[11.576s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[11.784s] -- Found FastRTPS: /opt/ros/foxy/include  
+[12.364s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.855s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[12.869s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.875s] -- Looking for pthread.h
+[13.562s] -- Looking for pthread.h - found
+[13.569s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[14.285s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[14.287s] -- Looking for pthread_create in pthreads
+[14.853s] -- Looking for pthread_create in pthreads - not found
+[14.854s] -- Looking for pthread_create in pthread
+[15.789s] -- Looking for pthread_create in pthread - found
+[15.813s] -- Found Threads: TRUE  
+[17.540s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[18.890s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[20.858s] -- Checking for module 'eigen3'
+[21.148s] --   Found eigen3, version 3.3.7
+[21.878s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[21.879s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[23.048s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[23.157s] -- Checking for module 'libusb-1.0'
+[23.437s] --   Found libusb-1.0, version 1.0.23
+[24.292s] -- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[25.509s] -- Found OpenNI: /usr/lib/libOpenNI.so  
+[25.509s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[26.731s] -- Found OpenNI2: /usr/lib/libOpenNI2.so  
+[26.733s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[26.737s] ** WARNING ** io features related to pcap will be disabled
+[26.738s] ** WARNING ** io features related to png will be disabled
+[27.690s] -- The imported target "vtkParseOGLExt" references the file
+[27.690s]    "/usr/bin/vtkParseOGLExt-7.1"
+[27.691s] but this file does not exist.  Possible reasons include:
+[27.691s] * The file was deleted, renamed, or moved to another location.
+[27.692s] * An install or uninstall procedure did not complete successfully.
+[27.692s] * The installation package was faulty and contained
+[27.693s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[27.693s] but not all the files it references.
+[27.694s] 
+[27.713s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[27.714s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[27.714s] but this file does not exist.  Possible reasons include:
+[27.715s] * The file was deleted, renamed, or moved to another location.
+[27.715s] * An install or uninstall procedure did not complete successfully.
+[27.716s] * The installation package was faulty and contained
+[27.716s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[27.716s] but not all the files it references.
+[27.717s] 
+[27.732s] -- The imported target "vtk" references the file
+[27.733s]    "/usr/bin/vtk"
+[27.733s] but this file does not exist.  Possible reasons include:
+[27.734s] * The file was deleted, renamed, or moved to another location.
+[27.734s] * An install or uninstall procedure did not complete successfully.
+[27.734s] * The installation package was faulty and contained
+[27.735s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[27.735s] but not all the files it references.
+[27.736s] 
+[27.736s] -- The imported target "pvtk" references the file
+[27.736s]    "/usr/bin/pvtk"
+[27.737s] but this file does not exist.  Possible reasons include:
+[27.737s] * The file was deleted, renamed, or moved to another location.
+[27.738s] * An install or uninstall procedure did not complete successfully.
+[27.738s] * The installation package was faulty and contained
+[27.738s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[27.739s] but not all the files it references.
+[27.739s] 
+[28.043s] -- Found libusb-1.0: /usr/include  
+[28.045s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[28.231s] -- Checking for module 'flann'
+[28.490s] --   Found flann, version 1.9.1
+[29.175s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[29.559s] -- looking for PCL_COMMON
+[29.579s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[29.582s] -- looking for PCL_OCTREE
+[29.600s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[29.601s] -- looking for PCL_IO
+[29.616s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[29.619s] -- looking for PCL_KDTREE
+[29.625s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[29.652s] -- looking for PCL_SEARCH
+[29.659s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[29.661s] -- looking for PCL_SAMPLE_CONSENSUS
+[29.681s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[29.683s] -- looking for PCL_FILTERS
+[29.689s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[29.691s] -- looking for PCL_GEOMETRY
+[29.705s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[29.707s] -- looking for PCL_2D
+[29.709s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[29.710s] -- looking for PCL_FEATURES
+[29.729s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[29.732s] -- looking for PCL_ML
+[29.738s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[29.745s] -- looking for PCL_SEGMENTATION
+[29.754s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[29.761s] -- Found PCL: pcl_common;pcl_octree;pcl_io;pcl_kdtree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_features;pcl_ml;pcl_segmentation;/usr/lib/aarch64-linux-gnu/libboost_system.so;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;/usr/lib/aarch64-linux-gnu/libboost_iostreams.so;/usr/lib/aarch64-linux-gnu/libboost_regex.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/aarch64-linux-gnu/libfreetype.so;/usr/lib/aarch64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/aarch64-linux-gnu/libjpeg.so;/usr/lib/aarch64-linux-gnu/libpng.so;/usr/lib/aarch64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/aarch64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  
+[29.977s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[30.738s] -- Added test 'copyright' to check source files copyright and LICENSE
+[30.755s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[30.759s] -- Configured cppcheck include dirs: 
+[30.761s] -- Configured cppcheck exclude dirs and/or files: 
+[30.769s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[30.770s] -- Configured cpplint exclude dirs and/or files: 
+[30.777s] -- Added test 'lint_cmake' to check CMake code style
+[30.785s] -- Added test 'uncrustify' to check C / C++ code style
+[30.786s] -- Configured uncrustify additional arguments: 
+[30.790s] -- Added test 'xmllint' to check XML markup files
+[30.827s] -- Configuring done
+[31.196s] -- Generating done
+[31.211s] -- Build files have been written to: /home/nvidia/master_ws/build/lidar
+[31.324s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/lidar -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/lidar
+[31.332s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j6 -l6
+[32.600s] [35m[1mScanning dependencies of target lidar[0m
+[33.154s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[115.418s] [100%] [32m[1mLinking CXX executable lidar[0m
+[119.341s] [100%] Built target lidar
+[119.418s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/lidar -- -j6 -l6
+[119.652s] Invoking command in '/home/nvidia/master_ws/build/lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/lidar
+[119.734s] -- Install configuration: ""
+[119.737s] -- Installing: /home/nvidia/master_ws/install/lidar/lib/lidar/lidar
+[119.766s] -- Set runtime path of "/home/nvidia/master_ws/install/lidar/lib/lidar/lidar" to ""
+[119.769s] -- Installing: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/package_run_dependencies/lidar
+[119.772s] -- Installing: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/parent_prefix_path/lidar
+[119.775s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/environment/ament_prefix_path.sh
+[119.778s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/environment/ament_prefix_path.dsv
+[119.780s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/environment/path.sh
+[119.783s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/environment/path.dsv
+[119.785s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.bash
+[119.789s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.sh
+[119.791s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.zsh
+[119.794s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/local_setup.dsv
+[119.796s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/package.dsv
+[119.798s] -- Installing: /home/nvidia/master_ws/install/lidar/share/ament_index/resource_index/packages/lidar
+[119.801s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/cmake/lidarConfig.cmake
+[119.803s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/cmake/lidarConfig-version.cmake
+[119.805s] -- Installing: /home/nvidia/master_ws/install/lidar/share/lidar/package.xml
+[119.820s] Invoked command in '/home/nvidia/master_ws/build/lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/lidar

@@ -1,0 +1,22 @@
+[0.115s] Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[1.154s] [100%] Built target realsense_control
+[1.217s] Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/realsense_control -- -j6 -l6
+[3.211s] Invoking command in '/home/nvidia/master_ws/build/realsense_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/realsense_control
+[3.289s] -- Install configuration: ""
+[3.295s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/lib/realsense_control/realsense_control
+[3.311s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/package_run_dependencies/realsense_control
+[3.314s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/parent_prefix_path/realsense_control
+[3.314s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/ament_prefix_path.sh
+[3.316s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/ament_prefix_path.dsv
+[3.316s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/path.sh
+[3.317s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/environment/path.dsv
+[3.317s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.bash
+[3.318s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.sh
+[3.319s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.zsh
+[3.329s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/local_setup.dsv
+[3.332s] -- Installing: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.dsv
+[3.333s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/ament_index/resource_index/packages/realsense_control
+[3.333s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/cmake/realsense_controlConfig.cmake
+[3.334s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/cmake/realsense_controlConfig-version.cmake
+[3.334s] -- Up-to-date: /home/nvidia/master_ws/install/realsense_control/share/realsense_control/package.xml
+[3.361s] Invoked command in '/home/nvidia/master_ws/build/realsense_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/realsense_control

@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4b1b2/fast && /usr/bin/make -f CMakeFiles/cmTC_4b1b2.dir/build.make CMakeFiles/cmTC_4b1b2.dir/build
+Run Build Command(s):/usr/bin/make cmTC_bc0db/fast && /usr/bin/make -f CMakeFiles/cmTC_bc0db.dir/build.make CMakeFiles/cmTC_bc0db.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4b1b2.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4b1b2.dir/src.c.o   -c /home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_4b1b2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b1b2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_4b1b2.dir/src.c.o  -o cmTC_4b1b2 
-/usr/bin/ld: CMakeFiles/cmTC_4b1b2.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_bc0db.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bc0db.dir/src.c.o   -c /home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bc0db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc0db.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_bc0db.dir/src.c.o  -o cmTC_bc0db 
+/usr/bin/ld: CMakeFiles/cmTC_bc0db.dir/src.c.o: in function `main':
 src.c:(.text+0x48): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_4b1b2.dir/build.make:87: cmTC_4b1b2] Error 1
+make[1]: *** [CMakeFiles/cmTC_bc0db.dir/build.make:87: cmTC_bc0db] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_4b1b2/fast] Error 2
+make: *** [Makefile:121: cmTC_bc0db/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_eef29/fast && /usr/bin/make -f CMakeFiles/cmTC_eef29.dir/build.make CMakeFiles/cmTC_eef29.dir/build
+Run Build Command(s):/usr/bin/make cmTC_fc9e5/fast && /usr/bin/make -f CMakeFiles/cmTC_fc9e5.dir/build.make CMakeFiles/cmTC_fc9e5.dir/build
 make[1]: Entering directory '/home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eef29.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_eef29.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_eef29
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eef29.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_eef29.dir/CheckFunctionExists.c.o  -o cmTC_eef29  -lpthreads 
+Building C object CMakeFiles/cmTC_fc9e5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fc9e5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fc9e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc9e5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fc9e5.dir/CheckFunctionExists.c.o  -o cmTC_fc9e5  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_eef29.dir/build.make:87: cmTC_eef29] Error 1
+make[1]: *** [CMakeFiles/cmTC_fc9e5.dir/build.make:87: cmTC_fc9e5] Error 1
 make[1]: Leaving directory '/home/nvidia/master_ws/build/lidar/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_eef29/fast] Error 2
+make: *** [Makefile:121: cmTC_fc9e5/fast] Error 2
 
 
 

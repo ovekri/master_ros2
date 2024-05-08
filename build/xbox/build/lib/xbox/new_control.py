@@ -47,6 +47,8 @@ class Controller(Node):
         self.timer_lidar = self.create_timer(self.timer_period_lidar, self.lidar_desicion_callback)
         self.timer_realsense = self.create_timer(self.timer_period_realsense, self.realsense_desicion_callback)
 
+        self.counter_lidar_only = 0
+        self.counter_realsense_and_lidar = 0
         self.gap_selected = 0
         self.flag_lidar = False
         self.flag_realsense = False
@@ -269,8 +271,20 @@ class Controller(Node):
             else:
                 result_list.append(value)    
         #self.get_logger().info(f'result_list: {result_list}')
-
+        #self.get_logger().info(f'points 1: {result_list[3]}')
+        #self.get_logger().info(f'points 2: {result_list[7]}')
+        #self.get_logger().info(f'points 3: {result_list[11]}')
         #self.get_logger().info(f'plane_fitter_features: {plane_fitter_features}')
+        if (result_list[3] < 100):
+            result_list[1] = 0
+            #self.get_logger().info(f'points 1: {result_list[3]}')
+        if (result_list[7] < 100):
+            result_list[5] = 0
+            #self.get_logger().info(f'points 2: {result_list[7]}')
+        if (result_list[11] < 100):
+            result_list[9] = 0
+            #self.get_logger().info(f'points 3: {result_list[11]}')
+
         self.MSE_array = np.array([result_list[1], result_list[5], result_list[9]])
 
         """
@@ -302,7 +316,7 @@ class Controller(Node):
     def set_state(self):
         self.servo.angle = self.angle_servo
         self.motor.angle = self.angle_motor
-        #time.sleep(0.05)
+        #time.sleep(0.01)
         #self.motor.angle = 106
 
     def control(self):
@@ -340,10 +354,12 @@ class Controller(Node):
             realsense_array = self.MSE_array
             lidar_array = self.decision_array
 
+            #self.get_logger().info(f'points: [{realsense_array[3]},{realsense_array[7]},{realsense_array[11]}]')
+
             realsense_weight = 0.66                                                                             ###### Param
             lidar_weight = 1                                                                                    ###### Param
-            min_mse = 10                                                                                        ###### Param
-            max_mse = 100                                                                                       ###### Param
+            min_mse = 10           #50                                                                          ###### Param
+            max_mse = 100          #20 0                                                                        ###### Param
 
             if self.flag_lidar == True and self.flag_realsense == True:
                 # -36 to -12 to 12 to 36
@@ -355,12 +371,25 @@ class Controller(Node):
                 new_realsense_array = 1 / realsense_array
 
                 normalized_realsense_array = (new_realsense_array - new_realsense_array.min()) / (new_realsense_array.max() - new_realsense_array.min())
-                self.get_logger().info(f'normalized realsense_array_before: {normalized_realsense_array}')
+                #self.get_logger().info(f'normalized realsense_array_before: {normalized_realsense_array}')
 
-                middle_index = 3 - np.argmin(normalized_realsense_array) - np.argmax(normalized_realsense_array)
-                if (normalized_realsense_array[middle_index] > 0.2):                                                ## Param
-                    normalized_realsense_array[middle_index] *= 1 / np.sqrt(normalized_realsense_array[middle_index])
-                    self.get_logger().info(f'normalized realsense_array_after: {normalized_realsense_array}')
+                #middle_index = 3 - np.argmin(normalized_realsense_array) - np.argmax(normalized_realsense_array)
+                #if (normalized_realsense_array[middle_index] > 0.2):                                                ## Param
+                #    normalized_realsense_array[middle_index] *= 1 / np.sqrt(normalized_realsense_array[middle_index])
+                    #self.get_logger().info(f'normalized realsense_array_after: {normalized_realsense_array}')
+
+                #self.get_logger().info(f'normalized realsense_array_before: {normalized_realsense_array}')
+                a, b, c = normalized_realsense_array[0], normalized_realsense_array[1], normalized_realsense_array[2]
+                if a <= b <= c:
+                    if (normalized_realsense_array[1] != 0):
+                        normalized_realsense_array[1] *= 1 / np.sqrt(normalized_realsense_array[1])
+                elif c <= a <= b:
+                    if (normalized_realsense_array[0] != 0):
+                        normalized_realsense_array[0] *= 1 / np.sqrt(normalized_realsense_array[0])
+                else:
+                    if (normalized_realsense_array[2] != 0):
+                        normalized_realsense_array[2] *= 1 / np.sqrt(normalized_realsense_array[2])
+                #self.get_logger().info(f'normalized realsense_array_after: {normalized_realsense_array}')
 
                 if (realsense_array.max() > max_mse):
                     for i in range(len(realsense_array)):
@@ -368,22 +397,43 @@ class Controller(Node):
                             normalized_realsense_array[i] = - 1
                 expand_normalized_realsense_array = np.repeat(normalized_realsense_array, 6)
                 final_normalized_realsense_array = np.insert(expand_normalized_realsense_array, 9, normalized_realsense_array[1])
-                self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
+                #self.get_logger().info(f'normalized realsense: {final_normalized_realsense_array}')
 
+                ###### for visual only ######
+                """
+                max_1_lidar_test = 0
+                max_2_lidar_test = 0
+                max_3_lidar_test = 0
+                j = 0
+                k = 0
+                l = 0
+                for i in range(len(lidar_array)):
+                    if (lidar_array[i] > max_1_lidar_test):
+                        max_3_lidar_test = max_2_lidar_test
+                        l = k
+                        max_2_lidar_test = max_1_lidar_test
+                        k = j
+                        max_1_lidar_test = lidar_array[i]
+                        j = i
+                self.get_logger().info(f'largest lidar: [{max_1_lidar_test} ({j}), {max_2_lidar_test} ({k}), {max_3_lidar_test} ({l})]')
+                self.get_logger().info(f'lidar arr: [{j}.0000000, {k}.0000000, {l}.0000000]')
+                self.get_logger().info(' ')
+                """
+                #############################
                 #self.get_logger().info(f'lidar array: {lidar_array}')
                 normalized_lidar_array = (lidar_array - lidar_array.min()) / (lidar_array.max() - lidar_array.min())
-                self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
+                #self.get_logger().info(f'normalized lidar: {normalized_lidar_array}')
 
                 self.result_array = realsense_weight*final_normalized_realsense_array + lidar_weight*normalized_lidar_array
                 # give weigth to the last chosen angle and its neighboor to reduce changing angels sharply when not important to turn
                 self.result_array[self.gap_selected] *= 1.25                                                        ###### Param
-                self.get_logger().info(f'weight on pos: {self.result_array[self.gap_selected]}')
+                #self.get_logger().info(f'weight on pos: {self.result_array[self.gap_selected]}')
                 if (self.gap_selected != 0):
                     self.result_array[self.gap_selected-1] *= 1.1
                 if (self.gap_selected != len(self.result_array)-1):
                     self.result_array[self.gap_selected+1] *= 1.1
 
-                self.get_logger().info(f'result array: {self.result_array}')
+                #self.get_logger().info(f'result array: {self.result_array}')
 
                 self.flag_lidar = False
                 self.flag_realsense = False
@@ -403,24 +453,41 @@ class Controller(Node):
                 if (max_value <= 0):
                     self.angle_motor = 106
                     self.angle_servo = 90
-                    self.get_logger().info(f'no valid solution: {max_value}')
+                    #self.get_logger().info(f'no valid solution: {max_value}')
                 elif (realsense_array.min() > max_mse):
                     self.angle_motor = 106
                     self.angle_servo = 90
-                    self.get_logger().info(f'no valid solution, realsense min mse value is: {realsense_array.min()}')
+                    #self.get_logger().info(f'no valid solution, realsense min mse value is: {realsense_array.min()}')
                 else:
                     self.angle_motor = 114
                     self.angle_servo = 90 - 36 + 4*(gap_chosen)
-                    self.get_logger().info(f'realsense + lidar: {90 - 36 + 4*(gap_chosen)}, {114}')
+                    #self.get_logger().info(f'realsense + lidar: {90 - 36 + 4*(gap_chosen)}, {114}')
+                    self.counter_realsense_and_lidar += 1
+                    #self.get_logger().info(f'lidar and realsense: {self.counter_realsense_and_lidar}')
             else: 
                 if (self.no_solution == True):
                     self.angle_motor = 106
                     self.angle_servo = 90 + self.lidar_decision_state
-                    self.get_logger().info(f'lidar no solution: {90+self.lidar_decision_state}')
+                    #self.get_logger().info(f'lidar no solution: {90+self.lidar_decision_state}')
                 else:
                     self.angle_motor = 114
                     self.angle_servo = 90 + self.lidar_decision_state
-                    self.get_logger().info(f'lidar only: {90+self.lidar_decision_state}')
+                    #self.get_logger().info(f'lidar only: {90+self.lidar_decision_state}')
+                    self.counter_lidar_only += 1
+                    #self.get_logger().info(f'lidar only: {self.counter_lidar_only}')
+            #self.ratio_desicion = self.counter_lidar_only+1 / self.counter_realsense_and_lidar+1
+            #self.get_logger().info(f'ratio: {self.ratio_desicion}')
+
+            """
+            # Se the decision
+            if (self.lidar_decision_state > 16 or self.gap_selected > 13):
+                self.get_logger().info('Right')
+            elif (self.lidar_decision_state < -16 or self.gap_selected < 6):
+                self.get_logger().info('Left')
+            else:
+                self.get_logger().info('Forward or light turning')
+            """
+
                 
 
 def main(args=None):

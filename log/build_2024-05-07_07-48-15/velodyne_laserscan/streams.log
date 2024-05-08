@@ -1,0 +1,94 @@
+[0.336s] Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/velodyne/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/velodyne_laserscan
+[3.581s] -- The C compiler identification is GNU 9.4.0
+[3.582s] -- The CXX compiler identification is GNU 9.4.0
+[3.583s] -- Check for working C compiler: /usr/bin/cc
+[3.583s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.583s] -- Detecting C compiler ABI info
+[3.584s] -- Detecting C compiler ABI info - done
+[3.584s] -- Detecting C compile features
+[3.585s] -- Detecting C compile features - done
+[3.585s] -- Check for working CXX compiler: /usr/bin/c++
+[3.586s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.587s] -- Detecting CXX compiler ABI info
+[3.734s] -- Detecting CXX compiler ABI info - done
+[3.828s] -- Detecting CXX compile features
+[3.831s] -- Detecting CXX compile features - done
+[3.850s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.082s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.083s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.859s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.320s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.380s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.551s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.816s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.545s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.173s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[9.213s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.234s] -- Looking for pthread.h
+[10.253s] -- Looking for pthread.h - found
+[10.255s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.023s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[11.024s] -- Looking for pthread_create in pthreads
+[11.635s] -- Looking for pthread_create in pthreads - not found
+[11.636s] -- Looking for pthread_create in pthread
+[12.272s] -- Looking for pthread_create in pthread - found
+[12.280s] -- Found Threads: TRUE  
+[13.945s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[14.714s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[15.943s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[16.863s] -- Added test 'copyright' to check source files copyright and LICENSE
+[16.888s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[16.889s] -- Configured cppcheck include dirs: /home/nvidia/master_ws/src/velodyne/velodyne_laserscan/include
+[16.889s] -- Configured cppcheck exclude dirs and/or files: 
+[16.915s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[16.916s] -- Configured cpplint exclude dirs and/or files: 
+[16.930s] -- Added test 'flake8' to check Python code syntax and style conventions
+[16.957s] -- Added test 'lint_cmake' to check CMake code style
+[16.965s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[16.978s] -- Added test 'uncrustify' to check C / C++ code style
+[16.978s] -- Configured uncrustify additional arguments: 
+[16.983s] -- Added test 'xmllint' to check XML markup files
+[17.018s] -- Configuring done
+[17.167s] -- Generating done
+[17.192s] -- Build files have been written to: /home/nvidia/master_ws/build/velodyne_laserscan
+[17.264s] Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake /home/nvidia/master_ws/src/velodyne/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/nvidia/master_ws/install/velodyne_laserscan
+[17.270s] Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j6 -l6
+[30.638s] [35m[1mScanning dependencies of target velodyne_laserscan[0m
+[30.638s] [ 25%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o[0m
+[64.487s] [ 50%] [32m[1mLinking CXX shared library libvelodyne_laserscan.so[0m
+[66.923s] [ 50%] Built target velodyne_laserscan
+[67.077s] [35m[1mScanning dependencies of target velodyne_laserscan_node[0m
+[67.675s] [ 75%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan_node.dir/src/node.cpp.o[0m
+[85.942s] [100%] [32m[1mLinking CXX executable velodyne_laserscan_node[0m
+[87.692s] [100%] Built target velodyne_laserscan_node
+[88.062s] Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --build /home/nvidia/master_ws/build/velodyne_laserscan -- -j6 -l6
+[88.557s] Invoking command in '/home/nvidia/master_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_laserscan
+[94.135s] -- Install configuration: ""
+[94.139s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/lib/libvelodyne_laserscan.so
+[94.140s] -- Set runtime path of "/home/nvidia/master_ws/install/velodyne_laserscan/lib/libvelodyne_laserscan.so" to ""
+[94.141s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/lib/velodyne_laserscan/velodyne_laserscan_node
+[94.142s] -- Set runtime path of "/home/nvidia/master_ws/install/velodyne_laserscan/lib/velodyne_laserscan/velodyne_laserscan_node" to ""
+[94.142s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/include/velodyne_laserscan
+[94.152s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/include/velodyne_laserscan/velodyne_laserscan.hpp
+[94.156s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/config
+[94.157s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/config/default-velodyne_laserscan_node-params.yaml
+[94.157s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch
+[94.158s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-launch.py
+[94.158s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-composed-launch.py
+[94.160s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/ament_index/resource_index/package_run_dependencies/velodyne_laserscan
+[94.161s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/ament_index/resource_index/parent_prefix_path/velodyne_laserscan
+[94.162s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.sh
+[94.162s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.dsv
+[94.165s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.sh
+[94.166s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.dsv
+[94.171s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.bash
+[94.172s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.sh
+[94.173s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.zsh
+[94.173s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.dsv
+[94.174s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv
+[94.174s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/ament_index/resource_index/packages/velodyne_laserscan
+[94.176s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/ament_index/resource_index/rclcpp_components/velodyne_laserscan
+[94.177s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig.cmake
+[94.177s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig-version.cmake
+[94.177s] -- Installing: /home/nvidia/master_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.xml
+[94.206s] Invoked command in '/home/nvidia/master_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/master_ws/install/xbox:/home/nvidia/master_ws/install/lidar_control:/home/nvidia/master_ws/install/launch_car:/home/nvidia/master_ws/install/broadcaster:/home/nvidia/install/xbox:/opt/ros/foxy /usr/bin/cmake --install /home/nvidia/master_ws/build/velodyne_laserscan

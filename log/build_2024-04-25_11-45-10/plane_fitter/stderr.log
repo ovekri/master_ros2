@@ -1,3 +1,0 @@
-make[2]: *** [CMakeFiles/plane_fitter.dir/build.make:63: CMakeFiles/plane_fitter.dir/src/plane_fitter.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/plane_fitter.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

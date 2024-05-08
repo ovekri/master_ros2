@@ -139,7 +139,7 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             for (const auto& point : cloud_msg->points) {
                 float r = std::sqrt(point.x * point.x + point.y * point.y);
                 float theta = std::atan2(point.y, point.x);
-                if (r < 1.6 && r > 0.8 && point.y > - 1.0 && point.y < 1.0) {
+                if (r < 1.4 && r > 0.6 && point.y > - 1.0 && point.y < 1.0) {
                     if (theta > -0.25 && theta < 0.25) {
                         //std::cout << "Point z value: " << point.z << std::endl;
                         cloud_mid->points.push_back(point);
@@ -158,6 +158,7 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             publisher_feature_right_->publish(pointCloudCb(cloud_right));
             */
             // ###### new cloud to publish, visual only #########
+            ///*
             pcl::PointCloud<pcl::PointXYZ>::Ptr combined_cloud(new pcl::PointCloud<pcl::PointXYZ>);
             sensor_msgs::msg::PointCloud2 output_msg;
 
@@ -169,6 +170,7 @@ class pointCloudPlaneFitter : public rclcpp::Node {
             output_msg.header.stamp = now(); // Make sure to call this in the context of a node to get the current time
             output_msg.header.frame_id = "transformed_realsense_frame";
             publisher_->publish(output_msg);
+            //*/
             // ####################
 
             std_msgs::msg::Float64MultiArray feature_mid;
